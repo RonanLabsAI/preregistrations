@@ -1,0 +1,1 @@
+Prospective technical correction before any GPU execution: smoke prefix receives a disjoint group identifier. No scored workload, model, engine, outcome or analysis choice changes. Version one is superseded unrun; it produced no measured outcome. This version is the executable freeze.
