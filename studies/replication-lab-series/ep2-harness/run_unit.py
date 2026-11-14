@@ -12,7 +12,6 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
-import os
 import random
 import signal
 import subprocess
@@ -22,7 +21,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent))
 
-from common import k3  # noqa: E402
+from common import k3
 
 PRODUCT = "replication-lab-series-ep2"
 TITLE = "Replication lab episode 2: CIG-SFT versus matched SFT on Qwen2.5-Math-1.5B"
@@ -126,6 +125,7 @@ def main() -> int:
     ap.add_argument("--expect-fingerprint")
     ap.add_argument("--print-fingerprint", action="store_true")
     ap.add_argument("--smoke", action="store_true", help="5 steps / 5 problems; never a scored result")
+    ap.add_argument("--smoke-tag", default="", help="suffix that keeps each smoke in fresh directories")
     ap.add_argument("--out", type=Path)
     args = ap.parse_args()
     lock = json.loads(LOCK.read_text())
@@ -139,7 +139,8 @@ def main() -> int:
     out = args.out or (Path(ident["receipt_dir"]) if ident["receipt_dir"] else None)
     if out is None or not args.prereg_url:
         ap.error("--prereg-url and --out (or RL_RECEIPT_DIR) are required")
-    tag = f"{args.arm}-s{args.seed}" + ("-smoke" if args.smoke else "")
+    smoke_sfx = f"-smoke{args.smoke_tag}" if args.smoke else ""
+    tag = f"{args.arm}-s{args.seed}{smoke_sfx}"
     run_dir = args.work / "runs" / tag
     run_dir.mkdir(parents=True, exist_ok=True)
     log_path = run_dir / "unit.log"
@@ -181,7 +182,7 @@ def main() -> int:
     if args.arm == "compare":
         arms = {}
         for arm in ("base", "sft", "cig"):
-            f = args.work / "runs" / f"{arm}-s{args.seed}" / "eval-math500.jsonl"
+            f = args.work / "runs" / f"{arm}-s{args.seed}{smoke_sfx}" / "eval-math500.jsonl"
             if not f.exists():
                 raise SystemExit(f"KILL: missing {arm} evaluation")
             arms[arm] = {json.loads(line)["index"]: [s["correct"] for s in json.loads(line)["samples"]]
@@ -213,8 +214,8 @@ def arm_verdict(arm: str, s: dict, url: str, smoke: bool) -> str:
     claimed = {"base": CLAIMED_BASE, "sft": CLAIMED_SFT, "cig": CLAIMED_CIG}[arm]
     head = "SMOKE ONLY, not a result" if smoke else f"arm `{arm}`"
     return "\n".join([
-        f"# Replication episode 2: {head}", "", f"Preregistration: {url}", "",
-        (f"MATH-500 Avg@16 for this arm was {s['avg_at_16']:.1f} points (n={s['n_problems']} problems) "
+        f"# Replication episode two: {head}", "", f"Preregistration: {url}", "",
+        (f"Avg@16 for this arm was {s['avg_at_16']:.1f} points (n={s['n_problems']} problems) "
          f"against the paper's {claimed:.1f}, from receipts/results.jsonl."),
         f"Pass@16 for this arm was {s['pass_at_16']:.1f} points (n={s['n_problems']} problems), from receipts/results.jsonl.",
         (f"The share of samples stopped at the length cap was {100 * s['truncated_share']:.1f}% "
@@ -224,7 +225,7 @@ def arm_verdict(arm: str, s: dict, url: str, smoke: bool) -> str:
 
 def verdict_text(rows: list[dict], cmp: dict, url: str) -> str:
     arms = {r["arm"]: r for r in rows if r["kind"] == "arm"}
-    lines = ["# Verdict: CIG-SFT versus matched SFT, MATH-500 (episode 2)", "", f"Preregistration: {url}", "",
+    lines = ["# Verdict: CIG-SFT versus matched SFT (replication episode two)", "", f"Preregistration: {url}", "",
              f"Classification under the preregistered rule: **{cmp['classification']}**.",
              (f"CIG minus SFT Avg@16 was {cmp['avg_diff']:.2f} points (paired bootstrap 95% CI [{cmp['avg_ci'][0]:.2f}, "
               f"{cmp['avg_ci'][1]:.2f}], n={cmp['n_problems']} problems) against the paper's {CLAIMED_CIG - CLAIMED_SFT:.1f}, "
@@ -236,8 +237,9 @@ def verdict_text(rows: list[dict], cmp: dict, url: str) -> str:
         lines.append(f"Arm {arm} Avg@16 was {a['avg_at_16']:.1f} points (n={a['n_problems']} problems) against the paper's "
                      f"{claimed:.1f}, from receipts/results.jsonl.")
     lines += ["", "## What this does and does not establish", "",
-              "It tests the authors' released code and recipe at one seed on MATH-500 with a fixed prompt and grader. "
-              "It does not test the other five benchmarks, other seeds, the 7B or code results, or a separately tuned SFT baseline.", ""]
+              ("It tests the authors' released code and recipe at one seed on the frozen evaluation set with a fixed prompt and grader. "
+               "It does not test the other five benchmarks, other seeds, the larger-model or code results, or a separately tuned "
+               "SFT baseline."), ""]
     return "\n".join(lines)
 
 

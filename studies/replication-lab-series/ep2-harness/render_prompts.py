@@ -10,13 +10,12 @@ import json
 import sys
 from pathlib import Path
 
-from transformers import AutoTokenizer
-
 from llamafactory.data import get_template_and_fix_tokenizer
 from llamafactory.hparams import DataArguments
+from transformers import AutoTokenizer
 
 sys.path.insert(0, "/work/CIG-SFT-public/example/scripts")
-from build_dataset import BOXED_USER_SUFFIX  # noqa: E402
+from build_dataset import BOXED_USER_SUFFIX
 
 
 def main() -> int:

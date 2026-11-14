@@ -14,6 +14,7 @@ from math_verify import parse, verify
 from vllm import LLM, SamplingParams
 
 N_SAMPLES, TEMPERATURE, TOP_P, MAX_NEW = 16, 1.0, 1.0, 4096
+CONTEXT = 4096  # Qwen2.5-Math-1.5B max_position_embeddings; generation is capped at the remaining context
 STOP_TOKEN_IDS = [151645, 151643]  # <|im_end|>, <|endoftext|>: the qwen template turn end, identical for all arms
 
 
@@ -22,7 +23,7 @@ def grade(text: str, answer: str) -> bool:
         gold = parse("$" + answer + "$")
         pred = parse(text)
         return bool(pred) and bool(verify(gold, pred))
-    except Exception:
+    except Exception:  # noqa: BLE001 - any parser/verifier failure grades the sample incorrect
         return False
 
 
@@ -45,11 +46,11 @@ def main() -> int:
     print(json.dumps({"event": "eval-start", "model": args.model, "todo": len(todo), "done": len(done)}), flush=True)
     if not todo:
         return 0
-    llm = LLM(model=args.model, dtype="bfloat16", max_model_len=6144, gpu_memory_utilization=0.85, seed=args.seed,
+    llm = LLM(model=args.model, dtype="bfloat16", max_model_len=CONTEXT, gpu_memory_utilization=0.85, seed=args.seed,
               enable_prefix_caching=True)
     for start in range(0, len(todo), args.chunk):
         chunk = todo[start:start + args.chunk]
-        params = [SamplingParams(n=N_SAMPLES, temperature=TEMPERATURE, top_p=TOP_P, max_tokens=MAX_NEW, stop_token_ids=STOP_TOKEN_IDS,
+        params = [SamplingParams(n=N_SAMPLES, temperature=TEMPERATURE, top_p=TOP_P, max_tokens=min(MAX_NEW, CONTEXT - len(r["prompt_ids"])), stop_token_ids=STOP_TOKEN_IDS,
                                  seed=args.seed * 100003 + r["index"]) for r in chunk]
         outs = llm.generate([{"prompt_token_ids": r["prompt_ids"]} for r in chunk], params, use_tqdm=False)
         with args.out.open("a") as f:
