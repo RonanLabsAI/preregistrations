@@ -1,0 +1,175 @@
+{
+  "product": "cost-per-answer-shootout-v2",
+  "unit_id": "cost-1",
+  "run_id": "cost-1-a1-1215f33b516b8521",
+  "date_pt": "2026-11-14",
+  "status": "completed; PI review pending",
+  "preregistration": {
+    "sha256": "c5a5cc3fcad06214d34c68f7526393ae77ae1419c96df4639d4b0a9c33c73bde",
+    "url": "https://github.com/RonanLabsAI/preregistrations/blob/c2ab7b55d02b6fe1dfb7a14acad585f519c1fc1c/studies/cost-per-answer-shootout/v4/protocol.md",
+    "timestamp_verifiable": true
+  },
+  "serving_fingerprint": "sha256:9a4d6123cc4c5e1eb60406ed8dd793892b9076754796e1b14e7e0552174e9637",
+  "source_manifest_sha256": "281bd9169a0e77397e7beb89db188fbfb7323c1a2d015cbbfbf7ae1fa5913f3e",
+  "result_receipt_sha256": "850fce5ce5d962cc651c8e4ac30214bb240d591dfccb5f91a3fe1dfac2c07435",
+  "valid_rows": 128,
+  "invalid_rows": 0,
+  "gpu_hours": 0.28684270372138093,
+  "summary": {
+    "groups": {
+      "4B-cache-False": {
+        "n": 32,
+        "correct": 32,
+        "wilson95": [
+          0.8928208017449293,
+          1.0
+        ],
+        "correct_strict_v1": 0,
+        "wilson95_strict_v1": [
+          0.0,
+          0.1071791982550706
+        ],
+        "cost_usd": 0.036542423250005174,
+        "usd_per_correct": 0.0011419507265626617,
+        "usd_per_correct_ci95": [
+          0.0007301612763921929,
+          0.0018655406910601476
+        ],
+        "extraction_rules": {
+          "answer-marker": 22,
+          "last-number": 9,
+          "boxed": 1
+        },
+        "truncated": 0,
+        "mean_completion_tokens": 147.375
+      },
+      "4B-cache-True": {
+        "n": 32,
+        "correct": 32,
+        "wilson95": [
+          0.8928208017449293,
+          1.0
+        ],
+        "correct_strict_v1": 0,
+        "wilson95_strict_v1": [
+          0.0,
+          0.1071791982550706
+        ],
+        "cost_usd": 0.037835649358672604,
+        "usd_per_correct": 0.0011823640424585189,
+        "usd_per_correct_ci95": [
+          0.0007492395107191664,
+          0.0019442820915423448
+        ],
+        "extraction_rules": {
+          "answer-marker": 23,
+          "last-number": 8,
+          "boxed": 1
+        },
+        "truncated": 0,
+        "mean_completion_tokens": 147.46875
+      },
+      "8B-cache-False": {
+        "n": 32,
+        "correct": 29,
+        "wilson95": [
+          0.7578184527161212,
+          0.9675984487016337
+        ],
+        "correct_strict_v1": 1,
+        "wilson95_strict_v1": [
+          0.005537860164003122,
+          0.15744263820012558
+        ],
+        "cost_usd": 0.03876284398943584,
+        "usd_per_correct": 0.0013366497927391667,
+        "usd_per_correct_ci95": [
+          0.0008368100505663236,
+          0.002193356970428435
+        ],
+        "extraction_rules": {
+          "answer-marker": 21,
+          "last-number": 6,
+          "bare-number": 2,
+          "boxed": 2,
+          "answer-marker-next": 1
+        },
+        "truncated": 0,
+        "mean_completion_tokens": 159.09375
+      },
+      "8B-cache-True": {
+        "n": 32,
+        "correct": 29,
+        "wilson95": [
+          0.7578184527161212,
+          0.9675984487016337
+        ],
+        "correct_strict_v1": 1,
+        "wilson95_strict_v1": [
+          0.005537860164003122,
+          0.15744263820012558
+        ],
+        "cost_usd": 0.03840340696639107,
+        "usd_per_correct": 0.001324255412634175,
+        "usd_per_correct_ci95": [
+          0.0008305048618848933,
+          0.0021797709065760774
+        ],
+        "extraction_rules": {
+          "answer-marker": 20,
+          "last-number": 7,
+          "bare-number": 2,
+          "boxed": 2,
+          "answer-marker-next": 1
+        },
+        "truncated": 0,
+        "mean_completion_tokens": 156.40625
+      }
+    },
+    "contrasts": {
+      "4B-vs-8B-cache-False": {
+        "ratio": 0.8543380119204503,
+        "ci95": [
+          0.7400179797782879,
+          0.9539122927804304
+        ],
+        "undefined_draws": 0,
+        "n_paired_questions": 32,
+        "decision": "4B-cache-False lower"
+      },
+      "4B-vs-8B-cache-True": {
+        "ratio": 0.8928519613195997,
+        "ci95": [
+          0.7738981182682888,
+          0.9982421272710688
+        ],
+        "undefined_draws": 0,
+        "n_paired_questions": 32,
+        "decision": "4B-cache-True lower"
+      },
+      "4B-ON-vs-OFF": {
+        "ratio": 1.0353897194999855,
+        "ci95": [
+          1.0088671053834342,
+          1.0573718493807558
+        ],
+        "undefined_draws": 0,
+        "n_paired_questions": 32,
+        "decision": "4B-cache-False lower"
+      },
+      "8B-ON-vs-OFF": {
+        "ratio": 0.9907272793724134,
+        "ci95": [
+          0.9690543057510403,
+          1.005063298710488
+        ],
+        "undefined_draws": 0,
+        "n_paired_questions": 32,
+        "decision": "no detectable difference"
+      }
+    }
+  },
+  "operator_audit": "Read-only check after scoring, no score changed: the extractor returned the model's stated final answer in every inspected row (all 6 incorrect rows and the 9 last-number rows for 4B cache OFF). The 8B misses are three questions answered wrongly in both cache modes (ids 12, 21, 22: answered 12, 23, 15 against 13, 14, 7).",
+  "interpretation_limits": "32 fixed GSM8K questions, one GPU, pinned engine and model revisions; Qwen3-4B is at the 32/32 ceiling, so the 4B-vs-8B contrast reflects both accuracy (32/32 vs 29/32) and per-answer cost. Board energy is an endpoint estimate and amortization an explicit assumption. Per-answer costs are not comparable to v1 (different transport).",
+  "publication": "Outcome recording only; PI review pending; no post, paper or email authorized."
+}
