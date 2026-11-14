@@ -1,0 +1,46 @@
+{
+  "product": "spark-needle-numctx-32k",
+  "date_pt": "2026-11-14",
+  "protocol": {
+    "url": "https://github.com/RonanLabsAI/preregistrations/blob/34de7bb565380ee527a62d5c821c6cc479466e13/studies/spark-needle-numctx-32k/v3/protocol.md",
+    "protocol_sha256": "0ad28c145c0728a9a7fe37a3acbe191e281ad41b3a0f35d2b96d68aaeb4395ca",
+    "fingerprint": "sha256:955bfbc59bcdb77ee309448ceb3565c64d0f21658ee0ec33888707cda8c592df"
+  },
+  "queue_state_at_record": "admitted; scored execution pending or in progress",
+  "smokes": [
+    {
+      "arm": "s1ah",
+      "phase": "smoke, excluded from study estimates",
+      "status": "completed",
+      "gpu_hours_last_segment": 0.033883372229441495,
+      "attempt_denominator": 1,
+      "row_denominator": 1,
+      "valid_rows": 1,
+      "k3_structural_validation": "passed",
+      "serving_fingerprint": "sha256:955bfbc59bcdb77ee309448ceb3565c64d0f21658ee0ec33888707cda8c592df"
+    }
+  ],
+  "scientific_results": "No smoke result is a study estimate. Scored results will be recorded separately.",
+  "superseded_versions": {
+    "v1": "unrun; prospective smoke-identifier correction",
+    "v2": "no scored study rows; prospective container ownership/packaging correction"
+  },
+  "pi_review": "pending; no post or paper authorized",
+  "earlier_smoke_dispositions": [
+    {
+      "kind": "deployment generator hash mismatch; refused before engine start",
+      "gpu_hours": 0,
+      "attempt_denominator": 1
+    },
+    {
+      "kind": "research transport connection refused before model inference",
+      "gpu_hours": 0.00194270356361004,
+      "attempt_denominator": 1
+    },
+    {
+      "kind": "research transport timeout before model inference",
+      "gpu_hours": 0.0508552709008331,
+      "attempt_denominator": 1
+    }
+  ]
+}

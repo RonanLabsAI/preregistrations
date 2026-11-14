@@ -1,0 +1,29 @@
+{
+  "product": "cheap-model-bakeoff",
+  "date_pt": "2026-11-14",
+  "protocol": {
+    "url": "https://github.com/RonanLabsAI/preregistrations/blob/34de7bb565380ee527a62d5c821c6cc479466e13/studies/cheap-model-bakeoff/v3/protocol.md",
+    "protocol_sha256": "0bb5f6217dd6843ed8f45591b8eaccda313bd55ec095772e967cd4fc84dac13e",
+    "fingerprint": "sha256:e91467e07b30f8dae4592277f82bc4c2559ff3c76bb24a51efe630f770e120df"
+  },
+  "queue_state_at_record": "admitted; scored execution pending or in progress",
+  "smokes": [
+    {
+      "arm": "bakeoff",
+      "phase": "smoke, excluded from study estimates",
+      "status": "completed",
+      "gpu_hours_last_segment": 0.053256751805557646,
+      "attempt_denominator": 1,
+      "row_denominator": 2,
+      "valid_rows": 2,
+      "k3_structural_validation": "passed",
+      "serving_fingerprint": "sha256:e91467e07b30f8dae4592277f82bc4c2559ff3c76bb24a51efe630f770e120df"
+    }
+  ],
+  "scientific_results": "No smoke result is a study estimate. Scored results will be recorded separately.",
+  "superseded_versions": {
+    "v1": "unrun; prospective smoke-identifier correction",
+    "v2": "no scored study rows; prospective container ownership/packaging correction"
+  },
+  "pi_review": "pending; no post or paper authorized"
+}

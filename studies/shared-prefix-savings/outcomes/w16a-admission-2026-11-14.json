@@ -1,0 +1,40 @@
+{
+  "product": "shared-prefix-savings",
+  "date_pt": "2026-11-14",
+  "protocol": {
+    "url": "https://github.com/RonanLabsAI/preregistrations/blob/34de7bb565380ee527a62d5c821c6cc479466e13/studies/shared-prefix-savings/v3/protocol.md",
+    "protocol_sha256": "de1c3dc4cfacd1020d520f875f23d16346c60327ae3164313f7f1cb84f86a674",
+    "fingerprint": "sha256:7c1211d161784c2f84c89c2165121e85bdb5574bb5c4412ce5a60a5cf853f65d"
+  },
+  "queue_state_at_record": "admitted; scored execution pending or in progress",
+  "smokes": [
+    {
+      "arm": "vllm",
+      "phase": "smoke, excluded from study estimates",
+      "status": "completed",
+      "gpu_hours_last_segment": 0.07263801147861361,
+      "attempt_denominator": 1,
+      "row_denominator": 16,
+      "valid_rows": 16,
+      "k3_structural_validation": "passed",
+      "serving_fingerprint": "sha256:7c1211d161784c2f84c89c2165121e85bdb5574bb5c4412ce5a60a5cf853f65d"
+    },
+    {
+      "arm": "sglang",
+      "phase": "smoke, excluded from study estimates",
+      "status": "completed",
+      "gpu_hours_last_segment": 0.04723112644944195,
+      "attempt_denominator": 1,
+      "row_denominator": 16,
+      "valid_rows": 16,
+      "k3_structural_validation": "passed",
+      "serving_fingerprint": "sha256:7c1211d161784c2f84c89c2165121e85bdb5574bb5c4412ce5a60a5cf853f65d"
+    }
+  ],
+  "scientific_results": "No smoke result is a study estimate. Scored results will be recorded separately.",
+  "superseded_versions": {
+    "v1": "unrun; prospective smoke-identifier correction",
+    "v2": "no scored study rows; prospective container ownership/packaging correction"
+  },
+  "pi_review": "pending; no post or paper authorized"
+}

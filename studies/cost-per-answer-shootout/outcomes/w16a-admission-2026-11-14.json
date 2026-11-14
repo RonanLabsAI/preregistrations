@@ -1,0 +1,37 @@
+{
+  "product": "cost-per-answer-shootout",
+  "date_pt": "2026-11-14",
+  "protocol": {
+    "url": "https://github.com/RonanLabsAI/preregistrations/blob/34de7bb565380ee527a62d5c821c6cc479466e13/studies/cost-per-answer-shootout/v3/protocol.md",
+    "protocol_sha256": "e00c537008b8750b0dab670d95593576dc7248d0ee48ddf0fa2642dc28e29109",
+    "fingerprint": "sha256:1ab99e4424c7a0df00b730da8033cb5b0ecb4718c4c3eb642129499eb99c4087"
+  },
+  "queue_state_at_record": "admitted; scored execution pending or in progress",
+  "smokes": [
+    {
+      "arm": "cost",
+      "phase": "smoke, excluded from study estimates",
+      "status": "completed",
+      "gpu_hours_last_segment": 0.07765836079027294,
+      "attempt_denominator": 1,
+      "row_denominator": 4,
+      "valid_rows": 4,
+      "k3_structural_validation": "passed",
+      "serving_fingerprint": "sha256:1ab99e4424c7a0df00b730da8033cb5b0ecb4718c4c3eb642129499eb99c4087"
+    }
+  ],
+  "scientific_results": "No smoke result is a study estimate. Scored results will be recorded separately.",
+  "superseded_versions": {
+    "v1": "unrun; prospective smoke-identifier correction",
+    "v2": "no scored study rows; prospective container ownership/packaging correction"
+  },
+  "pi_review": "pending; no post or paper authorized",
+  "smoke_interruption": {
+    "status": "interrupted then resumed from committed control row",
+    "gpu_hours_prior_segment": 0.03575878840416812,
+    "release_seconds": 6.679664021998178,
+    "attempt_denominator": 1,
+    "checkpoint_hash_preserved": true,
+    "lost_committed_rows": 0
+  }
+}
