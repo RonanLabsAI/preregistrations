@@ -1,0 +1,142 @@
+{
+  "product": "cost-per-answer-shootout-v2",
+  "protocol": "https://github.com/RonanLabsAI/preregistrations/blob/c2ab7b55d02b6fe1dfb7a14acad585f519c1fc1c/studies/cost-per-answer-shootout/v4/protocol.md",
+  "date_pt": "2026-11-14",
+  "status": "admitted to the research queue (queued); scored unit not yet run",
+  "hardware": "dedicated RTX PRO 6000 Blackwell Max-Q, under a preemptible fleet claim bound to that GPU",
+  "fingerprint": "sha256:9a4d6123cc4c5e1eb60406ed8dd793892b9076754796e1b14e7e0552174e9637",
+  "smoke_dispositions": [
+    {
+      "run_id": "smoke-cost-v2",
+      "status": "completed",
+      "manifest_sha256": "6478bc3e8c69cce70623725867b8bc0a7521e27e05ee28e77ddeb06420c68bd8",
+      "results_sha256": "f24744b8198b3c91367ffcc83e8458437af9e42dc03ba7481bcf2f330eabc624",
+      "rows": [
+        {
+          "id": "4B-0-smoke-control",
+          "answer": "15",
+          "extracted": 15.0,
+          "extraction_rule": "bare-number",
+          "correct": true,
+          "correct_strict_v1": true,
+          "finish_reason": "stop",
+          "prompt_tokens": 40
+        },
+        {
+          "id": "4B-1-smoke-control",
+          "answer": "15",
+          "extracted": 15.0,
+          "extraction_rule": "bare-number",
+          "correct": true,
+          "correct_strict_v1": true,
+          "finish_reason": "stop",
+          "prompt_tokens": 40
+        },
+        {
+          "id": "8B-0-smoke-control",
+          "answer": "15",
+          "extracted": 15.0,
+          "extraction_rule": "bare-number",
+          "correct": true,
+          "correct_strict_v1": true,
+          "finish_reason": "stop",
+          "prompt_tokens": 40
+        },
+        {
+          "id": "8B-1-smoke-control",
+          "answer": "15",
+          "extracted": 15.0,
+          "extraction_rule": "bare-number",
+          "correct": true,
+          "correct_strict_v1": true,
+          "finish_reason": "stop",
+          "prompt_tokens": 40
+        }
+      ],
+      "k3": "valid",
+      "note": "disjoint synthetic control, all four conditions; excluded from study estimates"
+    },
+    {
+      "run_id": "smoke-cost-v2-interrupted",
+      "status": "completed",
+      "manifest_sha256": "b560daabd366cce05676aef2da09d3e5ca04011d08af07f9fe3822e65a12d9f1",
+      "results_sha256": "36eb4ab789ab1258008bc813e69e7f9e50403bc0da055cd46738c66250dac7a6",
+      "rows": [
+        {
+          "id": "4B-0-smoke-control",
+          "answer": "15",
+          "extracted": 15.0,
+          "extraction_rule": "bare-number",
+          "correct": true,
+          "correct_strict_v1": true,
+          "finish_reason": "stop",
+          "prompt_tokens": 40
+        },
+        {
+          "id": "4B-1-smoke-control",
+          "answer": "15",
+          "extracted": 15.0,
+          "extraction_rule": "bare-number",
+          "correct": true,
+          "correct_strict_v1": true,
+          "finish_reason": "stop",
+          "prompt_tokens": 40
+        },
+        {
+          "id": "8B-0-smoke-control",
+          "answer": "15",
+          "extracted": 15.0,
+          "extraction_rule": "bare-number",
+          "correct": true,
+          "correct_strict_v1": true,
+          "finish_reason": "stop",
+          "prompt_tokens": 40
+        },
+        {
+          "id": "8B-1-smoke-control",
+          "answer": "15",
+          "extracted": 15.0,
+          "extraction_rule": "bare-number",
+          "correct": true,
+          "correct_strict_v1": true,
+          "finish_reason": "stop",
+          "prompt_tokens": 40
+        }
+      ],
+      "k3": "valid",
+      "note": "intended forced-stop witness; the operator's launcher blocked until the run finished, so it completed all four conditions and no stop was sent before completion. Retained as a second complete smoke."
+    },
+    {
+      "run_id": "smoke-cost-v2-stop",
+      "status": "interrupted",
+      "manifest_sha256": "e67648dc202978bc41c7cb7c0ea50aef45a6a61a91bb212d715a002d46bb4b48",
+      "results_sha256": "a705251d50525a2cc5490708172495c202425be2ac0dc30fe617e406e7820536",
+      "rows": [
+        {
+          "id": "4B-0-smoke-control",
+          "answer": "15",
+          "extracted": 15.0,
+          "extraction_rule": "bare-number",
+          "correct": true,
+          "correct_strict_v1": true,
+          "finish_reason": "stop",
+          "prompt_tokens": 40
+        }
+      ],
+      "k3": "valid",
+      "note": "forced-stop witness under a fresh claim: TERM to the run's process group after one committed row",
+      "release_seconds": 11.929,
+      "stops": 1,
+      "checkpoint_unchanged": true,
+      "rows_kept": 1
+    }
+  ],
+  "counter_check": "all 8 complete smoke rows reported 40 prompt tokens, equal to the independent count used for the v1 admission (same prompt, question and template)",
+  "admission": {
+    "state": "queued",
+    "units": [
+      "cost-1"
+    ]
+  },
+  "publication": "Outcome recording only; no post, paper or email authorized."
+}
