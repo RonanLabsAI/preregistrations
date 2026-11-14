@@ -1,0 +1,85 @@
+{
+  "product": "shared-prefix-savings",
+  "date_pt": "2026-11-14",
+  "status": "all preregistered queue units completed; awaiting PI review",
+  "outcomes": [
+    {
+      "unit_id": "vllm-1",
+      "run_id": "vllm-1-a1-32690b1b32094caf",
+      "source_manifest_sha256": "ddb33b0779d2e7eb460a958498204f625d63fe1673ab15dd6efe849cca40da5b",
+      "result_receipt_sha256": "5be7105b939c319f837eb8451c98c58f73e3899a6ee584a73b2b4f182ff418fb",
+      "preregistration": {
+        "sha256": "de1c3dc4cfacd1020d520f875f23d16346c60327ae3164313f7f1cb84f86a674",
+        "url": "https://github.com/RonanLabsAI/preregistrations/blob/34de7bb565380ee527a62d5c821c6cc479466e13/studies/shared-prefix-savings/v3/protocol.md",
+        "timestamp_verifiable": true
+      },
+      "serving_fingerprint": "sha256:7c1211d161784c2f84c89c2165121e85bdb5574bb5c4412ce5a60a5cf853f65d",
+      "trial_seeds": [
+        42
+      ],
+      "summary": {
+        "product": "shared-prefix-savings",
+        "run_id": "vllm-1-a1-32690b1b32094caf",
+        "valid_rows": 80,
+        "invalid_rows": 0,
+        "warm_cache_on_off_ratio": {
+          "point": 0.3488585474168359,
+          "ci95": [
+            0.33145152013209517,
+            0.3679347462843456
+          ],
+          "n_paired_batches": 5
+        },
+        "output_blue": {
+          "correct": 80,
+          "n": 80
+        }
+      },
+      "engine_occupancy_gpu_hours_final_segment": 0.07408476860806533,
+      "queue_reported_gpu_hours_all_segments": 0.063,
+      "attempt_denominator": 1,
+      "interruptions": 0,
+      "k3_status": "valid; PI scientific review pending"
+    },
+    {
+      "unit_id": "sglang-1",
+      "run_id": "sglang-1-a1-3099ba60d9645de8",
+      "source_manifest_sha256": "fe01ca503bd0f0f19da34ac0cb2f2542a20c484f4c38ee37ebdffe8ae8c7b898",
+      "result_receipt_sha256": "519efe88ce6b34f582af956ba9c9e8064281aa339e89c6fdcebd7709b4da6c5f",
+      "preregistration": {
+        "sha256": "de1c3dc4cfacd1020d520f875f23d16346c60327ae3164313f7f1cb84f86a674",
+        "url": "https://github.com/RonanLabsAI/preregistrations/blob/34de7bb565380ee527a62d5c821c6cc479466e13/studies/shared-prefix-savings/v3/protocol.md",
+        "timestamp_verifiable": true
+      },
+      "serving_fingerprint": "sha256:7c1211d161784c2f84c89c2165121e85bdb5574bb5c4412ce5a60a5cf853f65d",
+      "trial_seeds": [
+        42
+      ],
+      "summary": {
+        "product": "shared-prefix-savings",
+        "run_id": "sglang-1-a1-3099ba60d9645de8",
+        "valid_rows": 80,
+        "invalid_rows": 0,
+        "warm_cache_on_off_ratio": {
+          "point": 0.407618860564895,
+          "ci95": [
+            0.37855244174345837,
+            0.4418015940209501
+          ],
+          "n_paired_batches": 5
+        },
+        "output_blue": {
+          "correct": 80,
+          "n": 80
+        }
+      },
+      "engine_occupancy_gpu_hours_final_segment": 0.04055554963888426,
+      "queue_reported_gpu_hours_all_segments": 0.033,
+      "attempt_denominator": 1,
+      "interruptions": 0,
+      "k3_status": "valid; PI scientific review pending"
+    }
+  ],
+  "interpretation_limits": "Fixed small public subsets and the frozen measurement method only; this is not a general model/engine leaderboard. Smoke is excluded. Board energy is an endpoint estimate and hardware amortization an explicit assumption.",
+  "publication": "Approved public outcome recording only; no post, paper or email authorized."
+}
