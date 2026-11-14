@@ -1,0 +1,42 @@
+{
+ "base_model": {
+  "repo": "Qwen/Qwen2.5-Math-1.5B",
+  "revision": "4a83ca6e4526a4f2da3aa259ec36c259f66b2ab2"
+ },
+ "cig_commit": "b3a2f7ffa3e8ea474158dd4950f06be29a1ad543",
+ "cig_repo": "https://github.com/NiuKequan/CIG-SFT-public",
+ "files": {
+  "CIG-SFT-public/example/configs/qwen2_5_math_1p5b_full_cig_sft.yaml": "a7c267b3e62cfba897fb741aab2329d6e4ebf5122301645debaf83de17b0f6fc",
+  "CIG-SFT-public/example/data/dataset_info.json": "cb8cb24eb4fa0e6fa1429d804f3024da3bf595317ed61cf82e9000bf3f245319",
+  "CIG-SFT-public/example/data/numina_cot/30k/manifest.json": "d4e9c63fb50915ad298dcd3fd7b2163752b72c0fdcc33aa1de8bd0a76c41b66d",
+  "CIG-SFT-public/example/data/numina_cot/30k/train.parquet": "4790bd8ccf7634332bda4aaf56593660805323946df4c6df3bf0938ac56c77f1",
+  "CIG-SFT-public/example/scripts/build_dataset.py": "78c9d02ae62aa6d3851c72c3d8706365e8827d03ab8de0974822f7cd7aab3350",
+  "CIG-SFT-public/src/llamafactory/train/trainer_utils.py": "2358431b734db92fba542d0d8d12ec1825b6ee6b267eccaa191f32ea1c60e2ed",
+  "data/math500-prompts.jsonl": "466edbdf3a73ae4a62c86c33dab1dcd295a4072e2c1f3f1b6f82c330d52bc70a",
+  "data/math500-test.jsonl": "35dc41080a3680858b27fa7e0533d2d547825316fc5dafe5d316f4ccc5a06132",
+  "models/Qwen2.5-Math-1.5B/config.json": "81d1dc3c9d4797466a24bfc140776894d15ac4ccce58a0220462b2106f2f4831",
+  "models/Qwen2.5-Math-1.5B/generation_config.json": "8c970692323e3ea0e9b8b0a4dca79388d31226e41f83c9fd6014804280ebf6e8",
+  "models/Qwen2.5-Math-1.5B/merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+  "models/Qwen2.5-Math-1.5B/model.safetensors": "f7aa8d665ab44d3b461bed742fe93cdcedc15d2e31e50dc372c126e6f720857b",
+  "models/Qwen2.5-Math-1.5B/tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+  "models/Qwen2.5-Math-1.5B/tokenizer_config.json": "a668be4b083078aca7c38853dd929184e81534d72525a9c1ddb84ea6fd1de6f8",
+  "models/Qwen2.5-Math-1.5B/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+  "pydeps/eval-env.json": "b90af31bd791206b52b41fae55efa728064a34e286dfe96133d51de6bf8ddcfa",
+  "pydeps/train-env.json": "f714921cf717b4eecb3404a8dcfe3094410d252a916b2ed96c35a76d21205881"
+ },
+ "image": "vllm/vllm-openai:nightly-3f1bcfd82bb2e93fcd364fc7a5491718453a77e2",
+ "image_digest": "sha256:cb9bc64f0f038c2c2ebf13b31248fb87aca40c356c3d20f363be087cfcff1fcd",
+ "math500": {
+  "file": "test.jsonl",
+  "repo": "HuggingFaceH4/MATH-500",
+  "revision": "6e4ed1a2a79af7d8630a6b768ec859cb5af4d3be"
+ },
+ "package_inputs": {
+  "data-manifest.json": "CIG-SFT-public/example/data/numina_cot/30k/manifest.json",
+  "eval-env.json": "pydeps/eval-env.json",
+  "math500-prompts.jsonl": "data/math500-prompts.jsonl",
+  "math500-test.jsonl": "data/math500-test.jsonl",
+  "recipe.yaml": "CIG-SFT-public/example/configs/qwen2_5_math_1p5b_full_cig_sft.yaml",
+  "train-env.json": "pydeps/train-env.json"
+ }
+}
