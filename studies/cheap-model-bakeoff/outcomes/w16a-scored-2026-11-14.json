@@ -1,0 +1,91 @@
+{
+  "product": "cheap-model-bakeoff",
+  "date_pt": "2026-11-14",
+  "status": "all preregistered queue units completed; awaiting PI review",
+  "outcomes": [
+    {
+      "unit_id": "bakeoff-1",
+      "run_id": "bakeoff-1-a1-47a8576c5ba58b59",
+      "source_manifest_sha256": "1c18d810e7c9aa9299a7a1f224844a8ce1ae0c9a822ec9694ba2805b5ed7ad79",
+      "result_receipt_sha256": "68ca56396414872f1ba580c638d3dfd1cbf7e61901647082e5454d062c2547d3",
+      "preregistration": {
+        "sha256": "0bb5f6217dd6843ed8f45591b8eaccda313bd55ec095772e967cd4fc84dac13e",
+        "url": "https://github.com/RonanLabsAI/preregistrations/blob/34de7bb565380ee527a62d5c821c6cc479466e13/studies/cheap-model-bakeoff/v3/protocol.md",
+        "timestamp_verifiable": true
+      },
+      "serving_fingerprint": "sha256:e91467e07b30f8dae4592277f82bc4c2559ff3c76bb24a51efe630f770e120df",
+      "trial_seeds": [
+        42
+      ],
+      "summary": {
+        "product": "cheap-model-bakeoff",
+        "run_id": "bakeoff-1-a1-47a8576c5ba58b59",
+        "valid_rows": 96,
+        "invalid_rows": 1,
+        "groups": {
+          "4B-cache-False": {
+            "correct": 36,
+            "n": 48,
+            "wilson95": [
+              0.6121562719049204,
+              0.8507936632620209
+            ]
+          },
+          "8B-cache-False": {
+            "correct": 39,
+            "n": 48,
+            "wilson95": [
+              0.680601328507153,
+              0.8980860904515235
+            ]
+          }
+        },
+        "strata": {
+          "4B-gsm8k": {
+            "correct": 20,
+            "n": 32,
+            "wilson95": [
+              0.4525440735307745,
+              0.7706611269054578
+            ],
+            "tool_calls": 33
+          },
+          "4B-bbh": {
+            "correct": 16,
+            "n": 16,
+            "wilson95": [
+              0.8063923194655637,
+              1.0
+            ],
+            "tool_calls": 16
+          },
+          "8B-gsm8k": {
+            "correct": 23,
+            "n": 32,
+            "wilson95": [
+              0.5462549057408342,
+              0.8443541950225723
+            ],
+            "tool_calls": 35
+          },
+          "8B-bbh": {
+            "correct": 16,
+            "n": 16,
+            "wilson95": [
+              0.8063923194655637,
+              1.0
+            ],
+            "tool_calls": 16
+          }
+        }
+      },
+      "engine_occupancy_gpu_hours_final_segment": 0.10512747498333434,
+      "queue_reported_gpu_hours_all_segments": 0.126,
+      "attempt_denominator": 1,
+      "interruptions": 1,
+      "k3_status": "valid; PI scientific review pending"
+    }
+  ],
+  "interpretation_limits": "Fixed small public subsets and the frozen measurement method only; this is not a general model/engine leaderboard. Smoke is excluded. Board energy is an endpoint estimate and hardware amortization an explicit assumption.",
+  "publication": "Approved public outcome recording only; no post, paper or email authorized."
+}
