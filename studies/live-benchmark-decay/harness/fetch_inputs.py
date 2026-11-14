@@ -54,8 +54,17 @@ def main() -> int:
     lock["lcb"]["sha256"] = sha(lcb)
     name, rev, path = LB_JUDGMENT
     mj = get(hf_url(name, rev, path))
-    (dest / "livebench_model_judgment.parquet").write_bytes(mj)
     lock["livebench"]["model_judgment"] = {"url": hf_url(name, rev, path), "revision": rev, "sha256": sha(mj)}
+    # Packages accept text receipts only: freeze a deterministic CSV of the pinned parquet.
+    jcols = ["question_id", "model", "task", "category", "turn", "score"]
+    jrows = pq.read_table(io.BytesIO(mj), columns=jcols).to_pylist()
+    jrows.sort(key=lambda r: (r["question_id"], r["model"], int(r["turn"])))
+    jbuf = io.StringIO()
+    jw = csv.writer(jbuf, lineterminator="\n")
+    jw.writerow(jcols)
+    for r in jrows:
+        jw.writerow([r["question_id"], r["model"], r["task"], r["category"], int(r["turn"]), repr(float(r["score"]))])
+    (dest / "livebench_model_judgment.csv").write_bytes(jbuf.getvalue().encode())
     rows = []
     for cat, qrev in LB_QUESTIONS.items():
         url = hf_url(cat, qrev, "data/test-00000-of-00001.parquet")
@@ -72,7 +81,7 @@ def main() -> int:
     w.writerows(rows)
     index = buf.getvalue().encode()
     (dest / "livebench_release_index.csv").write_bytes(index)
-    for fname in ("lcb_performances_generation.json", "livebench_model_judgment.parquet", "livebench_release_index.csv"):
+    for fname in ("lcb_performances_generation.json", "livebench_model_judgment.csv", "livebench_release_index.csv"):
         lock["frozen_files"][fname] = {"sha256": sha((dest / fname).read_bytes())}
     if write_lock:
         (HERE / "inputs.lock.json").write_text(json.dumps(lock, indent=2, sort_keys=True) + "\n")

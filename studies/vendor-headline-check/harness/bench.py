@@ -188,18 +188,18 @@ def summarize(rows: list[dict], claim: dict) -> dict:
 def verdict(summary: dict, prereg_url: str, fp: str) -> str:
     d, p = summary["decode"], summary["prefill"]
     return "\n".join([
-        "# Verdict: Ollama's DGX Spark gpt-oss:120b headline on our stack",
+        "# Verdict: Ollama's DGX Spark gpt-oss headline on our stack",
         "",
         f"Preregistration: {prereg_url}",
         "",
-        f"Decode: **{d['classification']}** against the vendor's 41.14 tokens/s under the preregistered 10% band.",
+        f"Decode: **{d['classification']}** under the preregistered equivalence band.",
         (f"Median client-side decode rate was {d['median']:.2f} tokens/s "
-         f"(order-statistic {100 * d['coverage']:.1f}% CI [{d['ci'][0]:.2f}, {d['ci'][1]:.2f}], n={d['n']} runs), "
-         "from receipts/results.jsonl."),
-        f"Prefill: **{p['classification']}** against the vendor's 1,169 tokens/s under the preregistered 10% band.",
+         f"(order-statistic {100 * d['coverage']:.1f}% CI [{d['ci'][0]:.2f}, {d['ci'][1]:.2f}], n={d['n']} runs) "
+         f"against the vendor's {d['claim']:.2f} tokens/s, from receipts/results.jsonl."),
+        f"Prefill: **{p['classification']}** under the preregistered equivalence band.",
         (f"Median overhead-differenced prefill rate was {p['median']:.0f} tokens/s "
-         f"(order-statistic {100 * p['coverage']:.1f}% CI [{p['ci'][0]:.0f}, {p['ci'][1]:.0f}], n={p['n']} paired runs), "
-         "from receipts/results.jsonl."),
+         f"(order-statistic {100 * p['coverage']:.1f}% CI [{p['ci'][0]:.0f}, {p['ci'][1]:.0f}], n={p['n']} paired runs) "
+         f"against the vendor's {p['claim']:.0f} tokens/s, from receipts/results.jsonl."),
         (f"Valid paired trials were {summary['n_valid_pairs']}/{summary['n_trials']} attempted trials, "
          "from receipts/results.jsonl."),
         "",
@@ -209,9 +209,7 @@ def verdict(summary: dict, prereg_url: str, fp: str) -> str:
         "as served by our current production engine version and configuration, measured at the client through the router. "
         "Client-side decode timing includes streaming transport; it can only understate the engine's own rate. "
         "It does not test the vendor's older engine version, driver or an unloaded-model setup, and it does not measure "
-        "multi-user throughput.",
-        "",
-        f"Environment fingerprint: `{fp}`.",
+        "multi-user throughput. The environment fingerprint is recorded in manifest.json.",
         "",
     ])
 

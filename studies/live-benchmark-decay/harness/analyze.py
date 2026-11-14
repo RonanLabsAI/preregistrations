@@ -25,7 +25,7 @@ from common import k3  # noqa: E402
 
 PRODUCT = "live-benchmark-decay"
 TITLE = "Live-benchmark decay: are scores from different release windows comparable?"
-ARM = "frozen-public-snapshots"
+ARM = "decay"
 LOCK = HERE / "inputs.lock.json"
 CODE_FILES = [HERE / "decay.py", HERE / "analyze.py", HERE.parent / "common" / "k3.py", LOCK]
 
@@ -43,15 +43,14 @@ def fingerprint() -> str:
 
 
 def load_inputs(inputs: Path) -> tuple[dict, list[dict], dict]:
-    import pyarrow.parquet as pq
-
     lock = json.loads(LOCK.read_text())
     for name, meta in lock["frozen_files"].items():
         got = k3.sha256_file(inputs / name)
         if got != meta["sha256"]:
             raise SystemExit(f"KILL: input drift for {name}: {got} != {meta['sha256']}")
     perf = json.loads((inputs / "lcb_performances_generation.json").read_text())
-    judgments = pq.read_table(inputs / "livebench_model_judgment.parquet").to_pylist()
+    with open(inputs / "livebench_model_judgment.csv", newline="") as f:
+        judgments = [{**r, "turn": int(r["turn"]), "score": float(r["score"])} for r in csv.DictReader(f)]
     index = {}
     with open(inputs / "livebench_release_index.csv", newline="") as f:
         for row in csv.DictReader(f):
@@ -94,7 +93,7 @@ def verdict_text(res: dict, prereg_url: str) -> str:
         "",
         "## Primary (LiveCodeBench, adjacent calendar quarters, difficulty-adjusted)",
         "",
-        f"Classification under the preregistered 3.0-point tolerance: **{p['classification']}**.",
+        f"Classification under the preregistered three-point tolerance: **{p['classification']}**.",
         (f"Mean absolute difficulty-adjusted drift between adjacent quarters was {pt['adj_mean_abs_drift']:.2f} points "
          f"({fmt_ci(ci['adj_mean_abs_drift'])}, n={pt['n_cells_adj']} model-pair cells), from receipts/results.jsonl."),
         (f"Unadjusted mean absolute drift was {pt['raw_mean_abs_drift']:.2f} points "
@@ -144,7 +143,8 @@ def main() -> int:
     ap.add_argument("--out", type=Path)
     ap.add_argument("--prereg", type=Path, default=HERE / "PREREG.md")
     ap.add_argument("--prereg-url")
-    ap.add_argument("--seed", type=int, default=20261114)
+    ap.add_argument("--arm", default=ARM)
+    ap.add_argument("--seed", type=int, default=1)
     ap.add_argument("--n-boot", type=int, default=decay.N_BOOT)
     ap.add_argument("--expect-fingerprint")
     ap.add_argument("--print-fingerprint", action="store_true")
@@ -177,7 +177,7 @@ def main() -> int:
     env = {"hardware": "cpu (Idleworks CPU executor)", "engine": f"python {k3.host_summary()['python']} numpy",
            "fingerprint": fp, "host": k3.host_summary()}
     pkg.finish(identity=ident, title=TITLE, lane="L3", prereg_path=args.prereg, prereg_url=args.prereg_url,
-               arm=ARM, seed=args.seed, environment=env, verdict=verdict_text(res, args.prereg_url),
+               arm=args.arm, seed=args.seed, environment=env, verdict=verdict_text(res, args.prereg_url),
                tiers=["P1", "P3"])
     print(json.dumps({"ok": True, "classification": res["primary_lcb"]["classification"], "out": str(out)}))
     return 0

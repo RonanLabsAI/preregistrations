@@ -3,8 +3,8 @@
     "lcb_performances_generation.json": {
       "sha256": "17f9a1d69e3f6290fc8b967a4dd13fbb46e34dd05716fdee793780a1cfadd0c1"
     },
-    "livebench_model_judgment.parquet": {
-      "sha256": "35ad896970151776145c96b31c5ddb3a2749ea9a1d91e6b7f1a4c4c04735182a"
+    "livebench_model_judgment.csv": {
+      "sha256": "f85a5a56d92d6b67e611eaa39cf0e80eff46fbccd45c48091ec9a96f8155a66c"
     },
     "livebench_release_index.csv": {
       "sha256": "c3c1dced32dac50de22b72d9c470b6acfd6cb576dd26e41263b6ce9cc09f820d"
