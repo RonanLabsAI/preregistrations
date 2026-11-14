@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "product_id": "vendor-headline-check-v1",
+  "run_id": "s3v-1-a1-cfd5915c280dc3f2",
+  "title": "Vendor headline check: Ollama's DGX Spark gpt-oss:120b prefill and decode rates",
+  "lane": "L3",
+  "created_at": "2026-11-14T11:43:47-08:00",
+  "preregistration": {
+    "sha256": "ec5d739f27f581e2653c3423fc80369303095e8ad2cd5681bd88d1c83829c054",
+    "url": "https://github.com/RonanLabsAI/preregistrations/blob/e21101fa15381704d40972fdffa9d7ab4f01b823/studies/vendor-headline-check/amendment-a1-2026-11-14.md",
+    "timestamp_verifiable": true
+  },
+  "backlog": false,
+  "arms": [
+    "vendor"
+  ],
+  "seeds": [
+    1
+  ],
+  "frozen_inputs": [
+    {
+      "path": "receipts/inputs/prompt.txt",
+      "sha256": "37c9b65bc6061dd0e9b9b051888ac13f93423234d0cdfe203c79571475b4a0e7"
+    }
+  ],
+  "environment": {
+    "hardware": "NVIDIA DGX Spark (GB10)",
+    "engine": "gb10|drv580.142|ollama0.32.4|gpt-oss120b-blob@6be6d66a3f54|ctx65536|np8|fa1|litellm1.104.1",
+    "fingerprint": "gb10|drv580.142|ollama0.32.4|gpt-oss120b-blob@6be6d66a3f54|ctx65536|np8|fa1|litellm1.104.1|route=gpt-oss|c1|code@81f6beab3c21",
+    "client": {
+      "python": "3.12.3",
+      "machine": "x86_64",
+      "system": "Linux",
+      "cpus": 64
+    }
+  },
+  "receipts": [
+    "receipts/run.log",
+    "receipts/inputs/prompt.txt",
+    "receipts/inputs.lock.json",
+    "receipts/results.jsonl",
+    "receipts/preregistration.md"
+  ],
+  "figures": [],
+  "publication_tiers": [
+    "P1",
+    "P3"
+  ]
+}

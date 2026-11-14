@@ -1,0 +1,2 @@
+{"event": "start", "fingerprint": "cpu-x86_64|py3.12.15|numpy2.3.4|pyarrow21.0.0|lcb@f186ab50|livebench@9704e5da|code@d70e41ae9ba8", "n_boot": 10000, "seed": 1, "t": "2026-11-14T11:33:40-08:00", "unit": "cpu-decay-1"}
+{"classification": "not comparable", "event": "done", "t": "2026-11-14T11:34:19-08:00"}

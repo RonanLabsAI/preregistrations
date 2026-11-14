@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "product_id": "live-benchmark-decay-v1",
+  "run_id": "cpu-decay-1-a1-be729d381df1a194",
+  "title": "Live-benchmark decay: are scores from different release windows comparable?",
+  "lane": "L3",
+  "created_at": "2026-11-14T11:34:19-08:00",
+  "preregistration": {
+    "sha256": "389574589132c04ac5fb8d259d11600e0ab2aa097ce3b65c24a4be1227c5c289",
+    "url": "https://github.com/RonanLabsAI/preregistrations/blob/e21101fa15381704d40972fdffa9d7ab4f01b823/studies/live-benchmark-decay/amendment-a1-2026-11-14.md",
+    "timestamp_verifiable": true
+  },
+  "backlog": false,
+  "arms": [
+    "decay"
+  ],
+  "seeds": [
+    1
+  ],
+  "frozen_inputs": [
+    {
+      "path": "receipts/inputs/lcb_performances_generation.json",
+      "sha256": "17f9a1d69e3f6290fc8b967a4dd13fbb46e34dd05716fdee793780a1cfadd0c1"
+    },
+    {
+      "path": "receipts/inputs/livebench_model_judgment.csv",
+      "sha256": "f85a5a56d92d6b67e611eaa39cf0e80eff46fbccd45c48091ec9a96f8155a66c"
+    },
+    {
+      "path": "receipts/inputs/livebench_release_index.csv",
+      "sha256": "c3c1dced32dac50de22b72d9c470b6acfd6cb576dd26e41263b6ce9cc09f820d"
+    }
+  ],
+  "environment": {
+    "hardware": "cpu (Idleworks CPU executor)",
+    "engine": "python 3.12.15 numpy",
+    "fingerprint": "cpu-x86_64|py3.12.15|numpy2.3.4|pyarrow21.0.0|lcb@f186ab50|livebench@9704e5da|code@d70e41ae9ba8",
+    "host": {
+      "python": "3.12.15",
+      "machine": "x86_64",
+      "system": "Linux",
+      "cpus": 64
+    }
+  },
+  "receipts": [
+    "receipts/run.log",
+    "receipts/inputs/lcb_performances_generation.json",
+    "receipts/inputs/livebench_model_judgment.csv",
+    "receipts/inputs/livebench_release_index.csv",
+    "receipts/inputs.lock.json",
+    "receipts/results.jsonl",
+    "receipts/preregistration.md"
+  ],
+  "figures": [],
+  "publication_tiers": [
+    "P1",
+    "P3"
+  ]
+}
