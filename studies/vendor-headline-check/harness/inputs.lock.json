@@ -1,0 +1,26 @@
+{
+  "claim": {
+    "decode_tok_s": 41.14,
+    "driver": "580.95.05",
+    "max_new_tokens": 500,
+    "model": "gpt-oss:120b",
+    "ollama_version": "0.12.6",
+    "prefill_tok_s": 1169.0,
+    "published": "2025-10-23",
+    "quantization": "MXFP4",
+    "runs": 10,
+    "temperature": 0,
+    "url": "https://ollama.com/blog/nvidia-spark-performance"
+  },
+  "frozen_files": {
+    "prompt.txt": {
+      "sha256": "37c9b65bc6061dd0e9b9b051888ac13f93423234d0cdfe203c79571475b4a0e7"
+    }
+  },
+  "source": {
+    "gist": "https://gist.github.com/mchiang0610/fd7ec5d4aa776de1b07bc57de3e10b15",
+    "gist_version": "d9679b9f3aea24aebfa627a999186a3349e27f73",
+    "pg98_sha256": "df8a5955bf290433c5d969d40ea831fff9fda355db3688675d4fd63d54a0907f",
+    "raw_url": "https://gist.githubusercontent.com/mchiang0610/fd7ec5d4aa776de1b07bc57de3e10b15/raw/4d17f1480875e91f7a600d0e7c0cc20f1ae02926/pg98.txt"
+  }
+}
