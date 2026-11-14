@@ -1,0 +1,94 @@
+{
+  "product": "cost-per-answer-shootout",
+  "date_pt": "2026-11-14",
+  "status": "all preregistered queue units completed; awaiting PI review",
+  "outcomes": [
+    {
+      "unit_id": "cost-1",
+      "run_id": "cost-1-a1-00be49656bab2554",
+      "source_manifest_sha256": "a9cd07692c08e6b21ce6ffff35ac9d7220fb44b64f0f8b5302ab973d0847d7bf",
+      "result_receipt_sha256": "cf0c3e1f7c66c94b7f77c001f919aef6aedbe8a69e1ec80b2eb646094c2b27f0",
+      "preregistration": {
+        "sha256": "e00c537008b8750b0dab670d95593576dc7248d0ee48ddf0fa2642dc28e29109",
+        "url": "https://github.com/RonanLabsAI/preregistrations/blob/34de7bb565380ee527a62d5c821c6cc479466e13/studies/cost-per-answer-shootout/v3/protocol.md",
+        "timestamp_verifiable": true
+      },
+      "serving_fingerprint": "sha256:1ab99e4424c7a0df00b730da8033cb5b0ecb4718c4c3eb642129499eb99c4087",
+      "trial_seeds": [
+        42
+      ],
+      "summary": {
+        "product": "cost-per-answer-shootout",
+        "run_id": "cost-1-a1-00be49656bab2554",
+        "valid_rows": 128,
+        "invalid_rows": 0,
+        "groups": {
+          "4B-cache-False": {
+            "correct": 0,
+            "n": 32,
+            "wilson95": [
+              0.0,
+              0.1071791982550706
+            ],
+            "cost_usd": 0.037001034298569824,
+            "usd_per_correct": null,
+            "usd_per_correct_ci95": [
+              null,
+              null
+            ]
+          },
+          "4B-cache-True": {
+            "correct": 0,
+            "n": 32,
+            "wilson95": [
+              0.0,
+              0.1071791982550706
+            ],
+            "cost_usd": 0.03674172878780618,
+            "usd_per_correct": null,
+            "usd_per_correct_ci95": [
+              null,
+              null
+            ]
+          },
+          "8B-cache-False": {
+            "correct": 1,
+            "n": 32,
+            "wilson95": [
+              0.005537860164003122,
+              0.15744263820012558
+            ],
+            "cost_usd": 0.0393768844312643,
+            "usd_per_correct": 0.0393768844312643,
+            "usd_per_correct_ci95": [
+              0.00998165509897834,
+              null
+            ]
+          },
+          "8B-cache-True": {
+            "correct": 1,
+            "n": 32,
+            "wilson95": [
+              0.005537860164003122,
+              0.15744263820012558
+            ],
+            "cost_usd": 0.03888135506845032,
+            "usd_per_correct": 0.03888135506845032,
+            "usd_per_correct_ci95": [
+              0.00978774529623897,
+              null
+            ]
+          }
+        }
+      },
+      "engine_occupancy_gpu_hours_final_segment": 0.2876581723686104,
+      "queue_reported_gpu_hours_all_segments": 0.283,
+      "attempt_denominator": 1,
+      "interruptions": 0,
+      "k3_status": "valid; PI scientific review pending"
+    }
+  ],
+  "interpretation_limits": "Fixed small public subsets and the frozen measurement method only; this is not a general model/engine leaderboard. Smoke is excluded. Board energy is an endpoint estimate and hardware amortization an explicit assumption.",
+  "publication": "Approved public outcome recording only; no post, paper or email authorized.",
+  "scoring_limit": "The preregistered strict final-number rule rejects explanatory answers even when their arithmetic is right. These are format-qualified exact-answer scores, not general mathematical accuracy. Zero correct qualifying answers makes USD per correct answer undefined/unbounded; null cost fields are never zero-dollar estimates. No scorer was loosened after viewing outputs."
+}
