@@ -1,0 +1,4 @@
+{"arm": "base", "avg_at_16": 46.2625, "kind": "arm", "n_problems": 500, "pass_at_16": 87.0, "truncated_share": 0.029375}
+{"arm": "sft", "avg_at_16": 42.275, "kind": "arm", "n_problems": 500, "pass_at_16": 81.8, "truncated_share": 0.00125}
+{"arm": "cig", "avg_at_16": 65.9625, "kind": "arm", "n_problems": 500, "pass_at_16": 88.2, "truncated_share": 0.07475}
+{"avg_ci": [21.2875, 26.1125], "avg_diff": 23.6875, "classification": "supported", "kind": "comparison", "n_boot": 10000, "n_problems": 500, "pair": "cig_minus_sft", "pass_ci": [3.0, 9.8], "pass_diff": 6.4, "seed": 42}

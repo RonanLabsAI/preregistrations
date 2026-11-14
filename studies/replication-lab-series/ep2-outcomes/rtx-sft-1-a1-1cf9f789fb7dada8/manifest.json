@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "product_id": "replication-lab-series-ep2",
+  "run_id": "rtx-sft-1-a1-1cf9f789fb7dada8",
+  "title": "Replication lab episode 2: CIG-SFT versus matched SFT on Qwen2.5-Math-1.5B",
+  "lane": "L3",
+  "created_at": "2026-11-14T13:33:48-08:00",
+  "preregistration": {
+    "sha256": "9f1cd1726aac19094bfe7f60cc605dfb09682f44a63faff6999053e2957ac22a",
+    "url": "https://github.com/RonanLabsAI/preregistrations/blob/6e472349b92392a6e4cd7570784acee7afbdab59/studies/replication-lab-series/ep2-amendment-a2-2026-11-14.md",
+    "timestamp_verifiable": true
+  },
+  "backlog": false,
+  "arms": [
+    "sft"
+  ],
+  "seeds": [
+    42
+  ],
+  "frozen_inputs": [
+    {
+      "path": "receipts/inputs/data-manifest.json",
+      "sha256": "d4e9c63fb50915ad298dcd3fd7b2163752b72c0fdcc33aa1de8bd0a76c41b66d"
+    },
+    {
+      "path": "receipts/inputs/eval-env.json",
+      "sha256": "b90af31bd791206b52b41fae55efa728064a34e286dfe96133d51de6bf8ddcfa"
+    },
+    {
+      "path": "receipts/inputs/math500-prompts.jsonl",
+      "sha256": "466edbdf3a73ae4a62c86c33dab1dcd295a4072e2c1f3f1b6f82c330d52bc70a"
+    },
+    {
+      "path": "receipts/inputs/math500-test.jsonl",
+      "sha256": "35dc41080a3680858b27fa7e0533d2d547825316fc5dafe5d316f4ccc5a06132"
+    },
+    {
+      "path": "receipts/inputs/recipe.yaml",
+      "sha256": "a7c267b3e62cfba897fb741aab2329d6e4ebf5122301645debaf83de17b0f6fc"
+    },
+    {
+      "path": "receipts/inputs/train-env.json",
+      "sha256": "f714921cf717b4eecb3404a8dcfe3094410d252a916b2ed96c35a76d21205881"
+    }
+  ],
+  "environment": {
+    "hardware": "NVIDIA RTX PRO 6000 Blackwell Max-Q (96 GB), dedicated research worker",
+    "engine": "vllm/vllm-openai:nightly-3f1bcfd82bb2e93fcd364fc7a5491718453a77e2 (train: transformers + CIG-SFT fork; eval: vLLM + math-verify)",
+    "fingerprint": "rtxpro6000-sm120|image@cb9bc64f0f03|torch2.14.0+cu130|tf4.57.1|trl0.24.0|vllm0.32.0rc1.dev190+g3f1bcfd82|mathverify0.9.0|cig@b3a2f7f|code@82a46658f422"
+  },
+  "receipts": [
+    "receipts/run.log",
+    "receipts/inputs/data-manifest.json",
+    "receipts/inputs/eval-env.json",
+    "receipts/inputs/math500-prompts.jsonl",
+    "receipts/inputs/math500-test.jsonl",
+    "receipts/inputs/recipe.yaml",
+    "receipts/inputs/train-env.json",
+    "receipts/inputs.lock.json",
+    "receipts/unit.log",
+    "receipts/trainer_state.json",
+    "receipts/results.jsonl",
+    "receipts/preregistration.md"
+  ],
+  "figures": [],
+  "publication_tiers": [
+    "P1",
+    "P3"
+  ]
+}
