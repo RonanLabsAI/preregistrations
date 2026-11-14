@@ -1,0 +1,98 @@
+{
+  "version": "w16a-v3",
+  "models": {
+    "4B": {
+      "repository": "Qwen/Qwen3-4B",
+      "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+      "dtype": "bfloat16",
+      "files": {
+        "config.json": "8ba006f74fecfaaeb392872a60f4a480e7ec9860153d2e1b769ec81f9a147f8a",
+        "generation_config.json": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2",
+        "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "model-00001-of-00003.safetensors": "328a91d3122359d5547f9d79521205bc0a46e1f79a792dfe650e99fc2d651223",
+        "model-00002-of-00003.safetensors": "6cd087b316306a68c562436b5492edbcf6e16c6dba3a1308279caa5a58e21ca5",
+        "model-00003-of-00003.safetensors": "e4bf436957184f4eeb86a80e9db394503f1f56446b2e6b7edeac5b81470f4ca1",
+        "model.safetensors.index.json": "6dc0981b8829fead746441f68f38f24c5ca4a3a66351f652c26c6df0efc43ab2",
+        "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+        "tokenizer_config.json": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+        "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      }
+    },
+    "8B": {
+      "repository": "Qwen/Qwen3-8B",
+      "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+      "dtype": "bfloat16",
+      "files": {
+        "config.json": "f7c4eadfbbf522470667b797a3c89be2524832d2d599797248dc304fff447c30",
+        "generation_config.json": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2",
+        "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "model-00001-of-00005.safetensors": "31d6a825ae35f11fb85b195b4c42c146c051e446433125a215336abdf95cbf5f",
+        "model-00002-of-00005.safetensors": "5991236cea6fe21f3d43cab0f0e84448734fbbe0789816202989f2ddc9d18282",
+        "model-00003-of-00005.safetensors": "c5185c4794be2d8a9784d5753c9922db38df478ce11f9ed0b415b7304d896836",
+        "model-00004-of-00005.safetensors": "b5ee7de71fbf17db3d5704e0c8f2bc7d005ca9e1d7ca2aeb19827b0cfcaa917a",
+        "model-00005-of-00005.safetensors": "20c2d6366ab85c90786ccdd829cd2b9e7d30ef3b2ebbb998280e7e4014b542ff",
+        "model.safetensors.index.json": "f9fdbcb91c23971c13ec5d5f2573d2349e8f61f2f049371ec699281748fdb1bc",
+        "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+        "tokenizer_config.json": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+        "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      }
+    },
+    "nemotron": {
+      "repository": "https://ollama.com/library/nemotron-3-nano:30b",
+      "manifest_sha256": "b725f11174073334edd0c2ff396b8d4e66d7dab22a5a63717ccad5a08a270cf1",
+      "quantization": "Q4_K_M",
+      "weight_sha256": "a70437c41b3b0b768c48737e15f8160c90f13dc963f5226aabb3a160f708d1ce",
+      "tokenizer_sha256": "c6021eb6847e682f89aa52d5eb6e8c7d902a23acfc8137e25211cf84828f1592"
+    }
+  },
+  "engines": {
+    "vllm": {
+      "image": "vllm/vllm-openai@sha256:cb9bc64f0f038c2c2ebf13b31248fb87aca40c356c3d20f363be087cfcff1fcd",
+      "version": "0.32.0rc1.dev190+g3f1bcfd82",
+      "torch": "2.14.0+cu130"
+    },
+    "sglang": {
+      "image": "lmsysorg/sglang@sha256:352f1373e721c37d0849cf10ac9ec3c5b81dce76e148b9f271c1b59085eaba1d",
+      "version": "0.0.0.dev1+g67eab5705",
+      "torch": "2.13.0+cu130"
+    },
+    "ollama": {
+      "version": "0.32.4",
+      "binary_sha256": "5291f8346b4d7e94ada041fe3bd2dc7be68c5d37bbdb99bc0496e3a5c9cedce4"
+    }
+  },
+  "environment": {
+    "hardware": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 96 GB",
+    "engine": "per-arm immutable vLLM / SGLang / Ollama identities below",
+    "platform": {
+      "driver": "595.99.02",
+      "platform": "Linux aarch64",
+      "os": "PRETTY_NAME=\"Ubuntu 24.04.4 LTS\""
+    }
+  },
+  "kv_tokens": 32768,
+  "kv_bytes": 4831838208,
+  "minimum_free_mib": 90000,
+  "budgets": {
+    "spark-needle-numctx-32k": 2,
+    "shared-prefix-savings": 12,
+    "cost-per-answer-shootout": 12,
+    "cheap-model-bakeoff": 12
+  },
+  "costing": {
+    "capital_usd": 10000,
+    "life_years": 3,
+    "utilization": 0.5,
+    "electricity_usd_kwh": 0.2,
+    "energy_method": "two-endpoint board-power trapezoid per answer; estimated GPU energy only, excludes host, PSU and cooling",
+    "hardware_method": "straight-line GPU-only amortization; no residual value; assumptions not purchase-price facts"
+  },
+  "input_hashes": {
+    "runner.py": "bc2ea30358f00f00ba48927803afb261e8affd88c8c30e3cb2dea7071e3bef1d",
+    "generate.py": "8324ef70ddb29cc32cae05b56a510a914b685e18cc0e8db9b20cc3a2783af533",
+    "needle.jsonl": "8075558dc1105a3d21abafc59be2a5119443e490901b913eb68a7a6bb37c8950",
+    "gsm8k-32.jsonl": "670266375b15687d4f0e9c63bec1a8db562cb4a01fa1cee365573191ba0ba6ab",
+    "bbh-16.jsonl": "ca7ef62a4cce4b5d366b37a6bf0ed9478ff7e95154740d8310d704b7b9025207",
+    "sources.json": "aa1204b4bc1ffa2c80a8eaf8c6c05b8493cd86b8fb0adaf73d6431b614b63711"
+  }
+}

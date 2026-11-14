@@ -1,0 +1,16 @@
+{
+  "gsm8k": {
+    "repository": "https://github.com/openai/grade-school-math",
+    "revision": "3101c7d5072418e28b9008a6636bde82a006892c",
+    "file": "grade_school_math/data/test.jsonl",
+    "selection": "first 32 test rows in original order",
+    "license": "MIT"
+  },
+  "bbh": {
+    "repository": "https://github.com/suzgunmirac/BIG-Bench-Hard",
+    "revision": "9ee07bd481feebf959a6b59d61ea57bdcf30964d",
+    "file": "bbh/multistep_arithmetic_two.json",
+    "selection": "first 16 examples in original order",
+    "license": "MIT"
+  }
+}
