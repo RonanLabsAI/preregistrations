@@ -1,0 +1,66 @@
+{
+  "frozen_pt": "2026-11-15T14:44:07.984656-08:00",
+  "timing_samples_before_binding": 0,
+  "pi_approval": {
+    "pt": "2026-11-15T14:32:00-08:00",
+    "choice": "Freeze the prereg with drafts-on as baseline and run it"
+  },
+  "revises": {
+    "draft": "PREREG-C-DRAFT.md (unpublished draft, tf-prep commit c688ba2)",
+    "changes": [
+      "baseline A is drafts-on",
+      "drafts-off is reference cell R, recorded in phase 0 only",
+      "S2-S6 unrun by prospective source reading",
+      "phase budget re-derived"
+    ]
+  },
+  "champion": {
+    "build_sha": "7c1bc0be3df413f43c65fb278699b629a44e7a90",
+    "model_revision": "078455ffe6472f9a52fbc1139f58b9db2881b25c",
+    "recipe_hash": "f8d2add58edc68b3e551b1e3ed68311a701a298a8c6b8cb67b0a30e88d0d9e84",
+    "manifest_sha256": "5032e323350f07ad2f2a585b9a8b25ca952400ae394a7e6dc39b34587af7e09b",
+    "server_sha256": "1711a2c9e8ef1058c563ea99b4f51346898731a41c73c42d713bc103cf7c9c92"
+  },
+  "original_drafts_off_bands": {
+    "relative_tolerance": 0.02,
+    "cv_gate": 0.015,
+    "cv_pass": true,
+    "cells": {
+      "1": {
+        "metric": "native_reply_tok_s",
+        "lower": 80.12335390502187,
+        "upper": 83.39369488073706
+      },
+      "16": {
+        "metric": "aggregate_client_tok_s",
+        "lower": 267.3277037430555,
+        "upper": 278.23903858971084
+      }
+    },
+    "rule": "Halt later matching five-round scoring if its mean is outside reference*[0.98,1.02]; never widen from observed data."
+  },
+  "drafter": {
+    "repo": "incoai/GLM-5.3-Flash-DFlash2",
+    "revision": "bf582e4eacc1810f76656d1811693ff6c6737d2a",
+    "model_safetensors_sha256": "b038e1d9d1e7833fa3880c2c0135ba9b673013f03da1b29fb831931584759dac",
+    "hf_lfs_sha256": "b038e1d9d1e7833fa3880c2c0135ba9b673013f03da1b29fb831931584759dac",
+    "config_json_sha256": "c4aeac0101196a6e26705b34c45230bcd0c7c68ee2d2d1efdb242087f3712573",
+    "bytes": 2342169800
+  },
+  "files_sha256": {
+    "PROTOCOL.md": "0f088cd7a8ad7ae9b4116acda8d4e125978b3607525f3d94ca79add77f918691",
+    "harness.py": "a30c2537fdfac47cbe93f6212a7c4d17d3a0ad70886a813fa9ee21927a32d6da",
+    "analyze.py": "057f4068b1e5b606e90b04fe392b72a35554dbbb0dbc56d18b764241c0559db9",
+    "test_harness.py": "29a0fb40fda864b594a8a34e5952699e5edc26a08837807a6686fd470cda80cc",
+    "TOKEN-REFERENCE.json": "25580be28082f7a7b0761467006d2fd2eda19de763ba1ba26b3073428cb3478c",
+    "reference-corpus.json": "edb21df93c0ce6971c5466addb85c8a7022a889f76e727526a49124a9eefc5bd"
+  },
+  "harness_self_test": "ALL STUDY C HARNESS SELF-TESTS PASS (CPU-only fake engine, before any GPU request)",
+  "gpu_cap_hours": 6.0,
+  "admission_bar": 1.05,
+  "screen_bar": 1.03,
+  "t95_critical": {
+    "df4": 2.776445105,
+    "df9": 2.262157163
+  }
+}
