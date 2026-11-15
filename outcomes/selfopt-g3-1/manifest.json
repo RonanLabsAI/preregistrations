@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "product_id": "selfopt-gen3-1-tensorfold-profile",
+  "run_id": "w26-g3-1-20261114",
+  "title": "G3.1: valid decode timelines and gated candidate dispositions",
+  "lane": "L4",
+  "created_at": "2026-11-14T21:58:34.665045-08:00",
+  "preregistration": {
+    "sha256": "1788f5aecb62678a6922c63913569f27d4dd29f24e788b56fd9a92324444b4a2",
+    "url": "https://github.com/RonanLabsAI/preregistrations/blob/600fdfa23f57cb9e9fdf2d958d357078c56c8b2c/protocols/selfopt-g3-1/PROTOCOL.md",
+    "timestamp_verifiable": true
+  },
+  "arms": [
+    "champion-uninstrumented",
+    "champion-nsys-inactive",
+    "champion-nsys-active",
+    "champion-ncu-one-instance"
+  ],
+  "seeds": [
+    1234
+  ],
+  "frozen_inputs": [
+    {
+      "path": "reference-corpus.json",
+      "sha256": "edb21df93c0ce6971c5466addb85c8a7022a889f76e727526a49124a9eefc5bd"
+    },
+    {
+      "path": "reference-prefill.jsonl",
+      "sha256": "3d25e71446774aa87c823e8078ae3e5f56fd5ee345cf76c12d7ef63db81ff6c6"
+    },
+    {
+      "path": "TOKEN-REFERENCE.json",
+      "sha256": "25580be28082f7a7b0761467006d2fd2eda19de763ba1ba26b3073428cb3478c"
+    }
+  ],
+  "environment": {
+    "hardware": "GB300 sm103, 152 SMs, driver 595.99.02",
+    "engine": "TensorFold native 7c1bc0be3df413f43c65fb278699b629a44e7a90",
+    "fingerprint": "w26-g3-1-f8d2add58edc68b3e551b1e3ed68311a-1711a2c9e8ef1058",
+    "executor": "Manual authorized implementation unit; no MC product admission claimed"
+  },
+  "receipts": [
+    "receipts/candidate-ledger.jsonl",
+    "receipts/counter-metrics.json",
+    "receipts/host-bound-sensitivity.json",
+    "receipts/measurement.log",
+    "receipts/receipt-verification.json",
+    "receipts/results.jsonl",
+    "receipts/source-audit.json",
+    "receipts/validation.json"
+  ],
+  "figures": [
+    {
+      "path": "figures/decode-time.png",
+      "source_receipts": [
+        "receipts/results.jsonl"
+      ]
+    }
+  ]
+}

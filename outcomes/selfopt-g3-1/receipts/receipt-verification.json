@@ -1,0 +1,36 @@
+{
+  "frozen_hashes_pass": true,
+  "all_recorded_output_ids_match": true,
+  "champion_blocks_complete": true,
+  "counts": {
+    "champion-attempts.jsonl": {
+      "replies": 192,
+      "output_ids": 98304
+    },
+    "counter-one-reply-attempts.jsonl": {
+      "replies": 1,
+      "output_ids": 512
+    },
+    "timeline-c1-inactive-attempts.jsonl": {
+      "replies": 5,
+      "output_ids": 2560
+    },
+    "timeline-c1-traced-attempts.jsonl": {
+      "replies": 5,
+      "output_ids": 2560
+    },
+    "timeline-c16-inactive-attempts.jsonl": {
+      "replies": 80,
+      "output_ids": 40960
+    },
+    "timeline-c16-traced-attempts.jsonl": {
+      "replies": 80,
+      "output_ids": 40960
+    },
+    "timeline-excluded-warm-attempts.jsonl": {
+      "replies": 1,
+      "output_ids": 512
+    }
+  },
+  "recorded_request_errors": []
+}

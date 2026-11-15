@@ -1,0 +1,13 @@
+{
+  "source": "7c1bc0be3df413f43c65fb278699b629a44e7a90",
+  "files": {
+    "zig/kernels/cuda/exl3_experts.cu": "38ef734d358b0561bc095d3f6e7ec92bd2fb215edee0f1f52978932b0d3257d2",
+    "zig/kernels/cuda/qmmf_body.cuh": "759c9b7a399dd9e8e5dc0e20a867ad34f851ad0327d7328994475c182d05982a",
+    "zig/kernels/cuda/common/fp_pairs.cuh": "bfef861aa91e198f34c4e9dcd52a26d3fcd499e3424bee0e88e3999e2e02f02f",
+    "zig/src/families/glm/cuda_engine.zig": "d789f9a59e5468bc78575e0bf496856c068b682ebde9d3652aac94d475afb669",
+    "zig/src/families/glm/cuda_engine_pick.zig": "015d87c902728301d2bed410beafb21bcaaa550db5e073e51247ddf67765696f",
+    "zig/src/families/glm/cuda_lanes.zig": "7bfdf31f80de497b061dc4364b1b3f0ced440fbd35338882b6f70c9055597adf"
+  },
+  "eligible_remaining": 0,
+  "reason": "qmmf guards admit sm103. EXL3 AHEAD is the excluded W14b regression. FP pair native decode is off and not the stored EXL3 decoder. Other scanned 890/900 guards already admit sm103. Shared forward uses per-lane dependent picks and host reads."
+}

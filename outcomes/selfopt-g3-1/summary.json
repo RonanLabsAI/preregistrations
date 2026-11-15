@@ -1,0 +1,2894 @@
+{
+  "recorded_pt": "2026-11-14T21:58:34.599366-08:00",
+  "classification": "valid low-overhead timeline; conditional candidate dispositions",
+  "champion_control": {
+    "1": {
+      "mean": 81.78316373768983,
+      "ci95": [
+        81.78088863653022,
+        81.78543883884944
+      ],
+      "cv": 2.2404368944722098e-05,
+      "n": 5,
+      "values": [
+        81.78483204906442,
+        81.78165356430902,
+        81.78344731538449,
+        81.78091958592948,
+        81.78496617376172
+      ],
+      "pass": true
+    },
+    "16": {
+      "mean": 272.65081426757945,
+      "ci95": [
+        272.58988891896064,
+        272.71173961619826
+      ],
+      "cv": 0.00017996462048698936,
+      "n": 5,
+      "values": [
+        272.7079892744995,
+        272.63695240604363,
+        272.6607797489931,
+        272.5759529215055,
+        272.6723969868556
+      ],
+      "pass": true
+    }
+  },
+  "timeline_overhead": {
+    "1": {
+      "pt": "2026-11-14T21:42:40.237783-08:00",
+      "concurrency": 1,
+      "comparisons": {
+        "native_seconds": {
+          "native": {
+            "mean": 6.2481572518,
+            "ci95": [
+              6.247113844727149,
+              6.2492006588728515
+            ],
+            "cv": 0.00013449239768654748,
+            "n": 5,
+            "values": [
+              6.247707594,
+              6.247812898,
+              6.248114492,
+              6.249612923,
+              6.247538352
+            ]
+          },
+          "traced": {
+            "mean": 6.2763439958,
+            "ci95": [
+              6.268707383896216,
+              6.283980607703783
+            ],
+            "cv": 0.0009799183550636239,
+            "n": 5,
+            "values": [
+              6.283655724,
+              6.282264438,
+              6.27363806,
+              6.270895016,
+              6.271266741
+            ]
+          },
+          "ratio": 1.0045112091235986,
+          "ordered_ratio_ci95": [
+            1.0032002646869718,
+            1.0058231086957166
+          ],
+          "overhead_fraction": 0.004511209123598592,
+          "inactive": {
+            "mean": 6.2690266596,
+            "ci95": [
+              6.267749551567541,
+              6.270303767632458
+            ],
+            "cv": 0.00016406782874160553,
+            "n": 5,
+            "values": [
+              6.270668153,
+              6.2691273,
+              6.268979795,
+              6.267969466,
+              6.268388584
+            ]
+          },
+          "inactive_overhead_fraction": 0.0011672204629715743
+        },
+        "client_seconds": {
+          "native": {
+            "mean": 6.364090060204035,
+            "ci95": [
+              6.362494195237918,
+              6.365685925170151
+            ],
+            "cv": 0.0002019555231753389,
+            "n": 5,
+            "values": [
+              6.364408995010308,
+              6.363169057003688,
+              6.363876048999373,
+              6.366122730003553,
+              6.362873470003251
+            ]
+          },
+          "traced": {
+            "mean": 6.392903789397678,
+            "ci95": [
+              6.38529581900265,
+              6.400511759792707
+            ],
+            "cv": 0.0009584435883186352,
+            "n": 5,
+            "values": [
+              6.400124193998636,
+              6.398842315989896,
+              6.390343413993833,
+              6.387765150007908,
+              6.387443872998119
+            ]
+          },
+          "ratio": 1.0045275489380363,
+          "ordered_ratio_ci95": [
+            1.0032572197982461,
+            1.0057987803752768
+          ],
+          "overhead_fraction": 0.004527548938036308,
+          "inactive": {
+            "mean": 6.385708929592511,
+            "ci95": [
+              6.384486942086111,
+              6.38693091709891
+            ],
+            "cv": 0.0001541180686165898,
+            "n": 5,
+            "values": [
+              6.3870487160020275,
+              6.385916813989752,
+              6.385933061988908,
+              6.384366898986627,
+              6.385279156995239
+            ]
+          },
+          "inactive_overhead_fraction": 0.0011267127713612268
+        }
+      },
+      "pass": true
+    },
+    "16": {
+      "pt": "2026-11-14T21:49:21.453265-08:00",
+      "concurrency": 16,
+      "comparisons": {
+        "native_seconds": {
+          "native": {
+            "mean": 29.08764673455,
+            "ci95": [
+              29.08228288270427,
+              29.093010586395728
+            ],
+            "cv": 0.00014851287231040997,
+            "n": 5,
+            "values": [
+              29.084720131125,
+              29.088803144625,
+              29.0844814975625,
+              29.09472669125,
+              29.0855022081875
+            ]
+          },
+          "traced": {
+            "mean": 29.1353933123875,
+            "ci95": [
+              29.115164169758565,
+              29.155622455016434
+            ],
+            "cv": 0.0005591811234183073,
+            "n": 5,
+            "values": [
+              29.1171595279375,
+              29.120214066125,
+              29.155352411875,
+              29.1443520823125,
+              29.1398884736875
+            ]
+          },
+          "ratio": 1.0016414726936569,
+          "ordered_ratio_ci95": [
+            1.0009389972537948,
+            1.0023442080893687
+          ],
+          "overhead_fraction": 0.0016414726936568869,
+          "inactive": {
+            "mean": 29.084915596487498,
+            "ci95": [
+              29.083095475983995,
+              29.086735716991
+            ],
+            "cv": 5.039973409665011e-05,
+            "n": 5,
+            "values": [
+              29.0866449844375,
+              29.085494760375,
+              29.085544125125,
+              29.0829176035,
+              29.083976509
+            ]
+          },
+          "inactive_overhead_fraction": 0.0017355290488136887
+        },
+        "client_seconds": {
+          "native": {
+            "mean": 30.04575737020059,
+            "ci95": [
+              30.03904290403645,
+              30.05247183636473
+            ],
+            "cv": 0.00017997999889457554,
+            "n": 5,
+            "values": [
+              30.039457303006202,
+              30.047284227999626,
+              30.044658449012786,
+              30.054008477993193,
+              30.043378392991144
+            ]
+          },
+          "traced": {
+            "mean": 30.09458771520294,
+            "ci95": [
+              30.071203031034642,
+              30.11797239937124
+            ],
+            "cv": 0.0006258049899251719,
+            "n": 5,
+            "values": [
+              30.073870594002074,
+              30.075719020998804,
+              30.115266527005588,
+              30.107729162002215,
+              30.100353272006032
+            ]
+          },
+          "ratio": 1.0016251993384857,
+          "ordered_ratio_ci95": [
+            1.0009130359915868,
+            1.0023375813136024
+          ],
+          "overhead_fraction": 0.0016251993384857055,
+          "inactive": {
+            "mean": 30.049410237403936,
+            "ci95": [
+              30.04256552113628,
+              30.056254953671594
+            ],
+            "cv": 0.0001834490252021562,
+            "n": 5,
+            "values": [
+              30.0504513259948,
+              30.05278001401166,
+              30.042238566005835,
+              30.04560079400835,
+              30.055980486999033
+            ]
+          },
+          "inactive_overhead_fraction": 0.0015034397494686491
+        }
+      },
+      "pass": true
+    }
+  },
+  "counter_overhead": {
+    "pt": "2026-11-14T21:51:13.213755-08:00",
+    "launch_count": 1,
+    "control_n": 5,
+    "profile_n": 1,
+    "ratio_ci95": null,
+    "token_ids_identical": true,
+    "native_seconds": {
+      "native_control_mean": 6.2481572518,
+      "profile_seconds": 43.895294862,
+      "ratio": 7.025318520809384,
+      "overhead_fraction": 6.025318520809384
+    },
+    "client_seconds": {
+      "native_control_mean": 6.364090060204035,
+      "profile_seconds": 44.02953679100028,
+      "ratio": 6.918433959055049,
+      "overhead_fraction": 5.918433959055049
+    },
+    "pass": false,
+    "disposition": "counter evidence rejected; valid timeline retained"
+  },
+  "timeline": {
+    "1": {
+      "aggregate": {
+        "device_idle_fraction": {
+          "median": 0.029173176878499293,
+          "range": [
+            0.029146624964307574,
+            0.02929893505119242
+          ],
+          "values": [
+            0.02929893505119242,
+            0.029160865656630022,
+            0.029146624964307574,
+            0.0291786832935761,
+            0.029173176878499293
+          ],
+          "n": 5
+        },
+        "host_outer_bound": {
+          "median": 1.0300498257605808,
+          "range": [
+            1.0300216548799,
+            1.03018327280061
+          ],
+          "values": [
+            1.03018327280061,
+            1.0300367636872745,
+            1.0300216548799,
+            1.0300556681146709,
+            1.0300498257605808
+          ],
+          "n": 5
+        },
+        "decode_seconds": {
+          "median": 6.273711904,
+          "range": [
+            6.270966656,
+            6.283733408
+          ],
+          "values": [
+            6.283733408,
+            6.28235424,
+            6.273711904,
+            6.270966656,
+            6.271337152
+          ],
+          "n": 5
+        },
+        "stable_cycles": {
+          "median": 511,
+          "range": [
+            511,
+            511
+          ],
+          "values": [
+            511,
+            511,
+            511,
+            511,
+            511
+          ],
+          "n": 5
+        },
+        "kernel_overlap_seconds": {
+          "median": 1.484221764,
+          "range": [
+            1.483727771,
+            1.485963651
+          ],
+          "values": [
+            1.485830567,
+            1.485963651,
+            1.484221764,
+            1.483922594,
+            1.483727771
+          ],
+          "n": 5
+        },
+        "EXL3_union_fraction": {
+          "median": 0.36048524742713467,
+          "range": [
+            0.36035314600786167,
+            0.3606884692321966
+          ],
+          "values": [
+            0.36067275978236407,
+            0.3606884692321966,
+            0.36048524742713467,
+            0.36035314600786167,
+            0.3603764507030605
+          ],
+          "n": 5
+        },
+        "dense_bf16_union_fraction": {
+          "median": 0.3173468229758228,
+          "range": [
+            0.31717745989391916,
+            0.3174082849086034
+          ],
+          "values": [
+            0.31717745989391916,
+            0.31722543028710204,
+            0.3173468229758228,
+            0.3174082849086034,
+            0.3173675662398831
+          ],
+          "n": 5
+        },
+        "attention_union_fraction": {
+          "median": 0.027325423405971588,
+          "range": [
+            0.027321476001801275,
+            0.027347011874325634
+          ],
+          "values": [
+            0.02733924274719963,
+            0.027347011874325634,
+            0.02732336384313512,
+            0.027321476001801275,
+            0.027325423405971588
+          ],
+          "n": 5
+        },
+        "other_union_fraction": {
+          "median": 0.2596971653991971,
+          "range": [
+            0.25946953859058436,
+            0.25974649257702676
+          ],
+          "values": [
+            0.25946953859058436,
+            0.2595285214289349,
+            0.2596971653991971,
+            0.25974186570447616,
+            0.25974649257702676
+          ],
+          "n": 5
+        }
+      },
+      "per_report": [
+        {
+          "concurrency": 1,
+          "read_sizes": {
+            "16": 512
+          },
+          "output_read_count": 512,
+          "stable_cycles": 511,
+          "decode_seconds": 6.283733408,
+          "cycle_ms": {
+            "median": 12.278496,
+            "min": 12.243872,
+            "max": 13.289024
+          },
+          "kernel_count": 731787,
+          "kernel_union_seconds": 6.045424727,
+          "device_union_seconds": 6.099626711,
+          "device_idle_fraction": 0.02929893505119242,
+          "host_outer_bound": 1.03018327280061,
+          "kernel_overlap_seconds": 1.485830567,
+          "families": {
+            "other": {
+              "count": 412402,
+              "sum_seconds": 1.630437408,
+              "union_seconds": 1.630437408,
+              "union_fraction_of_decode": 0.25946953859058436
+            },
+            "dense_bf16": {
+              "count": 138488,
+              "sum_seconds": 3.462653903,
+              "union_seconds": 1.993058601,
+              "union_fraction_of_decode": 0.31717745989391916
+            },
+            "EXL3": {
+              "count": 128775,
+              "sum_seconds": 2.26637147,
+              "union_seconds": 2.26637147,
+              "union_fraction_of_decode": 0.36067275978236407
+            },
+            "attention": {
+              "count": 52122,
+              "sum_seconds": 0.171792513,
+              "union_seconds": 0.171792513,
+              "union_fraction_of_decode": 0.02733924274719963
+            }
+          },
+          "top_kernels": [
+            {
+              "name": "glm_mm16_16",
+              "count": 138481,
+              "sum_seconds": 3.462041519,
+              "union_seconds": 1.992481225
+            },
+            {
+              "name": "tf_exl3_grouped_1",
+              "count": 42924,
+              "sum_seconds": 1.96101173,
+              "union_seconds": 1.96101173
+            },
+            {
+              "name": "tf_glm_hc_finish",
+              "count": 45990,
+              "sum_seconds": 0.307041791,
+              "union_seconds": 0.307041791
+            },
+            {
+              "name": "tf_glm_router_tile",
+              "count": 27085,
+              "sum_seconds": 0.2056744,
+              "union_seconds": 0.2056744
+            },
+            {
+              "name": "tf_glm_chunks_16",
+              "count": 5621,
+              "sum_seconds": 0.193056064,
+              "union_seconds": 0.193056064
+            },
+            {
+              "name": "tf_glm_hc_partial8",
+              "count": 45990,
+              "sum_seconds": 0.158491872,
+              "union_seconds": 0.158491872
+            },
+            {
+              "name": "glm_mm_reduce",
+              "count": 78694,
+              "sum_seconds": 0.15794128,
+              "union_seconds": 0.15794128
+            },
+            {
+              "name": "tf_glm_topk",
+              "count": 21463,
+              "sum_seconds": 0.118084865,
+              "union_seconds": 0.118084865
+            },
+            {
+              "name": "tf_exl3_gateup_epilogue",
+              "count": 21462,
+              "sum_seconds": 0.099386077,
+              "union_seconds": 0.099386077
+            },
+            {
+              "name": "tf_glm_kda_step",
+              "count": 17374,
+              "sum_seconds": 0.091937824,
+              "union_seconds": 0.091937824
+            },
+            {
+              "name": "tf_glm_hc_post",
+              "count": 45990,
+              "sum_seconds": 0.088144545,
+              "union_seconds": 0.088144545
+            },
+            {
+              "name": "tf_exl3_group",
+              "count": 21462,
+              "sum_seconds": 0.083887168,
+              "union_seconds": 0.083887168
+            },
+            {
+              "name": "tf_glm_combine",
+              "count": 21463,
+              "sum_seconds": 0.072778816,
+              "union_seconds": 0.072778816
+            },
+            {
+              "name": "tf_glm_slice_sum",
+              "count": 27085,
+              "sum_seconds": 0.071164895,
+              "union_seconds": 0.071164895
+            },
+            {
+              "name": "tf_exl3_down_combine",
+              "count": 21462,
+              "sum_seconds": 0.065898656,
+              "union_seconds": 0.065898656
+            }
+          ],
+          "streams": {
+            "17": {
+              "count": 731787,
+              "union_seconds": 6.045424727
+            }
+          },
+          "copies": {
+            "8": {
+              "count": 42926,
+              "bytes": 2814548672,
+              "sum_seconds": 0.05795616
+            },
+            "1": {
+              "count": 512,
+              "bytes": 2428,
+              "sum_seconds": 0.000883648
+            },
+            "2": {
+              "count": 511,
+              "bytes": 8176,
+              "sum_seconds": 0.000934496
+            }
+          },
+          "api": {
+            "cuMemcpyDtoDAsync_v2": {
+              "count": 2,
+              "sum_seconds": 1.2832e-05,
+              "no_device_seconds": 1.0464e-05
+            },
+            "cuMemcpyHtoDAsync_v2": {
+              "count": 512,
+              "sum_seconds": 0.001797504,
+              "no_device_seconds": 0.00095358
+            },
+            "cuEventRecord": {
+              "count": 512,
+              "sum_seconds": 0.000522848,
+              "no_device_seconds": 0.000492832
+            },
+            "cuLaunchKernel": {
+              "count": 593299,
+              "sum_seconds": 1.313560736,
+              "no_device_seconds": 0.039797086
+            },
+            "cuMemsetD8Async": {
+              "count": 1,
+              "sum_seconds": 7.616e-06,
+              "no_device_seconds": 3.616e-06
+            },
+            "cuLaunchKernelEx": {
+              "count": 138488,
+              "sum_seconds": 0.348348672,
+              "no_device_seconds": 0.008645741
+            },
+            "cuMemsetD32Async": {
+              "count": 512,
+              "sum_seconds": 0.001455392,
+              "no_device_seconds": 0.001246174
+            },
+            "cuEventQuery": {
+              "count": 1,
+              "sum_seconds": 4.288e-06,
+              "no_device_seconds": 2.56e-07
+            },
+            "cuMemcpy2DAsync_v2": {
+              "count": 42924,
+              "sum_seconds": 0.144719072,
+              "no_device_seconds": 0.004099766
+            },
+            "cuStreamSynchronize": {
+              "count": 511,
+              "sum_seconds": 4.2783136,
+              "no_device_seconds": 0.110966495
+            },
+            "cuMemcpyDtoH_v2": {
+              "count": 511,
+              "sum_seconds": 0.0077048,
+              "no_device_seconds": 0.006770304
+            }
+          },
+          "scope": "C1 excludes prefill/first token; C16 stable full-width shared cycles exclude prompts/tails; API idle is descriptive, not proven removable; union family intervals are not automatically critical-path contributions"
+        },
+        {
+          "concurrency": 1,
+          "read_sizes": {
+            "16": 512
+          },
+          "output_read_count": 512,
+          "stable_cycles": 511,
+          "decode_seconds": 6.28235424,
+          "cycle_ms": {
+            "median": 12.276416,
+            "min": 12.24032,
+            "max": 13.2808
+          },
+          "kernel_count": 731787,
+          "kernel_union_seconds": 6.04491116,
+          "device_union_seconds": 6.099155352,
+          "device_idle_fraction": 0.029160865656630022,
+          "host_outer_bound": 1.0300367636872745,
+          "kernel_overlap_seconds": 1.485963651,
+          "families": {
+            "other": {
+              "count": 412402,
+              "sum_seconds": 1.630450107,
+              "union_seconds": 1.630450107,
+              "union_fraction_of_decode": 0.2595285214289349
+            },
+            "dense_bf16": {
+              "count": 138488,
+              "sum_seconds": 3.462648354,
+              "union_seconds": 1.992922527,
+              "union_fraction_of_decode": 0.31722543028710204
+            },
+            "EXL3": {
+              "count": 128775,
+              "sum_seconds": 2.265972734,
+              "union_seconds": 2.265972734,
+              "union_fraction_of_decode": 0.3606884692321966
+            },
+            "attention": {
+              "count": 52122,
+              "sum_seconds": 0.171803616,
+              "union_seconds": 0.171803616,
+              "union_fraction_of_decode": 0.027347011874325634
+            }
+          },
+          "top_kernels": [
+            {
+              "name": "glm_mm16_16",
+              "count": 138481,
+              "sum_seconds": 3.462035618,
+              "union_seconds": 1.992344767
+            },
+            {
+              "name": "tf_exl3_grouped_1",
+              "count": 42924,
+              "sum_seconds": 1.960577089,
+              "union_seconds": 1.960577089
+            },
+            {
+              "name": "tf_glm_hc_finish",
+              "count": 45990,
+              "sum_seconds": 0.30713232,
+              "union_seconds": 0.30713232
+            },
+            {
+              "name": "tf_glm_router_tile",
+              "count": 27085,
+              "sum_seconds": 0.205652255,
+              "union_seconds": 0.205652255
+            },
+            {
+              "name": "tf_glm_chunks_16",
+              "count": 5621,
+              "sum_seconds": 0.193044158,
+              "union_seconds": 0.193044158
+            },
+            {
+              "name": "tf_glm_hc_partial8",
+              "count": 45990,
+              "sum_seconds": 0.158485568,
+              "union_seconds": 0.158485568
+            },
+            {
+              "name": "glm_mm_reduce",
+              "count": 78694,
+              "sum_seconds": 0.158004991,
+              "union_seconds": 0.158004991
+            },
+            {
+              "name": "tf_glm_topk",
+              "count": 21463,
+              "sum_seconds": 0.118011424,
+              "union_seconds": 0.118011424
+            },
+            {
+              "name": "tf_exl3_gateup_epilogue",
+              "count": 21462,
+              "sum_seconds": 0.099353918,
+              "union_seconds": 0.099353918
+            },
+            {
+              "name": "tf_glm_kda_step",
+              "count": 17374,
+              "sum_seconds": 0.091911232,
+              "union_seconds": 0.091911232
+            },
+            {
+              "name": "tf_glm_hc_post",
+              "count": 45990,
+              "sum_seconds": 0.088155105,
+              "union_seconds": 0.088155105
+            },
+            {
+              "name": "tf_exl3_group",
+              "count": 21462,
+              "sum_seconds": 0.0839136,
+              "union_seconds": 0.0839136
+            },
+            {
+              "name": "tf_glm_combine",
+              "count": 21463,
+              "sum_seconds": 0.072792449,
+              "union_seconds": 0.072792449
+            },
+            {
+              "name": "tf_glm_slice_sum",
+              "count": 27085,
+              "sum_seconds": 0.071164638,
+              "union_seconds": 0.071164638
+            },
+            {
+              "name": "tf_exl3_down_combine",
+              "count": 21462,
+              "sum_seconds": 0.06592848,
+              "union_seconds": 0.06592848
+            }
+          ],
+          "streams": {
+            "17": {
+              "count": 731787,
+              "union_seconds": 6.04491116
+            }
+          },
+          "copies": {
+            "8": {
+              "count": 42926,
+              "bytes": 2814548672,
+              "sum_seconds": 0.058001056
+            },
+            "1": {
+              "count": 512,
+              "bytes": 2428,
+              "sum_seconds": 0.000882688
+            },
+            "2": {
+              "count": 511,
+              "bytes": 8176,
+              "sum_seconds": 0.000933344
+            }
+          },
+          "api": {
+            "cuMemcpyDtoDAsync_v2": {
+              "count": 2,
+              "sum_seconds": 1.8592e-05,
+              "no_device_seconds": 1.6224e-05
+            },
+            "cuMemcpyHtoDAsync_v2": {
+              "count": 512,
+              "sum_seconds": 0.001739392,
+              "no_device_seconds": 0.000782511
+            },
+            "cuEventRecord": {
+              "count": 512,
+              "sum_seconds": 0.000485632,
+              "no_device_seconds": 0.000462506
+            },
+            "cuLaunchKernel": {
+              "count": 593299,
+              "sum_seconds": 1.314440384,
+              "no_device_seconds": 0.039774075
+            },
+            "cuMemsetD8Async": {
+              "count": 1,
+              "sum_seconds": 5.632e-06,
+              "no_device_seconds": 2.432e-06
+            },
+            "cuLaunchKernelEx": {
+              "count": 138488,
+              "sum_seconds": 0.348108576,
+              "no_device_seconds": 0.008754727
+            },
+            "cuMemsetD32Async": {
+              "count": 512,
+              "sum_seconds": 0.001367584,
+              "no_device_seconds": 0.001151507
+            },
+            "cuEventQuery": {
+              "count": 1,
+              "sum_seconds": 4.832e-06,
+              "no_device_seconds": 0.0
+            },
+            "cuMemcpy2DAsync_v2": {
+              "count": 42924,
+              "sum_seconds": 0.144355296,
+              "no_device_seconds": 0.004122632
+            },
+            "cuStreamSynchronize": {
+              "count": 511,
+              "sum_seconds": 4.278259616,
+              "no_device_seconds": 0.110879248
+            },
+            "cuMemcpyDtoH_v2": {
+              "count": 511,
+              "sum_seconds": 0.007369184,
+              "no_device_seconds": 0.00643584
+            }
+          },
+          "scope": "C1 excludes prefill/first token; C16 stable full-width shared cycles exclude prompts/tails; API idle is descriptive, not proven removable; union family intervals are not automatically critical-path contributions"
+        },
+        {
+          "concurrency": 1,
+          "read_sizes": {
+            "16": 512
+          },
+          "output_read_count": 512,
+          "stable_cycles": 511,
+          "decode_seconds": 6.273711904,
+          "cycle_ms": {
+            "median": 12.270144,
+            "min": 12.241056,
+            "max": 13.283424
+          },
+          "kernel_count": 731787,
+          "kernel_union_seconds": 6.036973096,
+          "device_union_seconds": 6.090854376,
+          "device_idle_fraction": 0.029146624964307574,
+          "host_outer_bound": 1.0300216548799,
+          "kernel_overlap_seconds": 1.484221764,
+          "families": {
+            "other": {
+              "count": 412402,
+              "sum_seconds": 1.629265198,
+              "union_seconds": 1.629265198,
+              "union_fraction_of_decode": 0.2596971653991971
+            },
+            "dense_bf16": {
+              "count": 138488,
+              "sum_seconds": 3.458930161,
+              "union_seconds": 1.990942541,
+              "union_fraction_of_decode": 0.3173468229758228
+            },
+            "EXL3": {
+              "count": 128775,
+              "sum_seconds": 2.261580588,
+              "union_seconds": 2.261580588,
+              "union_fraction_of_decode": 0.36048524742713467
+            },
+            "attention": {
+              "count": 52122,
+              "sum_seconds": 0.171418913,
+              "union_seconds": 0.171418913,
+              "union_fraction_of_decode": 0.02732336384313512
+            }
+          },
+          "top_kernels": [
+            {
+              "name": "glm_mm16_16",
+              "count": 138481,
+              "sum_seconds": 3.458316849,
+              "union_seconds": 1.990364461
+            },
+            {
+              "name": "tf_exl3_grouped_1",
+              "count": 42924,
+              "sum_seconds": 1.956680296,
+              "union_seconds": 1.956680296
+            },
+            {
+              "name": "tf_glm_hc_finish",
+              "count": 45990,
+              "sum_seconds": 0.306850306,
+              "union_seconds": 0.306850306
+            },
+            {
+              "name": "tf_glm_router_tile",
+              "count": 27085,
+              "sum_seconds": 0.205337313,
+              "union_seconds": 0.205337313
+            },
+            {
+              "name": "tf_glm_chunks_16",
+              "count": 5621,
+              "sum_seconds": 0.193020961,
+              "union_seconds": 0.193020961
+            },
+            {
+              "name": "tf_glm_hc_partial8",
+              "count": 45990,
+              "sum_seconds": 0.158043042,
+              "union_seconds": 0.158043042
+            },
+            {
+              "name": "glm_mm_reduce",
+              "count": 78694,
+              "sum_seconds": 0.157938883,
+              "union_seconds": 0.157938883
+            },
+            {
+              "name": "tf_glm_topk",
+              "count": 21463,
+              "sum_seconds": 0.117998433,
+              "union_seconds": 0.117998433
+            },
+            {
+              "name": "tf_exl3_gateup_epilogue",
+              "count": 21462,
+              "sum_seconds": 0.099273377,
+              "union_seconds": 0.099273377
+            },
+            {
+              "name": "tf_glm_kda_step",
+              "count": 17374,
+              "sum_seconds": 0.091797985,
+              "union_seconds": 0.091797985
+            },
+            {
+              "name": "tf_glm_hc_post",
+              "count": 45990,
+              "sum_seconds": 0.088141185,
+              "union_seconds": 0.088141185
+            },
+            {
+              "name": "tf_exl3_group",
+              "count": 21462,
+              "sum_seconds": 0.084238049,
+              "union_seconds": 0.084238049
+            },
+            {
+              "name": "tf_glm_combine",
+              "count": 21463,
+              "sum_seconds": 0.07280256,
+              "union_seconds": 0.07280256
+            },
+            {
+              "name": "tf_glm_slice_sum",
+              "count": 27085,
+              "sum_seconds": 0.071171586,
+              "union_seconds": 0.071171586
+            },
+            {
+              "name": "tf_exl3_down_combine",
+              "count": 21462,
+              "sum_seconds": 0.065878145,
+              "union_seconds": 0.065878145
+            }
+          ],
+          "streams": {
+            "17": {
+              "count": 731787,
+              "union_seconds": 6.036973096
+            }
+          },
+          "copies": {
+            "8": {
+              "count": 42926,
+              "bytes": 2814548672,
+              "sum_seconds": 0.057760896
+            },
+            "1": {
+              "count": 512,
+              "bytes": 2428,
+              "sum_seconds": 0.000826528
+            },
+            "2": {
+              "count": 511,
+              "bytes": 8176,
+              "sum_seconds": 0.000863648
+            }
+          },
+          "api": {
+            "cuMemcpyDtoDAsync_v2": {
+              "count": 2,
+              "sum_seconds": 1.3856e-05,
+              "no_device_seconds": 1.1488e-05
+            },
+            "cuMemcpyHtoDAsync_v2": {
+              "count": 512,
+              "sum_seconds": 0.001816224,
+              "no_device_seconds": 0.000835279
+            },
+            "cuEventRecord": {
+              "count": 512,
+              "sum_seconds": 0.000477568,
+              "no_device_seconds": 0.000457353
+            },
+            "cuLaunchKernel": {
+              "count": 593299,
+              "sum_seconds": 1.309936064,
+              "no_device_seconds": 0.039672635
+            },
+            "cuMemsetD8Async": {
+              "count": 1,
+              "sum_seconds": 6.816e-06,
+              "no_device_seconds": 3.277e-06
+            },
+            "cuLaunchKernelEx": {
+              "count": 138488,
+              "sum_seconds": 0.350040896,
+              "no_device_seconds": 0.008646576
+            },
+            "cuMemsetD32Async": {
+              "count": 512,
+              "sum_seconds": 0.00139552,
+              "no_device_seconds": 0.001170149
+            },
+            "cuEventQuery": {
+              "count": 1,
+              "sum_seconds": 4.896e-06,
+              "no_device_seconds": 2.56e-07
+            },
+            "cuMemcpy2DAsync_v2": {
+              "count": 42924,
+              "sum_seconds": 0.144498816,
+              "no_device_seconds": 0.00409277
+            },
+            "cuStreamSynchronize": {
+              "count": 511,
+              "sum_seconds": 4.272653312,
+              "no_device_seconds": 0.11082466
+            },
+            "cuMemcpyDtoH_v2": {
+              "count": 511,
+              "sum_seconds": 0.007540608,
+              "no_device_seconds": 0.00667696
+            }
+          },
+          "scope": "C1 excludes prefill/first token; C16 stable full-width shared cycles exclude prompts/tails; API idle is descriptive, not proven removable; union family intervals are not automatically critical-path contributions"
+        },
+        {
+          "concurrency": 1,
+          "read_sizes": {
+            "16": 512
+          },
+          "output_read_count": 512,
+          "stable_cycles": 511,
+          "decode_seconds": 6.270966656,
+          "cycle_ms": {
+            "median": 12.26912,
+            "min": 12.242848,
+            "max": 13.289216
+          },
+          "kernel_count": 731787,
+          "kernel_union_seconds": 6.034158026,
+          "device_union_seconds": 6.087988106,
+          "device_idle_fraction": 0.0291786832935761,
+          "host_outer_bound": 1.0300556681146709,
+          "kernel_overlap_seconds": 1.483922594,
+          "families": {
+            "other": {
+              "count": 412402,
+              "sum_seconds": 1.628832579,
+              "union_seconds": 1.628832579,
+              "union_fraction_of_decode": 0.25974186570447616
+            },
+            "dense_bf16": {
+              "count": 138488,
+              "sum_seconds": 3.458153413,
+              "union_seconds": 1.990456771,
+              "union_fraction_of_decode": 0.3174082849086034
+            },
+            "EXL3": {
+              "count": 128775,
+              "sum_seconds": 2.259762563,
+              "union_seconds": 2.259762563,
+              "union_fraction_of_decode": 0.36035314600786167
+            },
+            "attention": {
+              "count": 52122,
+              "sum_seconds": 0.171332065,
+              "union_seconds": 0.171332065,
+              "union_fraction_of_decode": 0.027321476001801275
+            }
+          },
+          "top_kernels": [
+            {
+              "name": "glm_mm16_16",
+              "count": 138481,
+              "sum_seconds": 3.457540037,
+              "union_seconds": 1.989878403
+            },
+            {
+              "name": "tf_exl3_grouped_1",
+              "count": 42924,
+              "sum_seconds": 1.95535965,
+              "union_seconds": 1.95535965
+            },
+            {
+              "name": "tf_glm_hc_finish",
+              "count": 45990,
+              "sum_seconds": 0.306866145,
+              "union_seconds": 0.306866145
+            },
+            {
+              "name": "tf_glm_router_tile",
+              "count": 27085,
+              "sum_seconds": 0.205211808,
+              "union_seconds": 0.205211808
+            },
+            {
+              "name": "tf_glm_chunks_16",
+              "count": 5621,
+              "sum_seconds": 0.193032384,
+              "union_seconds": 0.193032384
+            },
+            {
+              "name": "glm_mm_reduce",
+              "count": 78694,
+              "sum_seconds": 0.157977664,
+              "union_seconds": 0.157977664
+            },
+            {
+              "name": "tf_glm_hc_partial8",
+              "count": 45990,
+              "sum_seconds": 0.157805984,
+              "union_seconds": 0.157805984
+            },
+            {
+              "name": "tf_glm_topk",
+              "count": 21463,
+              "sum_seconds": 0.1179352,
+              "union_seconds": 0.1179352
+            },
+            {
+              "name": "tf_exl3_gateup_epilogue",
+              "count": 21462,
+              "sum_seconds": 0.099194881,
+              "union_seconds": 0.099194881
+            },
+            {
+              "name": "tf_glm_kda_step",
+              "count": 17374,
+              "sum_seconds": 0.091783969,
+              "union_seconds": 0.091783969
+            },
+            {
+              "name": "tf_glm_hc_post",
+              "count": 45990,
+              "sum_seconds": 0.088124064,
+              "union_seconds": 0.088124064
+            },
+            {
+              "name": "tf_exl3_group",
+              "count": 21462,
+              "sum_seconds": 0.08392656,
+              "union_seconds": 0.08392656
+            },
+            {
+              "name": "tf_glm_combine",
+              "count": 21463,
+              "sum_seconds": 0.072823488,
+              "union_seconds": 0.072823488
+            },
+            {
+              "name": "tf_glm_slice_sum",
+              "count": 27085,
+              "sum_seconds": 0.071103744,
+              "union_seconds": 0.071103744
+            },
+            {
+              "name": "tf_exl3_down_combine",
+              "count": 21462,
+              "sum_seconds": 0.06589568,
+              "union_seconds": 0.06589568
+            }
+          ],
+          "streams": {
+            "17": {
+              "count": 731787,
+              "union_seconds": 6.034158026
+            }
+          },
+          "copies": {
+            "8": {
+              "count": 42926,
+              "bytes": 2814548672,
+              "sum_seconds": 0.057749344
+            },
+            "1": {
+              "count": 512,
+              "bytes": 2428,
+              "sum_seconds": 0.00081312
+            },
+            "2": {
+              "count": 511,
+              "bytes": 8176,
+              "sum_seconds": 0.000839296
+            }
+          },
+          "api": {
+            "cuMemcpyDtoDAsync_v2": {
+              "count": 2,
+              "sum_seconds": 1.5328e-05,
+              "no_device_seconds": 1.2992e-05
+            },
+            "cuMemcpyHtoDAsync_v2": {
+              "count": 512,
+              "sum_seconds": 0.001899584,
+              "no_device_seconds": 0.000980647
+            },
+            "cuEventRecord": {
+              "count": 512,
+              "sum_seconds": 0.000519168,
+              "no_device_seconds": 0.000500868
+            },
+            "cuLaunchKernel": {
+              "count": 593299,
+              "sum_seconds": 1.309040384,
+              "no_device_seconds": 0.0397458
+            },
+            "cuMemsetD8Async": {
+              "count": 1,
+              "sum_seconds": 5.472e-06,
+              "no_device_seconds": 3.072e-06
+            },
+            "cuLaunchKernelEx": {
+              "count": 138488,
+              "sum_seconds": 0.349324288,
+              "no_device_seconds": 0.008570451
+            },
+            "cuMemsetD32Async": {
+              "count": 512,
+              "sum_seconds": 0.001425344,
+              "no_device_seconds": 0.001206401
+            },
+            "cuEventQuery": {
+              "count": 1,
+              "sum_seconds": 4.192e-06,
+              "no_device_seconds": 0.0
+            },
+            "cuMemcpy2DAsync_v2": {
+              "count": 42924,
+              "sum_seconds": 0.143676384,
+              "no_device_seconds": 0.004013796
+            },
+            "cuStreamSynchronize": {
+              "count": 511,
+              "sum_seconds": 4.270708576,
+              "no_device_seconds": 0.110869437
+            },
+            "cuMemcpyDtoH_v2": {
+              "count": 511,
+              "sum_seconds": 0.007339264,
+              "no_device_seconds": 0.006499968
+            }
+          },
+          "scope": "C1 excludes prefill/first token; C16 stable full-width shared cycles exclude prompts/tails; API idle is descriptive, not proven removable; union family intervals are not automatically critical-path contributions"
+        },
+        {
+          "concurrency": 1,
+          "read_sizes": {
+            "16": 512
+          },
+          "output_read_count": 512,
+          "stable_cycles": 511,
+          "decode_seconds": 6.271337152,
+          "cycle_ms": {
+            "median": 12.268544,
+            "min": 12.2416,
+            "max": 13.27952
+          },
+          "kernel_count": 731787,
+          "kernel_union_seconds": 6.034455765,
+          "device_union_seconds": 6.088382324,
+          "device_idle_fraction": 0.029173176878499293,
+          "host_outer_bound": 1.0300498257605808,
+          "kernel_overlap_seconds": 1.483727771,
+          "families": {
+            "other": {
+              "count": 412402,
+              "sum_seconds": 1.628957829,
+              "union_seconds": 1.628957829,
+              "union_fraction_of_decode": 0.25974649257702676
+            },
+            "dense_bf16": {
+              "count": 138488,
+              "sum_seconds": 3.45781654,
+              "union_seconds": 1.990319009,
+              "union_fraction_of_decode": 0.3173675662398831
+            },
+            "EXL3": {
+              "count": 128775,
+              "sum_seconds": 2.260042224,
+              "union_seconds": 2.260042224,
+              "union_fraction_of_decode": 0.3603764507030605
+            },
+            "attention": {
+              "count": 52122,
+              "sum_seconds": 0.171366943,
+              "union_seconds": 0.171366943,
+              "union_fraction_of_decode": 0.027325423405971588
+            }
+          },
+          "top_kernels": [
+            {
+              "name": "glm_mm16_16",
+              "count": 138481,
+              "sum_seconds": 3.457203388,
+              "union_seconds": 1.989740833
+            },
+            {
+              "name": "tf_exl3_grouped_1",
+              "count": 42924,
+              "sum_seconds": 1.95571093,
+              "union_seconds": 1.95571093
+            },
+            {
+              "name": "tf_glm_hc_finish",
+              "count": 45990,
+              "sum_seconds": 0.306824157,
+              "union_seconds": 0.306824157
+            },
+            {
+              "name": "tf_glm_router_tile",
+              "count": 27085,
+              "sum_seconds": 0.205241955,
+              "union_seconds": 0.205241955
+            },
+            {
+              "name": "tf_glm_chunks_16",
+              "count": 5621,
+              "sum_seconds": 0.193035557,
+              "union_seconds": 0.193035557
+            },
+            {
+              "name": "glm_mm_reduce",
+              "count": 78694,
+              "sum_seconds": 0.157921536,
+              "union_seconds": 0.157921536
+            },
+            {
+              "name": "tf_glm_hc_partial8",
+              "count": 45990,
+              "sum_seconds": 0.157881793,
+              "union_seconds": 0.157881793
+            },
+            {
+              "name": "tf_glm_topk",
+              "count": 21463,
+              "sum_seconds": 0.118027615,
+              "union_seconds": 0.118027615
+            },
+            {
+              "name": "tf_exl3_gateup_epilogue",
+              "count": 21462,
+              "sum_seconds": 0.099199999,
+              "union_seconds": 0.099199999
+            },
+            {
+              "name": "tf_glm_kda_step",
+              "count": 17374,
+              "sum_seconds": 0.091821216,
+              "union_seconds": 0.091821216
+            },
+            {
+              "name": "tf_glm_hc_post",
+              "count": 45990,
+              "sum_seconds": 0.088159582,
+              "union_seconds": 0.088159582
+            },
+            {
+              "name": "tf_exl3_group",
+              "count": 21462,
+              "sum_seconds": 0.083897567,
+              "union_seconds": 0.083897567
+            },
+            {
+              "name": "tf_glm_combine",
+              "count": 21463,
+              "sum_seconds": 0.0728168,
+              "union_seconds": 0.0728168
+            },
+            {
+              "name": "tf_glm_slice_sum",
+              "count": 27085,
+              "sum_seconds": 0.071148288,
+              "union_seconds": 0.071148288
+            },
+            {
+              "name": "tf_exl3_down_combine",
+              "count": 21462,
+              "sum_seconds": 0.065882592,
+              "union_seconds": 0.065882592
+            }
+          ],
+          "streams": {
+            "17": {
+              "count": 731787,
+              "union_seconds": 6.034455765
+            }
+          },
+          "copies": {
+            "8": {
+              "count": 42926,
+              "bytes": 2814548672,
+              "sum_seconds": 0.057839743
+            },
+            "1": {
+              "count": 512,
+              "bytes": 2428,
+              "sum_seconds": 0.000816864
+            },
+            "2": {
+              "count": 511,
+              "bytes": 8176,
+              "sum_seconds": 0.000839872
+            }
+          },
+          "api": {
+            "cuMemcpyDtoDAsync_v2": {
+              "count": 2,
+              "sum_seconds": 1.392e-05,
+              "no_device_seconds": 1.1456e-05
+            },
+            "cuMemcpyHtoDAsync_v2": {
+              "count": 512,
+              "sum_seconds": 0.001932736,
+              "no_device_seconds": 0.001002054
+            },
+            "cuEventRecord": {
+              "count": 512,
+              "sum_seconds": 0.00049456,
+              "no_device_seconds": 0.000472731
+            },
+            "cuLaunchKernel": {
+              "count": 593299,
+              "sum_seconds": 1.309956672,
+              "no_device_seconds": 0.039714662
+            },
+            "cuMemsetD8Async": {
+              "count": 1,
+              "sum_seconds": 5.536e-06,
+              "no_device_seconds": 2.016e-06
+            },
+            "cuLaunchKernelEx": {
+              "count": 138488,
+              "sum_seconds": 0.349335232,
+              "no_device_seconds": 0.008561288
+            },
+            "cuMemsetD32Async": {
+              "count": 512,
+              "sum_seconds": 0.001427296,
+              "no_device_seconds": 0.001206365
+            },
+            "cuEventQuery": {
+              "count": 1,
+              "sum_seconds": 4.288e-06,
+              "no_device_seconds": 0.0
+            },
+            "cuMemcpy2DAsync_v2": {
+              "count": 42924,
+              "sum_seconds": 0.144001536,
+              "no_device_seconds": 0.004024132
+            },
+            "cuStreamSynchronize": {
+              "count": 511,
+              "sum_seconds": 4.271296448,
+              "no_device_seconds": 0.110876315
+            },
+            "cuMemcpyDtoH_v2": {
+              "count": 511,
+              "sum_seconds": 0.007320576,
+              "no_device_seconds": 0.006480704
+            }
+          },
+          "scope": "C1 excludes prefill/first token; C16 stable full-width shared cycles exclude prompts/tails; API idle is descriptive, not proven removable; union family intervals are not automatically critical-path contributions"
+        }
+      ]
+    },
+    "16": {
+      "aggregate": {
+        "device_idle_fraction": {
+          "median": 0.026790980889541887,
+          "range": [
+            0.026703487602000333,
+            0.027531304927220192
+          ],
+          "values": [
+            0.026703487602000333,
+            0.026790980889541887,
+            0.026720601496437856,
+            0.027531304927220192,
+            0.027517052405673946
+          ],
+          "n": 5
+        },
+        "host_outer_bound": {
+          "median": 1.0275284963080487,
+          "range": [
+            1.0274361279033133,
+            1.0283107364450017
+          ],
+          "values": [
+            1.0274361279033133,
+            1.0275284963080487,
+            1.0274541940757416,
+            1.0283107364450017,
+            1.0282956657222053
+          ],
+          "n": 5
+        },
+        "decode_seconds": {
+          "median": 28.314723008,
+          "range": [
+            28.311421312,
+            28.336624256
+          ],
+          "values": [
+            28.311421312,
+            28.314723008,
+            28.313022336,
+            28.336624256,
+            28.335830688
+          ],
+          "n": 5
+        },
+        "stable_cycles": {
+          "median": 511,
+          "range": [
+            511,
+            511
+          ],
+          "values": [
+            511,
+            511,
+            511,
+            511,
+            511
+          ],
+          "n": 5
+        },
+        "kernel_overlap_seconds": {
+          "median": 1.583742147,
+          "range": [
+            1.583455294,
+            1.5839073
+          ],
+          "values": [
+            1.583455294,
+            1.583764382,
+            1.583742147,
+            1.583711646,
+            1.5839073
+          ],
+          "n": 5
+        },
+        "EXL3_union_fraction": {
+          "median": 0.5908681711021172,
+          "range": [
+            0.5904242921695989,
+            0.590930573339975
+          ],
+          "values": [
+            0.5909177014687351,
+            0.5908681711021172,
+            0.590930573339975,
+            0.590434992674097,
+            0.5904242921695989
+          ],
+          "n": 5
+        },
+        "dense_bf16_union_fraction": {
+          "median": 0.07638511884396393,
+          "range": [
+            0.07633158312927874,
+            0.07639175529782742
+          ],
+          "values": [
+            0.07639175529782742,
+            0.07638511884396393,
+            0.07638947235420993,
+            0.07633158312927874,
+            0.07634538234716882
+          ],
+          "n": 5
+        },
+        "attention_union_fraction": {
+          "median": 0.09073992393547628,
+          "range": [
+            0.09066153193798414,
+            0.09076031597576051
+          ],
+          "values": [
+            0.09076031597576051,
+            0.09073992393547628,
+            0.09074340649720172,
+            0.09066153193798414,
+            0.09067619196666482
+          ],
+          "n": 5
+        },
+        "other_union_fraction": {
+          "median": 0.1981366275357711,
+          "range": [
+            0.19797334840004108,
+            0.19815094785164278
+          ],
+          "values": [
+            0.19815094785164278,
+            0.19813814062086693,
+            0.1981366275357711,
+            0.19797582941842992,
+            0.19797334840004108
+          ],
+          "n": 5
+        }
+      },
+      "per_report": [
+        {
+          "concurrency": 16,
+          "read_sizes": {
+            "16": 8192
+          },
+          "output_read_count": 8192,
+          "stable_cycles": 511,
+          "decode_seconds": 28.311421312,
+          "cycle_ms": {
+            "median": 55.891232,
+            "min": 33.049024,
+            "max": 58.008032
+          },
+          "kernel_count": 1958157,
+          "kernel_union_seconds": 27.05115348,
+          "device_union_seconds": 27.555407624,
+          "device_idle_fraction": 0.026703487602000333,
+          "host_outer_bound": 1.0274361279033133,
+          "kernel_overlap_seconds": 1.583455294,
+          "families": {
+            "other": {
+              "count": 856942,
+              "sum_seconds": 5.609934968,
+              "union_seconds": 5.609934968,
+              "union_fraction_of_decode": 0.19815094785164278
+            },
+            "dense_bf16": {
+              "count": 138488,
+              "sum_seconds": 3.725400255,
+              "union_seconds": 2.162759169,
+              "union_fraction_of_decode": 0.07639175529782742
+            },
+            "EXL3": {
+              "count": 128775,
+              "sum_seconds": 16.729720007,
+              "union_seconds": 16.729720007,
+              "union_fraction_of_decode": 0.5909177014687351
+            },
+            "attention": {
+              "count": 833952,
+              "sum_seconds": 2.569553544,
+              "union_seconds": 2.569553544,
+              "union_fraction_of_decode": 0.09076031597576051
+            }
+          },
+          "top_kernels": [
+            {
+              "name": "tf_exl3_grouped_1",
+              "count": 42924,
+              "sum_seconds": 15.598650558,
+              "union_seconds": 15.598650558
+            },
+            {
+              "name": "glm_mm16_16",
+              "count": 138481,
+              "sum_seconds": 3.724787519,
+              "union_seconds": 2.162181409
+            },
+            {
+              "name": "tf_glm_chunks_16",
+              "count": 89936,
+              "sum_seconds": 3.072023163,
+              "union_seconds": 3.072023163
+            },
+            {
+              "name": "tf_glm_kda_step",
+              "count": 277984,
+              "sum_seconds": 1.393339365,
+              "union_seconds": 1.393339365
+            },
+            {
+              "name": "tf_exl3_group",
+              "count": 21462,
+              "sum_seconds": 0.788887878,
+              "union_seconds": 0.788887878
+            },
+            {
+              "name": "tf_glm_kda_prep",
+              "count": 277984,
+              "sum_seconds": 0.628960257,
+              "union_seconds": 0.628960257
+            },
+            {
+              "name": "tf_glm_kda_out",
+              "count": 277984,
+              "sum_seconds": 0.547253922,
+              "union_seconds": 0.547253922
+            },
+            {
+              "name": "tf_glm_hc_finish",
+              "count": 45990,
+              "sum_seconds": 0.309551838,
+              "union_seconds": 0.309551838
+            },
+            {
+              "name": "tf_glm_lat_write",
+              "count": 89937,
+              "sum_seconds": 0.232237633,
+              "union_seconds": 0.232237633
+            },
+            {
+              "name": "tf_glm_router_tile",
+              "count": 27085,
+              "sum_seconds": 0.206628353,
+              "union_seconds": 0.206628353
+            },
+            {
+              "name": "tf_glm_absorb_q",
+              "count": 5622,
+              "sum_seconds": 0.194631423,
+              "union_seconds": 0.194631423
+            },
+            {
+              "name": "tf_glm_expand_v",
+              "count": 5622,
+              "sum_seconds": 0.189100862,
+              "union_seconds": 0.189100862
+            },
+            {
+              "name": "tf_glm_hc_partial8",
+              "count": 45990,
+              "sum_seconds": 0.183659168,
+              "union_seconds": 0.183659168
+            },
+            {
+              "name": "tf_glm_merge",
+              "count": 89937,
+              "sum_seconds": 0.175788929,
+              "union_seconds": 0.175788929
+            },
+            {
+              "name": "glm_mm_reduce",
+              "count": 78694,
+              "sum_seconds": 0.171270017,
+              "union_seconds": 0.171270017
+            }
+          ],
+          "streams": {
+            "17": {
+              "count": 1958157,
+              "union_seconds": 27.05115348
+            }
+          },
+          "copies": {
+            "8": {
+              "count": 320910,
+              "bytes": 58862197760,
+              "sum_seconds": 0.498492832
+            },
+            "1": {
+              "count": 512,
+              "bytes": 33068,
+              "sum_seconds": 0.000815616
+            },
+            "2": {
+              "count": 8176,
+              "bytes": 130816,
+              "sum_seconds": 0.011763008
+            }
+          },
+          "api": {
+            "cuMemcpyDtoDAsync_v2": {
+              "count": 277986,
+              "sum_seconds": 1.458240032,
+              "no_device_seconds": 0.045325757
+            },
+            "cuMemcpyHtoDAsync_v2": {
+              "count": 512,
+              "sum_seconds": 0.002460544,
+              "no_device_seconds": 0.001377196
+            },
+            "cuEventRecord": {
+              "count": 512,
+              "sum_seconds": 0.000615328,
+              "no_device_seconds": 0.000350256
+            },
+            "cuLaunchKernel": {
+              "count": 1819669,
+              "sum_seconds": 18.09852192,
+              "no_device_seconds": 0.356880913
+            },
+            "cuMemsetD8Async": {
+              "count": 1,
+              "sum_seconds": 4.544e-06,
+              "no_device_seconds": 3.36e-06
+            },
+            "cuLaunchKernelEx": {
+              "count": 138488,
+              "sum_seconds": 0.562889536,
+              "no_device_seconds": 0.020113419
+            },
+            "cuMemsetD32Async": {
+              "count": 8162,
+              "sum_seconds": 0.012003552,
+              "no_device_seconds": 0.006588605
+            },
+            "cuEventQuery": {
+              "count": 1,
+              "sum_seconds": 4.128e-06,
+              "no_device_seconds": 2.24e-07
+            },
+            "cuMemcpy2DAsync_v2": {
+              "count": 42924,
+              "sum_seconds": 0.240058048,
+              "no_device_seconds": 0.007756648
+            },
+            "cuStreamSynchronize": {
+              "count": 8176,
+              "sum_seconds": 7.280564832,
+              "no_device_seconds": 0.176519009
+            },
+            "cuMemcpyDtoH_v2": {
+              "count": 8176,
+              "sum_seconds": 0.096655232,
+              "no_device_seconds": 0.084892224
+            }
+          },
+          "scope": "C1 excludes prefill/first token; C16 stable full-width shared cycles exclude prompts/tails; API idle is descriptive, not proven removable; union family intervals are not automatically critical-path contributions"
+        },
+        {
+          "concurrency": 16,
+          "read_sizes": {
+            "16": 8192
+          },
+          "output_read_count": 8192,
+          "stable_cycles": 511,
+          "decode_seconds": 28.314723008,
+          "cycle_ms": {
+            "median": 55.926496,
+            "min": 33.055008,
+            "max": 58.024448
+          },
+          "kernel_count": 1958157,
+          "kernel_union_seconds": 27.051770301,
+          "device_union_seconds": 27.556143805,
+          "device_idle_fraction": 0.026790980889541887,
+          "host_outer_bound": 1.0275284963080487,
+          "kernel_overlap_seconds": 1.583764382,
+          "families": {
+            "other": {
+              "count": 856942,
+              "sum_seconds": 5.610226569,
+              "union_seconds": 5.610226569,
+              "union_fraction_of_decode": 0.19813814062086693
+            },
+            "dense_bf16": {
+              "count": 138488,
+              "sum_seconds": 3.725763703,
+              "union_seconds": 2.162823482,
+              "union_fraction_of_decode": 0.07638511884396393
+            },
+            "EXL3": {
+              "count": 128775,
+              "sum_seconds": 16.730268599,
+              "union_seconds": 16.730268599,
+              "union_fraction_of_decode": 0.5908681711021172
+            },
+            "attention": {
+              "count": 833952,
+              "sum_seconds": 2.569275812,
+              "union_seconds": 2.569275812,
+              "union_fraction_of_decode": 0.09073992393547628
+            }
+          },
+          "top_kernels": [
+            {
+              "name": "tf_exl3_grouped_1",
+              "count": 42924,
+              "sum_seconds": 15.59920108,
+              "union_seconds": 15.59920108
+            },
+            {
+              "name": "glm_mm16_16",
+              "count": 138481,
+              "sum_seconds": 3.725150519,
+              "union_seconds": 2.16224521
+            },
+            {
+              "name": "tf_glm_chunks_16",
+              "count": 89936,
+              "sum_seconds": 3.072019622,
+              "union_seconds": 3.072019622
+            },
+            {
+              "name": "tf_glm_kda_step",
+              "count": 277984,
+              "sum_seconds": 1.392981479,
+              "union_seconds": 1.392981479
+            },
+            {
+              "name": "tf_exl3_group",
+              "count": 21462,
+              "sum_seconds": 0.788889215,
+              "union_seconds": 0.788889215
+            },
+            {
+              "name": "tf_glm_kda_prep",
+              "count": 277984,
+              "sum_seconds": 0.629012799,
+              "union_seconds": 0.629012799
+            },
+            {
+              "name": "tf_glm_kda_out",
+              "count": 277984,
+              "sum_seconds": 0.547281534,
+              "union_seconds": 0.547281534
+            },
+            {
+              "name": "tf_glm_hc_finish",
+              "count": 45990,
+              "sum_seconds": 0.309572098,
+              "union_seconds": 0.309572098
+            },
+            {
+              "name": "tf_glm_lat_write",
+              "count": 89937,
+              "sum_seconds": 0.232123455,
+              "union_seconds": 0.232123455
+            },
+            {
+              "name": "tf_glm_router_tile",
+              "count": 27085,
+              "sum_seconds": 0.206675489,
+              "union_seconds": 0.206675489
+            },
+            {
+              "name": "tf_glm_absorb_q",
+              "count": 5622,
+              "sum_seconds": 0.19461568,
+              "union_seconds": 0.19461568
+            },
+            {
+              "name": "tf_glm_expand_v",
+              "count": 5622,
+              "sum_seconds": 0.189190304,
+              "union_seconds": 0.189190304
+            },
+            {
+              "name": "tf_glm_hc_partial8",
+              "count": 45990,
+              "sum_seconds": 0.183650304,
+              "union_seconds": 0.183650304
+            },
+            {
+              "name": "tf_glm_merge",
+              "count": 89937,
+              "sum_seconds": 0.176070688,
+              "union_seconds": 0.176070688
+            },
+            {
+              "name": "glm_mm_reduce",
+              "count": 78694,
+              "sum_seconds": 0.171270367,
+              "union_seconds": 0.171270367
+            }
+          ],
+          "streams": {
+            "17": {
+              "count": 1958157,
+              "union_seconds": 27.051770301
+            }
+          },
+          "copies": {
+            "8": {
+              "count": 320910,
+              "bytes": 58862197760,
+              "sum_seconds": 0.498517472
+            },
+            "1": {
+              "count": 512,
+              "bytes": 33068,
+              "sum_seconds": 0.000817632
+            },
+            "2": {
+              "count": 8176,
+              "bytes": 130816,
+              "sum_seconds": 0.011856992
+            }
+          },
+          "api": {
+            "cuMemcpyDtoDAsync_v2": {
+              "count": 277986,
+              "sum_seconds": 1.476464128,
+              "no_device_seconds": 0.047069043
+            },
+            "cuMemcpyHtoDAsync_v2": {
+              "count": 512,
+              "sum_seconds": 0.002558752,
+              "no_device_seconds": 0.001418161
+            },
+            "cuEventRecord": {
+              "count": 512,
+              "sum_seconds": 0.000636128,
+              "no_device_seconds": 0.000342543
+            },
+            "cuLaunchKernel": {
+              "count": 1819669,
+              "sum_seconds": 18.083843104,
+              "no_device_seconds": 0.356622415
+            },
+            "cuMemsetD8Async": {
+              "count": 1,
+              "sum_seconds": 4.832e-06,
+              "no_device_seconds": 1.6e-06
+            },
+            "cuLaunchKernelEx": {
+              "count": 138488,
+              "sum_seconds": 0.56205136,
+              "no_device_seconds": 0.020150451
+            },
+            "cuMemsetD32Async": {
+              "count": 8162,
+              "sum_seconds": 0.012145408,
+              "no_device_seconds": 0.006641485
+            },
+            "cuEventQuery": {
+              "count": 1,
+              "sum_seconds": 3.872e-06,
+              "no_device_seconds": 0.0
+            },
+            "cuMemcpy2DAsync_v2": {
+              "count": 42924,
+              "sum_seconds": 0.240749152,
+              "no_device_seconds": 0.007804484
+            },
+            "cuStreamSynchronize": {
+              "count": 8176,
+              "sum_seconds": 7.28095648,
+              "no_device_seconds": 0.176349411
+            },
+            "cuMemcpyDtoH_v2": {
+              "count": 8176,
+              "sum_seconds": 0.097642304,
+              "no_device_seconds": 0.085785312
+            }
+          },
+          "scope": "C1 excludes prefill/first token; C16 stable full-width shared cycles exclude prompts/tails; API idle is descriptive, not proven removable; union family intervals are not automatically critical-path contributions"
+        },
+        {
+          "concurrency": 16,
+          "read_sizes": {
+            "16": 8192
+          },
+          "output_read_count": 8192,
+          "stable_cycles": 511,
+          "decode_seconds": 28.313022336,
+          "cycle_ms": {
+            "median": 55.919296,
+            "min": 33.063584,
+            "max": 58.014464
+          },
+          "kernel_count": 1958157,
+          "kernel_union_seconds": 27.052087687,
+          "device_union_seconds": 27.556481349,
+          "device_idle_fraction": 0.026720601496437856,
+          "host_outer_bound": 1.0274541940757416,
+          "kernel_overlap_seconds": 1.583742147,
+          "families": {
+            "other": {
+              "count": 856942,
+              "sum_seconds": 5.609846761,
+              "union_seconds": 5.609846761,
+              "union_fraction_of_decode": 0.1981366275357711
+            },
+            "dense_bf16": {
+              "count": 138488,
+              "sum_seconds": 3.725732456,
+              "union_seconds": 2.162816837,
+              "union_fraction_of_decode": 0.07638947235420993
+            },
+            "EXL3": {
+              "count": 128775,
+              "sum_seconds": 16.731030522,
+              "union_seconds": 16.731030522,
+              "union_fraction_of_decode": 0.590930573339975
+            },
+            "attention": {
+              "count": 833952,
+              "sum_seconds": 2.569220095,
+              "union_seconds": 2.569220095,
+              "union_fraction_of_decode": 0.09074340649720172
+            }
+          },
+          "top_kernels": [
+            {
+              "name": "tf_exl3_grouped_1",
+              "count": 42924,
+              "sum_seconds": 15.599658687,
+              "union_seconds": 15.599658687
+            },
+            {
+              "name": "glm_mm16_16",
+              "count": 138481,
+              "sum_seconds": 3.725117,
+              "union_seconds": 2.162236869
+            },
+            {
+              "name": "tf_glm_chunks_16",
+              "count": 89936,
+              "sum_seconds": 3.07207786,
+              "union_seconds": 3.07207786
+            },
+            {
+              "name": "tf_glm_kda_step",
+              "count": 277984,
+              "sum_seconds": 1.392889628,
+              "union_seconds": 1.392889628
+            },
+            {
+              "name": "tf_exl3_group",
+              "count": 21462,
+              "sum_seconds": 0.78919411,
+              "union_seconds": 0.78919411
+            },
+            {
+              "name": "tf_glm_kda_prep",
+              "count": 277984,
+              "sum_seconds": 0.629067584,
+              "union_seconds": 0.629067584
+            },
+            {
+              "name": "tf_glm_kda_out",
+              "count": 277984,
+              "sum_seconds": 0.547262883,
+              "union_seconds": 0.547262883
+            },
+            {
+              "name": "tf_glm_hc_finish",
+              "count": 45990,
+              "sum_seconds": 0.309587138,
+              "union_seconds": 0.309587138
+            },
+            {
+              "name": "tf_glm_lat_write",
+              "count": 89937,
+              "sum_seconds": 0.232163712,
+              "union_seconds": 0.232163712
+            },
+            {
+              "name": "tf_glm_router_tile",
+              "count": 27085,
+              "sum_seconds": 0.206676354,
+              "union_seconds": 0.206676354
+            },
+            {
+              "name": "tf_glm_absorb_q",
+              "count": 5622,
+              "sum_seconds": 0.194351297,
+              "union_seconds": 0.194351297
+            },
+            {
+              "name": "tf_glm_expand_v",
+              "count": 5622,
+              "sum_seconds": 0.189193087,
+              "union_seconds": 0.189193087
+            },
+            {
+              "name": "tf_glm_hc_partial8",
+              "count": 45990,
+              "sum_seconds": 0.183687518,
+              "union_seconds": 0.183687518
+            },
+            {
+              "name": "tf_glm_merge",
+              "count": 89937,
+              "sum_seconds": 0.175794655,
+              "union_seconds": 0.175794655
+            },
+            {
+              "name": "glm_mm_reduce",
+              "count": 78694,
+              "sum_seconds": 0.171268607,
+              "union_seconds": 0.171268607
+            }
+          ],
+          "streams": {
+            "17": {
+              "count": 1958157,
+              "union_seconds": 27.052087687
+            }
+          },
+          "copies": {
+            "8": {
+              "count": 320910,
+              "bytes": 58862197760,
+              "sum_seconds": 0.49853411
+            },
+            "1": {
+              "count": 512,
+              "bytes": 33068,
+              "sum_seconds": 0.00082032
+            },
+            "2": {
+              "count": 8176,
+              "bytes": 130816,
+              "sum_seconds": 0.011859744
+            }
+          },
+          "api": {
+            "cuMemcpyDtoDAsync_v2": {
+              "count": 277986,
+              "sum_seconds": 1.45766576,
+              "no_device_seconds": 0.044984687
+            },
+            "cuMemcpyHtoDAsync_v2": {
+              "count": 512,
+              "sum_seconds": 0.002470656,
+              "no_device_seconds": 0.001405103
+            },
+            "cuEventRecord": {
+              "count": 512,
+              "sum_seconds": 0.000677472,
+              "no_device_seconds": 0.000348393
+            },
+            "cuLaunchKernel": {
+              "count": 1819669,
+              "sum_seconds": 18.10350176,
+              "no_device_seconds": 0.356603469
+            },
+            "cuMemsetD8Async": {
+              "count": 1,
+              "sum_seconds": 6.208e-06,
+              "no_device_seconds": 3.04e-06
+            },
+            "cuLaunchKernelEx": {
+              "count": 138488,
+              "sum_seconds": 0.562417152,
+              "no_device_seconds": 0.020097997
+            },
+            "cuMemsetD32Async": {
+              "count": 8162,
+              "sum_seconds": 0.012052032,
+              "no_device_seconds": 0.006532828
+            },
+            "cuEventQuery": {
+              "count": 1,
+              "sum_seconds": 4.448e-06,
+              "no_device_seconds": 0.0
+            },
+            "cuMemcpy2DAsync_v2": {
+              "count": 42924,
+              "sum_seconds": 0.238699264,
+              "no_device_seconds": 0.007684657
+            },
+            "cuStreamSynchronize": {
+              "count": 8176,
+              "sum_seconds": 7.282,
+              "no_device_seconds": 0.176519301
+            },
+            "cuMemcpyDtoH_v2": {
+              "count": 8176,
+              "sum_seconds": 0.097355232,
+              "no_device_seconds": 0.085495488
+            }
+          },
+          "scope": "C1 excludes prefill/first token; C16 stable full-width shared cycles exclude prompts/tails; API idle is descriptive, not proven removable; union family intervals are not automatically critical-path contributions"
+        },
+        {
+          "concurrency": 16,
+          "read_sizes": {
+            "16": 8192
+          },
+          "output_read_count": 8192,
+          "stable_cycles": 511,
+          "decode_seconds": 28.336624256,
+          "cycle_ms": {
+            "median": 55.910528,
+            "min": 33.04624,
+            "max": 76.418016
+          },
+          "kernel_count": 1958157,
+          "kernel_union_seconds": 27.052092492,
+          "device_union_seconds": 27.556480013,
+          "device_idle_fraction": 0.027531304927220192,
+          "host_outer_bound": 1.0283107364450017,
+          "kernel_overlap_seconds": 1.583711646,
+          "families": {
+            "other": {
+              "count": 856942,
+              "sum_seconds": 5.60996669,
+              "union_seconds": 5.60996669,
+              "union_fraction_of_decode": 0.19797582941842992
+            },
+            "dense_bf16": {
+              "count": 138488,
+              "sum_seconds": 3.725861148,
+              "union_seconds": 2.16297939,
+              "union_fraction_of_decode": 0.07633158312927874
+            },
+            "EXL3": {
+              "count": 128775,
+              "sum_seconds": 16.730934535,
+              "union_seconds": 16.730934535,
+              "union_fraction_of_decode": 0.590434992674097
+            },
+            "attention": {
+              "count": 833952,
+              "sum_seconds": 2.569041765,
+              "union_seconds": 2.569041765,
+              "union_fraction_of_decode": 0.09066153193798414
+            }
+          },
+          "top_kernels": [
+            {
+              "name": "tf_exl3_grouped_1",
+              "count": 42924,
+              "sum_seconds": 15.599822533,
+              "union_seconds": 15.599822533
+            },
+            {
+              "name": "glm_mm16_16",
+              "count": 138481,
+              "sum_seconds": 3.725248956,
+              "union_seconds": 2.162402206
+            },
+            {
+              "name": "tf_glm_chunks_16",
+              "count": 89936,
+              "sum_seconds": 3.072020001,
+              "union_seconds": 3.072020001
+            },
+            {
+              "name": "tf_glm_kda_step",
+              "count": 277984,
+              "sum_seconds": 1.392873283,
+              "union_seconds": 1.392873283
+            },
+            {
+              "name": "tf_exl3_group",
+              "count": 21462,
+              "sum_seconds": 0.788903489,
+              "union_seconds": 0.788903489
+            },
+            {
+              "name": "tf_glm_kda_prep",
+              "count": 277984,
+              "sum_seconds": 0.628967298,
+              "union_seconds": 0.628967298
+            },
+            {
+              "name": "tf_glm_kda_out",
+              "count": 277984,
+              "sum_seconds": 0.547201184,
+              "union_seconds": 0.547201184
+            },
+            {
+              "name": "tf_glm_hc_finish",
+              "count": 45990,
+              "sum_seconds": 0.309543328,
+              "union_seconds": 0.309543328
+            },
+            {
+              "name": "tf_glm_lat_write",
+              "count": 89937,
+              "sum_seconds": 0.232177662,
+              "union_seconds": 0.232177662
+            },
+            {
+              "name": "tf_glm_router_tile",
+              "count": 27085,
+              "sum_seconds": 0.206652672,
+              "union_seconds": 0.206652672
+            },
+            {
+              "name": "tf_glm_absorb_q",
+              "count": 5622,
+              "sum_seconds": 0.19432989,
+              "union_seconds": 0.19432989
+            },
+            {
+              "name": "tf_glm_expand_v",
+              "count": 5622,
+              "sum_seconds": 0.189090306,
+              "union_seconds": 0.189090306
+            },
+            {
+              "name": "tf_glm_hc_partial8",
+              "count": 45990,
+              "sum_seconds": 0.183993151,
+              "union_seconds": 0.183993151
+            },
+            {
+              "name": "tf_glm_merge",
+              "count": 89937,
+              "sum_seconds": 0.175811775,
+              "union_seconds": 0.175811775
+            },
+            {
+              "name": "glm_mm_reduce",
+              "count": 78694,
+              "sum_seconds": 0.171283267,
+              "union_seconds": 0.171283267
+            }
+          ],
+          "streams": {
+            "17": {
+              "count": 1958157,
+              "union_seconds": 27.052092492
+            }
+          },
+          "copies": {
+            "8": {
+              "count": 320910,
+              "bytes": 58862197760,
+              "sum_seconds": 0.498529025
+            },
+            "1": {
+              "count": 512,
+              "bytes": 33068,
+              "sum_seconds": 0.000813184
+            },
+            "2": {
+              "count": 8176,
+              "bytes": 130816,
+              "sum_seconds": 0.011864064
+            }
+          },
+          "api": {
+            "cuMemcpyDtoDAsync_v2": {
+              "count": 277986,
+              "sum_seconds": 1.466621408,
+              "no_device_seconds": 0.045493309
+            },
+            "cuMemcpyHtoDAsync_v2": {
+              "count": 512,
+              "sum_seconds": 0.002575968,
+              "no_device_seconds": 0.00149699
+            },
+            "cuEventRecord": {
+              "count": 512,
+              "sum_seconds": 0.000669248,
+              "no_device_seconds": 0.000391598
+            },
+            "cuLaunchKernel": {
+              "count": 1819669,
+              "sum_seconds": 18.08974608,
+              "no_device_seconds": 0.356354087
+            },
+            "cuMemsetD8Async": {
+              "count": 1,
+              "sum_seconds": 5.696e-06,
+              "no_device_seconds": 2.93e-06
+            },
+            "cuLaunchKernelEx": {
+              "count": 138488,
+              "sum_seconds": 0.561711616,
+              "no_device_seconds": 0.020050475
+            },
+            "cuMemsetD32Async": {
+              "count": 8162,
+              "sum_seconds": 0.012365824,
+              "no_device_seconds": 0.006795371
+            },
+            "cuEventQuery": {
+              "count": 1,
+              "sum_seconds": 4.096e-06,
+              "no_device_seconds": 0.0
+            },
+            "cuMemcpy2DAsync_v2": {
+              "count": 42924,
+              "sum_seconds": 0.26525072,
+              "no_device_seconds": 0.030430813
+            },
+            "cuStreamSynchronize": {
+              "count": 8176,
+              "sum_seconds": 7.281833792,
+              "no_device_seconds": 0.1766592
+            },
+            "cuMemcpyDtoH_v2": {
+              "count": 8176,
+              "sum_seconds": 0.09762608,
+              "no_device_seconds": 0.085762016
+            }
+          },
+          "scope": "C1 excludes prefill/first token; C16 stable full-width shared cycles exclude prompts/tails; API idle is descriptive, not proven removable; union family intervals are not automatically critical-path contributions"
+        },
+        {
+          "concurrency": 16,
+          "read_sizes": {
+            "16": 8192
+          },
+          "output_read_count": 8192,
+          "stable_cycles": 511,
+          "decode_seconds": 28.335830688,
+          "cycle_ms": {
+            "median": 55.923744,
+            "min": 33.06464,
+            "max": 73.415616
+          },
+          "kernel_count": 1958157,
+          "kernel_union_seconds": 27.051769461,
+          "device_union_seconds": 27.55611215,
+          "device_idle_fraction": 0.027517052405673946,
+          "host_outer_bound": 1.0282956657222053,
+          "kernel_overlap_seconds": 1.5839073,
+          "families": {
+            "other": {
+              "count": 856942,
+              "sum_seconds": 5.609739281,
+              "union_seconds": 5.609739281,
+              "union_fraction_of_decode": 0.19797334840004108
+            },
+            "dense_bf16": {
+              "count": 138488,
+              "sum_seconds": 3.72638948,
+              "union_seconds": 2.163309828,
+              "union_fraction_of_decode": 0.07634538234716882
+            },
+            "EXL3": {
+              "count": 128775,
+              "sum_seconds": 16.730162777,
+              "union_seconds": 16.730162777,
+              "union_fraction_of_decode": 0.5904242921695989
+            },
+            "attention": {
+              "count": 833952,
+              "sum_seconds": 2.569385223,
+              "union_seconds": 2.569385223,
+              "union_fraction_of_decode": 0.09067619196666482
+            }
+          },
+          "top_kernels": [
+            {
+              "name": "tf_exl3_grouped_1",
+              "count": 42924,
+              "sum_seconds": 15.599133494,
+              "union_seconds": 15.599133494
+            },
+            {
+              "name": "glm_mm16_16",
+              "count": 138481,
+              "sum_seconds": 3.72577684,
+              "union_seconds": 2.16273226
+            },
+            {
+              "name": "tf_glm_chunks_16",
+              "count": 89936,
+              "sum_seconds": 3.072030411,
+              "union_seconds": 3.072030411
+            },
+            {
+              "name": "tf_glm_kda_step",
+              "count": 277984,
+              "sum_seconds": 1.393168675,
+              "union_seconds": 1.393168675
+            },
+            {
+              "name": "tf_exl3_group",
+              "count": 21462,
+              "sum_seconds": 0.788872161,
+              "union_seconds": 0.788872161
+            },
+            {
+              "name": "tf_glm_kda_prep",
+              "count": 277984,
+              "sum_seconds": 0.628958244,
+              "union_seconds": 0.628958244
+            },
+            {
+              "name": "tf_glm_kda_out",
+              "count": 277984,
+              "sum_seconds": 0.547258304,
+              "union_seconds": 0.547258304
+            },
+            {
+              "name": "tf_glm_hc_finish",
+              "count": 45990,
+              "sum_seconds": 0.309581025,
+              "union_seconds": 0.309581025
+            },
+            {
+              "name": "tf_glm_lat_write",
+              "count": 89937,
+              "sum_seconds": 0.232222371,
+              "union_seconds": 0.232222371
+            },
+            {
+              "name": "tf_glm_router_tile",
+              "count": 27085,
+              "sum_seconds": 0.206636224,
+              "union_seconds": 0.206636224
+            },
+            {
+              "name": "tf_glm_absorb_q",
+              "count": 5622,
+              "sum_seconds": 0.194358848,
+              "union_seconds": 0.194358848
+            },
+            {
+              "name": "tf_glm_expand_v",
+              "count": 5622,
+              "sum_seconds": 0.189185345,
+              "union_seconds": 0.189185345
+            },
+            {
+              "name": "tf_glm_hc_partial8",
+              "count": 45990,
+              "sum_seconds": 0.183690112,
+              "union_seconds": 0.183690112
+            },
+            {
+              "name": "tf_glm_merge",
+              "count": 89937,
+              "sum_seconds": 0.175800961,
+              "union_seconds": 0.175800961
+            },
+            {
+              "name": "glm_mm_reduce",
+              "count": 78694,
+              "sum_seconds": 0.171269857,
+              "union_seconds": 0.171269857
+            }
+          ],
+          "streams": {
+            "17": {
+              "count": 1958157,
+              "union_seconds": 27.051769461
+            }
+          },
+          "copies": {
+            "8": {
+              "count": 320910,
+              "bytes": 58862197760,
+              "sum_seconds": 0.498496481
+            },
+            "1": {
+              "count": 512,
+              "bytes": 33068,
+              "sum_seconds": 0.00080928
+            },
+            "2": {
+              "count": 8176,
+              "bytes": 130816,
+              "sum_seconds": 0.011859584
+            }
+          },
+          "api": {
+            "cuMemcpyDtoDAsync_v2": {
+              "count": 277986,
+              "sum_seconds": 1.504216448,
+              "no_device_seconds": 0.067605665
+            },
+            "cuMemcpyHtoDAsync_v2": {
+              "count": 512,
+              "sum_seconds": 0.002518464,
+              "no_device_seconds": 0.00141794
+            },
+            "cuEventRecord": {
+              "count": 512,
+              "sum_seconds": 0.000647648,
+              "no_device_seconds": 0.000342174
+            },
+            "cuLaunchKernel": {
+              "count": 1819669,
+              "sum_seconds": 18.07511728,
+              "no_device_seconds": 0.356122691
+            },
+            "cuMemsetD8Async": {
+              "count": 1,
+              "sum_seconds": 4.672e-06,
+              "no_device_seconds": 2.272e-06
+            },
+            "cuLaunchKernelEx": {
+              "count": 138488,
+              "sum_seconds": 0.56206688,
+              "no_device_seconds": 0.02011561
+            },
+            "cuMemsetD32Async": {
+              "count": 8162,
+              "sum_seconds": 0.012352832,
+              "no_device_seconds": 0.006807223
+            },
+            "cuEventQuery": {
+              "count": 1,
+              "sum_seconds": 3.904e-06,
+              "no_device_seconds": 2.24e-07
+            },
+            "cuMemcpy2DAsync_v2": {
+              "count": 42924,
+              "sum_seconds": 0.242184,
+              "no_device_seconds": 0.00798466
+            },
+            "cuStreamSynchronize": {
+              "count": 8176,
+              "sum_seconds": 7.28084064,
+              "no_device_seconds": 0.176228274
+            },
+            "cuMemcpyDtoH_v2": {
+              "count": 8176,
+              "sum_seconds": 0.097607744,
+              "no_device_seconds": 0.08574816
+            }
+          },
+          "scope": "C1 excludes prefill/first token; C16 stable full-width shared cycles exclude prompts/tails; API idle is descriptive, not proven removable; union family intervals are not automatically critical-path contributions"
+        }
+      ]
+    }
+  },
+  "candidates": [
+    {
+      "id": "host-readback",
+      "status": "unrun-bound-below-bar",
+      "bound": {
+        "1": 1.03018327280061,
+        "16": 1.0283107364450017
+      },
+      "bound_display": "C1 1.030183x; C16 1.028311x (maximum observed)",
+      "speed_interval": null,
+      "reason": "Even deleting all within-decode device-idle gaps falls below 1.05; no demonstrated independent C1 host work. No patch/run.",
+      "falsifier_counted": false
+    },
+    {
+      "id": "exl3-strips",
+      "status": "unrun-unknown-applicable-bound",
+      "bound": null,
+      "bound_display": "Unknown",
+      "speed_interval": null,
+      "reason": "EXL3 time is measured, but counter evidence failed its cap and no applicable decoder ALU ceiling exists. MMA/STREAM and occupancy are not that ceiling. No patch/run.",
+      "falsifier_counted": false
+    },
+    {
+      "id": "one-guard",
+      "status": "unrun-not-applicable",
+      "bound": 1.0,
+      "bound_display": "1.000000x",
+      "speed_interval": null,
+      "reason": "No eligible closed sm103 guard: qmmf admits sm103; native pair decode is not this EXL3 path; AHEAD remains excluded. No patch/run.",
+      "falsifier_counted": false
+    }
+  ],
+  "new_champion": null,
+  "restore": {
+    "invocation_pt": "2026-11-14T21:55:29.594421-08:00",
+    "health_seconds": 101.69685975200264,
+    "both_routed_answers_seconds": 103.12060698399728,
+    "probe_attempts": 1,
+    "routes_pass": true
+  },
+  "gpu_usage": {
+    "left_exclusive_gpu_hours": 0.5545745097222222,
+    "windows": 1,
+    "includes": "load, profiling, CPU waits and restore",
+    "right_shared_gpu_busy_time": "not metered",
+    "released_pt": "2026-11-14T21:57:50.220271-08:00"
+  },
+  "implementation": {
+    "pt": "2026-11-14T21:52:14.412706-08:00",
+    "implementation_head": "602daefcc0ce2d2b0fe09c5530e8f5c30a938cdf",
+    "files": {
+      "rung2/gen3_1/README.md": "3b3c18421ec61ca07d3e4c70cf17a995d3f46f775f571955660cd5a07849bb4d",
+      "rung2/gen3_1/TOKEN-REFERENCE.json": "25580be28082f7a7b0761467006d2fd2eda19de763ba1ba26b3073428cb3478c",
+      "rung2/gen3_1/analyze.py": "543f0868d013d0ba4b7c1e33990eaff61c13a28505ea3b96dde5a91f09d5b9ac",
+      "rung2/gen3_1/counter_station.py": "523665c51c7a85fff361161c991896d90f0ade9ed3ec8357e3cdace40e18982f",
+      "rung2/gen3_1/counters.py": "283da4fec29d79de7f4401b073627ecb8f85b17a6f2cd61e2aeea716d1f9f9b7",
+      "rung2/gen3_1/generation.json": "565b6deaca0c52ff1e9123207d04444d226df5e27109024ece337ace5401cd65",
+      "rung2/gen3_1/profile.py": "7422057090c27057b751b2c99a4195d9201cd82872964c734f1c580168fe7373",
+      "rung2/gen3_1/reference-corpus.json": "edb21df93c0ce6971c5466addb85c8a7022a889f76e727526a49124a9eefc5bd",
+      "rung2/gen3_1/reference-prefill.jsonl": "3d25e71446774aa87c823e8078ae3e5f56fd5ee345cf76c12d7ef63db81ff6c6",
+      "rung2/gen3_1/run.py": "699094bb164c8b95359c9526992ef5e49ab4c686dd676b938c873548448a0374",
+      "rung2/gen3_1/station.py": "27958d007a86b7a524053a50a0cc3beac0a477b3c8487de90737036dbfdf8d3b",
+      "rung2/gen3_1/test_analysis.py": "faae84bdcd845e413425aa1d82134f559e048e5b93f39297a1b2a1eaf3e23ffc"
+    },
+    "prereg_head": "b4d1997e1916226f5afb390e952246603d530e41"
+  },
+  "execution_scope": "PI-authorized manual implementation run with local durable checkpoints; no new Mission Control product was queued/admitted and no MC heartbeat guarantee is claimed.",
+  "followup_leads": [
+    {
+      "surface": "EXL3 register decoder at served shapes",
+      "evidence": "Dominant C16 measured union; accepted timeline only",
+      "admitted": false,
+      "missing": "Applicable attainable local decoder ceiling; rejected replay counters cannot supply it"
+    },
+    {
+      "surface": "Dense BF16 single-row projection shapes",
+      "evidence": "C1 sum materially exceeds union due dependent-launch overlap",
+      "admitted": false,
+      "missing": "Finite attainable local speed estimate and isolated source surface; raw summed time is not a critical-path bound"
+    }
+  ],
+  "measured_source_heads": {
+    "SelfOptimize": {
+      "branch": "feat/w26-g3-1",
+      "head": "602daefcc0ce2d2b0fe09c5530e8f5c30a938cdf"
+    },
+    "TensorFold_engine": {
+      "branch": "ronanlabs/sm103-enable",
+      "head": "7c1bc0be3df413f43c65fb278699b629a44e7a90"
+    }
+  },
+  "verification": {
+    "selfoptimize_unit_suite": "PASS",
+    "generation_unit_suite": "PASS",
+    "timeline_unit_tests": 3,
+    "owner_k3_errors": [],
+    "token_replies": 364,
+    "output_ids": 186368,
+    "request_errors": 0
+  },
+  "top_findings_additional": {
+    "1": {
+      "sync_seconds_median": 4.272653312,
+      "sync_no_device_seconds_median": 0.110876315,
+      "dense_sum_seconds_median": 3.458930161,
+      "dense_union_seconds_median": 1.990942541
+    },
+    "16": {
+      "sync_seconds_median": 7.28095648,
+      "sync_no_device_seconds_median": 0.176519009,
+      "dense_sum_seconds_median": 3.725763703,
+      "dense_union_seconds_median": 2.162823482
+    }
+  }
+}

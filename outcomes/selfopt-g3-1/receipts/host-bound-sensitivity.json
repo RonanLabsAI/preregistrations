@@ -1,0 +1,26 @@
+{
+  "1": {
+    "maximum": 1.0377192192839588,
+    "values": [
+      1.0377192192839588,
+      1.03751334034304,
+      1.037529163454542,
+      1.0375296771145968,
+      1.0375204675148364
+    ],
+    "overhead_upper_fraction": 0.005823108695716561,
+    "note": "Post-analysis conservative sensitivity, not an admission rule: all DtoH API time plus overhead upper estimate added to idle, deliberately double counting overlaps."
+  },
+  "16": {
+    "maximum": 1.034469281133023,
+    "values": [
+      1.0335508134344231,
+      1.0336811065030056,
+      1.0335953010844803,
+      1.034469281133023,
+      1.034453440149876
+    ],
+    "overhead_upper_fraction": 0.002344208089368749,
+    "note": "Post-analysis conservative sensitivity, not an admission rule: all DtoH API time plus overhead upper estimate added to idle, deliberately double counting overlaps."
+  }
+}
