@@ -1,0 +1,35 @@
+[
+  {
+    "case": "arrival",
+    "reason": "arrival",
+    "stop_seconds": 0.0011301839986117557,
+    "detection_seconds": 0.3002710040018428,
+    "max_completion_gap": 0.10014183299790602
+  },
+  {
+    "case": "read_failure",
+    "reason": "read_failure",
+    "stop_seconds": 0.0011098039976786822,
+    "detection_seconds": 0.3003114640014246,
+    "max_completion_gap": 0.1003671719954582
+  },
+  {
+    "case": "claim_expiry",
+    "reason": "claim_expiry",
+    "stop_seconds": 0.001105165996705182,
+    "detection_seconds": 0.30024518400023226,
+    "max_completion_gap": 0.10027673600416165
+  },
+  {
+    "case": "stall",
+    "reason": "monitor watchdog expired",
+    "stop_seconds": 0.0011162029986735433,
+    "detection_seconds": 0.451866182993399,
+    "max_completion_gap": 0.10010978500940837
+  },
+  {
+    "case": "cadence",
+    "max_completion_gap": 0.10023849899880588,
+    "n": 21
+  }
+]

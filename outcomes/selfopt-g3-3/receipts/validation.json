@@ -1,0 +1,15 @@
+{
+  "kernel_numerics_all_pass": true,
+  "primary_graph_transfer_c1": false,
+  "primary_graph_transfer_c16": true,
+  "native_launch_transfer_both_cells": true,
+  "monitor_target_pass": true,
+  "end_to_end_admitted": false,
+  "new_champion": false,
+  "owner_k3_pass": true,
+  "selfoptimize_package_pass": true,
+  "section12_terminal_pass": true,
+  "frozen_hashes_pass": true,
+  "private_scan_pass": true,
+  "direct_review": "All real payloads, weights, pointers, raw operations and profiler databases excluded. Anonymous hashes and public numerical/resource summaries only. Primary failure and native sensitivity retained; no full-model null or promotion."
+}

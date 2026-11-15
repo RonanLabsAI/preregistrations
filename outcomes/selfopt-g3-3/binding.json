@@ -1,0 +1,17 @@
+{
+  "engine_parent": "7c1bc0be3df413f43c65fb278699b629a44e7a90",
+  "engine_experimental_head": "8209d5011828ee6807640eebb9a1a63292667ce6",
+  "champion_fatbin_sha256": "1dadf5ec0919f46c6a3d737044cbfe36889a9da9259ad17f3368060d0052afa5",
+  "candidate_fatbin_sha256": "e54a6397022ad8b79dbd1acf92a5d4060fcb52c8c7560860b646f086b6054083",
+  "source_sha256": {
+    "analyze.py": "fb0da20a123f5812e6622d7e103f539ae8e6c89165b342b2291e6bf8ab153f99",
+    "capture.c": "2e2f357cbb4635af8fe1d4e594ae5ddb587619083ded15131257784ad466f456",
+    "guard.py": "844163ce81ede3bdd15125cf4acb37ebc1ef367a175cbfe5d1fa65015f5d2b59",
+    "harness.py": "5b5cae821082c69992935c2665f1ab5843cc23e4ddb39c503d3645cb65006183",
+    "monitor.py": "01e416410210681affb20b9ff95b2f97660acdf6b926cc4c3bded0b3d19938a4",
+    "test_monitor.py": "e3b3ab1729b7c93c444cf06ec65f65cebb08a042e75b1d5405e6371f34e803b0"
+  },
+  "primary_payload_manifest_sha256": "5f6624a14a12be5220487594f498f8df684c550415bc36baf08df9fa54d50c1b",
+  "early_payload_manifest_sha256": "887cf3f92a09ee16e4b5c3a119eff22f77c0f80b6d5f1ebccd0c9544095d3e19",
+  "timing_samples_before_binding": 0
+}

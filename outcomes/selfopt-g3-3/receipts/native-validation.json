@@ -1,0 +1,244 @@
+[
+  {
+    "rows": 1,
+    "kind": "preregistered native-launch sensitivity; primary retained",
+    "stages": [
+      {
+        "stage": 0,
+        "name": "tf_exl3_group",
+        "mean_us": 4.0224,
+        "ci95_us": [
+          4.004630751328,
+          4.040169248672
+        ],
+        "block_medians_us": [
+          4.032,
+          4.032,
+          4.016,
+          4.0,
+          4.032
+        ],
+        "served_us": 3.904,
+        "ratio": 1.030327868852459,
+        "pass_tolerance": true
+      },
+      {
+        "stage": 1,
+        "name": "tf_exl3_experts_rot_in",
+        "mean_us": 2.2304000000000004,
+        "ci95_us": [
+          2.2126307513280006,
+          2.248169248672
+        ],
+        "block_medians_us": [
+          2.208,
+          2.224,
+          2.24,
+          2.24,
+          2.24
+        ],
+        "served_us": 2.56,
+        "ratio": 0.8712500000000001,
+        "pass_tolerance": true
+      },
+      {
+        "stage": 2,
+        "name": "tf_exl3_grouped_1",
+        "mean_us": 51.4688,
+        "ci95_us": [
+          51.36711082655203,
+          51.570489173447974
+        ],
+        "block_medians_us": [
+          51.536,
+          51.504000000000005,
+          51.472,
+          51.504000000000005,
+          51.328
+        ],
+        "served_us": 51.552,
+        "ratio": 0.9983860955927996,
+        "pass_tolerance": true
+      },
+      {
+        "stage": 3,
+        "name": "tf_exl3_gateup_epilogue",
+        "mean_us": 4.5344,
+        "ci95_us": [
+          4.4886635969474655,
+          4.580136403052534
+        ],
+        "block_medians_us": [
+          4.512,
+          4.544,
+          4.528,
+          4.592,
+          4.496
+        ],
+        "served_us": 4.608,
+        "ratio": 0.9840277777777778,
+        "pass_tolerance": true
+      },
+      {
+        "stage": 4,
+        "name": "tf_exl3_grouped_1",
+        "mean_us": 39.510400000000004,
+        "ci95_us": [
+          39.483746126992,
+          39.537053873008006
+        ],
+        "block_medians_us": [
+          39.52,
+          39.488,
+          39.52,
+          39.536,
+          39.488
+        ],
+        "served_us": 39.552,
+        "ratio": 0.9989482200647251,
+        "pass_tolerance": true
+      },
+      {
+        "stage": 5,
+        "name": "tf_exl3_down_combine",
+        "mean_us": 3.0528,
+        "ci95_us": [
+          3.020155805730729,
+          3.0854441942692707
+        ],
+        "block_medians_us": [
+          3.04,
+          3.04,
+          3.024,
+          3.088,
+          3.072
+        ],
+        "served_us": 3.072,
+        "ratio": 0.9937499999999999,
+        "pass_tolerance": true
+      }
+    ],
+    "pass_tolerance": true
+  },
+  {
+    "rows": 16,
+    "kind": "preregistered native-launch sensitivity; primary retained",
+    "stages": [
+      {
+        "stage": 0,
+        "name": "tf_exl3_group",
+        "mean_us": 36.495999999999995,
+        "ci95_us": [
+          36.47613337603015,
+          36.51586662396984
+        ],
+        "block_medians_us": [
+          36.48,
+          36.48,
+          36.512,
+          36.495999999999995,
+          36.512
+        ],
+        "served_us": 36.704,
+        "ratio": 0.9943330427201393,
+        "pass_tolerance": true
+      },
+      {
+        "stage": 1,
+        "name": "tf_exl3_experts_rot_in",
+        "mean_us": 5.9584,
+        "ci95_us": [
+          5.935748563569898,
+          5.981051436430103
+        ],
+        "block_medians_us": [
+          5.984,
+          5.952,
+          5.968,
+          5.936,
+          5.952
+        ],
+        "served_us": 6.08,
+        "ratio": 0.98,
+        "pass_tolerance": true
+      },
+      {
+        "stage": 2,
+        "name": "tf_exl3_grouped_1",
+        "mean_us": 511.312,
+        "ci95_us": [
+          511.1574739301881,
+          511.46652606981195
+        ],
+        "block_medians_us": [
+          511.44,
+          511.136,
+          511.376,
+          511.23199999999997,
+          511.376
+        ],
+        "served_us": 490.336,
+        "ratio": 1.04277882921099,
+        "pass_tolerance": true
+      },
+      {
+        "stage": 3,
+        "name": "tf_exl3_gateup_epilogue",
+        "mean_us": 5.392,
+        "ci95_us": [
+          5.2998822542550945,
+          5.484117745744906
+        ],
+        "block_medians_us": [
+          5.36,
+          5.376,
+          5.376,
+          5.52,
+          5.328
+        ],
+        "served_us": 5.536,
+        "ratio": 0.9739884393063585,
+        "pass_tolerance": true
+      },
+      {
+        "stage": 4,
+        "name": "tf_exl3_grouped_1",
+        "mean_us": 256.704,
+        "ci95_us": [
+          256.5744854572325,
+          256.8335145427675
+        ],
+        "block_medians_us": [
+          256.75199999999995,
+          256.768,
+          256.8,
+          256.656,
+          256.544
+        ],
+        "served_us": 245.472,
+        "ratio": 1.045756746186938,
+        "pass_tolerance": true
+      },
+      {
+        "stage": 5,
+        "name": "tf_exl3_down_combine",
+        "mean_us": 4.2208000000000006,
+        "ci95_us": [
+          4.191333034674228,
+          4.250266965325773
+        ],
+        "block_medians_us": [
+          4.256,
+          4.192,
+          4.224,
+          4.224,
+          4.208
+        ],
+        "served_us": 4.288,
+        "ratio": 0.9843283582089553,
+        "pass_tolerance": true
+      }
+    ],
+    "pass_tolerance": true
+  }
+]

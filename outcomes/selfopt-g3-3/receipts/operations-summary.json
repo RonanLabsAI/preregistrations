@@ -1,0 +1,153 @@
+{
+  "windows": [
+    {
+      "attempt": "initial",
+      "ended_pt": "2026-11-14T22:36:47.135422-08:00",
+      "gpu_hours": 0.049622328521391965,
+      "restore_health_seconds": 99.90550113198697,
+      "restore_routed_seconds": 101.11040236199915,
+      "production_unchanged": true,
+      "daily_config_and_id_preserved": true,
+      "peers_unchanged": true
+    },
+    {
+      "attempt": "attempt2",
+      "ended_pt": "2026-11-14T22:40:53.104822-08:00",
+      "gpu_hours": 0.04963202284944499,
+      "restore_health_seconds": 99.838505799009,
+      "restore_routed_seconds": 101.05572199598828,
+      "production_unchanged": true,
+      "daily_config_and_id_preserved": true,
+      "peers_unchanged": true
+    },
+    {
+      "attempt": "attempt3",
+      "ended_pt": "2026-11-14T22:44:06.020036-08:00",
+      "gpu_hours": 0.051090532981668525,
+      "restore_health_seconds": 101.62894683799823,
+      "restore_routed_seconds": 102.83251817700511,
+      "production_unchanged": true,
+      "daily_config_and_id_preserved": true,
+      "peers_unchanged": true
+    },
+    {
+      "attempt": "attempt4",
+      "ended_pt": "2026-11-14T22:48:28.202675-08:00",
+      "gpu_hours": 0.05075729300527908,
+      "restore_health_seconds": 101.6221923159901,
+      "restore_routed_seconds": 102.8219017770025,
+      "production_unchanged": true,
+      "daily_config_and_id_preserved": true,
+      "peers_unchanged": true
+    },
+    {
+      "attempt": "attempt5",
+      "ended_pt": "2026-11-14T22:51:59.929964-08:00",
+      "gpu_hours": 0.050270157503331976,
+      "restore_health_seconds": 101.62048179100384,
+      "restore_routed_seconds": 102.83122414999525,
+      "production_unchanged": true,
+      "daily_config_and_id_preserved": true,
+      "peers_unchanged": true
+    },
+    {
+      "attempt": "attempt6",
+      "ended_pt": "2026-11-14T22:55:02.757919-08:00",
+      "gpu_hours": 0.04835591056277836,
+      "restore_health_seconds": 101.61765587699483,
+      "restore_routed_seconds": 102.79944887499732,
+      "production_unchanged": true,
+      "daily_config_and_id_preserved": true,
+      "peers_unchanged": true
+    },
+    {
+      "attempt": "attempt7",
+      "ended_pt": "2026-11-14T23:01:04.772076-08:00",
+      "gpu_hours": 0.09437551655277882,
+      "restore_health_seconds": 101.6210473079991,
+      "restore_routed_seconds": 102.82153869500326,
+      "production_unchanged": true,
+      "daily_config_and_id_preserved": true,
+      "peers_unchanged": true
+    },
+    {
+      "attempt": "attempt8",
+      "ended_pt": "2026-11-14T23:07:35.118522-08:00",
+      "gpu_hours": 0.09390543060277802,
+      "restore_health_seconds": 99.68475377600407,
+      "restore_routed_seconds": 100.90570452999964,
+      "production_unchanged": true,
+      "daily_config_and_id_preserved": true,
+      "peers_unchanged": true
+    }
+  ],
+  "capture_gpu_hours": 0.48800919257945174,
+  "production_unchanged": true,
+  "gpu_accounting": {
+    "probe-usage.json": 0.003306652440001522,
+    "packed-probe-usage.json": 0.0033315942555539853,
+    "early-probe-usage.json": 0.0033314142213890187,
+    "shared-usage.json": 0.030495293308332394,
+    "native-usage.json": 0.00796209350361298,
+    "capture": 0.48800919257945174,
+    "left_total_gpu_hours": 0.5364362403083417,
+    "right_shared_nominal_device_claim_hours": 0.9760183851589035
+  },
+  "monitor": {
+    "max_observed_completion_gap_seconds": 0.15087151501211338,
+    "minimum_free_bytes": 33571209216,
+    "guarded_cases": 13,
+    "production_arrivals_observed": 0,
+    "guard_failures": 0,
+    "live_arrival_abort_exercised": false,
+    "injection_tests": [
+      {
+        "case": "arrival",
+        "reason": "arrival",
+        "stop_seconds": 0.0011301839986117557,
+        "detection_seconds": 0.3002710040018428,
+        "max_completion_gap": 0.10014183299790602
+      },
+      {
+        "case": "read_failure",
+        "reason": "read_failure",
+        "stop_seconds": 0.0011098039976786822,
+        "detection_seconds": 0.3003114640014246,
+        "max_completion_gap": 0.1003671719954582
+      },
+      {
+        "case": "claim_expiry",
+        "reason": "claim_expiry",
+        "stop_seconds": 0.001105165996705182,
+        "detection_seconds": 0.30024518400023226,
+        "max_completion_gap": 0.10027673600416165
+      },
+      {
+        "case": "stall",
+        "reason": "monitor watchdog expired",
+        "stop_seconds": 0.0011162029986735433,
+        "detection_seconds": 0.451866182993399,
+        "max_completion_gap": 0.10010978500940837
+      },
+      {
+        "case": "cadence",
+        "max_completion_gap": 0.10023849899880588,
+        "n": 21
+      }
+    ]
+  },
+  "all_w28_claims_released": true,
+  "last_restore": {
+    "attempt": "attempt8",
+    "ended_pt": "2026-11-14T23:07:35.118522-08:00",
+    "gpu_hours": 0.09390543060277802,
+    "restore_health_seconds": 99.68475377600407,
+    "restore_routed_seconds": 100.90570452999964,
+    "production_unchanged": true,
+    "daily_config_and_id_preserved": true,
+    "peers_unchanged": true
+  },
+  "production_router_and_config_unchanged": true,
+  "shared_diagnostic_daily_stopped": false,
+  "hardware_busy_hours_metered": false
+}

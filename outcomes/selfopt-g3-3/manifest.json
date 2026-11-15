@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "product_id": "selfopt-gen3-3-tensorfold-occupancy",
+  "run_id": "w28-g3-3-20261114",
+  "title": "G3.3 measured occupancy candidates below admission bar",
+  "lane": "L4",
+  "created_at": "2026-11-14T23:19:05.664701-08:00",
+  "preregistration": {
+    "sha256": "ef31237dadd4f445e919aeb4dfd6dad5967d3055b986bd3be0779127d040eeb4",
+    "url": "https://github.com/RonanLabsAI/preregistrations/blob/2f3792b/protocols/selfopt-g3-3/PROTOCOL.md",
+    "timestamp_verifiable": true
+  },
+  "arms": [
+    "champion",
+    "r96",
+    "t4r96",
+    "t2r64"
+  ],
+  "seeds": [
+    1234
+  ],
+  "frozen_inputs": [
+    {
+      "path": "AMENDMENT-1.md",
+      "sha256": "34398a30e29d7b640b782e12ea0c9f806031992c6bc783e76531ca10536be80b"
+    },
+    {
+      "path": "AMENDMENT-2.md",
+      "sha256": "95ea902ba07167b34191e067d370425b9643c0a92db697e542bd8df504fcd7fb"
+    },
+    {
+      "path": "AMENDMENT-3.md",
+      "sha256": "37312ee59cdc41b52c44be369e3a14c5dfefa5d4a56ccf5286724be27d5fffad"
+    },
+    {
+      "path": "AMENDMENT-4.md",
+      "sha256": "8933938aef69681f716d5dc5844a09fde08b52bf2fe31d1db85587f62c3fb485"
+    },
+    {
+      "path": "AMENDMENT-5.md",
+      "sha256": "f544db77023085c2def77c95edbbdf47303453d21f940000509dc9b4160f2330"
+    },
+    {
+      "path": "AMENDMENT-6.md",
+      "sha256": "2aa999403c5599ee6c9af7709c1e356d377648a902f7211ee5a8814679c90c78"
+    },
+    {
+      "path": "PROTOCOL.md",
+      "sha256": "ef31237dadd4f445e919aeb4dfd6dad5967d3055b986bd3be0779127d040eeb4"
+    },
+    {
+      "path": "analyze.py",
+      "sha256": "cc90839d5fc44268d425b59852e375a383200f3c0291655b52eee4b8cd57ba65"
+    },
+    {
+      "path": "analyze_native.py",
+      "sha256": "3bac9496ad94f6cb00e7ee4fb462b03cbdcea0ebf4d825c68ff4e0a9b8f72602"
+    },
+    {
+      "path": "binding.json",
+      "sha256": "f9f6eb0a3dfd6fca6791e0c0eb220fe2bd6c0686eb812b640605085568d403a9"
+    },
+    {
+      "path": "harness-primary.py",
+      "sha256": "5b5cae821082c69992935c2665f1ab5843cc23e4ddb39c503d3645cb65006183"
+    }
+  ],
+  "environment": {
+    "hardware": "GB300 sm103, 152 SMs, driver 595.99.02",
+    "engine": "champion 7c1bc0be; opt-in experiments 8209d5011",
+    "fingerprint": "real-middle-payload-C1-U8-C16-U97-E288-per-slot",
+    "executor": "PI authorized manual execution; no Mission Control queue or scheduler SLA"
+  },
+  "receipts": [
+    "receipts/ab-c1-r96.json",
+    "receipts/ab-c1-t2r64.json",
+    "receipts/ab-c1-t4r96.json",
+    "receipts/ab-c16-r96.json",
+    "receipts/ab-c16-t2r64.json",
+    "receipts/ab-c16-t4r96.json",
+    "receipts/analysis.json",
+    "receipts/candidate-ledger.jsonl",
+    "receipts/measurement.log",
+    "receipts/monitor-tests-final.json",
+    "receipts/native-validation.json",
+    "receipts/operations-summary.json",
+    "receipts/payload-manifest.json",
+    "receipts/primary-payload-manifest.json",
+    "receipts/raw-hashes.json",
+    "receipts/results.jsonl",
+    "receipts/source-heads.json",
+    "receipts/validation.json"
+  ],
+  "figures": [
+    {
+      "path": "figures/kernel-ab.png",
+      "source_receipts": [
+        "receipts/analysis.json",
+        "receipts/results.jsonl"
+      ]
+    }
+  ]
+}

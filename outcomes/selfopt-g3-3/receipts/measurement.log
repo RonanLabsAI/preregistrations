@@ -1,0 +1,10 @@
+W28 G3.3 manual authorized experiment; all timestamps PT.
+Six invalid capture-method windows retained; two valid payload windows, early and fixed middle.
+Primary n=5 retained stage blocks of twenty after one warm block.
+Three candidates, two cells, n=10 retained alternating AB/BA block pairs, twenty replays per arm after one warm pair.
+Every candidate passes five repeats of exact captured partial and six-stage output bytes.
+Native-launch sensitivity retains all primary failures and passes every stage within the unchanged 15% tolerance.
+No candidate reaches the 1.05 end-to-end admission bar; no candidate model run or promotion.
+Claim accounting includes waits and eight timed daily restores; busy hours not metered.
+No production router mutation, Spark model load, or non-preregistration push.
+Initial package validation rejected a line-wrapped numerical claim whose denominator was on the next line; wording joined, values and samples unchanged.
