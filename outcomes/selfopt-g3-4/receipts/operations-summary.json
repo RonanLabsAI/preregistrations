@@ -1,0 +1,59 @@
+{
+  "cost": {
+    "ended_pt": "2026-11-14T23:32:07.520209-08:00",
+    "shared_reservation_gpu_hours": 0.038622296847497635,
+    "daily_stopped": false,
+    "restore_seconds": null
+  },
+  "monitor": {
+    "max_completion_gap_seconds": 0.15180214500287548,
+    "minimum_free_bytes": 33571209216,
+    "guarded_cases": 10,
+    "failures": 0,
+    "arrivals_observed": 0,
+    "real_arrival_abort_exercised": false,
+    "injection_tests": [
+      {
+        "case": "arrival",
+        "reason": "arrival",
+        "stop_seconds": 0.0011412019957788289,
+        "detection_seconds": 0.3003089709964115,
+        "max_completion_gap": 0.10010162500839215
+      },
+      {
+        "case": "read_failure",
+        "reason": "read_failure",
+        "stop_seconds": 0.0011201199959032238,
+        "detection_seconds": 0.30033554299734533,
+        "max_completion_gap": 0.10008108300098684
+      },
+      {
+        "case": "claim_expiry",
+        "reason": "claim_expiry",
+        "stop_seconds": 0.001106449999497272,
+        "detection_seconds": 0.30029446800472215,
+        "max_completion_gap": 0.10017270299431402
+      },
+      {
+        "case": "stall",
+        "reason": "monitor watchdog expired",
+        "stop_seconds": 0.001112858997657895,
+        "detection_seconds": 0.45310864299244713,
+        "max_completion_gap": 0.1001518700068118
+      },
+      {
+        "case": "cadence",
+        "max_completion_gap": 0.1002371399954427,
+        "n": 21
+      }
+    ]
+  },
+  "production_router_and_config_unchanged": true,
+  "daily_identity_start_config_mounts_unchanged": true,
+  "peer_identities_start_config_mounts_unchanged": true,
+  "daily_health_pass": true,
+  "all_claims_released": true,
+  "restore_time_seconds": null,
+  "restore_time_reason": "daily never unloaded; shared diagnostics only",
+  "hardware_busy_hours_metered": false
+}

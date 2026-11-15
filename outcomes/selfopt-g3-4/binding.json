@@ -1,0 +1,16 @@
+{
+  "recorded_pt": "2026-11-14T23:29:06.956948-08:00",
+  "timing_samples_before_binding": 0,
+  "champion_fatbin_sha256": "1dadf5ec0919f46c6a3d737044cbfe36889a9da9259ad17f3368060d0052afa5",
+  "primary_payload_manifest_sha256": "5f6624a14a12be5220487594f498f8df684c550415bc36baf08df9fa54d50c1b",
+  "source_sha256": {
+    "monitor.py": "01e416410210681affb20b9ff95b2f97660acdf6b926cc4c3bded0b3d19938a4",
+    "harness.py": "906c48ec06fe81015073059bce0d957887d0d43ea6b5306378b40be811126887",
+    "test_monitor.py": "e3b3ab1729b7c93c444cf06ec65f65cebb08a042e75b1d5405e6371f34e803b0",
+    "guard.py": "463f747f2e85238c03bb070afc28d13a86122488282cbe0fc7172ee664953b20",
+    "exl3_w29.cu": "0f6699b396336083c3d892c0176c693ee3f6db9a6aa418fc3b4083cf113d000a",
+    "exl3_w29_stages.cu": "16db60bfb8992f01e5067f569fe4b6ef068d1d49c3fcd407e020949ce0b08994",
+    "exl3_w29_lookup.cu": "d07ef50ee4f8026ca52a12a553ca30a6f2e3ea8ac475501c7d2130942d97e46a"
+  },
+  "protocol_sha256": "e1a6355865f7a14da7a280f8f2d2b0cef6e8372108f6b756bce7d2977cd85460"
+}

@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "product_id": "selfopt-gen3-4-tensorfold-work-reduction",
+  "run_id": "w29-g3-4-20261114",
+  "title": "G3.4 work-reduction arms below admission; campaign stops",
+  "lane": "L4",
+  "created_at": "2026-11-14T23:35:38.327839-08:00",
+  "preregistration": {
+    "sha256": "e1a6355865f7a14da7a280f8f2d2b0cef6e8372108f6b756bce7d2977cd85460",
+    "url": "https://github.com/RonanLabsAI/preregistrations/blob/e779267/protocols/selfopt-g3-4/PROTOCOL.md",
+    "timestamp_verifiable": true
+  },
+  "arms": [
+    "champion",
+    "lookup",
+    "stages",
+    "combined"
+  ],
+  "seeds": [
+    1234
+  ],
+  "frozen_inputs": [
+    {
+      "path": "binding.json",
+      "sha256": "d3e5110ffe5d19e35a54f1c2d823f94388098f1ec1eb05aa680a39f6f8eff3d8"
+    },
+    {
+      "path": "analysis-binding.json",
+      "sha256": "5966aec51854adcbc898772f84bf8bb9d493db48bf04894a79f2440a0ad02967"
+    },
+    {
+      "path": "PROTOCOL.md",
+      "sha256": "e1a6355865f7a14da7a280f8f2d2b0cef6e8372108f6b756bce7d2977cd85460"
+    }
+  ],
+  "environment": {
+    "hardware": "GB300 sm103, driver 595.99.02, CUDA compiler 13.2.51",
+    "engine": "champion 7c1bc0be; experiments a64baaacc3a1524bc2a5cb728503cf67ab0e5dea",
+    "fingerprint": "W28 real midpoint C1-U8 C16-U97 E288 per-slot",
+    "executor": "PI authorized manual run; no Mission Control queue or scheduler SLA"
+  },
+  "receipts": [
+    "receipts/ab-c1-combined.json",
+    "receipts/ab-c1-lookup.json",
+    "receipts/ab-c1-stages.json",
+    "receipts/ab-c16-combined.json",
+    "receipts/ab-c16-lookup.json",
+    "receipts/ab-c16-stages.json",
+    "receipts/analysis.json",
+    "receipts/candidate-ledger.jsonl",
+    "receipts/native-validation.json",
+    "receipts/operations-summary.json",
+    "receipts/primary-payload-manifest.json",
+    "receipts/raw-hashes.json",
+    "receipts/results.jsonl",
+    "receipts/run.log",
+    "receipts/served-durations.json",
+    "receipts/source-heads.json",
+    "receipts/validation.json"
+  ],
+  "figures": [
+    {
+      "path": "figures/kernel-ab.png",
+      "source_receipts": [
+        "receipts/analysis.json",
+        "receipts/results.jsonl"
+      ]
+    }
+  ]
+}

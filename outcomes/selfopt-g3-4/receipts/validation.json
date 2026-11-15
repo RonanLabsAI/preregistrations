@@ -1,0 +1,9 @@
+{
+  "owner_k3_pass": true,
+  "selfoptimize_package_pass": true,
+  "section12_terminal_pass": true,
+  "frozen_hashes_pass": true,
+  "numerics_and_n_pass": true,
+  "privacy_scan_pass": true,
+  "direct_review": "Anonymous hashes and aggregate kernel/resource/operational outcomes only. No payloads, weights, routes, private pointers, infrastructure addresses, emails or credentials. All limitations retained."
+}

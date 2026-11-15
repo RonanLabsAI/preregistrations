@@ -1,0 +1,1016 @@
+{
+  "c1": [
+    {
+      "source_sha256": "c28921369ac0e74959c7156d939132ad6e4b550f67d5116d7031da37733c87f2",
+      "kernels": [
+        {
+          "name": "tf_exl3_group",
+          "grid": [
+            1,
+            1,
+            1
+          ],
+          "block": 1024,
+          "shared": 128,
+          "registers": 32,
+          "count": 21462,
+          "median_us": 3.904,
+          "mean_us": 3.90863703289535,
+          "p10_us": 3.584,
+          "p90_us": 4.256
+        },
+        {
+          "name": "tf_exl3_experts_rot_in",
+          "grid": [
+            8,
+            32,
+            2
+          ],
+          "block": 32,
+          "shared": 0,
+          "registers": 21,
+          "count": 21462,
+          "median_us": 2.56,
+          "mean_us": 2.6119317398192154,
+          "p10_us": 2.432,
+          "p90_us": 2.816
+        },
+        {
+          "name": "tf_exl3_grouped_1",
+          "grid": [
+            8,
+            16,
+            8
+          ],
+          "block": 128,
+          "shared": 32832,
+          "registers": 128,
+          "count": 21462,
+          "median_us": 51.648,
+          "mean_us": 51.70086399217221,
+          "p10_us": 51.264,
+          "p90_us": 52.192
+        },
+        {
+          "name": "tf_exl3_gateup_epilogue",
+          "grid": [
+            8,
+            16,
+            1
+          ],
+          "block": 32,
+          "shared": 0,
+          "registers": 40,
+          "count": 21462,
+          "median_us": 4.608,
+          "mean_us": 4.630792889758643,
+          "p10_us": 4.48,
+          "p90_us": 4.8
+        },
+        {
+          "name": "tf_exl3_grouped_1",
+          "grid": [
+            8,
+            32,
+            1
+          ],
+          "block": 128,
+          "shared": 32832,
+          "registers": 128,
+          "count": 21462,
+          "median_us": 39.616,
+          "mean_us": 39.67047744851365,
+          "p10_us": 39.264,
+          "p90_us": 40.128
+        },
+        {
+          "name": "tf_exl3_down_combine",
+          "grid": [
+            1,
+            32,
+            1
+          ],
+          "block": 256,
+          "shared": 16384,
+          "registers": 48,
+          "count": 21462,
+          "median_us": 3.072,
+          "mean_us": 3.070480663498276,
+          "p10_us": 2.944,
+          "p90_us": 3.2
+        }
+      ]
+    },
+    {
+      "source_sha256": "4e0e72452881025f082e6d94fa276c6a0a3a2dff38dcc882880fa4626036a519",
+      "kernels": [
+        {
+          "name": "tf_exl3_group",
+          "grid": [
+            1,
+            1,
+            1
+          ],
+          "block": 1024,
+          "shared": 128,
+          "registers": 32,
+          "count": 21462,
+          "median_us": 3.904,
+          "mean_us": 3.909868604976237,
+          "p10_us": 3.584,
+          "p90_us": 4.256
+        },
+        {
+          "name": "tf_exl3_experts_rot_in",
+          "grid": [
+            8,
+            32,
+            2
+          ],
+          "block": 32,
+          "shared": 0,
+          "registers": 21,
+          "count": 21462,
+          "median_us": 2.592,
+          "mean_us": 2.612456574410586,
+          "p10_us": 2.432,
+          "p90_us": 2.816
+        },
+        {
+          "name": "tf_exl3_grouped_1",
+          "grid": [
+            8,
+            16,
+            8
+          ],
+          "block": 128,
+          "shared": 32832,
+          "registers": 128,
+          "count": 21462,
+          "median_us": 51.648,
+          "mean_us": 51.68984964122635,
+          "p10_us": 51.264,
+          "p90_us": 52.16
+        },
+        {
+          "name": "tf_exl3_gateup_epilogue",
+          "grid": [
+            8,
+            16,
+            1
+          ],
+          "block": 32,
+          "shared": 0,
+          "registers": 40,
+          "count": 21462,
+          "median_us": 4.608,
+          "mean_us": 4.629294473953965,
+          "p10_us": 4.48,
+          "p90_us": 4.8
+        },
+        {
+          "name": "tf_exl3_grouped_1",
+          "grid": [
+            8,
+            32,
+            1
+          ],
+          "block": 128,
+          "shared": 32832,
+          "registers": 128,
+          "count": 21462,
+          "median_us": 39.616,
+          "mean_us": 39.66124014537322,
+          "p10_us": 39.264,
+          "p90_us": 40.128
+        },
+        {
+          "name": "tf_exl3_down_combine",
+          "grid": [
+            1,
+            32,
+            1
+          ],
+          "block": 256,
+          "shared": 16384,
+          "registers": 48,
+          "count": 21462,
+          "median_us": 3.072,
+          "mean_us": 3.071870282359519,
+          "p10_us": 2.944,
+          "p90_us": 3.2
+        }
+      ]
+    },
+    {
+      "source_sha256": "a0cffd0115d782f4656f3cca190d7984953e5ad4010e664b9c47effcffb4ec86",
+      "kernels": [
+        {
+          "name": "tf_exl3_group",
+          "grid": [
+            1,
+            1,
+            1
+          ],
+          "block": 1024,
+          "shared": 128,
+          "registers": 32,
+          "count": 21462,
+          "median_us": 3.904,
+          "mean_us": 3.9249859752120027,
+          "p10_us": 3.584,
+          "p90_us": 4.256
+        },
+        {
+          "name": "tf_exl3_experts_rot_in",
+          "grid": [
+            8,
+            32,
+            2
+          ],
+          "block": 32,
+          "shared": 0,
+          "registers": 21,
+          "count": 21462,
+          "median_us": 2.56,
+          "mean_us": 2.5803597521200263,
+          "p10_us": 2.432,
+          "p90_us": 2.752
+        },
+        {
+          "name": "tf_exl3_grouped_1",
+          "grid": [
+            8,
+            16,
+            8
+          ],
+          "block": 128,
+          "shared": 32832,
+          "registers": 128,
+          "count": 21462,
+          "median_us": 51.552,
+          "mean_us": 51.595299040164015,
+          "p10_us": 51.232,
+          "p90_us": 52.0
+        },
+        {
+          "name": "tf_exl3_gateup_epilogue",
+          "grid": [
+            8,
+            16,
+            1
+          ],
+          "block": 32,
+          "shared": 0,
+          "registers": 40,
+          "count": 21462,
+          "median_us": 4.608,
+          "mean_us": 4.625541748206132,
+          "p10_us": 4.48,
+          "p90_us": 4.768
+        },
+        {
+          "name": "tf_exl3_grouped_1",
+          "grid": [
+            8,
+            32,
+            1
+          ],
+          "block": 128,
+          "shared": 32832,
+          "registers": 128,
+          "count": 21462,
+          "median_us": 39.552,
+          "mean_us": 39.574223651104276,
+          "p10_us": 39.232,
+          "p90_us": 39.968
+        },
+        {
+          "name": "tf_exl3_down_combine",
+          "grid": [
+            1,
+            32,
+            1
+          ],
+          "block": 256,
+          "shared": 16384,
+          "registers": 48,
+          "count": 21462,
+          "median_us": 3.072,
+          "mean_us": 3.069524974373311,
+          "p10_us": 2.944,
+          "p90_us": 3.2
+        }
+      ]
+    },
+    {
+      "source_sha256": "eeafa492cdad022a4ee64edf9cacaf5d96ec2d79028bb88c5fa0e7da81f08b82",
+      "kernels": [
+        {
+          "name": "tf_exl3_group",
+          "grid": [
+            1,
+            1,
+            1
+          ],
+          "block": 1024,
+          "shared": 128,
+          "registers": 32,
+          "count": 21462,
+          "median_us": 3.904,
+          "mean_us": 3.910472462957786,
+          "p10_us": 3.584,
+          "p90_us": 4.256
+        },
+        {
+          "name": "tf_exl3_experts_rot_in",
+          "grid": [
+            8,
+            32,
+            2
+          ],
+          "block": 32,
+          "shared": 0,
+          "registers": 21,
+          "count": 21462,
+          "median_us": 2.56,
+          "mean_us": 2.5745537228590067,
+          "p10_us": 2.432,
+          "p90_us": 2.72
+        },
+        {
+          "name": "tf_exl3_grouped_1",
+          "grid": [
+            8,
+            16,
+            8
+          ],
+          "block": 128,
+          "shared": 32832,
+          "registers": 128,
+          "count": 21462,
+          "median_us": 51.552,
+          "mean_us": 51.56399822942876,
+          "p10_us": 51.232,
+          "p90_us": 51.936
+        },
+        {
+          "name": "tf_exl3_gateup_epilogue",
+          "grid": [
+            8,
+            16,
+            1
+          ],
+          "block": 32,
+          "shared": 0,
+          "registers": 40,
+          "count": 21462,
+          "median_us": 4.608,
+          "mean_us": 4.621884307147516,
+          "p10_us": 4.48,
+          "p90_us": 4.768
+        },
+        {
+          "name": "tf_exl3_grouped_1",
+          "grid": [
+            8,
+            32,
+            1
+          ],
+          "block": 128,
+          "shared": 32832,
+          "registers": 128,
+          "count": 21462,
+          "median_us": 39.52,
+          "mean_us": 39.54399030845215,
+          "p10_us": 39.232,
+          "p90_us": 39.904
+        },
+        {
+          "name": "tf_exl3_down_combine",
+          "grid": [
+            1,
+            32,
+            1
+          ],
+          "block": 256,
+          "shared": 16384,
+          "registers": 48,
+          "count": 21462,
+          "median_us": 3.072,
+          "mean_us": 3.0703419998136243,
+          "p10_us": 2.944,
+          "p90_us": 3.2
+        }
+      ]
+    },
+    {
+      "source_sha256": "95e9ee5ce4a5fc0d48181aafa7cfcbeab94506abb2fc366ccc608ab0c81aa5a9",
+      "kernels": [
+        {
+          "name": "tf_exl3_group",
+          "grid": [
+            1,
+            1,
+            1
+          ],
+          "block": 1024,
+          "shared": 128,
+          "registers": 32,
+          "count": 21462,
+          "median_us": 3.904,
+          "mean_us": 3.909121563693971,
+          "p10_us": 3.584,
+          "p90_us": 4.256
+        },
+        {
+          "name": "tf_exl3_experts_rot_in",
+          "grid": [
+            8,
+            32,
+            2
+          ],
+          "block": 32,
+          "shared": 0,
+          "registers": 21,
+          "count": 21462,
+          "median_us": 2.56,
+          "mean_us": 2.5729344888640386,
+          "p10_us": 2.432,
+          "p90_us": 2.72
+        },
+        {
+          "name": "tf_exl3_grouped_1",
+          "grid": [
+            8,
+            16,
+            8
+          ],
+          "block": 128,
+          "shared": 32832,
+          "registers": 128,
+          "count": 21462,
+          "median_us": 51.552,
+          "mean_us": 51.57812529121237,
+          "p10_us": 51.232,
+          "p90_us": 51.936
+        },
+        {
+          "name": "tf_exl3_gateup_epilogue",
+          "grid": [
+            8,
+            16,
+            1
+          ],
+          "block": 32,
+          "shared": 0,
+          "registers": 40,
+          "count": 21462,
+          "median_us": 4.608,
+          "mean_us": 4.622122775137452,
+          "p10_us": 4.48,
+          "p90_us": 4.768
+        },
+        {
+          "name": "tf_exl3_grouped_1",
+          "grid": [
+            8,
+            32,
+            1
+          ],
+          "block": 128,
+          "shared": 32832,
+          "registers": 128,
+          "count": 21462,
+          "median_us": 39.52,
+          "mean_us": 39.546230779983226,
+          "p10_us": 39.232,
+          "p90_us": 39.904
+        },
+        {
+          "name": "tf_exl3_down_combine",
+          "grid": [
+            1,
+            32,
+            1
+          ],
+          "block": 256,
+          "shared": 16384,
+          "registers": 48,
+          "count": 21462,
+          "median_us": 3.072,
+          "mean_us": 3.069732177802628,
+          "p10_us": 2.944,
+          "p90_us": 3.2
+        }
+      ]
+    }
+  ],
+  "c16": [
+    {
+      "source_sha256": "f81d58f0d850480d0ba607c520498d87f040ff15376eadcc2c3a6221c787f5f5",
+      "kernels": [
+        {
+          "name": "tf_exl3_group",
+          "grid": [
+            1,
+            1,
+            1
+          ],
+          "block": 1024,
+          "shared": 128,
+          "registers": 32,
+          "count": 21462,
+          "median_us": 36.704,
+          "mean_us": 36.75742605535365,
+          "p10_us": 36.288,
+          "p90_us": 37.312
+        },
+        {
+          "name": "tf_exl3_experts_rot_in",
+          "grid": [
+            128,
+            32,
+            2
+          ],
+          "block": 32,
+          "shared": 0,
+          "registers": 21,
+          "count": 21462,
+          "median_us": 6.08,
+          "mean_us": 6.110139222812413,
+          "p10_us": 6.08,
+          "p90_us": 6.176
+        },
+        {
+          "name": "tf_exl3_grouped_1",
+          "grid": [
+            128,
+            16,
+            8
+          ],
+          "block": 128,
+          "shared": 32832,
+          "registers": 128,
+          "count": 21462,
+          "median_us": 490.4,
+          "mean_us": 484.10295130929086,
+          "p10_us": 435.2,
+          "p90_us": 536.064
+        },
+        {
+          "name": "tf_exl3_gateup_epilogue",
+          "grid": [
+            128,
+            16,
+            1
+          ],
+          "block": 32,
+          "shared": 0,
+          "registers": 40,
+          "count": 21462,
+          "median_us": 5.536,
+          "mean_us": 5.53482210418414,
+          "p10_us": 5.376,
+          "p90_us": 5.696
+        },
+        {
+          "name": "tf_exl3_grouped_1",
+          "grid": [
+            128,
+            32,
+            1
+          ],
+          "block": 128,
+          "shared": 32832,
+          "registers": 128,
+          "count": 21462,
+          "median_us": 245.472,
+          "mean_us": 242.70026171838597,
+          "p10_us": 221.472,
+          "p90_us": 267.872
+        },
+        {
+          "name": "tf_exl3_down_combine",
+          "grid": [
+            16,
+            32,
+            1
+          ],
+          "block": 256,
+          "shared": 16384,
+          "registers": 48,
+          "count": 21462,
+          "median_us": 4.288,
+          "mean_us": 4.292601388500606,
+          "p10_us": 4.192,
+          "p90_us": 4.384
+        }
+      ]
+    },
+    {
+      "source_sha256": "758e813e96d6e52e5266e1e4bf7c058b25a2350ce1a7053db86a4f0e3c7d56fe",
+      "kernels": [
+        {
+          "name": "tf_exl3_group",
+          "grid": [
+            1,
+            1,
+            1
+          ],
+          "block": 1024,
+          "shared": 128,
+          "registers": 32,
+          "count": 21462,
+          "median_us": 36.704,
+          "mean_us": 36.75748835150498,
+          "p10_us": 36.288,
+          "p90_us": 37.312
+        },
+        {
+          "name": "tf_exl3_experts_rot_in",
+          "grid": [
+            128,
+            32,
+            2
+          ],
+          "block": 32,
+          "shared": 0,
+          "registers": 21,
+          "count": 21462,
+          "median_us": 6.08,
+          "mean_us": 6.110714751654086,
+          "p10_us": 6.08,
+          "p90_us": 6.176
+        },
+        {
+          "name": "tf_exl3_grouped_1",
+          "grid": [
+            128,
+            16,
+            8
+          ],
+          "block": 128,
+          "shared": 32832,
+          "registers": 128,
+          "count": 21462,
+          "median_us": 490.336,
+          "mean_us": 484.1258944180412,
+          "p10_us": 435.232,
+          "p90_us": 536.096
+        },
+        {
+          "name": "tf_exl3_gateup_epilogue",
+          "grid": [
+            128,
+            16,
+            1
+          ],
+          "block": 32,
+          "shared": 0,
+          "registers": 40,
+          "count": 21462,
+          "median_us": 5.536,
+          "mean_us": 5.533963283943715,
+          "p10_us": 5.376,
+          "p90_us": 5.696
+        },
+        {
+          "name": "tf_exl3_grouped_1",
+          "grid": [
+            128,
+            32,
+            1
+          ],
+          "block": 128,
+          "shared": 32832,
+          "registers": 128,
+          "count": 21462,
+          "median_us": 245.472,
+          "mean_us": 242.702969620725,
+          "p10_us": 221.504,
+          "p90_us": 267.872
+        },
+        {
+          "name": "tf_exl3_down_combine",
+          "grid": [
+            16,
+            32,
+            1
+          ],
+          "block": 256,
+          "shared": 16384,
+          "registers": 48,
+          "count": 21462,
+          "median_us": 4.288,
+          "mean_us": 4.292680272108844,
+          "p10_us": 4.192,
+          "p90_us": 4.384
+        }
+      ]
+    },
+    {
+      "source_sha256": "07b39d0807c080c64cc6384c23acf9a9691e0030469290bce3cee935fb72c1a7",
+      "kernels": [
+        {
+          "name": "tf_exl3_group",
+          "grid": [
+            1,
+            1,
+            1
+          ],
+          "block": 1024,
+          "shared": 128,
+          "registers": 32,
+          "count": 21462,
+          "median_us": 36.704,
+          "mean_us": 36.7716946230547,
+          "p10_us": 36.288,
+          "p90_us": 37.312
+        },
+        {
+          "name": "tf_exl3_experts_rot_in",
+          "grid": [
+            128,
+            32,
+            2
+          ],
+          "block": 32,
+          "shared": 0,
+          "registers": 21,
+          "count": 21462,
+          "median_us": 6.08,
+          "mean_us": 6.1102271456527815,
+          "p10_us": 6.08,
+          "p90_us": 6.176
+        },
+        {
+          "name": "tf_exl3_grouped_1",
+          "grid": [
+            128,
+            16,
+            8
+          ],
+          "block": 128,
+          "shared": 32832,
+          "registers": 128,
+          "count": 21462,
+          "median_us": 490.336,
+          "mean_us": 484.13482713633397,
+          "p10_us": 435.2,
+          "p90_us": 536.064
+        },
+        {
+          "name": "tf_exl3_gateup_epilogue",
+          "grid": [
+            128,
+            16,
+            1
+          ],
+          "block": 32,
+          "shared": 0,
+          "registers": 40,
+          "count": 21462,
+          "median_us": 5.536,
+          "mean_us": 5.534622262603672,
+          "p10_us": 5.376,
+          "p90_us": 5.696
+        },
+        {
+          "name": "tf_exl3_grouped_1",
+          "grid": [
+            128,
+            32,
+            1
+          ],
+          "block": 128,
+          "shared": 32832,
+          "registers": 128,
+          "count": 21462,
+          "median_us": 245.472,
+          "mean_us": 242.7153586338645,
+          "p10_us": 221.504,
+          "p90_us": 267.872
+        },
+        {
+          "name": "tf_exl3_down_combine",
+          "grid": [
+            16,
+            32,
+            1
+          ],
+          "block": 256,
+          "shared": 16384,
+          "registers": 48,
+          "count": 21462,
+          "median_us": 4.288,
+          "mean_us": 4.292496831609356,
+          "p10_us": 4.192,
+          "p90_us": 4.384
+        }
+      ]
+    },
+    {
+      "source_sha256": "dc2119629f3bd90c8f4442651792b0a92350ba62786427bd417281114badbd16",
+      "kernels": [
+        {
+          "name": "tf_exl3_group",
+          "grid": [
+            1,
+            1,
+            1
+          ],
+          "block": 1024,
+          "shared": 128,
+          "registers": 32,
+          "count": 21462,
+          "median_us": 36.704,
+          "mean_us": 36.75815343397633,
+          "p10_us": 36.288,
+          "p90_us": 37.312
+        },
+        {
+          "name": "tf_exl3_experts_rot_in",
+          "grid": [
+            128,
+            32,
+            2
+          ],
+          "block": 32,
+          "shared": 0,
+          "registers": 21,
+          "count": 21462,
+          "median_us": 6.08,
+          "mean_us": 6.110766936911751,
+          "p10_us": 6.08,
+          "p90_us": 6.176
+        },
+        {
+          "name": "tf_exl3_grouped_1",
+          "grid": [
+            128,
+            16,
+            8
+          ],
+          "block": 128,
+          "shared": 32832,
+          "registers": 128,
+          "count": 21462,
+          "median_us": 490.368,
+          "mean_us": 484.1567988537881,
+          "p10_us": 435.2,
+          "p90_us": 536.16
+        },
+        {
+          "name": "tf_exl3_gateup_epilogue",
+          "grid": [
+            128,
+            16,
+            1
+          ],
+          "block": 32,
+          "shared": 0,
+          "registers": 40,
+          "count": 21462,
+          "median_us": 5.536,
+          "mean_us": 5.535187447581772,
+          "p10_us": 5.376,
+          "p90_us": 5.696
+        },
+        {
+          "name": "tf_exl3_grouped_1",
+          "grid": [
+            128,
+            32,
+            1
+          ],
+          "block": 128,
+          "shared": 32832,
+          "registers": 128,
+          "count": 21462,
+          "median_us": 245.472,
+          "mean_us": 242.70102115366694,
+          "p10_us": 221.504,
+          "p90_us": 267.872
+        },
+        {
+          "name": "tf_exl3_down_combine",
+          "grid": [
+            16,
+            32,
+            1
+          ],
+          "block": 256,
+          "shared": 16384,
+          "registers": 48,
+          "count": 21462,
+          "median_us": 4.288,
+          "mean_us": 4.292839809896561,
+          "p10_us": 4.192,
+          "p90_us": 4.384
+        }
+      ]
+    },
+    {
+      "source_sha256": "070b58beb4171137fe684d0ec94c5983ccda82efe3c7b4ded11cc313173ff458",
+      "kernels": [
+        {
+          "name": "tf_exl3_group",
+          "grid": [
+            1,
+            1,
+            1
+          ],
+          "block": 1024,
+          "shared": 128,
+          "registers": 32,
+          "count": 21462,
+          "median_us": 36.704,
+          "mean_us": 36.756693737769076,
+          "p10_us": 36.288,
+          "p90_us": 37.312
+        },
+        {
+          "name": "tf_exl3_experts_rot_in",
+          "grid": [
+            128,
+            32,
+            2
+          ],
+          "block": 32,
+          "shared": 0,
+          "registers": 21,
+          "count": 21462,
+          "median_us": 6.08,
+          "mean_us": 6.109547339483739,
+          "p10_us": 6.08,
+          "p90_us": 6.176
+        },
+        {
+          "name": "tf_exl3_grouped_1",
+          "grid": [
+            128,
+            16,
+            8
+          ],
+          "block": 128,
+          "shared": 32832,
+          "registers": 128,
+          "count": 21462,
+          "median_us": 490.336,
+          "mean_us": 484.1255719876992,
+          "p10_us": 435.2,
+          "p90_us": 536.096
+        },
+        {
+          "name": "tf_exl3_gateup_epilogue",
+          "grid": [
+            128,
+            16,
+            1
+          ],
+          "block": 32,
+          "shared": 0,
+          "registers": 40,
+          "count": 21462,
+          "median_us": 5.536,
+          "mean_us": 5.534383794613736,
+          "p10_us": 5.376,
+          "p90_us": 5.696
+        },
+        {
+          "name": "tf_exl3_grouped_1",
+          "grid": [
+            128,
+            32,
+            1
+          ],
+          "block": 128,
+          "shared": 32832,
+          "registers": 128,
+          "count": 21462,
+          "median_us": 245.472,
+          "mean_us": 242.70014295033081,
+          "p10_us": 221.504,
+          "p90_us": 267.872
+        },
+        {
+          "name": "tf_exl3_down_combine",
+          "grid": [
+            16,
+            32,
+            1
+          ],
+          "block": 256,
+          "shared": 16384,
+          "registers": 48,
+          "count": 21462,
+          "median_us": 4.288,
+          "mean_us": 4.2924924051812505,
+          "p10_us": 4.192,
+          "p90_us": 4.384
+        }
+      ]
+    }
+  ]
+}

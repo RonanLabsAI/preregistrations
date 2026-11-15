@@ -1,0 +1,244 @@
+[
+  {
+    "rows": 1,
+    "kind": "preregistered primary native-launch transfer validation",
+    "stages": [
+      {
+        "stage": 0,
+        "name": "tf_exl3_group",
+        "mean_us": 4.016,
+        "ci95_us": [
+          3.97157687832,
+          4.06042312168
+        ],
+        "block_medians_us": [
+          4.032,
+          4.064,
+          3.968,
+          4.0,
+          4.016
+        ],
+        "served_us": 3.904,
+        "ratio": 1.028688524590164,
+        "pass_tolerance": true
+      },
+      {
+        "stage": 1,
+        "name": "tf_exl3_experts_rot_in",
+        "mean_us": 2.24,
+        "ci95_us": [
+          2.2119043509432794,
+          2.268095649056721
+        ],
+        "block_medians_us": [
+          2.272,
+          2.24,
+          2.208,
+          2.24,
+          2.24
+        ],
+        "served_us": 2.56,
+        "ratio": 0.8750000000000001,
+        "pass_tolerance": true
+      },
+      {
+        "stage": 2,
+        "name": "tf_exl3_grouped_1",
+        "mean_us": 51.440000000000005,
+        "ci95_us": [
+          51.33301495576102,
+          51.54698504423899
+        ],
+        "block_medians_us": [
+          51.55200000000001,
+          51.44,
+          51.392,
+          51.328,
+          51.488
+        ],
+        "served_us": 51.552,
+        "ratio": 0.9978274363749225,
+        "pass_tolerance": true
+      },
+      {
+        "stage": 3,
+        "name": "tf_exl3_gateup_epilogue",
+        "mean_us": 4.4928,
+        "ci95_us": [
+          4.454585785793123,
+          4.531014214206877
+        ],
+        "block_medians_us": [
+          4.48,
+          4.496,
+          4.512,
+          4.528,
+          4.448
+        ],
+        "served_us": 4.608,
+        "ratio": 0.9750000000000001,
+        "pass_tolerance": true
+      },
+      {
+        "stage": 4,
+        "name": "tf_exl3_grouped_1",
+        "mean_us": 39.510400000000004,
+        "ci95_us": [
+          39.44072505615432,
+          39.58007494384569
+        ],
+        "block_medians_us": [
+          39.536,
+          39.44,
+          39.472,
+          39.584,
+          39.52
+        ],
+        "served_us": 39.552,
+        "ratio": 0.9989482200647251,
+        "pass_tolerance": true
+      },
+      {
+        "stage": 5,
+        "name": "tf_exl3_down_combine",
+        "mean_us": 3.0336,
+        "ci95_us": [
+          2.9714076296479996,
+          3.095792370352
+        ],
+        "block_medians_us": [
+          3.12,
+          2.992,
+          3.024,
+          3.024,
+          3.008
+        ],
+        "served_us": 3.072,
+        "ratio": 0.9874999999999999,
+        "pass_tolerance": true
+      }
+    ],
+    "pass_tolerance": true
+  },
+  {
+    "rows": 16,
+    "kind": "preregistered primary native-launch transfer validation",
+    "stages": [
+      {
+        "stage": 0,
+        "name": "tf_exl3_group",
+        "mean_us": 36.4768,
+        "ci95_us": [
+          36.44733303467422,
+          36.50626696532577
+        ],
+        "block_medians_us": [
+          36.44799999999999,
+          36.48,
+          36.512,
+          36.464,
+          36.48
+        ],
+        "served_us": 36.704,
+        "ratio": 0.9938099389712292,
+        "pass_tolerance": true
+      },
+      {
+        "stage": 1,
+        "name": "tf_exl3_experts_rot_in",
+        "mean_us": 5.9584,
+        "ci95_us": [
+          5.928270772988571,
+          5.988529227011429
+        ],
+        "block_medians_us": [
+          5.968,
+          5.92,
+          5.984,
+          5.968,
+          5.952
+        ],
+        "served_us": 6.08,
+        "ratio": 0.98,
+        "pass_tolerance": true
+      },
+      {
+        "stage": 2,
+        "name": "tf_exl3_grouped_1",
+        "mean_us": 510.9344,
+        "ci95_us": [
+          510.870640825727,
+          510.998159174273
+        ],
+        "block_medians_us": [
+          510.976,
+          510.928,
+          510.91200000000003,
+          510.86400000000003,
+          510.99199999999996
+        ],
+        "served_us": 490.336,
+        "ratio": 1.0420087450238202,
+        "pass_tolerance": true
+      },
+      {
+        "stage": 3,
+        "name": "tf_exl3_gateup_epilogue",
+        "mean_us": 5.4016,
+        "ci95_us": [
+          5.3443648114525555,
+          5.458835188547445
+        ],
+        "block_medians_us": [
+          5.36,
+          5.408,
+          5.408,
+          5.36,
+          5.472
+        ],
+        "served_us": 5.536,
+        "ratio": 0.9757225433526012,
+        "pass_tolerance": true
+      },
+      {
+        "stage": 4,
+        "name": "tf_exl3_grouped_1",
+        "mean_us": 256.74559999999997,
+        "ci95_us": [
+          256.5985332988465,
+          256.8926667011534
+        ],
+        "block_medians_us": [
+          256.768,
+          256.736,
+          256.608,
+          256.688,
+          256.928
+        ],
+        "served_us": 245.472,
+        "ratio": 1.0459262156172597,
+        "pass_tolerance": true
+      },
+      {
+        "stage": 5,
+        "name": "tf_exl3_down_combine",
+        "mean_us": 4.2016,
+        "ci95_us": [
+          4.183830751328,
+          4.219369248672
+        ],
+        "block_medians_us": [
+          4.224,
+          4.192,
+          4.208,
+          4.192,
+          4.192
+        ],
+        "served_us": 4.288,
+        "ratio": 0.9798507462686566,
+        "pass_tolerance": true
+      }
+    ],
+    "pass_tolerance": true
+  }
+]
