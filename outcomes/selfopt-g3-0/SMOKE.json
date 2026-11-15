@@ -1,0 +1,243 @@
+{
+  "control": {
+    "1": {
+      "mean": 81.79133017350532,
+      "ci95": [
+        81.79009025714791,
+        81.79257008986272
+      ],
+      "cv": 1.2209026298730005e-05,
+      "n": 5,
+      "values": [
+        81.79237867721595,
+        81.79125685838206,
+        81.79223270018365,
+        81.78999981167081,
+        81.7907828200741
+      ],
+      "pass": true
+    },
+    "16": {
+      "mean": 272.6899667610252,
+      "ci95": [
+        272.63868641882397,
+        272.7412471032264
+      ],
+      "cv": 0.00015145292548875012,
+      "n": 5,
+      "values": [
+        272.7262838282097,
+        272.7085899523608,
+        272.6463476320748,
+        272.7242448593202,
+        272.6443675331602
+      ],
+      "pass": true
+    }
+  },
+  "profile": {
+    "started_pt": "2026-11-14T19:48:37.177130-08:00",
+    "status": "PASS",
+    "prereg_commit": "8f1c7a504fa9a06c8e1b2419a1a213eda7904cbd",
+    "prereg_sha256": "f78e42a7b8497a2fed7589530a7916639e87b7abcf57dad17c609aad130b4582",
+    "native_seconds": {
+      "plain": {
+        "mean": 6.2471793911999995,
+        "ci95": [
+          6.2469087083628665,
+          6.247450074037133
+        ],
+        "cv": 3.489575938892442e-05,
+        "n": 5,
+        "values": [
+          6.247090665,
+          6.246951333,
+          6.247309959,
+          6.247053608,
+          6.247491391
+        ]
+      },
+      "traced": {
+        "mean": 6.2865408548,
+        "ci95": [
+          6.262745276351788,
+          6.310336433248212
+        ],
+        "cv": 0.003048459539748878,
+        "n": 5,
+        "values": [
+          6.283064159,
+          6.284983282,
+          6.319268415,
+          6.272766446,
+          6.272621972
+        ]
+      },
+      "ratio_of_means": 1.0063006776554946,
+      "overhead_fraction": 0.00630067765549458,
+      "ordered_ratio_ci95": [
+        1.0025069980776593,
+        1.0101012206423996
+      ]
+    },
+    "client_seconds": {
+      "plain": {
+        "mean": 6.363305973398383,
+        "ci95": [
+          6.362403353302134,
+          6.364208593494632
+        ],
+        "cv": 0.00011423997600613392,
+        "n": 5,
+        "values": [
+          6.363189853000222,
+          6.362342205000459,
+          6.3641207450127695,
+          6.362952496987418,
+          6.363924566991045
+        ]
+      },
+      "traced": {
+        "mean": 6.402957557199988,
+        "ci95": [
+          6.379120819525458,
+          6.426794294874519
+        ],
+        "cv": 0.002998210391177823,
+        "n": 5,
+        "values": [
+          6.399711707999813,
+          6.402122592000524,
+          6.435487305992865,
+          6.388539952007704,
+          6.388926227999036
+        ]
+      },
+      "ratio_of_means": 1.0062312866876695,
+      "overhead_fraction": 0.0062312866876694795,
+      "ordered_ratio_ci95": [
+        1.002553389798055,
+        1.0099154384642774
+      ]
+    },
+    "ended_pt": "2026-11-14T19:50:44.985379-08:00"
+  },
+  "restore": {
+    "started_pt": "2026-11-14T19:52:36.957010-08:00",
+    "health_seconds": 145.78867897301097,
+    "health_pt": "2026-11-14T19:55:02.745591-08:00",
+    "controller_start_pt": "2026-11-14T19:52:36.687078-08:00",
+    "invocation_to_both_routed_answers_seconds": 147.21015481298673,
+    "routes_pass": true
+  },
+  "trace": {
+    "kernel_count": 3665070,
+    "kernel_span_seconds": 32.169177725,
+    "kernel_union_seconds": 30.723806111,
+    "idle_gap_upper_fraction": 0.04493032511915096,
+    "host_bubble": "INCONCLUSIVE: GPU timeline gaps do not establish absence of useful host work; includes inter-request idle",
+    "families": {
+      "other": {
+        "summed_seconds": 26.472306888,
+        "count": 3020565,
+        "summed_fraction": 0.693585277213148
+      },
+      "EXL3": {
+        "summed_seconds": 11.695035698,
+        "count": 644505,
+        "summed_fraction": 0.306414722786852
+      }
+    },
+    "top_kernels": [
+      {
+        "name": "glm_mm16_16",
+        "summed_seconds": 17.293097397,
+        "count": 692405
+      },
+      {
+        "name": "tf_exl3_grouped_1",
+        "summed_seconds": 9.790309113,
+        "count": 214620
+      },
+      {
+        "name": "tf_glm_hc_finish",
+        "summed_seconds": 1.538519549,
+        "count": 230400
+      },
+      {
+        "name": "tf_glm_router_tile",
+        "summed_seconds": 1.029826179,
+        "count": 135690
+      },
+      {
+        "name": "tf_glm_chunks_16",
+        "summed_seconds": 0.96524726,
+        "count": 28105
+      },
+      {
+        "name": "tf_glm_hc_partial8",
+        "summed_seconds": 0.791075167,
+        "count": 229950
+      },
+      {
+        "name": "glm_mm_reduce",
+        "summed_seconds": 0.789786945,
+        "count": 393470
+      },
+      {
+        "name": "tf_glm_topk",
+        "summed_seconds": 0.591292764,
+        "count": 107525
+      },
+      {
+        "name": "tf_exl3_gateup_epilogue",
+        "summed_seconds": 0.496383103,
+        "count": 107310
+      },
+      {
+        "name": "tf_glm_kda_step",
+        "summed_seconds": 0.470280443,
+        "count": 87040
+      },
+      {
+        "name": "tf_glm_hc_post",
+        "summed_seconds": 0.441967552,
+        "count": 230400
+      },
+      {
+        "name": "tf_exl3_group",
+        "summed_seconds": 0.419375808,
+        "count": 107310
+      },
+      {
+        "name": "tf_glm_combine",
+        "summed_seconds": 0.365284418,
+        "count": 107525
+      },
+      {
+        "name": "tf_glm_slice_sum",
+        "summed_seconds": 0.356489121,
+        "count": 135690
+      },
+      {
+        "name": "tf_exl3_down_combine",
+        "summed_seconds": 0.329578844,
+        "count": 107310
+      }
+    ],
+    "occupancy": "unmeasured: requires valid hardware counters",
+    "ALU_HBM_split": "unmeasured: duration is not achieved bandwidth or ALU utilization",
+    "note": "smoke aggregate trace only; no kernel-family metric is a candidate bound"
+  },
+  "max_observed_block_seconds": 102.99679366199416,
+  "release_demonstration_seconds": 327.33599,
+  "command_fingerprint": "ba8ef83af26c17d936cf5f198260996ea09e92e4db101d545df404880c9d3494",
+  "status": "SMOKE_PASS_ADMITTED",
+  "mission_control_state": "queued",
+  "cleanup_attempts": {
+    "first": "Nsight shutdown succeeded; helper rejected emptied command line of exited process",
+    "second": "Repeated shutdown found session already gone",
+    "third": "GPU-free confirmation succeeded; preserved daily restored",
+    "device_failure": false
+  }
+}
