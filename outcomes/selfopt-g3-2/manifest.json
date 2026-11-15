@@ -50,6 +50,7 @@
     "receipts/candidate-ledger.jsonl",
     "receipts/counter-summary.json",
     "receipts/harness-timings.json",
+    "receipts/invalid-attempt-hashes.json",
     "receipts/measurement.log",
     "receipts/operations-summary.json",
     "receipts/raw-hashes.json",

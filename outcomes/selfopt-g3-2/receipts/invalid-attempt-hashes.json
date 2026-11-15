@@ -1,0 +1,17 @@
+[
+  {
+    "attempt": "preflight",
+    "sha256": "f8c80fada7b7efab952b828c7ce938a037e81feb6e177e591ec499fcac6490bb",
+    "bytes": 1912
+  },
+  {
+    "attempt": "original-event-timing",
+    "sha256": "12f7c4df6d9022c8e7f2482c2d6115d186d96b34b8be03dca8a1dc8c7b556208",
+    "bytes": 458
+  },
+  {
+    "attempt": "original-event-timing-guard",
+    "sha256": "d0042d0fd4c6f545df8aaeaa704b549ed1340cd04347db42dec3c96409aacfb6",
+    "bytes": 619
+  }
+]
