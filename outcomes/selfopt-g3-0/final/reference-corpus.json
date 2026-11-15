@@ -1,0 +1,72 @@
+{
+  "public_synthetic_prompts": true,
+  "tokenizer_sha256": "19e773648cb4e65de8660ea6365e10acca112d42a854923df93db4a6f333a82d",
+  "prompts": [
+    {
+      "id": "ref-00-gpu-matmul",
+      "prompt": "Reference topic 00: Explain how a GPU computes dense matrix multiplication, from memory layout through tiling, synchronization, accumulation and writeback. Include pseudocode for a tiled kernel, at least four concrete shape examples and a discussion of numerical precision. Give a detailed tutorial with complete examples and tests. Aim for at least 1200 words; do not stop after a brief summary. Continue the explanation and examples in full."
+    },
+    {
+      "id": "ref-01-dijkstra",
+      "prompt": "Reference topic 01: Write and explain a complete Python implementation of Dijkstra shortest paths using a binary heap. Include path reconstruction, stale heap entries, unreachable vertices, six unit tests and a detailed complexity analysis. Give a detailed tutorial with complete examples and tests. Aim for at least 1200 words; do not stop after a brief summary. Continue the explanation and examples in full."
+    },
+    {
+      "id": "ref-02-bfs",
+      "prompt": "Reference topic 02: Write and explain breadth-first search and depth-first search for directed graphs in Python. Include traversal ordering, cycles, connected components, path reconstruction, six tests and a detailed comparison of their memory use. Give a detailed tutorial with complete examples and tests. Aim for at least 1200 words; do not stop after a brief summary. Continue the explanation and examples in full."
+    },
+    {
+      "id": "ref-03-avl",
+      "prompt": "Reference topic 03: Develop a complete Python AVL tree with insertion, deletion, rotations, invariant checks and deterministic tests. Explain each balancing case and walk through several insertion and deletion examples. Give a detailed tutorial with complete examples and tests. Aim for at least 1200 words; do not stop after a brief summary. Continue the explanation and examples in full."
+    },
+    {
+      "id": "ref-04-mutex-semaphore",
+      "prompt": "Reference topic 04: Explain mutexes, semaphores and condition variables for a systems programmer. Include correct producer-consumer pseudocode, lock ordering, spurious wakeups, deadlocks and several worked schedules. Give a detailed tutorial with complete examples and tests. Aim for at least 1200 words; do not stop after a brief summary. Continue the explanation and examples in full."
+    },
+    {
+      "id": "ref-05-stable-summation",
+      "prompt": "Reference topic 05: Explain floating-point rounding and stable summation. Derive error examples for naive, pairwise and compensated sums; implement all three in Python, add tests and discuss reproducibility under parallel execution. Give a detailed tutorial with complete examples and tests. Aim for at least 1200 words; do not stop after a brief summary. Continue the explanation and examples in full."
+    },
+    {
+      "id": "ref-06-hash-table",
+      "prompt": "Reference topic 06: Implement an open-addressed hash table in Python with resizing and tombstone deletion. Explain collision probing, load factors, adversarial keys, iteration semantics, invariants and a substantial test suite. Give a detailed tutorial with complete examples and tests. Aim for at least 1200 words; do not stop after a brief summary. Continue the explanation and examples in full."
+    },
+    {
+      "id": "ref-07-statistics-bootstrap",
+      "prompt": "Reference topic 07: Explain confidence intervals, bootstrap resampling and paired experimental designs for software performance. Include reproducible Python code, numerical worked examples, assumptions, failure modes and reporting guidance. Give a detailed tutorial with complete examples and tests. Aim for at least 1200 words; do not stop after a brief summary. Continue the explanation and examples in full."
+    },
+    {
+      "id": "ref-08-compression",
+      "prompt": "Reference topic 08: Implement a pedagogical LZ-style compressor and decompressor in Python. Explain the format, matching, overlapping copies, malformed input checks, tests, complexity and comparisons with run-length coding. Give a detailed tutorial with complete examples and tests. Aim for at least 1200 words; do not stop after a brief summary. Continue the explanation and examples in full."
+    },
+    {
+      "id": "ref-09-virtual-memory",
+      "prompt": "Reference topic 09: Explain virtual memory from page tables through translation caches, copy-on-write, page faults and memory mapping. Include address-translation examples, operating-system pseudocode and a discussion of locality and huge pages. Give a detailed tutorial with complete examples and tests. Aim for at least 1200 words; do not stop after a brief summary. Continue the explanation and examples in full."
+    },
+    {
+      "id": "ref-10-distributed-log",
+      "prompt": "Reference topic 10: Design a replicated append-only log with explicit consistency and failure assumptions. Explain leader epochs, acknowledgments, recovery, retries, idempotency and several concrete failure timelines, with pseudocode. Give a detailed tutorial with complete examples and tests. Aim for at least 1200 words; do not stop after a brief summary. Continue the explanation and examples in full."
+    },
+    {
+      "id": "ref-11-sql-indexes",
+      "prompt": "Reference topic 11: Explain database indexes using B-trees and sorted pages. Walk through inserts, splits, range scans, composite indexes, covering indexes, query planning and update costs, with concrete table and query examples. Give a detailed tutorial with complete examples and tests. Aim for at least 1200 words; do not stop after a brief summary. Continue the explanation and examples in full."
+    },
+    {
+      "id": "ref-12-tensor-strides",
+      "prompt": "Reference topic 12: Explain tensor shapes, strides, transposes and broadcasting to a numerical programmer. Implement a small strided array view in Python, with indexing, slicing, broadcasting and tests for noncontiguous cases. Give a detailed tutorial with complete examples and tests. Aim for at least 1200 words; do not stop after a brief summary. Continue the explanation and examples in full."
+    },
+    {
+      "id": "ref-13-network-framing",
+      "prompt": "Reference topic 13: Design a robust length-prefixed binary protocol over a byte stream. Give a Python encoder, incremental parser, limits, cancellation behavior and comprehensive tests for fragmented and malformed messages. Give a detailed tutorial with complete examples and tests. Aim for at least 1200 words; do not stop after a brief summary. Continue the explanation and examples in full."
+    },
+    {
+      "id": "ref-14-deterministic-runtime",
+      "prompt": "Reference topic 14: Design a deterministic task runtime for a small virtual machine. Explain scheduling, clocks, random seeds, replay logs, cancellation and exception propagation, with Python pseudocode and worked execution traces. Give a detailed tutorial with complete examples and tests. Aim for at least 1200 words; do not stop after a brief summary. Continue the explanation and examples in full."
+    },
+    {
+      "id": "ref-15-compiler-parser",
+      "prompt": "Reference topic 15: Implement and explain a tokenizer and recursive-descent parser for arithmetic expressions in Python. Add an abstract syntax tree, precedence, unary operators, useful errors, evaluation and extensive tests. Give a detailed tutorial with complete examples and tests. Aim for at least 1200 words; do not stop after a brief summary. Continue the explanation and examples in full."
+    }
+  ],
+  "frozen_pt": "2026-11-14T15:07:14.610076-08:00",
+  "tokenizers_version": "0.23.3"
+}

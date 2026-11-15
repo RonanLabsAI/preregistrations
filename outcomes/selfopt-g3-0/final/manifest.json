@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "product_id": "selfopt-gen3-tensorfold-profile",
+  "run_id": "w24-g3-20261114",
+  "title": "G3.0: valid timeline matrix and counter-overhead stop",
+  "lane": "L4",
+  "created_at": "2026-11-14T21:09:09.748608-08:00",
+  "preregistration": {
+    "sha256": "f78e42a7b8497a2fed7589530a7916639e87b7abcf57dad17c609aad130b4582",
+    "url": "https://github.com/RonanLabsAI/preregistrations/blob/8f1c7a504fa9a06c8e1b2419a1a213eda7904cbd/protocols/selfopt-g3-0/PROTOCOL.md",
+    "timestamp_verifiable": true
+  },
+  "arms": [
+    "champion-uninstrumented",
+    "champion-nsys",
+    "champion-ncu"
+  ],
+  "seeds": [
+    1234
+  ],
+  "frozen_inputs": [
+    {
+      "path": "reference-corpus.json",
+      "sha256": "edb21df93c0ce6971c5466addb85c8a7022a889f76e727526a49124a9eefc5bd"
+    },
+    {
+      "path": "reference-prefill.jsonl",
+      "sha256": "3d25e71446774aa87c823e8078ae3e5f56fd5ee345cf76c12d7ef63db81ff6c6"
+    },
+    {
+      "path": "TOKEN-REFERENCE.json",
+      "sha256": "25580be28082f7a7b0761467006d2fd2eda19de763ba1ba26b3073428cb3478c"
+    }
+  ],
+  "environment": {
+    "hardware": "GB300 sm103, 152 SMs, driver 595.99.02",
+    "engine": "TensorFold native 7c1bc0be3df413f43c65fb278699b629a44e7a90",
+    "fingerprint": "w24-g3-f8d2add58edc68b3e551b1e3ed68311a-1711a2c9e8ef1058",
+    "diagnostic_compiler": "CUDA 13.2.51, sm103a; served champion remains compiled with CUDA 13.2.86"
+  },
+  "receipts": [
+    "receipts/counter-metrics.json",
+    "receipts/measurement.log",
+    "receipts/raw-hashes.json",
+    "receipts/results.jsonl",
+    "receipts/roofline.json",
+    "receipts/trace-matrix.json",
+    "receipts/artifact-identities.json"
+  ],
+  "figures": [
+    {
+      "path": "figures/profile-overhead.png",
+      "source_receipts": [
+        "receipts/results.jsonl"
+      ]
+    }
+  ]
+}

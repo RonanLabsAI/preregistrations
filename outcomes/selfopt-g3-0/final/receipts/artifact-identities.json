@@ -1,0 +1,12 @@
+{
+  "sha256": {
+    "mma_roofline.cu": "fbeaff14d0c62cca249f8dc53abe818fab58bc09011a751b65cd19f06f5eb048",
+    "mma_roofline": "352764ff216c9517e9a7c95d60390e0cec75c842d183ae124d06e6613a80fdec",
+    "served-exl3-counters.ncu-rep": "c3157a675b729e494c2601a3475260a24c4b801865e69a96942aab4da0d7230c",
+    "counter_station.py": "2324266087b492c8062ed9606b9160e259fd227b293600e84343ffaf4b83ebfe"
+  },
+  "diagnostic_compiler": "CUDA 13.2.51",
+  "counter_tool": "Nsight Compute 2026.1.0",
+  "timeline_tool": "Nsight Systems 2025.6.3",
+  "served_binary_sha256": "1711a2c9e8ef1058c563ea99b4f51346898731a41c73c42d713bc103cf7c9c92"
+}

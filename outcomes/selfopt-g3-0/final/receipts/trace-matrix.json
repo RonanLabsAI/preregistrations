@@ -1,0 +1,2242 @@
+[
+  {
+    "kernel_count": 11728224,
+    "kernel_span_seconds": 102.474584023,
+    "kernel_union_seconds": 98.201319378,
+    "idle_gap_upper_fraction": 0.04170072692406235,
+    "host_bubble": "INCONCLUSIVE: GPU timeline gaps do not establish absence of useful host work; includes inter-request idle",
+    "families": {
+      "other": {
+        "summed_seconds": 26.183734346,
+        "count": 6610080,
+        "summed_fraction": 0.2146078609639258
+      },
+      "dense_bf16": {
+        "summed_seconds": 55.686033859,
+        "count": 2220144,
+        "summed_fraction": 0.4564154392236415
+      },
+      "attention": {
+        "summed_seconds": 2.785710635,
+        "count": 835584,
+        "summed_fraction": 0.022832319971697955
+      },
+      "EXL3": {
+        "summed_seconds": 37.351861564,
+        "count": 2062416,
+        "summed_fraction": 0.3061443798407347
+      }
+    },
+    "top_kernels": [
+      {
+        "name": "glm_mm16_16",
+        "summed_seconds": 55.308134015,
+        "count": 2215696
+      },
+      {
+        "name": "tf_exl3_grouped_1",
+        "summed_seconds": 31.292750876,
+        "count": 686784
+      },
+      {
+        "name": "tf_glm_hc_finish",
+        "summed_seconds": 4.920930231,
+        "count": 737280
+      },
+      {
+        "name": "tf_glm_router_tile",
+        "summed_seconds": 3.291808861,
+        "count": 434208
+      },
+      {
+        "name": "tf_glm_chunks_16",
+        "summed_seconds": 3.087540292,
+        "count": 89936
+      },
+      {
+        "name": "glm_mm_reduce",
+        "summed_seconds": 2.527369248,
+        "count": 1259104
+      },
+      {
+        "name": "tf_glm_hc_partial8",
+        "summed_seconds": 2.52658227,
+        "count": 735840
+      },
+      {
+        "name": "tf_glm_topk",
+        "summed_seconds": 1.891990276,
+        "count": 344080
+      },
+      {
+        "name": "tf_exl3_gateup_epilogue",
+        "summed_seconds": 1.587581406,
+        "count": 343392
+      },
+      {
+        "name": "tf_glm_kda_step",
+        "summed_seconds": 1.501138726,
+        "count": 278528
+      },
+      {
+        "name": "tf_glm_hc_post",
+        "summed_seconds": 1.413800865,
+        "count": 737280
+      },
+      {
+        "name": "tf_exl3_group",
+        "summed_seconds": 1.345531428,
+        "count": 343392
+      },
+      {
+        "name": "tf_glm_combine",
+        "summed_seconds": 1.168756224,
+        "count": 344080
+      },
+      {
+        "name": "tf_glm_slice_sum",
+        "summed_seconds": 1.140631902,
+        "count": 434208
+      },
+      {
+        "name": "tf_exl3_down_combine",
+        "summed_seconds": 1.053690305,
+        "count": 343392
+      }
+    ],
+    "occupancy": "unmeasured: requires valid hardware counters",
+    "ALU_HBM_split": "unmeasured: duration is not achieved bandwidth or ALU utilization",
+    "note": "smoke aggregate trace only; no kernel-family metric is a candidate bound",
+    "cell": "c1",
+    "repeat": 0,
+    "report_sha256": "f3167ce8a1c3691cff771131bdbb23c3b6fb816a50ade251e68e1be0948c6e1b"
+  },
+  {
+    "kernel_count": 11728224,
+    "kernel_span_seconds": 102.512936384,
+    "kernel_union_seconds": 98.201657757,
+    "idle_gap_upper_fraction": 0.042055947074333244,
+    "host_bubble": "INCONCLUSIVE: GPU timeline gaps do not establish absence of useful host work; includes inter-request idle",
+    "families": {
+      "other": {
+        "summed_seconds": 26.18336994,
+        "count": 6610080,
+        "summed_fraction": 0.2146016855325892
+      },
+      "dense_bf16": {
+        "summed_seconds": 55.687373692,
+        "count": 2220144,
+        "summed_fraction": 0.4564196390522512
+      },
+      "attention": {
+        "summed_seconds": 2.785689731,
+        "count": 835584,
+        "summed_fraction": 0.022831809389445804
+      },
+      "EXL3": {
+        "summed_seconds": 37.352719897,
+        "count": 2062416,
+        "summed_fraction": 0.3061468660257138
+      }
+    },
+    "top_kernels": [
+      {
+        "name": "glm_mm16_16",
+        "summed_seconds": 55.309493823,
+        "count": 2215696
+      },
+      {
+        "name": "tf_exl3_grouped_1",
+        "summed_seconds": 31.293745864,
+        "count": 686784
+      },
+      {
+        "name": "tf_glm_hc_finish",
+        "summed_seconds": 4.92100145,
+        "count": 737280
+      },
+      {
+        "name": "tf_glm_router_tile",
+        "summed_seconds": 3.291703046,
+        "count": 434208
+      },
+      {
+        "name": "tf_glm_chunks_16",
+        "summed_seconds": 3.087495171,
+        "count": 89936
+      },
+      {
+        "name": "glm_mm_reduce",
+        "summed_seconds": 2.52744468,
+        "count": 1259104
+      },
+      {
+        "name": "tf_glm_hc_partial8",
+        "summed_seconds": 2.526630719,
+        "count": 735840
+      },
+      {
+        "name": "tf_glm_topk",
+        "summed_seconds": 1.891553432,
+        "count": 344080
+      },
+      {
+        "name": "tf_exl3_gateup_epilogue",
+        "summed_seconds": 1.587582455,
+        "count": 343392
+      },
+      {
+        "name": "tf_glm_kda_step",
+        "summed_seconds": 1.501112646,
+        "count": 278528
+      },
+      {
+        "name": "tf_glm_hc_post",
+        "summed_seconds": 1.41390407,
+        "count": 737280
+      },
+      {
+        "name": "tf_exl3_group",
+        "summed_seconds": 1.345456607,
+        "count": 343392
+      },
+      {
+        "name": "tf_glm_combine",
+        "summed_seconds": 1.16873504,
+        "count": 344080
+      },
+      {
+        "name": "tf_glm_slice_sum",
+        "summed_seconds": 1.140639065,
+        "count": 434208
+      },
+      {
+        "name": "tf_exl3_down_combine",
+        "summed_seconds": 1.053704962,
+        "count": 343392
+      }
+    ],
+    "occupancy": "unmeasured: requires valid hardware counters",
+    "ALU_HBM_split": "unmeasured: duration is not achieved bandwidth or ALU utilization",
+    "note": "smoke aggregate trace only; no kernel-family metric is a candidate bound",
+    "cell": "c1",
+    "repeat": 1,
+    "report_sha256": "384daf9b9bec652d8a3d101fb329f69c24cb3ca80f636a30c91ccd26bb7e72fc"
+  },
+  {
+    "kernel_count": 11728224,
+    "kernel_span_seconds": 102.526567541,
+    "kernel_union_seconds": 98.199310992,
+    "idle_gap_upper_fraction": 0.04220619740604836,
+    "host_bubble": "INCONCLUSIVE: GPU timeline gaps do not establish absence of useful host work; includes inter-request idle",
+    "families": {
+      "other": {
+        "summed_seconds": 26.183018459,
+        "count": 6610080,
+        "summed_fraction": 0.21460354105880924
+      },
+      "dense_bf16": {
+        "summed_seconds": 55.686671267,
+        "count": 2220144,
+        "summed_fraction": 0.4564239551826093
+      },
+      "attention": {
+        "summed_seconds": 2.785652438,
+        "count": 835584,
+        "summed_fraction": 0.022832007634643707
+      },
+      "EXL3": {
+        "summed_seconds": 37.351118353,
+        "count": 2062416,
+        "summed_fraction": 0.30614049612393773
+      }
+    },
+    "top_kernels": [
+      {
+        "name": "glm_mm16_16",
+        "summed_seconds": 55.30877143,
+        "count": 2215696
+      },
+      {
+        "name": "tf_exl3_grouped_1",
+        "summed_seconds": 31.291949485,
+        "count": 686784
+      },
+      {
+        "name": "tf_glm_hc_finish",
+        "summed_seconds": 4.920964193,
+        "count": 737280
+      },
+      {
+        "name": "tf_glm_router_tile",
+        "summed_seconds": 3.291574876,
+        "count": 434208
+      },
+      {
+        "name": "tf_glm_chunks_16",
+        "summed_seconds": 3.087518894,
+        "count": 89936
+      },
+      {
+        "name": "glm_mm_reduce",
+        "summed_seconds": 2.527322692,
+        "count": 1259104
+      },
+      {
+        "name": "tf_glm_hc_partial8",
+        "summed_seconds": 2.526701853,
+        "count": 735840
+      },
+      {
+        "name": "tf_glm_topk",
+        "summed_seconds": 1.891581981,
+        "count": 344080
+      },
+      {
+        "name": "tf_exl3_gateup_epilogue",
+        "summed_seconds": 1.587491835,
+        "count": 343392
+      },
+      {
+        "name": "tf_glm_kda_step",
+        "summed_seconds": 1.50111385,
+        "count": 278528
+      },
+      {
+        "name": "tf_glm_hc_post",
+        "summed_seconds": 1.413714179,
+        "count": 737280
+      },
+      {
+        "name": "tf_exl3_group",
+        "summed_seconds": 1.345536863,
+        "count": 343392
+      },
+      {
+        "name": "tf_glm_combine",
+        "summed_seconds": 1.168891687,
+        "count": 344080
+      },
+      {
+        "name": "tf_glm_slice_sum",
+        "summed_seconds": 1.140666725,
+        "count": 434208
+      },
+      {
+        "name": "tf_exl3_down_combine",
+        "summed_seconds": 1.053695522,
+        "count": 343392
+      }
+    ],
+    "occupancy": "unmeasured: requires valid hardware counters",
+    "ALU_HBM_split": "unmeasured: duration is not achieved bandwidth or ALU utilization",
+    "note": "smoke aggregate trace only; no kernel-family metric is a candidate bound",
+    "cell": "c1",
+    "repeat": 2,
+    "report_sha256": "183313da7629cb689b8b0b55ba4d27a743ab34a5b344a5107831d0812d015e11"
+  },
+  {
+    "kernel_count": 11728224,
+    "kernel_span_seconds": 102.526177366,
+    "kernel_union_seconds": 98.199177884,
+    "idle_gap_upper_fraction": 0.04220385069613386,
+    "host_bubble": "INCONCLUSIVE: GPU timeline gaps do not establish absence of useful host work; includes inter-request idle",
+    "families": {
+      "other": {
+        "summed_seconds": 26.183431979,
+        "count": 6610080,
+        "summed_fraction": 0.21461044022401513
+      },
+      "dense_bf16": {
+        "summed_seconds": 55.683507485,
+        "count": 2220144,
+        "summed_fraction": 0.4564054881788456
+      },
+      "attention": {
+        "summed_seconds": 2.785769122,
+        "count": 835584,
+        "summed_fraction": 0.022833337436986418
+      },
+      "EXL3": {
+        "summed_seconds": 37.351756582,
+        "count": 2062416,
+        "summed_fraction": 0.30615073416015287
+      }
+    },
+    "top_kernels": [
+      {
+        "name": "glm_mm16_16",
+        "summed_seconds": 55.30561667,
+        "count": 2215696
+      },
+      {
+        "name": "tf_exl3_grouped_1",
+        "summed_seconds": 31.29235383,
+        "count": 686784
+      },
+      {
+        "name": "tf_glm_hc_finish",
+        "summed_seconds": 4.920934688,
+        "count": 737280
+      },
+      {
+        "name": "tf_glm_router_tile",
+        "summed_seconds": 3.291680959,
+        "count": 434208
+      },
+      {
+        "name": "tf_glm_chunks_16",
+        "summed_seconds": 3.087536207,
+        "count": 89936
+      },
+      {
+        "name": "glm_mm_reduce",
+        "summed_seconds": 2.527298565,
+        "count": 1259104
+      },
+      {
+        "name": "tf_glm_hc_partial8",
+        "summed_seconds": 2.526564543,
+        "count": 735840
+      },
+      {
+        "name": "tf_glm_topk",
+        "summed_seconds": 1.891649538,
+        "count": 344080
+      },
+      {
+        "name": "tf_exl3_gateup_epilogue",
+        "summed_seconds": 1.587638816,
+        "count": 343392
+      },
+      {
+        "name": "tf_glm_kda_step",
+        "summed_seconds": 1.501182883,
+        "count": 278528
+      },
+      {
+        "name": "tf_glm_hc_post",
+        "summed_seconds": 1.413818078,
+        "count": 737280
+      },
+      {
+        "name": "tf_exl3_group",
+        "summed_seconds": 1.345446875,
+        "count": 343392
+      },
+      {
+        "name": "tf_glm_combine",
+        "summed_seconds": 1.168821727,
+        "count": 344080
+      },
+      {
+        "name": "tf_glm_slice_sum",
+        "summed_seconds": 1.140663132,
+        "count": 434208
+      },
+      {
+        "name": "tf_exl3_down_combine",
+        "summed_seconds": 1.053705506,
+        "count": 343392
+      }
+    ],
+    "occupancy": "unmeasured: requires valid hardware counters",
+    "ALU_HBM_split": "unmeasured: duration is not achieved bandwidth or ALU utilization",
+    "note": "smoke aggregate trace only; no kernel-family metric is a candidate bound",
+    "cell": "c1",
+    "repeat": 3,
+    "report_sha256": "6ab5e48c55dc2b8a69c1d7defdab014fc20cf456b8ee59e2e43449854f497172"
+  },
+  {
+    "kernel_count": 11728224,
+    "kernel_span_seconds": 102.521548192,
+    "kernel_union_seconds": 98.199209794,
+    "idle_gap_upper_fraction": 0.042160291901808034,
+    "host_bubble": "INCONCLUSIVE: GPU timeline gaps do not establish absence of useful host work; includes inter-request idle",
+    "families": {
+      "other": {
+        "summed_seconds": 26.182788303,
+        "count": 6610080,
+        "summed_fraction": 0.21460266800461159
+      },
+      "dense_bf16": {
+        "summed_seconds": 55.686658762,
+        "count": 2220144,
+        "summed_fraction": 0.4564260079671615
+      },
+      "attention": {
+        "summed_seconds": 2.785854746,
+        "count": 835584,
+        "summed_fraction": 0.02283377363198587
+      },
+      "EXL3": {
+        "summed_seconds": 37.350582582,
+        "count": 2062416,
+        "summed_fraction": 0.3061375503962411
+      }
+    },
+    "top_kernels": [
+      {
+        "name": "glm_mm16_16",
+        "summed_seconds": 55.308746285,
+        "count": 2215696
+      },
+      {
+        "name": "tf_exl3_grouped_1",
+        "summed_seconds": 31.291439674,
+        "count": 686784
+      },
+      {
+        "name": "tf_glm_hc_finish",
+        "summed_seconds": 4.920856713,
+        "count": 737280
+      },
+      {
+        "name": "tf_glm_router_tile",
+        "summed_seconds": 3.291588672,
+        "count": 434208
+      },
+      {
+        "name": "tf_glm_chunks_16",
+        "summed_seconds": 3.087447642,
+        "count": 89936
+      },
+      {
+        "name": "glm_mm_reduce",
+        "summed_seconds": 2.527287388,
+        "count": 1259104
+      },
+      {
+        "name": "tf_glm_hc_partial8",
+        "summed_seconds": 2.526514116,
+        "count": 735840
+      },
+      {
+        "name": "tf_glm_topk",
+        "summed_seconds": 1.891674178,
+        "count": 344080
+      },
+      {
+        "name": "tf_exl3_gateup_epilogue",
+        "summed_seconds": 1.587563611,
+        "count": 343392
+      },
+      {
+        "name": "tf_glm_kda_step",
+        "summed_seconds": 1.501430908,
+        "count": 278528
+      },
+      {
+        "name": "tf_glm_hc_post",
+        "summed_seconds": 1.413814947,
+        "count": 737280
+      },
+      {
+        "name": "tf_exl3_group",
+        "summed_seconds": 1.345511422,
+        "count": 343392
+      },
+      {
+        "name": "tf_glm_combine",
+        "summed_seconds": 1.168853346,
+        "count": 344080
+      },
+      {
+        "name": "tf_glm_slice_sum",
+        "summed_seconds": 1.14055642,
+        "count": 434208
+      },
+      {
+        "name": "tf_exl3_down_combine",
+        "summed_seconds": 1.053580064,
+        "count": 343392
+      }
+    ],
+    "occupancy": "unmeasured: requires valid hardware counters",
+    "ALU_HBM_split": "unmeasured: duration is not achieved bandwidth or ALU utilization",
+    "note": "smoke aggregate trace only; no kernel-family metric is a candidate bound",
+    "cell": "c1",
+    "repeat": 4,
+    "report_sha256": "0b215261de3efe610093c23219dc1c36e3d1f13ce2ba5f0ccf9d711e77dedcb8"
+  },
+  {
+    "kernel_count": 1978376,
+    "kernel_span_seconds": 30.077904231,
+    "kernel_union_seconds": 28.715198796,
+    "idle_gap_upper_fraction": 0.045305863883811415,
+    "host_bubble": "INCONCLUSIVE: GPU timeline gaps do not establish absence of useful host work; includes inter-request idle",
+    "families": {
+      "other": {
+        "summed_seconds": 5.736175072,
+        "count": 869027,
+        "summed_fraction": 0.18886904700256396
+      },
+      "dense_bf16": {
+        "summed_seconds": 4.103657348,
+        "count": 142929,
+        "summed_fraction": 0.13511684054503506
+      },
+      "attention": {
+        "summed_seconds": 2.612362088,
+        "count": 835584,
+        "summed_fraction": 0.08601451869811204
+      },
+      "EXL3": {
+        "summed_seconds": 17.918981516,
+        "count": 130836,
+        "summed_fraction": 0.5899995937542889
+      }
+    },
+    "top_kernels": [
+      {
+        "name": "tf_exl3_grouped_1",
+        "summed_seconds": 15.599064334,
+        "count": 42924
+      },
+      {
+        "name": "glm_mm16_16",
+        "summed_seconds": 3.725776075,
+        "count": 138481
+      },
+      {
+        "name": "tf_glm_chunks_16",
+        "summed_seconds": 3.071771646,
+        "count": 89936
+      },
+      {
+        "name": "tf_glm_kda_step",
+        "summed_seconds": 1.424962568,
+        "count": 278528
+      },
+      {
+        "name": "tf_exl3_prompt_gu",
+        "summed_seconds": 0.805075149,
+        "count": 688
+      },
+      {
+        "name": "tf_exl3_group",
+        "summed_seconds": 0.788880411,
+        "count": 21462
+      },
+      {
+        "name": "tf_glm_kda_prep",
+        "summed_seconds": 0.637686076,
+        "count": 278528
+      },
+      {
+        "name": "tf_glm_kda_out",
+        "summed_seconds": 0.549713444,
+        "count": 278528
+      },
+      {
+        "name": "tf_exl3_prompt_down",
+        "summed_seconds": 0.381529208,
+        "count": 688
+      },
+      {
+        "name": "glm_mm16_rows",
+        "summed_seconds": 0.377881273,
+        "count": 4448
+      },
+      {
+        "name": "tf_glm_hc_finish",
+        "summed_seconds": 0.319733693,
+        "count": 47430
+      },
+      {
+        "name": "tf_glm_lat_write",
+        "summed_seconds": 0.234043904,
+        "count": 90128
+      },
+      {
+        "name": "tf_glm_absorb_q",
+        "summed_seconds": 0.21910819,
+        "count": 5813
+      },
+      {
+        "name": "tf_glm_router_tile",
+        "summed_seconds": 0.214676259,
+        "count": 27963
+      },
+      {
+        "name": "tf_glm_expand_v",
+        "summed_seconds": 0.213074432,
+        "count": 5813
+      }
+    ],
+    "occupancy": "unmeasured: requires valid hardware counters",
+    "ALU_HBM_split": "unmeasured: duration is not achieved bandwidth or ALU utilization",
+    "note": "smoke aggregate trace only; no kernel-family metric is a candidate bound",
+    "cell": "c16",
+    "repeat": 0,
+    "report_sha256": "8a0d4bb8341b530a4f9c580101997aebf0790dea33aaab2e4631bfbcabe2f8ef"
+  },
+  {
+    "kernel_count": 1978376,
+    "kernel_span_seconds": 30.044455072,
+    "kernel_union_seconds": 28.714220095,
+    "idle_gap_upper_fraction": 0.0442755567978238,
+    "host_bubble": "INCONCLUSIVE: GPU timeline gaps do not establish absence of useful host work; includes inter-request idle",
+    "families": {
+      "other": {
+        "summed_seconds": 5.735319519,
+        "count": 869027,
+        "summed_fraction": 0.18884787268435724
+      },
+      "dense_bf16": {
+        "summed_seconds": 4.103546462,
+        "count": 142929,
+        "summed_fraction": 0.13511819476541365
+      },
+      "attention": {
+        "summed_seconds": 2.612289928,
+        "count": 835584,
+        "summed_fraction": 0.08601532906811582
+      },
+      "EXL3": {
+        "summed_seconds": 17.918895061,
+        "count": 130836,
+        "summed_fraction": 0.5900186034821133
+      }
+    },
+    "top_kernels": [
+      {
+        "name": "tf_exl3_grouped_1",
+        "summed_seconds": 15.599287382,
+        "count": 42924
+      },
+      {
+        "name": "glm_mm16_16",
+        "summed_seconds": 3.725636222,
+        "count": 138481
+      },
+      {
+        "name": "tf_glm_chunks_16",
+        "summed_seconds": 3.07169398,
+        "count": 89936
+      },
+      {
+        "name": "tf_glm_kda_step",
+        "summed_seconds": 1.424911427,
+        "count": 278528
+      },
+      {
+        "name": "tf_exl3_prompt_gu",
+        "summed_seconds": 0.80479232,
+        "count": 688
+      },
+      {
+        "name": "tf_exl3_group",
+        "summed_seconds": 0.78880115,
+        "count": 21462
+      },
+      {
+        "name": "tf_glm_kda_prep",
+        "summed_seconds": 0.637630435,
+        "count": 278528
+      },
+      {
+        "name": "tf_glm_kda_out",
+        "summed_seconds": 0.549748066,
+        "count": 278528
+      },
+      {
+        "name": "tf_exl3_prompt_down",
+        "summed_seconds": 0.381528032,
+        "count": 688
+      },
+      {
+        "name": "glm_mm16_rows",
+        "summed_seconds": 0.37791024,
+        "count": 4448
+      },
+      {
+        "name": "tf_glm_hc_finish",
+        "summed_seconds": 0.319744608,
+        "count": 47430
+      },
+      {
+        "name": "tf_glm_lat_write",
+        "summed_seconds": 0.233865249,
+        "count": 90128
+      },
+      {
+        "name": "tf_glm_absorb_q",
+        "summed_seconds": 0.219117762,
+        "count": 5813
+      },
+      {
+        "name": "tf_glm_router_tile",
+        "summed_seconds": 0.214685791,
+        "count": 27963
+      },
+      {
+        "name": "tf_glm_expand_v",
+        "summed_seconds": 0.213102913,
+        "count": 5813
+      }
+    ],
+    "occupancy": "unmeasured: requires valid hardware counters",
+    "ALU_HBM_split": "unmeasured: duration is not achieved bandwidth or ALU utilization",
+    "note": "smoke aggregate trace only; no kernel-family metric is a candidate bound",
+    "cell": "c16",
+    "repeat": 1,
+    "report_sha256": "a8d7a478d210d2126a6d6b79d36599763dbce189b71ab4a3de101191a4863f4a"
+  },
+  {
+    "kernel_count": 1978376,
+    "kernel_span_seconds": 30.041873073,
+    "kernel_union_seconds": 28.716012945,
+    "idle_gap_upper_fraction": 0.04413373709349733,
+    "host_bubble": "INCONCLUSIVE: GPU timeline gaps do not establish absence of useful host work; includes inter-request idle",
+    "families": {
+      "other": {
+        "summed_seconds": 5.735345106,
+        "count": 869027,
+        "summed_fraction": 0.18883657678850915
+      },
+      "dense_bf16": {
+        "summed_seconds": 4.103737351,
+        "count": 142929,
+        "summed_fraction": 0.13511579496607623
+      },
+      "attention": {
+        "summed_seconds": 2.612833121,
+        "count": 835584,
+        "summed_fraction": 0.08602768502511042
+      },
+      "EXL3": {
+        "summed_seconds": 17.920087577,
+        "count": 130836,
+        "summed_fraction": 0.5900199432203042
+      }
+    },
+    "top_kernels": [
+      {
+        "name": "tf_exl3_grouped_1",
+        "summed_seconds": 15.600123839,
+        "count": 42924
+      },
+      {
+        "name": "glm_mm16_16",
+        "summed_seconds": 3.725655559,
+        "count": 138481
+      },
+      {
+        "name": "tf_glm_chunks_16",
+        "summed_seconds": 3.071768685,
+        "count": 89936
+      },
+      {
+        "name": "tf_glm_kda_step",
+        "summed_seconds": 1.425305088,
+        "count": 278528
+      },
+      {
+        "name": "tf_exl3_prompt_gu",
+        "summed_seconds": 0.805005856,
+        "count": 688
+      },
+      {
+        "name": "tf_exl3_group",
+        "summed_seconds": 0.788828893,
+        "count": 21462
+      },
+      {
+        "name": "tf_glm_kda_prep",
+        "summed_seconds": 0.637745318,
+        "count": 278528
+      },
+      {
+        "name": "tf_glm_kda_out",
+        "summed_seconds": 0.549782715,
+        "count": 278528
+      },
+      {
+        "name": "tf_exl3_prompt_down",
+        "summed_seconds": 0.3816784,
+        "count": 688
+      },
+      {
+        "name": "glm_mm16_rows",
+        "summed_seconds": 0.378081792,
+        "count": 4448
+      },
+      {
+        "name": "tf_glm_hc_finish",
+        "summed_seconds": 0.319706433,
+        "count": 47430
+      },
+      {
+        "name": "tf_glm_lat_write",
+        "summed_seconds": 0.233824002,
+        "count": 90128
+      },
+      {
+        "name": "tf_glm_absorb_q",
+        "summed_seconds": 0.219108416,
+        "count": 5813
+      },
+      {
+        "name": "tf_glm_router_tile",
+        "summed_seconds": 0.214691295,
+        "count": 27963
+      },
+      {
+        "name": "tf_glm_expand_v",
+        "summed_seconds": 0.213080543,
+        "count": 5813
+      }
+    ],
+    "occupancy": "unmeasured: requires valid hardware counters",
+    "ALU_HBM_split": "unmeasured: duration is not achieved bandwidth or ALU utilization",
+    "note": "smoke aggregate trace only; no kernel-family metric is a candidate bound",
+    "cell": "c16",
+    "repeat": 2,
+    "report_sha256": "7b66f890dc5c0a16195b9bed9cb1584aa228b2b8622f7f4ad72754d87ad31f6b"
+  },
+  {
+    "kernel_count": 1978376,
+    "kernel_span_seconds": 30.043253856,
+    "kernel_union_seconds": 28.714593215,
+    "idle_gap_upper_fraction": 0.04422492474910966,
+    "host_bubble": "INCONCLUSIVE: GPU timeline gaps do not establish absence of useful host work; includes inter-request idle",
+    "families": {
+      "other": {
+        "summed_seconds": 5.735557888,
+        "count": 869027,
+        "summed_fraction": 0.18885362452165438
+      },
+      "dense_bf16": {
+        "summed_seconds": 4.103441629,
+        "count": 142929,
+        "summed_fraction": 0.1351132426491677
+      },
+      "attention": {
+        "summed_seconds": 2.612528529,
+        "count": 835584,
+        "summed_fraction": 0.08602223035707525
+      },
+      "EXL3": {
+        "summed_seconds": 17.918860145,
+        "count": 130836,
+        "summed_fraction": 0.5900109024721026
+      }
+    },
+    "top_kernels": [
+      {
+        "name": "tf_exl3_grouped_1",
+        "summed_seconds": 15.598631813,
+        "count": 42924
+      },
+      {
+        "name": "glm_mm16_16",
+        "summed_seconds": 3.725181279,
+        "count": 138481
+      },
+      {
+        "name": "tf_glm_chunks_16",
+        "summed_seconds": 3.071813914,
+        "count": 89936
+      },
+      {
+        "name": "tf_glm_kda_step",
+        "summed_seconds": 1.424828083,
+        "count": 278528
+      },
+      {
+        "name": "tf_exl3_prompt_gu",
+        "summed_seconds": 0.805178228,
+        "count": 688
+      },
+      {
+        "name": "tf_exl3_group",
+        "summed_seconds": 0.788821985,
+        "count": 21462
+      },
+      {
+        "name": "tf_glm_kda_prep",
+        "summed_seconds": 0.63763024,
+        "count": 278528
+      },
+      {
+        "name": "tf_glm_kda_out",
+        "summed_seconds": 0.550070206,
+        "count": 278528
+      },
+      {
+        "name": "tf_exl3_prompt_down",
+        "summed_seconds": 0.381794875,
+        "count": 688
+      },
+      {
+        "name": "glm_mm16_rows",
+        "summed_seconds": 0.37826035,
+        "count": 4448
+      },
+      {
+        "name": "tf_glm_hc_finish",
+        "summed_seconds": 0.319712547,
+        "count": 47430
+      },
+      {
+        "name": "tf_glm_lat_write",
+        "summed_seconds": 0.233934145,
+        "count": 90128
+      },
+      {
+        "name": "tf_glm_absorb_q",
+        "summed_seconds": 0.219159043,
+        "count": 5813
+      },
+      {
+        "name": "tf_glm_router_tile",
+        "summed_seconds": 0.214634912,
+        "count": 27963
+      },
+      {
+        "name": "tf_glm_expand_v",
+        "summed_seconds": 0.213097472,
+        "count": 5813
+      }
+    ],
+    "occupancy": "unmeasured: requires valid hardware counters",
+    "ALU_HBM_split": "unmeasured: duration is not achieved bandwidth or ALU utilization",
+    "note": "smoke aggregate trace only; no kernel-family metric is a candidate bound",
+    "cell": "c16",
+    "repeat": 3,
+    "report_sha256": "bee46edaff2a6b082e84ea14b943fd1829f3a8b690ecfee7fae9bf222ab73300"
+  },
+  {
+    "kernel_count": 1978376,
+    "kernel_span_seconds": 30.046383731,
+    "kernel_union_seconds": 28.714655602,
+    "idle_gap_upper_fraction": 0.0443224096757443,
+    "host_bubble": "INCONCLUSIVE: GPU timeline gaps do not establish absence of useful host work; includes inter-request idle",
+    "families": {
+      "other": {
+        "summed_seconds": 5.735479641,
+        "count": 869027,
+        "summed_fraction": 0.18885037860447207
+      },
+      "dense_bf16": {
+        "summed_seconds": 4.103416986,
+        "count": 142929,
+        "summed_fraction": 0.1351119522486893
+      },
+      "attention": {
+        "summed_seconds": 2.612288431,
+        "count": 835584,
+        "summed_fraction": 0.0860140197677379
+      },
+      "EXL3": {
+        "summed_seconds": 17.919310799,
+        "count": 130836,
+        "summed_fraction": 0.5900236493791008
+      }
+    },
+    "top_kernels": [
+      {
+        "name": "tf_exl3_grouped_1",
+        "summed_seconds": 15.599791487,
+        "count": 42924
+      },
+      {
+        "name": "glm_mm16_16",
+        "summed_seconds": 3.725490914,
+        "count": 138481
+      },
+      {
+        "name": "tf_glm_chunks_16",
+        "summed_seconds": 3.071744414,
+        "count": 89936
+      },
+      {
+        "name": "tf_glm_kda_step",
+        "summed_seconds": 1.424829533,
+        "count": 278528
+      },
+      {
+        "name": "tf_exl3_prompt_gu",
+        "summed_seconds": 0.804780502,
+        "count": 688
+      },
+      {
+        "name": "tf_exl3_group",
+        "summed_seconds": 0.788819233,
+        "count": 21462
+      },
+      {
+        "name": "tf_glm_kda_prep",
+        "summed_seconds": 0.637706872,
+        "count": 278528
+      },
+      {
+        "name": "tf_glm_kda_out",
+        "summed_seconds": 0.549752026,
+        "count": 278528
+      },
+      {
+        "name": "tf_exl3_prompt_down",
+        "summed_seconds": 0.381519801,
+        "count": 688
+      },
+      {
+        "name": "glm_mm16_rows",
+        "summed_seconds": 0.377926072,
+        "count": 4448
+      },
+      {
+        "name": "tf_glm_hc_finish",
+        "summed_seconds": 0.319732959,
+        "count": 47430
+      },
+      {
+        "name": "tf_glm_lat_write",
+        "summed_seconds": 0.233853055,
+        "count": 90128
+      },
+      {
+        "name": "tf_glm_absorb_q",
+        "summed_seconds": 0.219073442,
+        "count": 5813
+      },
+      {
+        "name": "tf_glm_router_tile",
+        "summed_seconds": 0.214677023,
+        "count": 27963
+      },
+      {
+        "name": "tf_glm_expand_v",
+        "summed_seconds": 0.213200894,
+        "count": 5813
+      }
+    ],
+    "occupancy": "unmeasured: requires valid hardware counters",
+    "ALU_HBM_split": "unmeasured: duration is not achieved bandwidth or ALU utilization",
+    "note": "smoke aggregate trace only; no kernel-family metric is a candidate bound",
+    "cell": "c16",
+    "repeat": 4,
+    "report_sha256": "886a2415f4932a3e09d72988410a0db7f695fd8825cf6b6aa9c6c53ca44c84ec"
+  },
+  {
+    "kernel_count": 32565,
+    "kernel_span_seconds": 2.42876912,
+    "kernel_union_seconds": 2.415736832,
+    "idle_gap_upper_fraction": 0.005365799446593766,
+    "host_bubble": "INCONCLUSIVE: GPU timeline gaps do not establish absence of useful host work; includes inter-request idle",
+    "families": {
+      "other": {
+        "summed_seconds": 0.670308864,
+        "count": 19897,
+        "summed_fraction": 0.26500467546986406
+      },
+      "dense_bf16": {
+        "summed_seconds": 0.765217024,
+        "count": 6434,
+        "summed_fraction": 0.30252634270570405
+      },
+      "attention": {
+        "summed_seconds": 0.242024864,
+        "count": 1938,
+        "summed_fraction": 0.09568383171486448
+      },
+      "EXL3": {
+        "summed_seconds": 0.851872032,
+        "count": 4296,
+        "summed_fraction": 0.33678515010956744
+      }
+    },
+    "top_kernels": [
+      {
+        "name": "glm_mm16_rows",
+        "summed_seconds": 0.662866336,
+        "count": 2204
+      },
+      {
+        "name": "tf_exl3_prompt_gu",
+        "summed_seconds": 0.533899232,
+        "count": 172
+      },
+      {
+        "name": "tf_exl3_prompt_down",
+        "summed_seconds": 0.245735168,
+        "count": 172
+      },
+      {
+        "name": "tf_glm_chunks_32",
+        "summed_seconds": 0.241751072,
+        "count": 123
+      },
+      {
+        "name": "tf_glm_kda_step",
+        "summed_seconds": 0.18138208,
+        "count": 646
+      },
+      {
+        "name": "tf_glm_absorb_q",
+        "summed_seconds": 0.125616352,
+        "count": 213
+      },
+      {
+        "name": "tf_glm_expand_v",
+        "summed_seconds": 0.123887296,
+        "count": 213
+      },
+      {
+        "name": "glm_mm16_16",
+        "summed_seconds": 0.102350688,
+        "count": 4230
+      },
+      {
+        "name": "tf_exl3_grouped_1",
+        "summed_seconds": 0.057389088,
+        "count": 1260
+      },
+      {
+        "name": "tf_glm_kda_prep",
+        "summed_seconds": 0.048536192,
+        "count": 646
+      },
+      {
+        "name": "tf_glm_hc_partial",
+        "summed_seconds": 0.04496336,
+        "count": 1072
+      },
+      {
+        "name": "tf_glm_hc_finish",
+        "summed_seconds": 0.02154768,
+        "count": 2422
+      },
+      {
+        "name": "tf_glm_merge",
+        "summed_seconds": 0.020399488,
+        "count": 291
+      },
+      {
+        "name": "tf_glm_hc_post",
+        "summed_seconds": 0.01452752,
+        "count": 2430
+      },
+      {
+        "name": "tf_glm_router_tile",
+        "summed_seconds": 0.014013216,
+        "count": 1015
+      }
+    ],
+    "occupancy": "unmeasured: requires valid hardware counters",
+    "ALU_HBM_split": "unmeasured: duration is not achieved bandwidth or ALU utilization",
+    "note": "smoke aggregate trace only; no kernel-family metric is a candidate bound",
+    "cell": "8192",
+    "repeat": 0,
+    "report_sha256": "baf698a412a21c1a7eba63f87b426bc1a5a0c8537bcf5724a1b4663290464c03"
+  },
+  {
+    "kernel_count": 32565,
+    "kernel_span_seconds": 2.428811471,
+    "kernel_union_seconds": 2.415824878,
+    "idle_gap_upper_fraction": 0.0053468921548913695,
+    "host_bubble": "INCONCLUSIVE: GPU timeline gaps do not establish absence of useful host work; includes inter-request idle",
+    "families": {
+      "other": {
+        "summed_seconds": 0.670068666,
+        "count": 19897,
+        "summed_fraction": 0.26490417936938176
+      },
+      "dense_bf16": {
+        "summed_seconds": 0.764901694,
+        "count": 6434,
+        "summed_fraction": 0.30239536010078105
+      },
+      "attention": {
+        "summed_seconds": 0.241849758,
+        "count": 1938,
+        "summed_fraction": 0.09561260647527962
+      },
+      "EXL3": {
+        "summed_seconds": 0.852655512,
+        "count": 4296,
+        "summed_fraction": 0.33708785405455755
+      }
+    },
+    "top_kernels": [
+      {
+        "name": "glm_mm16_rows",
+        "summed_seconds": 0.662560029,
+        "count": 2204
+      },
+      {
+        "name": "tf_exl3_prompt_gu",
+        "summed_seconds": 0.534417047,
+        "count": 172
+      },
+      {
+        "name": "tf_exl3_prompt_down",
+        "summed_seconds": 0.245987839,
+        "count": 172
+      },
+      {
+        "name": "tf_glm_chunks_32",
+        "summed_seconds": 0.241674365,
+        "count": 123
+      },
+      {
+        "name": "tf_glm_kda_step",
+        "summed_seconds": 0.181222686,
+        "count": 646
+      },
+      {
+        "name": "tf_glm_absorb_q",
+        "summed_seconds": 0.125595584,
+        "count": 213
+      },
+      {
+        "name": "tf_glm_expand_v",
+        "summed_seconds": 0.123818687,
+        "count": 213
+      },
+      {
+        "name": "glm_mm16_16",
+        "summed_seconds": 0.102341665,
+        "count": 4230
+      },
+      {
+        "name": "tf_exl3_grouped_1",
+        "summed_seconds": 0.057390402,
+        "count": 1260
+      },
+      {
+        "name": "tf_glm_kda_prep",
+        "summed_seconds": 0.048527488,
+        "count": 646
+      },
+      {
+        "name": "tf_glm_hc_partial",
+        "summed_seconds": 0.04493603,
+        "count": 1072
+      },
+      {
+        "name": "tf_glm_hc_finish",
+        "summed_seconds": 0.021549216,
+        "count": 2422
+      },
+      {
+        "name": "tf_glm_merge",
+        "summed_seconds": 0.02038448,
+        "count": 291
+      },
+      {
+        "name": "tf_glm_hc_post",
+        "summed_seconds": 0.014540768,
+        "count": 2430
+      },
+      {
+        "name": "tf_glm_router_tile",
+        "summed_seconds": 0.014015968,
+        "count": 1015
+      }
+    ],
+    "occupancy": "unmeasured: requires valid hardware counters",
+    "ALU_HBM_split": "unmeasured: duration is not achieved bandwidth or ALU utilization",
+    "note": "smoke aggregate trace only; no kernel-family metric is a candidate bound",
+    "cell": "8192",
+    "repeat": 1,
+    "report_sha256": "035b2f65fa736a953780b370975511b288616eefd9480a443661fd00d1dbeecb"
+  },
+  {
+    "kernel_count": 32565,
+    "kernel_span_seconds": 2.429195546,
+    "kernel_union_seconds": 2.416225018,
+    "idle_gap_upper_fraction": 0.0053394334685643585,
+    "host_bubble": "INCONCLUSIVE: GPU timeline gaps do not establish absence of useful host work; includes inter-request idle",
+    "families": {
+      "other": {
+        "summed_seconds": 0.670137259,
+        "count": 19897,
+        "summed_fraction": 0.26488768499212945
+      },
+      "dense_bf16": {
+        "summed_seconds": 0.764983522,
+        "count": 6434,
+        "summed_fraction": 0.3023779255343654
+      },
+      "attention": {
+        "summed_seconds": 0.241869091,
+        "count": 1938,
+        "summed_fraction": 0.0956045089654397
+      },
+      "EXL3": {
+        "summed_seconds": 0.852902218,
+        "count": 4296,
+        "summed_fraction": 0.33712988050806547
+      }
+    },
+    "top_kernels": [
+      {
+        "name": "glm_mm16_rows",
+        "summed_seconds": 0.662617354,
+        "count": 2204
+      },
+      {
+        "name": "tf_exl3_prompt_gu",
+        "summed_seconds": 0.534631624,
+        "count": 172
+      },
+      {
+        "name": "tf_exl3_prompt_down",
+        "summed_seconds": 0.246051205,
+        "count": 172
+      },
+      {
+        "name": "tf_glm_chunks_32",
+        "summed_seconds": 0.241715778,
+        "count": 123
+      },
+      {
+        "name": "tf_glm_kda_step",
+        "summed_seconds": 0.181241923,
+        "count": 646
+      },
+      {
+        "name": "tf_glm_absorb_q",
+        "summed_seconds": 0.125597475,
+        "count": 213
+      },
+      {
+        "name": "tf_glm_expand_v",
+        "summed_seconds": 0.123826883,
+        "count": 213
+      },
+      {
+        "name": "glm_mm16_16",
+        "summed_seconds": 0.102366168,
+        "count": 4230
+      },
+      {
+        "name": "tf_exl3_grouped_1",
+        "summed_seconds": 0.057361149,
+        "count": 1260
+      },
+      {
+        "name": "tf_glm_kda_prep",
+        "summed_seconds": 0.048526656,
+        "count": 646
+      },
+      {
+        "name": "tf_glm_hc_partial",
+        "summed_seconds": 0.044929796,
+        "count": 1072
+      },
+      {
+        "name": "tf_glm_hc_finish",
+        "summed_seconds": 0.021535457,
+        "count": 2422
+      },
+      {
+        "name": "tf_glm_merge",
+        "summed_seconds": 0.020393761,
+        "count": 291
+      },
+      {
+        "name": "tf_glm_hc_post",
+        "summed_seconds": 0.014553311,
+        "count": 2430
+      },
+      {
+        "name": "tf_glm_router_tile",
+        "summed_seconds": 0.014017664,
+        "count": 1015
+      }
+    ],
+    "occupancy": "unmeasured: requires valid hardware counters",
+    "ALU_HBM_split": "unmeasured: duration is not achieved bandwidth or ALU utilization",
+    "note": "smoke aggregate trace only; no kernel-family metric is a candidate bound",
+    "cell": "8192",
+    "repeat": 2,
+    "report_sha256": "b25f0da9949625146d0327cae2d98f7f969fe8e9155a677114dd747c8cb2f341"
+  },
+  {
+    "kernel_count": 32565,
+    "kernel_span_seconds": 2.426640636,
+    "kernel_union_seconds": 2.413627132,
+    "idle_gap_upper_fraction": 0.005362765218277721,
+    "host_bubble": "INCONCLUSIVE: GPU timeline gaps do not establish absence of useful host work; includes inter-request idle",
+    "families": {
+      "other": {
+        "summed_seconds": 0.670212578,
+        "count": 19897,
+        "summed_fraction": 0.2651875035394023
+      },
+      "dense_bf16": {
+        "summed_seconds": 0.765194115,
+        "count": 6434,
+        "summed_fraction": 0.3027694849974784
+      },
+      "attention": {
+        "summed_seconds": 0.241968958,
+        "count": 1938,
+        "summed_fraction": 0.09574147966236839
+      },
+      "EXL3": {
+        "summed_seconds": 0.849940188,
+        "count": 4296,
+        "summed_fraction": 0.3363015318007509
+      }
+    },
+    "top_kernels": [
+      {
+        "name": "glm_mm16_rows",
+        "summed_seconds": 0.662817725,
+        "count": 2204
+      },
+      {
+        "name": "tf_exl3_prompt_gu",
+        "summed_seconds": 0.53259446,
+        "count": 172
+      },
+      {
+        "name": "tf_exl3_prompt_down",
+        "summed_seconds": 0.245107456,
+        "count": 172
+      },
+      {
+        "name": "tf_glm_chunks_32",
+        "summed_seconds": 0.241734918,
+        "count": 123
+      },
+      {
+        "name": "tf_glm_kda_step",
+        "summed_seconds": 0.181330528,
+        "count": 646
+      },
+      {
+        "name": "tf_glm_absorb_q",
+        "summed_seconds": 0.125604447,
+        "count": 213
+      },
+      {
+        "name": "tf_glm_expand_v",
+        "summed_seconds": 0.123867997,
+        "count": 213
+      },
+      {
+        "name": "glm_mm16_16",
+        "summed_seconds": 0.10237639,
+        "count": 4230
+      },
+      {
+        "name": "tf_exl3_grouped_1",
+        "summed_seconds": 0.057378848,
+        "count": 1260
+      },
+      {
+        "name": "tf_glm_kda_prep",
+        "summed_seconds": 0.04853363,
+        "count": 646
+      },
+      {
+        "name": "tf_glm_hc_partial",
+        "summed_seconds": 0.044934464,
+        "count": 1072
+      },
+      {
+        "name": "tf_glm_hc_finish",
+        "summed_seconds": 0.02155776,
+        "count": 2422
+      },
+      {
+        "name": "tf_glm_merge",
+        "summed_seconds": 0.020386848,
+        "count": 291
+      },
+      {
+        "name": "tf_glm_hc_post",
+        "summed_seconds": 0.014538527,
+        "count": 2430
+      },
+      {
+        "name": "tf_glm_router_tile",
+        "summed_seconds": 0.014014336,
+        "count": 1015
+      }
+    ],
+    "occupancy": "unmeasured: requires valid hardware counters",
+    "ALU_HBM_split": "unmeasured: duration is not achieved bandwidth or ALU utilization",
+    "note": "smoke aggregate trace only; no kernel-family metric is a candidate bound",
+    "cell": "8192",
+    "repeat": 3,
+    "report_sha256": "c0cbf42675e700339de2c2a4fbe3a64a3f260f1171bde510ee5100d33cf2d39a"
+  },
+  {
+    "kernel_count": 32565,
+    "kernel_span_seconds": 2.428481782,
+    "kernel_union_seconds": 2.415510134,
+    "idle_gap_upper_fraction": 0.005341463994560813,
+    "host_bubble": "INCONCLUSIVE: GPU timeline gaps do not establish absence of useful host work; includes inter-request idle",
+    "families": {
+      "other": {
+        "summed_seconds": 0.670113625,
+        "count": 19897,
+        "summed_fraction": 0.2649534133554712
+      },
+      "dense_bf16": {
+        "summed_seconds": 0.765005759,
+        "count": 6434,
+        "summed_fraction": 0.30247241590356105
+      },
+      "attention": {
+        "summed_seconds": 0.241863488,
+        "count": 1938,
+        "summed_fraction": 0.09562938928701836
+      },
+      "EXL3": {
+        "summed_seconds": 0.852192414,
+        "count": 4296,
+        "summed_fraction": 0.3369447814539494
+      }
+    },
+    "top_kernels": [
+      {
+        "name": "glm_mm16_rows",
+        "summed_seconds": 0.662609503,
+        "count": 2204
+      },
+      {
+        "name": "tf_exl3_prompt_gu",
+        "summed_seconds": 0.534166208,
+        "count": 172
+      },
+      {
+        "name": "tf_exl3_prompt_down",
+        "summed_seconds": 0.2458088,
+        "count": 172
+      },
+      {
+        "name": "tf_glm_chunks_32",
+        "summed_seconds": 0.241707389,
+        "count": 123
+      },
+      {
+        "name": "tf_glm_kda_step",
+        "summed_seconds": 0.181239552,
+        "count": 646
+      },
+      {
+        "name": "tf_glm_absorb_q",
+        "summed_seconds": 0.125574366,
+        "count": 213
+      },
+      {
+        "name": "tf_glm_expand_v",
+        "summed_seconds": 0.123827808,
+        "count": 213
+      },
+      {
+        "name": "glm_mm16_16",
+        "summed_seconds": 0.102396256,
+        "count": 4230
+      },
+      {
+        "name": "tf_exl3_grouped_1",
+        "summed_seconds": 0.057370974,
+        "count": 1260
+      },
+      {
+        "name": "tf_glm_kda_prep",
+        "summed_seconds": 0.04852784,
+        "count": 646
+      },
+      {
+        "name": "tf_glm_hc_partial",
+        "summed_seconds": 0.044946208,
+        "count": 1072
+      },
+      {
+        "name": "tf_glm_hc_finish",
+        "summed_seconds": 0.021546048,
+        "count": 2422
+      },
+      {
+        "name": "tf_glm_merge",
+        "summed_seconds": 0.020394848,
+        "count": 291
+      },
+      {
+        "name": "tf_glm_hc_post",
+        "summed_seconds": 0.014548672,
+        "count": 2430
+      },
+      {
+        "name": "tf_glm_router_tile",
+        "summed_seconds": 0.01401024,
+        "count": 1015
+      }
+    ],
+    "occupancy": "unmeasured: requires valid hardware counters",
+    "ALU_HBM_split": "unmeasured: duration is not achieved bandwidth or ALU utilization",
+    "note": "smoke aggregate trace only; no kernel-family metric is a candidate bound",
+    "cell": "8192",
+    "repeat": 4,
+    "report_sha256": "ed1bedcdfd14d1e4af6319b701be87e2e1d95e02880bce4deb3f1427a260e49c"
+  },
+  {
+    "kernel_count": 63117,
+    "kernel_span_seconds": 8.875805107,
+    "kernel_union_seconds": 8.845968946,
+    "idle_gap_upper_fraction": 0.0033615160135128663,
+    "host_bubble": "INCONCLUSIVE: GPU timeline gaps do not establish absence of useful host work; includes inter-request idle",
+    "families": {
+      "other": {
+        "summed_seconds": 2.431559358,
+        "count": 41029,
+        "summed_fraction": 0.26516615240730773
+      },
+      "dense_bf16": {
+        "summed_seconds": 2.759535031,
+        "count": 13082,
+        "summed_fraction": 0.3009325206049322
+      },
+      "attention": {
+        "summed_seconds": 0.953238527,
+        "count": 3162,
+        "summed_fraction": 0.10395246642833529
+      },
+      "EXL3": {
+        "summed_seconds": 3.025613308,
+        "count": 5844,
+        "summed_fraction": 0.3299488605594248
+      }
+    },
+    "top_kernels": [
+      {
+        "name": "glm_mm16_rows",
+        "summed_seconds": 2.657172215,
+        "count": 8852
+      },
+      {
+        "name": "tf_exl3_prompt_gu",
+        "summed_seconds": 2.012018592,
+        "count": 688
+      },
+      {
+        "name": "tf_exl3_prompt_down",
+        "summed_seconds": 0.923679,
+        "count": 688
+      },
+      {
+        "name": "tf_glm_chunks_32",
+        "summed_seconds": 0.844838043,
+        "count": 255
+      },
+      {
+        "name": "tf_glm_kda_step",
+        "summed_seconds": 0.717658365,
+        "count": 1054
+      },
+      {
+        "name": "tf_glm_absorb_q",
+        "summed_seconds": 0.497007072,
+        "count": 357
+      },
+      {
+        "name": "tf_glm_expand_v",
+        "summed_seconds": 0.491678466,
+        "count": 357
+      },
+      {
+        "name": "tf_glm_kda_prep",
+        "summed_seconds": 0.19019629,
+        "count": 1054
+      },
+      {
+        "name": "tf_glm_hc_partial",
+        "summed_seconds": 0.179883711,
+        "count": 4288
+      },
+      {
+        "name": "glm_mm16_16",
+        "summed_seconds": 0.102362816,
+        "count": 4230
+      },
+      {
+        "name": "tf_glm_merge",
+        "summed_seconds": 0.064612961,
+        "count": 435
+      },
+      {
+        "name": "tf_glm_hc_finish",
+        "summed_seconds": 0.059169215,
+        "count": 5638
+      },
+      {
+        "name": "tf_exl3_grouped_1",
+        "summed_seconds": 0.057388898,
+        "count": 1260
+      },
+      {
+        "name": "tf_glm_hc_post",
+        "summed_seconds": 0.050347168,
+        "count": 5670
+      },
+      {
+        "name": "tf_glm_scores",
+        "summed_seconds": 0.049715294,
+        "count": 840
+      }
+    ],
+    "occupancy": "unmeasured: requires valid hardware counters",
+    "ALU_HBM_split": "unmeasured: duration is not achieved bandwidth or ALU utilization",
+    "note": "smoke aggregate trace only; no kernel-family metric is a candidate bound",
+    "cell": "32768",
+    "repeat": 0,
+    "report_sha256": "d6249087bfc1646d606604c399fe455b2bab0c6b687c0555135df5356229601e"
+  },
+  {
+    "kernel_count": 63117,
+    "kernel_span_seconds": 8.858224448,
+    "kernel_union_seconds": 8.828315488,
+    "idle_gap_upper_fraction": 0.00337640575440068,
+    "host_bubble": "INCONCLUSIVE: GPU timeline gaps do not establish absence of useful host work; includes inter-request idle",
+    "families": {
+      "other": {
+        "summed_seconds": 2.431993888,
+        "count": 41029,
+        "summed_fraction": 0.2657233248153759
+      },
+      "dense_bf16": {
+        "summed_seconds": 2.759555168,
+        "count": 13082,
+        "summed_fraction": 0.3015131649263476
+      },
+      "attention": {
+        "summed_seconds": 0.953172576,
+        "count": 3162,
+        "summed_fraction": 0.10414507506260501
+      },
+      "EXL3": {
+        "summed_seconds": 3.007632192,
+        "count": 5844,
+        "summed_fraction": 0.32861843519567147
+      }
+    },
+    "top_kernels": [
+      {
+        "name": "glm_mm16_rows",
+        "summed_seconds": 2.657190688,
+        "count": 8852
+      },
+      {
+        "name": "tf_exl3_prompt_gu",
+        "summed_seconds": 1.999838144,
+        "count": 688
+      },
+      {
+        "name": "tf_exl3_prompt_down",
+        "summed_seconds": 0.91785968,
+        "count": 688
+      },
+      {
+        "name": "tf_glm_chunks_32",
+        "summed_seconds": 0.84519824,
+        "count": 255
+      },
+      {
+        "name": "tf_glm_kda_step",
+        "summed_seconds": 0.717604352,
+        "count": 1054
+      },
+      {
+        "name": "tf_glm_absorb_q",
+        "summed_seconds": 0.497028992,
+        "count": 357
+      },
+      {
+        "name": "tf_glm_expand_v",
+        "summed_seconds": 0.491666144,
+        "count": 357
+      },
+      {
+        "name": "tf_glm_kda_prep",
+        "summed_seconds": 0.190189856,
+        "count": 1054
+      },
+      {
+        "name": "tf_glm_hc_partial",
+        "summed_seconds": 0.179868,
+        "count": 4288
+      },
+      {
+        "name": "glm_mm16_16",
+        "summed_seconds": 0.10236448,
+        "count": 4230
+      },
+      {
+        "name": "tf_glm_merge",
+        "summed_seconds": 0.064602112,
+        "count": 435
+      },
+      {
+        "name": "tf_glm_hc_finish",
+        "summed_seconds": 0.059169056,
+        "count": 5638
+      },
+      {
+        "name": "tf_exl3_grouped_1",
+        "summed_seconds": 0.057392576,
+        "count": 1260
+      },
+      {
+        "name": "tf_glm_hc_post",
+        "summed_seconds": 0.05036992,
+        "count": 5670
+      },
+      {
+        "name": "tf_glm_scores",
+        "summed_seconds": 0.049715392,
+        "count": 840
+      }
+    ],
+    "occupancy": "unmeasured: requires valid hardware counters",
+    "ALU_HBM_split": "unmeasured: duration is not achieved bandwidth or ALU utilization",
+    "note": "smoke aggregate trace only; no kernel-family metric is a candidate bound",
+    "cell": "32768",
+    "repeat": 1,
+    "report_sha256": "5103558008a42b45ae804c89095c227a7095872ba72d71719c9eaa40ea007e83"
+  },
+  {
+    "kernel_count": 63117,
+    "kernel_span_seconds": 8.85407993,
+    "kernel_union_seconds": 8.82426057,
+    "idle_gap_upper_fraction": 0.0033678665920966466,
+    "host_bubble": "INCONCLUSIVE: GPU timeline gaps do not establish absence of useful host work; includes inter-request idle",
+    "families": {
+      "other": {
+        "summed_seconds": 2.432326264,
+        "count": 41029,
+        "summed_fraction": 0.26587714931503315
+      },
+      "dense_bf16": {
+        "summed_seconds": 2.759630288,
+        "count": 13082,
+        "summed_fraction": 0.30165469369649656
+      },
+      "attention": {
+        "summed_seconds": 0.953249159,
+        "count": 3162,
+        "summed_fraction": 0.10419949524578778
+      },
+      "EXL3": {
+        "summed_seconds": 3.003103086,
+        "count": 5844,
+        "summed_fraction": 0.32826866174268254
+      }
+    },
+    "top_kernels": [
+      {
+        "name": "glm_mm16_rows",
+        "summed_seconds": 2.657212238,
+        "count": 8852
+      },
+      {
+        "name": "tf_exl3_prompt_gu",
+        "summed_seconds": 1.996817095,
+        "count": 688
+      },
+      {
+        "name": "tf_exl3_prompt_down",
+        "summed_seconds": 0.916375494,
+        "count": 688
+      },
+      {
+        "name": "tf_glm_chunks_32",
+        "summed_seconds": 0.844965127,
+        "count": 255
+      },
+      {
+        "name": "tf_glm_kda_step",
+        "summed_seconds": 0.717674849,
+        "count": 1054
+      },
+      {
+        "name": "tf_glm_absorb_q",
+        "summed_seconds": 0.497330725,
+        "count": 357
+      },
+      {
+        "name": "tf_glm_expand_v",
+        "summed_seconds": 0.491726788,
+        "count": 357
+      },
+      {
+        "name": "tf_glm_kda_prep",
+        "summed_seconds": 0.190192614,
+        "count": 1054
+      },
+      {
+        "name": "tf_glm_hc_partial",
+        "summed_seconds": 0.179850242,
+        "count": 4288
+      },
+      {
+        "name": "glm_mm16_16",
+        "summed_seconds": 0.10241805,
+        "count": 4230
+      },
+      {
+        "name": "tf_glm_merge",
+        "summed_seconds": 0.064615777,
+        "count": 435
+      },
+      {
+        "name": "tf_glm_hc_finish",
+        "summed_seconds": 0.059478368,
+        "count": 5638
+      },
+      {
+        "name": "tf_exl3_grouped_1",
+        "summed_seconds": 0.057388193,
+        "count": 1260
+      },
+      {
+        "name": "tf_glm_hc_post",
+        "summed_seconds": 0.050354144,
+        "count": 5670
+      },
+      {
+        "name": "tf_glm_scores",
+        "summed_seconds": 0.049722721,
+        "count": 840
+      }
+    ],
+    "occupancy": "unmeasured: requires valid hardware counters",
+    "ALU_HBM_split": "unmeasured: duration is not achieved bandwidth or ALU utilization",
+    "note": "smoke aggregate trace only; no kernel-family metric is a candidate bound",
+    "cell": "32768",
+    "repeat": 2,
+    "report_sha256": "2322d40876d4eb2d7514217509d2fa2ac4f31387c02f51e150e377cb35b51aa1"
+  },
+  {
+    "kernel_count": 63117,
+    "kernel_span_seconds": 8.856698251,
+    "kernel_union_seconds": 8.827002923,
+    "idle_gap_upper_fraction": 0.0033528666279950547,
+    "host_bubble": "INCONCLUSIVE: GPU timeline gaps do not establish absence of useful host work; includes inter-request idle",
+    "families": {
+      "other": {
+        "summed_seconds": 2.431771332,
+        "count": 41029,
+        "summed_fraction": 0.26572761036845144
+      },
+      "dense_bf16": {
+        "summed_seconds": 2.760288357,
+        "count": 13082,
+        "summed_fraction": 0.3016257406201995
+      },
+      "attention": {
+        "summed_seconds": 0.953419614,
+        "count": 3162,
+        "summed_fraction": 0.10418328087545337
+      },
+      "EXL3": {
+        "summed_seconds": 3.005889381,
+        "count": 5844,
+        "summed_fraction": 0.3284633681358958
+      }
+    },
+    "top_kernels": [
+      {
+        "name": "glm_mm16_rows",
+        "summed_seconds": 2.657915429,
+        "count": 8852
+      },
+      {
+        "name": "tf_exl3_prompt_gu",
+        "summed_seconds": 1.998610978,
+        "count": 688
+      },
+      {
+        "name": "tf_exl3_prompt_down",
+        "summed_seconds": 0.917378563,
+        "count": 688
+      },
+      {
+        "name": "tf_glm_chunks_32",
+        "summed_seconds": 0.844910077,
+        "count": 255
+      },
+      {
+        "name": "tf_glm_kda_step",
+        "summed_seconds": 0.717849085,
+        "count": 1054
+      },
+      {
+        "name": "tf_glm_absorb_q",
+        "summed_seconds": 0.497022154,
+        "count": 357
+      },
+      {
+        "name": "tf_glm_expand_v",
+        "summed_seconds": 0.491731965,
+        "count": 357
+      },
+      {
+        "name": "tf_glm_kda_prep",
+        "summed_seconds": 0.190192386,
+        "count": 1054
+      },
+      {
+        "name": "tf_glm_hc_partial",
+        "summed_seconds": 0.179887105,
+        "count": 4288
+      },
+      {
+        "name": "glm_mm16_16",
+        "summed_seconds": 0.102372928,
+        "count": 4230
+      },
+      {
+        "name": "tf_glm_merge",
+        "summed_seconds": 0.06459904,
+        "count": 435
+      },
+      {
+        "name": "tf_glm_hc_finish",
+        "summed_seconds": 0.059185376,
+        "count": 5638
+      },
+      {
+        "name": "tf_exl3_grouped_1",
+        "summed_seconds": 0.057394784,
+        "count": 1260
+      },
+      {
+        "name": "tf_glm_hc_post",
+        "summed_seconds": 0.05038403,
+        "count": 5670
+      },
+      {
+        "name": "tf_glm_scores",
+        "summed_seconds": 0.049719841,
+        "count": 840
+      }
+    ],
+    "occupancy": "unmeasured: requires valid hardware counters",
+    "ALU_HBM_split": "unmeasured: duration is not achieved bandwidth or ALU utilization",
+    "note": "smoke aggregate trace only; no kernel-family metric is a candidate bound",
+    "cell": "32768",
+    "repeat": 3,
+    "report_sha256": "61e8b55d683b495909bc50d3d939f0995f415f146bed1ef78261d6d450e76348"
+  },
+  {
+    "kernel_count": 63117,
+    "kernel_span_seconds": 8.853759002,
+    "kernel_union_seconds": 8.823935643,
+    "idle_gap_upper_fraction": 0.0033684403419229625,
+    "host_bubble": "INCONCLUSIVE: GPU timeline gaps do not establish absence of useful host work; includes inter-request idle",
+    "families": {
+      "other": {
+        "summed_seconds": 2.431611171,
+        "count": 41029,
+        "summed_fraction": 0.26581021906378555
+      },
+      "dense_bf16": {
+        "summed_seconds": 2.759418065,
+        "count": 13082,
+        "summed_fraction": 0.3016442468655764
+      },
+      "attention": {
+        "summed_seconds": 0.95352685,
+        "count": 3162,
+        "summed_fraction": 0.10423425583189237
+      },
+      "EXL3": {
+        "summed_seconds": 3.00336599,
+        "count": 5844,
+        "summed_fraction": 0.3283112782387457
+      }
+    },
+    "top_kernels": [
+      {
+        "name": "glm_mm16_rows",
+        "summed_seconds": 2.657019406,
+        "count": 8852
+      },
+      {
+        "name": "tf_exl3_prompt_gu",
+        "summed_seconds": 1.996726019,
+        "count": 688
+      },
+      {
+        "name": "tf_exl3_prompt_down",
+        "summed_seconds": 0.916729439,
+        "count": 688
+      },
+      {
+        "name": "tf_glm_chunks_32",
+        "summed_seconds": 0.844860418,
+        "count": 255
+      },
+      {
+        "name": "tf_glm_kda_step",
+        "summed_seconds": 0.717970849,
+        "count": 1054
+      },
+      {
+        "name": "tf_glm_absorb_q",
+        "summed_seconds": 0.496964959,
+        "count": 357
+      },
+      {
+        "name": "tf_glm_expand_v",
+        "summed_seconds": 0.491696452,
+        "count": 357
+      },
+      {
+        "name": "tf_glm_kda_prep",
+        "summed_seconds": 0.190178461,
+        "count": 1054
+      },
+      {
+        "name": "tf_glm_hc_partial",
+        "summed_seconds": 0.179875807,
+        "count": 4288
+      },
+      {
+        "name": "glm_mm16_16",
+        "summed_seconds": 0.102398659,
+        "count": 4230
+      },
+      {
+        "name": "tf_glm_merge",
+        "summed_seconds": 0.064621471,
+        "count": 435
+      },
+      {
+        "name": "tf_glm_hc_finish",
+        "summed_seconds": 0.059168611,
+        "count": 5638
+      },
+      {
+        "name": "tf_exl3_grouped_1",
+        "summed_seconds": 0.057392163,
+        "count": 1260
+      },
+      {
+        "name": "tf_glm_hc_post",
+        "summed_seconds": 0.050347645,
+        "count": 5670
+      },
+      {
+        "name": "tf_glm_scores",
+        "summed_seconds": 0.049714304,
+        "count": 840
+      }
+    ],
+    "occupancy": "unmeasured: requires valid hardware counters",
+    "ALU_HBM_split": "unmeasured: duration is not achieved bandwidth or ALU utilization",
+    "note": "smoke aggregate trace only; no kernel-family metric is a candidate bound",
+    "cell": "32768",
+    "repeat": 4,
+    "report_sha256": "9c1647b40b52dea1a4873964522963716bcb80e9914968916df0455b82df7ebc"
+  }
+]

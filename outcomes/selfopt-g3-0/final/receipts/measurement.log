@@ -1,0 +1,832 @@
+All human-facing times PT. Primary source: results.jsonl.
+{
+  "recorded_pt": "2026-11-14T21:09:09.748608-08:00",
+  "generation": "G3.0",
+  "outcome": "HALTED_COUNTER_OVERHEAD",
+  "audited_scientific_null": false,
+  "promotion": false,
+  "champion_remeasurement": {
+    "1": {
+      "mean": 81.7853758005476,
+      "ci95": [
+        81.78353025306234,
+        81.78722134803286
+      ],
+      "cv": 1.8173788991798304e-05,
+      "n": 5,
+      "values": [
+        81.78791777782507,
+        81.78463211230853,
+        81.78408002552236,
+        81.78503252869885,
+        81.78521655838318
+      ],
+      "pass": true
+    },
+    "16": {
+      "mean": 272.5774146143899,
+      "ci95": [
+        272.51076082571484,
+        272.644068403065
+      ],
+      "cv": 0.0001969386167832842,
+      "n": 5,
+      "values": [
+        272.63630045147977,
+        272.534616575683,
+        272.54681541340057,
+        272.6355908016139,
+        272.5337498297723
+      ],
+      "pass": true
+    }
+  },
+  "smoke_control": {
+    "1": {
+      "mean": 81.79133017350532,
+      "ci95": [
+        81.79009025714791,
+        81.79257008986272
+      ],
+      "cv": 1.2209026298730005e-05,
+      "n": 5,
+      "values": [
+        81.79237867721595,
+        81.79125685838206,
+        81.79223270018365,
+        81.78999981167081,
+        81.7907828200741
+      ],
+      "pass": true
+    },
+    "16": {
+      "mean": 272.6899667610252,
+      "ci95": [
+        272.63868641882397,
+        272.7412471032264
+      ],
+      "cv": 0.00015145292548875012,
+      "n": 5,
+      "values": [
+        272.7262838282097,
+        272.7085899523608,
+        272.6463476320748,
+        272.7242448593202,
+        272.6443675331602
+      ],
+      "pass": true
+    }
+  },
+  "timeline_overhead": {
+    "c1": {
+      "native_seconds": {
+        "plain": {
+          "mean": 6.268273349875,
+          "ci95": [
+            6.268054258423453,
+            6.268492441326547
+          ],
+          "cv": 2.8149677040333472e-05,
+          "n": 5,
+          "values": [
+            6.2682810818125,
+            6.2684051753125,
+            6.2684618830000005,
+            6.2680151396875,
+            6.2682034695625
+          ]
+        },
+        "traced": {
+          "mean": 6.2734661932375,
+          "ci95": [
+            6.272045019986853,
+            6.274887366488146
+          ],
+          "cv": 0.0001824464316130213,
+          "n": 5,
+          "values": [
+            6.2715389155625,
+            6.2733478238125,
+            6.27386956425,
+            6.2742711795,
+            6.2743034830625
+          ]
+        },
+        "overhead_fraction": 0.0008284328191596746
+      },
+      "client_seconds": {
+        "plain": {
+          "mean": 102.45580366719805,
+          "ci95": [
+            102.44788668834467,
+            102.46372064605144
+          ],
+          "cv": 6.223272695956445e-05,
+          "n": 5,
+          "values": [
+            102.44563209300395,
+            102.457608015,
+            102.45887330500409,
+            102.46248032199219,
+            102.45442460099002
+          ]
+        },
+        "traced": {
+          "mean": 102.54383527379832,
+          "ci95": [
+            102.51690868452262,
+            102.57076186307403
+          ],
+          "cv": 0.000211479220186311,
+          "n": 5,
+          "values": [
+            102.5069069149904,
+            102.54270212800475,
+            102.55789833699237,
+            102.55973265500506,
+            102.55193633399904
+          ]
+        },
+        "overhead_fraction": 0.0008592154221562787
+      },
+      "paired_ratio_intervals": {
+        "native_seconds": {
+          "geometric_ratio": 1.0008284198090578,
+          "ci95": [
+            1.0005897579802492,
+            1.0010671385637624
+          ],
+          "n": 5
+        },
+        "client_seconds": {
+          "geometric_ratio": 1.0008591990652786,
+          "ci95": [
+            1.0006656936207394,
+            1.001052741929265
+          ],
+          "n": 5
+        }
+      }
+    },
+    "c16": {
+      "native_seconds": {
+        "plain": {
+          "mean": 29.0849666618625,
+          "ci95": [
+            29.08210703051495,
+            29.087826293210046
+          ],
+          "cv": 7.918399150469903e-05,
+          "n": 5,
+          "values": [
+            29.0819889174375,
+            29.0845141556875,
+            29.0866475051875,
+            29.083867886375,
+            29.087814844625
+          ]
+        },
+        "traced": {
+          "mean": 29.15681835395,
+          "ci95": [
+            29.14089847263311,
+            29.17273823526689
+          ],
+          "cv": 0.0004397396288607146,
+          "n": 5,
+          "values": [
+            29.179446098,
+            29.1527507481875,
+            29.14944290575,
+            29.1487716289375,
+            29.153680388875
+          ]
+        },
+        "overhead_fraction": 0.0024704065479201898
+      },
+      "client_seconds": {
+        "plain": {
+          "mean": 30.04585455619672,
+          "ci95": [
+            30.03963913690796,
+            30.052069975485477
+          ],
+          "cv": 0.00016660260264885577,
+          "n": 5,
+          "values": [
+            30.043141898990143,
+            30.051716677000513,
+            30.04217395199521,
+            30.041386313998373,
+            30.050853938999353
+          ]
+        },
+        "traced": {
+          "mean": 30.12157232319587,
+          "ci95": [
+            30.107878130663856,
+            30.135266515727885
+          ],
+          "cv": 0.00036614634442695134,
+          "n": 5,
+          "values": [
+            30.13850860299135,
+            30.11951742399833,
+            30.1222476339899,
+            30.10771017499792,
+            30.119877780001843
+          ]
+        },
+        "overhead_fraction": 0.0025200736713122396
+      },
+      "paired_ratio_intervals": {
+        "native_seconds": {
+          "geometric_ratio": 1.00247033155117,
+          "ci95": [
+            1.0018537458065624,
+            1.0030872967703086
+          ],
+          "n": 5
+        },
+        "client_seconds": {
+          "geometric_ratio": 1.0025200310463798,
+          "ci95": [
+            1.0020135240209092,
+            1.003026794105687
+          ],
+          "n": 5
+        }
+      }
+    },
+    "8192": {
+      "native_seconds": {
+        "plain": {
+          "mean": 2.2321727868,
+          "ci95": [
+            2.2307170575279764,
+            2.2336285160720237
+          ],
+          "cv": 0.0005252290236369344,
+          "n": 5,
+          "values": [
+            2.231957335,
+            2.232974825,
+            2.23307138,
+            2.230226438,
+            2.232633956
+          ]
+        },
+        "traced": {
+          "mean": 2.2324998586,
+          "ci95": [
+            2.231239272837211,
+            2.2337604443627894
+          ],
+          "cv": 0.0004547543570705268,
+          "n": 5,
+          "values": [
+            2.232822773,
+            2.232944639,
+            2.23334014,
+            2.230741441,
+            2.2326503
+          ]
+        },
+        "overhead_fraction": 0.00014652620170552133
+      },
+      "client_seconds": {
+        "plain": {
+          "mean": 2.479677176399855,
+          "ci95": [
+            2.477801163887009,
+            2.4815531889127005
+          ],
+          "cv": 0.0006093074623622643,
+          "n": 5,
+          "values": [
+            2.480204932988272,
+            2.479666355997324,
+            2.480426731010084,
+            2.477108908002265,
+            2.48097895400133
+          ]
+        },
+        "traced": {
+          "mean": 2.4807442418008576,
+          "ci95": [
+            2.4785362639050557,
+            2.4829522196966596
+          ],
+          "cv": 0.0007168175676052869,
+          "n": 5,
+          "values": [
+            2.479988560997299,
+            2.4797832040057983,
+            2.4812732309947023,
+            2.4790832519938704,
+            2.4835929610126186
+          ]
+        },
+        "overhead_fraction": 0.00043032432252010366
+      },
+      "paired_ratio_intervals": {
+        "native_seconds": {
+          "geometric_ratio": 1.000146553839321,
+          "ci95": [
+            0.9999397533246824,
+            1.0003533971229892
+          ],
+          "n": 5
+        },
+        "client_seconds": {
+          "geometric_ratio": 1.000430267407034,
+          "ci95": [
+            0.9998267644261273,
+            1.0010341346668945
+          ],
+          "n": 5
+        }
+      }
+    },
+    "32768": {
+      "native_seconds": {
+        "plain": {
+          "mean": 8.6617177624,
+          "ci95": [
+            8.65083919618036,
+            8.67259632861964
+          ],
+          "cv": 0.0010114945389294357,
+          "n": 5,
+          "values": [
+            8.67705582,
+            8.66045045,
+            8.65619053,
+            8.658697391,
+            8.656194621
+          ]
+        },
+        "traced": {
+          "mean": 8.6627759294,
+          "ci95": [
+            8.651344291501811,
+            8.67420756729819
+          ],
+          "cv": 0.0010627895840728096,
+          "n": 5,
+          "values": [
+            8.678889396,
+            8.661388152,
+            8.657103659,
+            8.659720157,
+            8.656778283
+          ]
+        },
+        "overhead_fraction": 0.00012216595241576478
+      },
+      "client_seconds": {
+        "plain": {
+          "mean": 9.035047850004048,
+          "ci95": [
+            9.023917635138199,
+            9.046178064869897
+          ],
+          "cv": 0.0009921309603937159,
+          "n": 5,
+          "values": [
+            9.049872542003868,
+            9.031917605010676,
+            9.028008350011078,
+            9.036685908999061,
+            9.028754843995557
+          ]
+        },
+        "traced": {
+          "mean": 9.03401681400137,
+          "ci95": [
+            9.023597378815262,
+            9.044436249187479
+          ],
+          "cv": 0.0009288791057837034,
+          "n": 5,
+          "values": [
+            9.048333683007513,
+            9.031990792005672,
+            9.029375066995271,
+            9.033493176000775,
+            9.02689135199762
+          ]
+        },
+        "overhead_fraction": -0.00011411516793202736
+      },
+      "paired_ratio_intervals": {
+        "native_seconds": {
+          "geometric_ratio": 1.0001221234393867,
+          "ci95": [
+            1.000055750283424,
+            1.0001885010004994
+          ],
+          "n": 5
+        },
+        "client_seconds": {
+          "geometric_ratio": 0.9998859334143242,
+          "ci95": [
+            0.9996421104133595,
+            1.0001298158862288
+          ],
+          "n": 5
+        }
+      }
+    }
+  },
+  "timeline_descriptive_metrics": {
+    "c1": {
+      "kernel_count": {
+        "median": 11728224,
+        "range": [
+          11728224,
+          11728224
+        ],
+        "n": 5
+      },
+      "kernel_span_seconds": {
+        "median": 102.521548192,
+        "range": [
+          102.474584023,
+          102.526567541
+        ],
+        "n": 5
+      },
+      "kernel_union_seconds": {
+        "median": 98.199310992,
+        "range": [
+          98.199177884,
+          98.201657757
+        ],
+        "n": 5
+      },
+      "idle_gap_upper_fraction": {
+        "median": 0.042160291901808034,
+        "range": [
+          0.04170072692406235,
+          0.04220619740604836
+        ],
+        "n": 5
+      },
+      "family_summed_seconds": {
+        "EXL3": {
+          "median": 37.351756582,
+          "range": [
+            37.350582582,
+            37.352719897
+          ],
+          "n": 5
+        },
+        "dense_bf16": {
+          "median": 55.686658762,
+          "range": [
+            55.683507485,
+            55.687373692
+          ],
+          "n": 5
+        },
+        "attention": {
+          "median": 2.785710635,
+          "range": [
+            2.785652438,
+            2.785854746
+          ],
+          "n": 5
+        },
+        "other": {
+          "median": 26.18336994,
+          "range": [
+            26.182788303,
+            26.183734346
+          ],
+          "n": 5
+        }
+      }
+    },
+    "c16": {
+      "kernel_count": {
+        "median": 1978376,
+        "range": [
+          1978376,
+          1978376
+        ],
+        "n": 5
+      },
+      "kernel_span_seconds": {
+        "median": 30.044455072,
+        "range": [
+          30.041873073,
+          30.077904231
+        ],
+        "n": 5
+      },
+      "kernel_union_seconds": {
+        "median": 28.714655602,
+        "range": [
+          28.714220095,
+          28.716012945
+        ],
+        "n": 5
+      },
+      "idle_gap_upper_fraction": {
+        "median": 0.0442755567978238,
+        "range": [
+          0.04413373709349733,
+          0.045305863883811415
+        ],
+        "n": 5
+      },
+      "family_summed_seconds": {
+        "EXL3": {
+          "median": 17.918981516,
+          "range": [
+            17.918860145,
+            17.920087577
+          ],
+          "n": 5
+        },
+        "dense_bf16": {
+          "median": 4.103546462,
+          "range": [
+            4.103416986,
+            4.103737351
+          ],
+          "n": 5
+        },
+        "attention": {
+          "median": 2.612362088,
+          "range": [
+            2.612288431,
+            2.612833121
+          ],
+          "n": 5
+        },
+        "other": {
+          "median": 5.735479641,
+          "range": [
+            5.735319519,
+            5.736175072
+          ],
+          "n": 5
+        }
+      }
+    },
+    "8192": {
+      "kernel_count": {
+        "median": 32565,
+        "range": [
+          32565,
+          32565
+        ],
+        "n": 5
+      },
+      "kernel_span_seconds": {
+        "median": 2.42876912,
+        "range": [
+          2.426640636,
+          2.429195546
+        ],
+        "n": 5
+      },
+      "kernel_union_seconds": {
+        "median": 2.415736832,
+        "range": [
+          2.413627132,
+          2.416225018
+        ],
+        "n": 5
+      },
+      "idle_gap_upper_fraction": {
+        "median": 0.0053468921548913695,
+        "range": [
+          0.0053394334685643585,
+          0.005365799446593766
+        ],
+        "n": 5
+      },
+      "family_summed_seconds": {
+        "EXL3": {
+          "median": 0.852192414,
+          "range": [
+            0.849940188,
+            0.852902218
+          ],
+          "n": 5
+        },
+        "dense_bf16": {
+          "median": 0.765005759,
+          "range": [
+            0.764901694,
+            0.765217024
+          ],
+          "n": 5
+        },
+        "attention": {
+          "median": 0.241869091,
+          "range": [
+            0.241849758,
+            0.242024864
+          ],
+          "n": 5
+        },
+        "other": {
+          "median": 0.670137259,
+          "range": [
+            0.670068666,
+            0.670308864
+          ],
+          "n": 5
+        }
+      }
+    },
+    "32768": {
+      "kernel_count": {
+        "median": 63117,
+        "range": [
+          63117,
+          63117
+        ],
+        "n": 5
+      },
+      "kernel_span_seconds": {
+        "median": 8.856698251,
+        "range": [
+          8.853759002,
+          8.875805107
+        ],
+        "n": 5
+      },
+      "kernel_union_seconds": {
+        "median": 8.827002923,
+        "range": [
+          8.823935643,
+          8.845968946
+        ],
+        "n": 5
+      },
+      "idle_gap_upper_fraction": {
+        "median": 0.0033678665920966466,
+        "range": [
+          0.0033528666279950547,
+          0.00337640575440068
+        ],
+        "n": 5
+      },
+      "family_summed_seconds": {
+        "EXL3": {
+          "median": 3.005889381,
+          "range": [
+            3.003103086,
+            3.025613308
+          ],
+          "n": 5
+        },
+        "dense_bf16": {
+          "median": 2.759555168,
+          "range": [
+            2.759418065,
+            2.760288357
+          ],
+          "n": 5
+        },
+        "attention": {
+          "median": 0.953249159,
+          "range": [
+            0.953172576,
+            0.95352685
+          ],
+          "n": 5
+        },
+        "other": {
+          "median": 2.431771332,
+          "range": [
+            2.431559358,
+            2.432326264
+          ],
+          "n": 5
+        }
+      }
+    }
+  },
+  "host_axis": "INCONCLUSIVE: no correlated useful host work; summed overlapping kernel time is not critical-path share",
+  "counter_probe": {
+    "status": "HALT_COUNTER_OVERHEAD",
+    "native_ratio": 5.8505853181929455,
+    "client_ratio": 5.76470463151993,
+    "profiled_replies": 1,
+    "control_replies": 5,
+    "ratio_ci95": null,
+    "qualification": "Single first counter reply versus five retained same-prompt controls; conservative operational stop, not an isolated causal-profiler estimate",
+    "output_ids_equal": true,
+    "captured_kernel_instances": 5,
+    "diagnostic_occupancy_percent": {
+      "median": 24.1,
+      "range": [
+        23.88,
+        24.2
+      ],
+      "n": 5,
+      "admissible_for_candidate_bound": false
+    },
+    "registers_per_thread": 128
+  },
+  "independent_references": {
+    "mma_fp16_tflops": {
+      "mean": 602.051373,
+      "ci95": [
+        601.9732209869118,
+        602.1295250130883
+      ],
+      "n": 5,
+      "cv": 0.00010454482240026496,
+      "values": [
+        601.955798,
+        602.041932,
+        602.120147,
+        602.044633,
+        602.094355
+      ]
+    },
+    "stream_decimal_GB_s": {
+      "mean": 4858.22299,
+      "ci95": [
+        4856.516837722752,
+        4859.9291422772485
+      ],
+      "n": 5,
+      "cv": 0.00028283702228320304,
+      "values": [
+        4857.00154,
+        4858.79469,
+        4860.23771,
+        4858.15001,
+        4856.931
+      ]
+    },
+    "stream_observed_floor_GB_s": 4856.931,
+    "meaning": "Sustained independent references, not certified absolute hardware ceilings or a dequant ALU ceiling"
+  },
+  "candidates": [
+    {
+      "id": "host-readback",
+      "status": "unrun-inconclusive-bound",
+      "largest_plausible_bound": null,
+      "interval": null,
+      "verdict": "No correlated useful-host-work evidence or per-reply critical-path bound. Timeline gaps are upper observations only; fatal counter-overhead stop also applies.",
+      "falsifier_counted": false
+    },
+    {
+      "id": "exl3-strips",
+      "status": "unrun-profile-overhead-gate",
+      "largest_plausible_bound": null,
+      "interval": null,
+      "verdict": "Counter timing ratio exceeds the frozen cap. Independent MMA/STREAM references do not supply a valid dequant ALU bound; no patch or served candidate executed.",
+      "falsifier_counted": false
+    },
+    {
+      "id": "one-guard",
+      "status": "not-applicable-unrun",
+      "largest_plausible_bound": 1.0,
+      "interval": null,
+      "verdict": "qmmf guards already include sm103; remaining EXL3 AHEAD is the explicitly excluded prior regression. No eligible guard.",
+      "falsifier_counted": false
+    }
+  ],
+  "restore": {
+    "smoke": {
+      "started_pt": "2026-11-14T19:52:36.957010-08:00",
+      "health_pt": "2026-11-14T19:55:02.745591-08:00",
+      "health_seconds": 145.78867897301097,
+      "invocation_to_both_routed_answers_seconds": 147.21015481298673,
+      "routes_pass": true
+    },
+    "generation": {
+      "started_pt": "2026-11-14T20:57:10.276696-08:00",
+      "health_pt": "2026-11-14T20:59:04.248732-08:00",
+      "health_seconds": 113.97214177000569,
+      "invocation_to_both_routed_answers_seconds": 115.43120078800712,
+      "routes_pass": true
+    }
+  },
+  "gpu_usage": {
+    "left_exclusive_gpu_hours": 1.4157717736111113,
+    "since_pt": "2026-11-14T19:32:44.372501-08:00",
+    "released_pt": "2026-11-14T20:59:05.803728-08:00",
+    "windows": 2,
+    "includes": "load, measurement, profiler generation, CPU wait and daily restoration",
+    "right_shared_probe_busy_time": "unmetered; no exclusive reservation of serving devices"
+  },
+  "production": {
+    "preserved_daily": true,
+    "original_settings": true,
+    "right_unchanged": true,
+    "production_router_unchanged": true,
+    "all_claims_released": true
+  },
+  "engine_changed": false
+}

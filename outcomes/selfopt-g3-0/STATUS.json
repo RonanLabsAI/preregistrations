@@ -1,0 +1,11 @@
+{
+  "generation": "G3.0",
+  "protocol_outcome": "HALTED_COUNTER_OVERHEAD",
+  "mission_control_state": "awaiting-review",
+  "unit_state": "done",
+  "package_validation": "valid",
+  "candidates_executed": 0,
+  "audited_scientific_null": false,
+  "claims_released": true,
+  "engine_changed": false
+}

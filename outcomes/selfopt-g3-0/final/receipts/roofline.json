@@ -1,0 +1,52 @@
+{
+  "checksum_pass": true,
+  "sms": 152,
+  "threads": 256,
+  "blocks": 1216,
+  "iterations": 8192,
+  "repeats": 10,
+  "samples": [
+    {
+      "milliseconds": 21.690464,
+      "fp16_tflops": 601.955798
+    },
+    {
+      "milliseconds": 21.6873608,
+      "fp16_tflops": 602.041932
+    },
+    {
+      "milliseconds": 21.6845436,
+      "fp16_tflops": 602.120147
+    },
+    {
+      "milliseconds": 21.6872635,
+      "fp16_tflops": 602.044633
+    },
+    {
+      "milliseconds": 21.6854725,
+      "fp16_tflops": 602.094355
+    }
+  ],
+  "stream_triad_samples": [
+    {
+      "milliseconds": 13.2642555,
+      "decimal_GB_s": 4857.00154
+    },
+    {
+      "milliseconds": 13.2593603,
+      "decimal_GB_s": 4858.79469
+    },
+    {
+      "milliseconds": 13.2554235,
+      "decimal_GB_s": 4860.23771
+    },
+    {
+      "milliseconds": 13.2611198,
+      "decimal_GB_s": 4858.15001
+    },
+    {
+      "milliseconds": 13.2644482,
+      "decimal_GB_s": 4856.931
+    }
+  ]
+}
