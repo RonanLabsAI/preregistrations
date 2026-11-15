@@ -99,26 +99,14 @@ if a.counter:
  for step in seq:launch(*step)
  call('cuStreamSynchronize',stream);call('cuProfilerStop');samples=[]
 else:
- events=[]
- for step in seq:
-  pair=[]
-  for _ in range(2):
-   ev=ptr();call('cuEventCreate',C.byref(ev),0);pair.append(ev)
-  events.append(pair)
  graph=ptr();call('cuStreamBeginCapture_v2',stream,0)
- for step,(start,end) in zip(seq,events):
-  call('cuEventRecord',start,stream);launch(*step);call('cuEventRecord',end,stream)
+ for step in seq:launch(*step)
  call('cuStreamEndCapture',stream,C.byref(graph));exe=ptr();call('cuGraphInstantiateWithFlags',C.byref(exe),graph,0)
+ # Kernel start/end timestamps come from Nsight Systems, as in served traces.
  samples=[]
  for repeat in range(6):
-  block=[]
   for j in range(20):
    call('cuMemsetD8_v2',scrub,repeat,256*2**20);call('cuGraphLaunch',exe,stream);call('cuStreamSynchronize',stream)
-   times=[]
-   for start,end in events:
-    ms=C.c_float();call('cuEventElapsedTime',C.byref(ms),start,end);times.append(ms.value*1000)
-   block.append(times)
-  if repeat:samples.append([statistics.median(row[k] for row in block) for k in range(6)])
 call('cuMemcpyDtoH_v2',h,out,len(h));assert hashlib.sha256(h.raw).hexdigest()==first_hash
 r=dict(rows=a.rows,unique=U,route_provenance='C1 distinct-membership equivalent; synthetic weights and values' if a.rows==1 else 'synthetic balanced collision sensitivity; NOT captured C16 routing',seed=1234,fatbin_sha256=FATBIN_SHA,resources=resources,steps=[dict(name=n,grid=g,block=b,shared=s) for n,g,b,s,_ in seq],samples_us=samples,finite=True,repeatable=True,output_sha256=first_hash,wall_seconds=time.monotonic())
 pathlib.Path(a.out).write_text(json.dumps(r,indent=2)+'\n');print(json.dumps(dict(rows=a.rows,unique=U,samples_us=samples,finite=True)),flush=True)
