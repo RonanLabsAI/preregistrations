@@ -1,0 +1,223 @@
+{
+  "frozen_pt": "2026-11-14T21:23:51.522744-08:00",
+  "champion": {
+    "build_sha": "7c1bc0be3df413f43c65fb278699b629a44e7a90",
+    "compiled_and_tested_build_sha": "624729eebb1d8d89c328363e6af23c6e6c4959b5",
+    "model_revision": "078455ffe6472f9a52fbc1139f58b9db2881b25c",
+    "recipe_hash": "f8d2add58edc68b3e551b1e3ed68311a701a298a8c6b8cb67b0a30e88d0d9e84",
+    "manifest_sha256": "5032e323350f07ad2f2a585b9a8b25ca952400ae394a7e6dc39b34587af7e09b",
+    "server_sha256": "1711a2c9e8ef1058c563ea99b4f51346898731a41c73c42d713bc103cf7c9c92",
+    "reference_toks": {
+      "1": {
+        "name": "native_reply_tok_s",
+        "reference_tok_s": 81.75852439287947,
+        "ci95": [
+          81.75559410272363,
+          81.7614546830353
+        ],
+        "cv": 2.886512832358374e-05,
+        "n": 5
+      },
+      "16": {
+        "name": "aggregate_client_tok_s",
+        "reference_tok_s": 272.7833711663832,
+        "ci95": [
+          272.69866418797415,
+          272.8680781447922
+        ],
+        "cv": 0.00025009050816263796,
+        "n": 5
+      }
+    },
+    "control_band": {
+      "relative_tolerance": 0.02,
+      "cv_gate": 0.015,
+      "cv_pass": true,
+      "cells": {
+        "1": {
+          "metric": "native_reply_tok_s",
+          "lower": 80.12335390502187,
+          "upper": 83.39369488073706
+        },
+        "16": {
+          "metric": "aggregate_client_tok_s",
+          "lower": 267.3277037430555,
+          "upper": 278.23903858971084
+        }
+      },
+      "rule": "Halt later matching five-round scoring if its mean is outside reference*[0.98,1.02]; never widen from observed data."
+    },
+    "cold_ttft_p95": {
+      "8192": {
+        "seconds": 2.23494711,
+        "n": 5,
+        "definition": "Cache-off, model loaded, native TTFT; nearest-rank empirical p95=max at n5, no population p95 CI"
+      },
+      "32768": {
+        "seconds": 8.679886403,
+        "n": 5,
+        "definition": "Cache-off, model loaded, native TTFT; nearest-rank empirical p95=max at n5, no population p95 CI"
+      }
+    },
+    "token_reference": {
+      "path": "TOKEN-REFERENCE.json",
+      "sha256": "25580be28082f7a7b0761467006d2fd2eda19de763ba1ba26b3073428cb3478c",
+      "long_plain_output_ids_checked": 196608
+    },
+    "baseline_id": "tensorfold-sm103-w14b-7c1bc0b",
+    "reference_tok_s": 81.75852439287947,
+    "cold_ttft_p95_s": 8.679886403
+  },
+  "inputs": {
+    "reference-corpus.json": "edb21df93c0ce6971c5466addb85c8a7022a889f76e727526a49124a9eefc5bd",
+    "reference-prefill.jsonl": "3d25e71446774aa87c823e8078ae3e5f56fd5ee345cf76c12d7ef63db81ff6c6",
+    "TOKEN-REFERENCE.json": "25580be28082f7a7b0761467006d2fd2eda19de763ba1ba26b3073428cb3478c"
+  },
+  "candidates": [
+    {
+      "key": "host-readback",
+      "seed": "1234",
+      "token_class": "preserving-expected",
+      "record": {
+        "experiment_id": "w26-g3-1-host-readback",
+        "created_at": "2026-11-14T21:23:51.522744-08:00",
+        "updated_at": "2026-11-14T21:23:51.522744-08:00",
+        "owner": "w26",
+        "status": "proposed",
+        "rung": "rung-3",
+        "hardware_class": "GB300 sm103",
+        "baseline_id": "tensorfold-sm103-w14b-7c1bc0b",
+        "candidate_id": "host-readback",
+        "mechanism": "overlap synchronous readback with independent host scheduling",
+        "change_surface": "Zig GLM scheduler readback lifetime",
+        "smallest_change": "double-buffer pinned readback for one GLM path only",
+        "evidence_refs": [
+          "champion binding",
+          "W14b register and recovery evidence"
+        ],
+        "evidence": "No current Zig host-bubble measurement. Python-era H3 +4.9% C1 is below bar and is a prior only.",
+        "upper_bound_estimate": 1.0,
+        "bound_status": "unmeasured; 1.0 is fail-closed admission sentinel, not an estimated ceiling",
+        "largest_plausible_bound": "1/(1-b), b = measured critical-path GPU bubble with no useful host work in flight; unknown until valid low-overhead profile",
+        "target": {
+          "model": "Mia-AiLab/GLM-5.3-Flash-EXL3-4bpw-TensorFold",
+          "checkpoint": "078455ffe6472f9a52fbc1139f58b9db2881b25c",
+          "quant": "EXL3 4bpw",
+          "tokenizer": "19e773648cb4e65de8660ea6365e10acca112d42a854923df93db4a6f333a82d"
+        },
+        "engine": {
+          "name": "TensorFold native",
+          "version": "7c1bc0be3df413f43c65fb278699b629a44e7a90"
+        },
+        "correctness_gate": "Exact frozen output token ID equality, mandatory kernel contract for kernel patches",
+        "quality_gate": "Token mismatch => classified token-changing, never promoted in G3.0",
+        "performance_gate": "Point >=1.05; paired t95 CI lower >1.00; n>=5 alternating pairs; CV<=1.5%; cold TTFT p95<=1.10x champion at both lengths",
+        "falsifier": "Bubble unchanged, token mismatch or served CI includes 1.00",
+        "budget_gpu_minutes": 120,
+        "workload_id": "f8d2add58edc68b3e551b1e3ed68311a701a298a8c6b8cb67b0a30e88d0d9e84",
+        "receipt_paths": [],
+        "verdict_scope": "Frozen one-rank GLM EXL3 champion on GB300, C1 and C16 reported separately",
+        "token_class": "preserving-expected"
+      }
+    },
+    {
+      "key": "exl3-strips",
+      "seed": "1234",
+      "token_class": "preserving-expected",
+      "record": {
+        "experiment_id": "w26-g3-1-exl3-strips",
+        "created_at": "2026-11-14T21:23:51.522744-08:00",
+        "updated_at": "2026-11-14T21:23:51.522744-08:00",
+        "owner": "w26",
+        "status": "proposed",
+        "rung": "rung-3",
+        "hardware_class": "GB300 sm103",
+        "baseline_id": "tensorfold-sm103-w14b-7c1bc0b",
+        "candidate_id": "exl3-strips",
+        "mechanism": "reduce EXL3 funnel-shift ALU through pre-permuted strips",
+        "change_surface": "EXL3 register-fragment decoder only",
+        "smallest_change": "one EXL3 strips-layout variant; no cp.async-to-SMEM rewrite",
+        "evidence_refs": [
+          "champion binding",
+          "W14b register and recovery evidence"
+        ],
+        "evidence": "W14b plain uses 128 registers vs 161 for load-ahead, 33856 shared bytes each; runtime occupancy/stalls unmeasured. Python-era bandwidth numbers are not current evidence.",
+        "upper_bound_estimate": 1.0,
+        "bound_status": "unmeasured; 1.0 is fail-closed admission sentinel, not an estimated ceiling",
+        "largest_plausible_bound": "1/((1-f)+f/r), f = current critical-path EXL3 share, r = measured applicable ALU ceiling/current throughput; unknown until ncu and microbench",
+        "target": {
+          "model": "Mia-AiLab/GLM-5.3-Flash-EXL3-4bpw-TensorFold",
+          "checkpoint": "078455ffe6472f9a52fbc1139f58b9db2881b25c",
+          "quant": "EXL3 4bpw",
+          "tokenizer": "19e773648cb4e65de8660ea6365e10acca112d42a854923df93db4a6f333a82d"
+        },
+        "engine": {
+          "name": "TensorFold native",
+          "version": "7c1bc0be3df413f43c65fb278699b629a44e7a90"
+        },
+        "correctness_gate": "Exact frozen output token ID equality, mandatory kernel contract for kernel patches",
+        "quality_gate": "Token mismatch => classified token-changing, never promoted in G3.0",
+        "performance_gate": "Point >=1.05; paired t95 CI lower >1.00; n>=5 alternating pairs; CV<=1.5%; cold TTFT p95<=1.10x champion at both lengths",
+        "falsifier": "Applicable ALU ceiling <=1.2x current effective rate, kernel contract failure or served non-promotion",
+        "budget_gpu_minutes": 120,
+        "workload_id": "f8d2add58edc68b3e551b1e3ed68311a701a298a8c6b8cb67b0a30e88d0d9e84",
+        "receipt_paths": [],
+        "verdict_scope": "Frozen one-rank GLM EXL3 champion on GB300, C1 and C16 reported separately",
+        "token_class": "preserving-expected"
+      }
+    },
+    {
+      "key": "one-guard",
+      "seed": "1234",
+      "token_class": "preserving-expected",
+      "record": {
+        "experiment_id": "w26-g3-1-one-guard",
+        "created_at": "2026-11-14T21:23:51.522744-08:00",
+        "updated_at": "2026-11-14T21:23:51.522744-08:00",
+        "owner": "w26",
+        "status": "proposed",
+        "rung": "rung-3",
+        "hardware_class": "GB300 sm103",
+        "baseline_id": "tensorfold-sm103-w14b-7c1bc0b",
+        "candidate_id": "one-guard",
+        "mechanism": "enable exactly one eligible architecture fast path",
+        "change_surface": "one still-closed sm103 capability guard, selected by measured share",
+        "smallest_change": "one capability predicate only, retaining exact arithmetic",
+        "evidence_refs": [
+          "champion binding",
+          "W14b register and recovery evidence"
+        ],
+        "evidence": "qmmf TMA already includes sm103. EXL3 AHEAD intentionally excluded after W14b regression; repeating it is duplicate. FP4 conversion unsupported by checkpoint; no known eligible guard yet.",
+        "upper_bound_estimate": 1.0,
+        "bound_status": "unmeasured; 1.0 is fail-closed admission sentinel, not an estimated ceiling",
+        "largest_plausible_bound": "1/(1-f_slow), fast path treated free as optimistic upper bound; absent eligible path => 1.0",
+        "target": {
+          "model": "Mia-AiLab/GLM-5.3-Flash-EXL3-4bpw-TensorFold",
+          "checkpoint": "078455ffe6472f9a52fbc1139f58b9db2881b25c",
+          "quant": "EXL3 4bpw",
+          "tokenizer": "19e773648cb4e65de8660ea6365e10acca112d42a854923df93db4a6f333a82d"
+        },
+        "engine": {
+          "name": "TensorFold native",
+          "version": "7c1bc0be3df413f43c65fb278699b629a44e7a90"
+        },
+        "correctness_gate": "Exact frozen output token ID equality, mandatory kernel contract for kernel patches",
+        "quality_gate": "Token mismatch => classified token-changing, never promoted in G3.0",
+        "performance_gate": "Point >=1.05; paired t95 CI lower >1.00; n>=5 alternating pairs; CV<=1.5%; cold TTFT p95<=1.10x champion at both lengths",
+        "falsifier": "No remaining applicable guard, bound <1.05, SASS mismatch in unclaimed surface or served non-promotion",
+        "budget_gpu_minutes": 120,
+        "workload_id": "f8d2add58edc68b3e551b1e3ed68311a701a298a8c6b8cb67b0a30e88d0d9e84",
+        "receipt_paths": [],
+        "verdict_scope": "Frozen one-rank GLM EXL3 champion on GB300, C1 and C16 reported separately",
+        "token_class": "preserving-expected"
+      }
+    }
+  ],
+  "predecessor": "selfopt-g3-0; terminal counter-overhead stop; not resumed",
+  "method": {
+    "timeline": "Nsight Systems CUDA node trace, CPU sampling/context switching/backtraces OFF",
+    "timeline_overhead_cap": 0.05,
+    "counter": "one tf_exl3_grouped_1 launch, skip 256; kernel replay; Occupancy and LaunchStats only",
+    "counter_overhead_cap": 0.1
+  }
+}
