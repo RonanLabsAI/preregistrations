@@ -1,0 +1,2600 @@
+[
+  {
+    "case": "counter-c1-u8",
+    "profiled_instances_per_stage": 1,
+    "replay_passes_per_stage": 14,
+    "kernels": [
+      {
+        "name": "tf_exl3_group",
+        "grid": "(1, 1, 1)",
+        "block": "(1024, 1, 1)",
+        "metrics": {
+          "sm__warps_active.avg.pct_of_peak_sustained_active": {
+            "value": 20.659745,
+            "unit": "%"
+          },
+          "sm__maximum_warps_per_active_cycle_pct": {
+            "value": 100.0,
+            "unit": "%"
+          },
+          "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.0,
+            "unit": "%"
+          },
+          "sm__pipe_alu_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.040501,
+            "unit": "%"
+          },
+          "sm__pipe_tensor_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.0,
+            "unit": "%"
+          },
+          "dram__bytes.sum.per_second": {
+            "value": 0.0,
+            "unit": "Tbyte/s"
+          },
+          "launch__registers_per_thread": {
+            "value": 32.0,
+            "unit": "register/thread"
+          },
+          "launch__shared_mem_per_block_static": {
+            "value": 0.128,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_dynamic": {
+            "value": 32.0,
+            "unit": "byte/block"
+          },
+          "launch__shared_mem_per_block_driver": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_allocated": {
+            "value": 1.28,
+            "unit": "Kbyte/block"
+          },
+          "launch__occupancy_limit_registers": {
+            "value": 2.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_shared_mem": {
+            "value": 6.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_warps": {
+            "value": 2.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_blocks": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "normalized_hbm_gb_s": {
+            "value": 0.0,
+            "unit": "GB/s"
+          }
+        }
+      },
+      {
+        "name": "tf_exl3_experts_rot_in",
+        "grid": "(8, 32, 2)",
+        "block": "(32, 1, 1)",
+        "metrics": {
+          "sm__warps_active.avg.pct_of_peak_sustained_active": {
+            "value": 5.11407,
+            "unit": "%"
+          },
+          "sm__maximum_warps_per_active_cycle_pct": {
+            "value": 50.0,
+            "unit": "%"
+          },
+          "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.0,
+            "unit": "%"
+          },
+          "sm__pipe_alu_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 1.198243,
+            "unit": "%"
+          },
+          "sm__pipe_tensor_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.0,
+            "unit": "%"
+          },
+          "dram__bytes.sum.per_second": {
+            "value": 0.0,
+            "unit": "Tbyte/s"
+          },
+          "launch__registers_per_thread": {
+            "value": 21.0,
+            "unit": "register/thread"
+          },
+          "launch__shared_mem_per_block_static": {
+            "value": 0.0,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_dynamic": {
+            "value": 0.0,
+            "unit": "byte/block"
+          },
+          "launch__shared_mem_per_block_driver": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_allocated": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__occupancy_limit_registers": {
+            "value": 84.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_shared_mem": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_warps": {
+            "value": 64.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_blocks": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "normalized_hbm_gb_s": {
+            "value": 0.0,
+            "unit": "GB/s"
+          }
+        }
+      },
+      {
+        "name": "tf_exl3_grouped_1",
+        "grid": "(8, 16, 8)",
+        "block": "(128, 1, 1)",
+        "metrics": {
+          "sm__warps_active.avg.pct_of_peak_sustained_active": {
+            "value": 20.84518,
+            "unit": "%"
+          },
+          "sm__maximum_warps_per_active_cycle_pct": {
+            "value": 25.0,
+            "unit": "%"
+          },
+          "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+            "value": 15.525057,
+            "unit": "%"
+          },
+          "sm__pipe_alu_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 58.037425,
+            "unit": "%"
+          },
+          "sm__pipe_tensor_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 13.511498,
+            "unit": "%"
+          },
+          "dram__bytes.sum.per_second": {
+            "value": 1.110701,
+            "unit": "Tbyte/s"
+          },
+          "launch__registers_per_thread": {
+            "value": 128.0,
+            "unit": "register/thread"
+          },
+          "launch__shared_mem_per_block_static": {
+            "value": 32.832,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_dynamic": {
+            "value": 0.0,
+            "unit": "byte/block"
+          },
+          "launch__shared_mem_per_block_driver": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_allocated": {
+            "value": 33.92,
+            "unit": "Kbyte/block"
+          },
+          "launch__occupancy_limit_registers": {
+            "value": 4.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_shared_mem": {
+            "value": 4.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_warps": {
+            "value": 16.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_blocks": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "normalized_hbm_gb_s": {
+            "value": 1110.701,
+            "unit": "GB/s"
+          }
+        }
+      },
+      {
+        "name": "tf_exl3_gateup_epilogue",
+        "grid": "(8, 16, 1)",
+        "block": "(32, 1, 1)",
+        "metrics": {
+          "sm__warps_active.avg.pct_of_peak_sustained_active": {
+            "value": 1.575176,
+            "unit": "%"
+          },
+          "sm__maximum_warps_per_active_cycle_pct": {
+            "value": 50.0,
+            "unit": "%"
+          },
+          "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.0,
+            "unit": "%"
+          },
+          "sm__pipe_alu_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 1.023679,
+            "unit": "%"
+          },
+          "sm__pipe_tensor_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.0,
+            "unit": "%"
+          },
+          "dram__bytes.sum.per_second": {
+            "value": 0.0,
+            "unit": "Tbyte/s"
+          },
+          "launch__registers_per_thread": {
+            "value": 40.0,
+            "unit": "register/thread"
+          },
+          "launch__shared_mem_per_block_static": {
+            "value": 0.0,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_dynamic": {
+            "value": 0.0,
+            "unit": "byte/block"
+          },
+          "launch__shared_mem_per_block_driver": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_allocated": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__occupancy_limit_registers": {
+            "value": 48.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_shared_mem": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_warps": {
+            "value": 64.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_blocks": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "normalized_hbm_gb_s": {
+            "value": 0.0,
+            "unit": "GB/s"
+          }
+        }
+      },
+      {
+        "name": "tf_exl3_grouped_1",
+        "grid": "(8, 32, 1)",
+        "block": "(128, 1, 1)",
+        "metrics": {
+          "sm__warps_active.avg.pct_of_peak_sustained_active": {
+            "value": 10.534057,
+            "unit": "%"
+          },
+          "sm__maximum_warps_per_active_cycle_pct": {
+            "value": 25.0,
+            "unit": "%"
+          },
+          "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+            "value": 11.117143,
+            "unit": "%"
+          },
+          "sm__pipe_alu_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 35.508424,
+            "unit": "%"
+          },
+          "sm__pipe_tensor_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 8.40271,
+            "unit": "%"
+          },
+          "dram__bytes.sum.per_second": {
+            "value": 0.795581,
+            "unit": "Tbyte/s"
+          },
+          "launch__registers_per_thread": {
+            "value": 128.0,
+            "unit": "register/thread"
+          },
+          "launch__shared_mem_per_block_static": {
+            "value": 32.832,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_dynamic": {
+            "value": 0.0,
+            "unit": "byte/block"
+          },
+          "launch__shared_mem_per_block_driver": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_allocated": {
+            "value": 33.92,
+            "unit": "Kbyte/block"
+          },
+          "launch__occupancy_limit_registers": {
+            "value": 4.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_shared_mem": {
+            "value": 4.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_warps": {
+            "value": 16.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_blocks": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "normalized_hbm_gb_s": {
+            "value": 795.581,
+            "unit": "GB/s"
+          }
+        }
+      },
+      {
+        "name": "tf_exl3_down_combine",
+        "grid": "(1, 32, 1)",
+        "block": "(256, 1, 1)",
+        "metrics": {
+          "sm__warps_active.avg.pct_of_peak_sustained_active": {
+            "value": 9.594172,
+            "unit": "%"
+          },
+          "sm__maximum_warps_per_active_cycle_pct": {
+            "value": 62.5,
+            "unit": "%"
+          },
+          "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.0,
+            "unit": "%"
+          },
+          "sm__pipe_alu_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.646105,
+            "unit": "%"
+          },
+          "sm__pipe_tensor_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.0,
+            "unit": "%"
+          },
+          "dram__bytes.sum.per_second": {
+            "value": 0.0,
+            "unit": "Tbyte/s"
+          },
+          "launch__registers_per_thread": {
+            "value": 48.0,
+            "unit": "register/thread"
+          },
+          "launch__shared_mem_per_block_static": {
+            "value": 16.384,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_dynamic": {
+            "value": 0.0,
+            "unit": "byte/block"
+          },
+          "launch__shared_mem_per_block_driver": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_allocated": {
+            "value": 17.408,
+            "unit": "Kbyte/block"
+          },
+          "launch__occupancy_limit_registers": {
+            "value": 5.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_shared_mem": {
+            "value": 7.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_warps": {
+            "value": 8.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_blocks": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "normalized_hbm_gb_s": {
+            "value": 0.0,
+            "unit": "GB/s"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "case": "counter-c16-u128",
+    "profiled_instances_per_stage": 1,
+    "replay_passes_per_stage": 14,
+    "kernels": [
+      {
+        "name": "tf_exl3_group",
+        "grid": "(1, 1, 1)",
+        "block": "(1024, 1, 1)",
+        "metrics": {
+          "sm__warps_active.avg.pct_of_peak_sustained_active": {
+            "value": 6.822106,
+            "unit": "%"
+          },
+          "sm__maximum_warps_per_active_cycle_pct": {
+            "value": 100.0,
+            "unit": "%"
+          },
+          "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+            "value": 8e-05,
+            "unit": "%"
+          },
+          "sm__pipe_alu_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.024076,
+            "unit": "%"
+          },
+          "sm__pipe_tensor_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.0,
+            "unit": "%"
+          },
+          "dram__bytes.sum.per_second": {
+            "value": 6e-06,
+            "unit": "Tbyte/s"
+          },
+          "launch__registers_per_thread": {
+            "value": 32.0,
+            "unit": "register/thread"
+          },
+          "launch__shared_mem_per_block_static": {
+            "value": 0.128,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_dynamic": {
+            "value": 512.0,
+            "unit": "byte/block"
+          },
+          "launch__shared_mem_per_block_driver": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_allocated": {
+            "value": 1.664,
+            "unit": "Kbyte/block"
+          },
+          "launch__occupancy_limit_registers": {
+            "value": 2.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_shared_mem": {
+            "value": 4.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_warps": {
+            "value": 2.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_blocks": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "normalized_hbm_gb_s": {
+            "value": 0.006,
+            "unit": "GB/s"
+          }
+        }
+      },
+      {
+        "name": "tf_exl3_experts_rot_in",
+        "grid": "(128, 32, 2)",
+        "block": "(32, 1, 1)",
+        "metrics": {
+          "sm__warps_active.avg.pct_of_peak_sustained_active": {
+            "value": 23.17921,
+            "unit": "%"
+          },
+          "sm__maximum_warps_per_active_cycle_pct": {
+            "value": 50.0,
+            "unit": "%"
+          },
+          "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.002237,
+            "unit": "%"
+          },
+          "sm__pipe_alu_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 9.176501,
+            "unit": "%"
+          },
+          "sm__pipe_tensor_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.0,
+            "unit": "%"
+          },
+          "dram__bytes.sum.per_second": {
+            "value": 0.000159,
+            "unit": "Tbyte/s"
+          },
+          "launch__registers_per_thread": {
+            "value": 21.0,
+            "unit": "register/thread"
+          },
+          "launch__shared_mem_per_block_static": {
+            "value": 0.0,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_dynamic": {
+            "value": 0.0,
+            "unit": "byte/block"
+          },
+          "launch__shared_mem_per_block_driver": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_allocated": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__occupancy_limit_registers": {
+            "value": 84.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_shared_mem": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_warps": {
+            "value": 64.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_blocks": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "normalized_hbm_gb_s": {
+            "value": 0.159,
+            "unit": "GB/s"
+          }
+        }
+      },
+      {
+        "name": "tf_exl3_grouped_1",
+        "grid": "(128, 16, 8)",
+        "block": "(128, 1, 1)",
+        "metrics": {
+          "sm__warps_active.avg.pct_of_peak_sustained_active": {
+            "value": 24.427755,
+            "unit": "%"
+          },
+          "sm__maximum_warps_per_active_cycle_pct": {
+            "value": 25.0,
+            "unit": "%"
+          },
+          "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+            "value": 22.219943,
+            "unit": "%"
+          },
+          "sm__pipe_alu_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 72.531689,
+            "unit": "%"
+          },
+          "sm__pipe_tensor_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 16.885859,
+            "unit": "%"
+          },
+          "dram__bytes.sum.per_second": {
+            "value": 1.591053,
+            "unit": "Tbyte/s"
+          },
+          "launch__registers_per_thread": {
+            "value": 128.0,
+            "unit": "register/thread"
+          },
+          "launch__shared_mem_per_block_static": {
+            "value": 32.832,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_dynamic": {
+            "value": 0.0,
+            "unit": "byte/block"
+          },
+          "launch__shared_mem_per_block_driver": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_allocated": {
+            "value": 33.92,
+            "unit": "Kbyte/block"
+          },
+          "launch__occupancy_limit_registers": {
+            "value": 4.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_shared_mem": {
+            "value": 4.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_warps": {
+            "value": 16.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_blocks": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "normalized_hbm_gb_s": {
+            "value": 1591.053,
+            "unit": "GB/s"
+          }
+        }
+      },
+      {
+        "name": "tf_exl3_gateup_epilogue",
+        "grid": "(128, 16, 1)",
+        "block": "(32, 1, 1)",
+        "metrics": {
+          "sm__warps_active.avg.pct_of_peak_sustained_active": {
+            "value": 17.619893,
+            "unit": "%"
+          },
+          "sm__maximum_warps_per_active_cycle_pct": {
+            "value": 50.0,
+            "unit": "%"
+          },
+          "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.000558,
+            "unit": "%"
+          },
+          "sm__pipe_alu_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 12.773632,
+            "unit": "%"
+          },
+          "sm__pipe_tensor_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.0,
+            "unit": "%"
+          },
+          "dram__bytes.sum.per_second": {
+            "value": 4e-05,
+            "unit": "Tbyte/s"
+          },
+          "launch__registers_per_thread": {
+            "value": 40.0,
+            "unit": "register/thread"
+          },
+          "launch__shared_mem_per_block_static": {
+            "value": 0.0,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_dynamic": {
+            "value": 0.0,
+            "unit": "byte/block"
+          },
+          "launch__shared_mem_per_block_driver": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_allocated": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__occupancy_limit_registers": {
+            "value": 48.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_shared_mem": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_warps": {
+            "value": 64.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_blocks": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "normalized_hbm_gb_s": {
+            "value": 0.04,
+            "unit": "GB/s"
+          }
+        }
+      },
+      {
+        "name": "tf_exl3_grouped_1",
+        "grid": "(128, 32, 1)",
+        "block": "(128, 1, 1)",
+        "metrics": {
+          "sm__warps_active.avg.pct_of_peak_sustained_active": {
+            "value": 23.665792,
+            "unit": "%"
+          },
+          "sm__maximum_warps_per_active_cycle_pct": {
+            "value": 25.0,
+            "unit": "%"
+          },
+          "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+            "value": 22.764087,
+            "unit": "%"
+          },
+          "sm__pipe_alu_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 72.419338,
+            "unit": "%"
+          },
+          "sm__pipe_tensor_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 17.137305,
+            "unit": "%"
+          },
+          "dram__bytes.sum.per_second": {
+            "value": 1.629794,
+            "unit": "Tbyte/s"
+          },
+          "launch__registers_per_thread": {
+            "value": 128.0,
+            "unit": "register/thread"
+          },
+          "launch__shared_mem_per_block_static": {
+            "value": 32.832,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_dynamic": {
+            "value": 0.0,
+            "unit": "byte/block"
+          },
+          "launch__shared_mem_per_block_driver": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_allocated": {
+            "value": 33.92,
+            "unit": "Kbyte/block"
+          },
+          "launch__occupancy_limit_registers": {
+            "value": 4.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_shared_mem": {
+            "value": 4.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_warps": {
+            "value": 16.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_blocks": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "normalized_hbm_gb_s": {
+            "value": 1629.7939999999999,
+            "unit": "GB/s"
+          }
+        }
+      },
+      {
+        "name": "tf_exl3_down_combine",
+        "grid": "(16, 32, 1)",
+        "block": "(256, 1, 1)",
+        "metrics": {
+          "sm__warps_active.avg.pct_of_peak_sustained_active": {
+            "value": 34.456501,
+            "unit": "%"
+          },
+          "sm__maximum_warps_per_active_cycle_pct": {
+            "value": 62.5,
+            "unit": "%"
+          },
+          "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.001716,
+            "unit": "%"
+          },
+          "sm__pipe_alu_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 8.20358,
+            "unit": "%"
+          },
+          "sm__pipe_tensor_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.0,
+            "unit": "%"
+          },
+          "dram__bytes.sum.per_second": {
+            "value": 0.000122,
+            "unit": "Tbyte/s"
+          },
+          "launch__registers_per_thread": {
+            "value": 48.0,
+            "unit": "register/thread"
+          },
+          "launch__shared_mem_per_block_static": {
+            "value": 16.384,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_dynamic": {
+            "value": 0.0,
+            "unit": "byte/block"
+          },
+          "launch__shared_mem_per_block_driver": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_allocated": {
+            "value": 17.408,
+            "unit": "Kbyte/block"
+          },
+          "launch__occupancy_limit_registers": {
+            "value": 5.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_shared_mem": {
+            "value": 7.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_warps": {
+            "value": 8.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_blocks": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "normalized_hbm_gb_s": {
+            "value": 0.122,
+            "unit": "GB/s"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "case": "counter-c16-u32",
+    "profiled_instances_per_stage": 1,
+    "replay_passes_per_stage": 14,
+    "kernels": [
+      {
+        "name": "tf_exl3_group",
+        "grid": "(1, 1, 1)",
+        "block": "(1024, 1, 1)",
+        "metrics": {
+          "sm__warps_active.avg.pct_of_peak_sustained_active": {
+            "value": 6.843079,
+            "unit": "%"
+          },
+          "sm__maximum_warps_per_active_cycle_pct": {
+            "value": 100.0,
+            "unit": "%"
+          },
+          "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.000641,
+            "unit": "%"
+          },
+          "sm__pipe_alu_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.024311,
+            "unit": "%"
+          },
+          "sm__pipe_tensor_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.0,
+            "unit": "%"
+          },
+          "dram__bytes.sum.per_second": {
+            "value": 4.6e-05,
+            "unit": "Tbyte/s"
+          },
+          "launch__registers_per_thread": {
+            "value": 32.0,
+            "unit": "register/thread"
+          },
+          "launch__shared_mem_per_block_static": {
+            "value": 0.128,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_dynamic": {
+            "value": 512.0,
+            "unit": "byte/block"
+          },
+          "launch__shared_mem_per_block_driver": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_allocated": {
+            "value": 1.664,
+            "unit": "Kbyte/block"
+          },
+          "launch__occupancy_limit_registers": {
+            "value": 2.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_shared_mem": {
+            "value": 4.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_warps": {
+            "value": 2.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_blocks": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "normalized_hbm_gb_s": {
+            "value": 0.046,
+            "unit": "GB/s"
+          }
+        }
+      },
+      {
+        "name": "tf_exl3_experts_rot_in",
+        "grid": "(128, 32, 2)",
+        "block": "(32, 1, 1)",
+        "metrics": {
+          "sm__warps_active.avg.pct_of_peak_sustained_active": {
+            "value": 24.405853,
+            "unit": "%"
+          },
+          "sm__maximum_warps_per_active_cycle_pct": {
+            "value": 50.0,
+            "unit": "%"
+          },
+          "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.006257,
+            "unit": "%"
+          },
+          "sm__pipe_alu_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 9.054892,
+            "unit": "%"
+          },
+          "sm__pipe_tensor_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.0,
+            "unit": "%"
+          },
+          "dram__bytes.sum.per_second": {
+            "value": 0.000446,
+            "unit": "Tbyte/s"
+          },
+          "launch__registers_per_thread": {
+            "value": 21.0,
+            "unit": "register/thread"
+          },
+          "launch__shared_mem_per_block_static": {
+            "value": 0.0,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_dynamic": {
+            "value": 0.0,
+            "unit": "byte/block"
+          },
+          "launch__shared_mem_per_block_driver": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_allocated": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__occupancy_limit_registers": {
+            "value": 84.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_shared_mem": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_warps": {
+            "value": 64.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_blocks": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "normalized_hbm_gb_s": {
+            "value": 0.446,
+            "unit": "GB/s"
+          }
+        }
+      },
+      {
+        "name": "tf_exl3_grouped_1",
+        "grid": "(128, 16, 8)",
+        "block": "(128, 1, 1)",
+        "metrics": {
+          "sm__warps_active.avg.pct_of_peak_sustained_active": {
+            "value": 22.742413,
+            "unit": "%"
+          },
+          "sm__maximum_warps_per_active_cycle_pct": {
+            "value": 25.0,
+            "unit": "%"
+          },
+          "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+            "value": 19.622127,
+            "unit": "%"
+          },
+          "sm__pipe_alu_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 66.26018,
+            "unit": "%"
+          },
+          "sm__pipe_tensor_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 15.38384,
+            "unit": "%"
+          },
+          "dram__bytes.sum.per_second": {
+            "value": 1.404807,
+            "unit": "Tbyte/s"
+          },
+          "launch__registers_per_thread": {
+            "value": 128.0,
+            "unit": "register/thread"
+          },
+          "launch__shared_mem_per_block_static": {
+            "value": 32.832,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_dynamic": {
+            "value": 0.0,
+            "unit": "byte/block"
+          },
+          "launch__shared_mem_per_block_driver": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_allocated": {
+            "value": 33.92,
+            "unit": "Kbyte/block"
+          },
+          "launch__occupancy_limit_registers": {
+            "value": 4.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_shared_mem": {
+            "value": 4.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_warps": {
+            "value": 16.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_blocks": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "normalized_hbm_gb_s": {
+            "value": 1404.807,
+            "unit": "GB/s"
+          }
+        }
+      },
+      {
+        "name": "tf_exl3_gateup_epilogue",
+        "grid": "(128, 16, 1)",
+        "block": "(32, 1, 1)",
+        "metrics": {
+          "sm__warps_active.avg.pct_of_peak_sustained_active": {
+            "value": 17.529024,
+            "unit": "%"
+          },
+          "sm__maximum_warps_per_active_cycle_pct": {
+            "value": 50.0,
+            "unit": "%"
+          },
+          "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.000553,
+            "unit": "%"
+          },
+          "sm__pipe_alu_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 12.777879,
+            "unit": "%"
+          },
+          "sm__pipe_tensor_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.0,
+            "unit": "%"
+          },
+          "dram__bytes.sum.per_second": {
+            "value": 3.9e-05,
+            "unit": "Tbyte/s"
+          },
+          "launch__registers_per_thread": {
+            "value": 40.0,
+            "unit": "register/thread"
+          },
+          "launch__shared_mem_per_block_static": {
+            "value": 0.0,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_dynamic": {
+            "value": 0.0,
+            "unit": "byte/block"
+          },
+          "launch__shared_mem_per_block_driver": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_allocated": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__occupancy_limit_registers": {
+            "value": 48.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_shared_mem": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_warps": {
+            "value": 64.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_blocks": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "normalized_hbm_gb_s": {
+            "value": 0.039,
+            "unit": "GB/s"
+          }
+        }
+      },
+      {
+        "name": "tf_exl3_grouped_1",
+        "grid": "(128, 32, 1)",
+        "block": "(128, 1, 1)",
+        "metrics": {
+          "sm__warps_active.avg.pct_of_peak_sustained_active": {
+            "value": 20.628778,
+            "unit": "%"
+          },
+          "sm__maximum_warps_per_active_cycle_pct": {
+            "value": 25.0,
+            "unit": "%"
+          },
+          "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+            "value": 19.198574,
+            "unit": "%"
+          },
+          "sm__pipe_alu_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 61.251953,
+            "unit": "%"
+          },
+          "sm__pipe_tensor_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 14.474586,
+            "unit": "%"
+          },
+          "dram__bytes.sum.per_second": {
+            "value": 1.374285,
+            "unit": "Tbyte/s"
+          },
+          "launch__registers_per_thread": {
+            "value": 128.0,
+            "unit": "register/thread"
+          },
+          "launch__shared_mem_per_block_static": {
+            "value": 32.832,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_dynamic": {
+            "value": 0.0,
+            "unit": "byte/block"
+          },
+          "launch__shared_mem_per_block_driver": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_allocated": {
+            "value": 33.92,
+            "unit": "Kbyte/block"
+          },
+          "launch__occupancy_limit_registers": {
+            "value": 4.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_shared_mem": {
+            "value": 4.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_warps": {
+            "value": 16.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_blocks": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "normalized_hbm_gb_s": {
+            "value": 1374.285,
+            "unit": "GB/s"
+          }
+        }
+      },
+      {
+        "name": "tf_exl3_down_combine",
+        "grid": "(16, 32, 1)",
+        "block": "(256, 1, 1)",
+        "metrics": {
+          "sm__warps_active.avg.pct_of_peak_sustained_active": {
+            "value": 34.815879,
+            "unit": "%"
+          },
+          "sm__maximum_warps_per_active_cycle_pct": {
+            "value": 62.5,
+            "unit": "%"
+          },
+          "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.00342,
+            "unit": "%"
+          },
+          "sm__pipe_alu_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 8.117418,
+            "unit": "%"
+          },
+          "sm__pipe_tensor_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.0,
+            "unit": "%"
+          },
+          "dram__bytes.sum.per_second": {
+            "value": 0.000244,
+            "unit": "Tbyte/s"
+          },
+          "launch__registers_per_thread": {
+            "value": 48.0,
+            "unit": "register/thread"
+          },
+          "launch__shared_mem_per_block_static": {
+            "value": 16.384,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_dynamic": {
+            "value": 0.0,
+            "unit": "byte/block"
+          },
+          "launch__shared_mem_per_block_driver": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_allocated": {
+            "value": 17.408,
+            "unit": "Kbyte/block"
+          },
+          "launch__occupancy_limit_registers": {
+            "value": 5.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_shared_mem": {
+            "value": 7.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_warps": {
+            "value": 8.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_blocks": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "normalized_hbm_gb_s": {
+            "value": 0.244,
+            "unit": "GB/s"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "case": "counter-c16-u64",
+    "profiled_instances_per_stage": 1,
+    "replay_passes_per_stage": 14,
+    "kernels": [
+      {
+        "name": "tf_exl3_group",
+        "grid": "(1, 1, 1)",
+        "block": "(1024, 1, 1)",
+        "metrics": {
+          "sm__warps_active.avg.pct_of_peak_sustained_active": {
+            "value": 6.835499,
+            "unit": "%"
+          },
+          "sm__maximum_warps_per_active_cycle_pct": {
+            "value": 100.0,
+            "unit": "%"
+          },
+          "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+            "value": 8e-05,
+            "unit": "%"
+          },
+          "sm__pipe_alu_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.024113,
+            "unit": "%"
+          },
+          "sm__pipe_tensor_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.0,
+            "unit": "%"
+          },
+          "dram__bytes.sum.per_second": {
+            "value": 6e-06,
+            "unit": "Tbyte/s"
+          },
+          "launch__registers_per_thread": {
+            "value": 32.0,
+            "unit": "register/thread"
+          },
+          "launch__shared_mem_per_block_static": {
+            "value": 0.128,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_dynamic": {
+            "value": 512.0,
+            "unit": "byte/block"
+          },
+          "launch__shared_mem_per_block_driver": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_allocated": {
+            "value": 1.664,
+            "unit": "Kbyte/block"
+          },
+          "launch__occupancy_limit_registers": {
+            "value": 2.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_shared_mem": {
+            "value": 4.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_warps": {
+            "value": 2.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_blocks": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "normalized_hbm_gb_s": {
+            "value": 0.006,
+            "unit": "GB/s"
+          }
+        }
+      },
+      {
+        "name": "tf_exl3_experts_rot_in",
+        "grid": "(128, 32, 2)",
+        "block": "(32, 1, 1)",
+        "metrics": {
+          "sm__warps_active.avg.pct_of_peak_sustained_active": {
+            "value": 23.22411,
+            "unit": "%"
+          },
+          "sm__maximum_warps_per_active_cycle_pct": {
+            "value": 50.0,
+            "unit": "%"
+          },
+          "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.004028,
+            "unit": "%"
+          },
+          "sm__pipe_alu_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 9.195469,
+            "unit": "%"
+          },
+          "sm__pipe_tensor_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.0,
+            "unit": "%"
+          },
+          "dram__bytes.sum.per_second": {
+            "value": 0.000286,
+            "unit": "Tbyte/s"
+          },
+          "launch__registers_per_thread": {
+            "value": 21.0,
+            "unit": "register/thread"
+          },
+          "launch__shared_mem_per_block_static": {
+            "value": 0.0,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_dynamic": {
+            "value": 0.0,
+            "unit": "byte/block"
+          },
+          "launch__shared_mem_per_block_driver": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_allocated": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__occupancy_limit_registers": {
+            "value": 84.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_shared_mem": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_warps": {
+            "value": 64.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_blocks": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "normalized_hbm_gb_s": {
+            "value": 0.28600000000000003,
+            "unit": "GB/s"
+          }
+        }
+      },
+      {
+        "name": "tf_exl3_grouped_1",
+        "grid": "(128, 16, 8)",
+        "block": "(128, 1, 1)",
+        "metrics": {
+          "sm__warps_active.avg.pct_of_peak_sustained_active": {
+            "value": 23.849531,
+            "unit": "%"
+          },
+          "sm__maximum_warps_per_active_cycle_pct": {
+            "value": 25.0,
+            "unit": "%"
+          },
+          "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+            "value": 21.355761,
+            "unit": "%"
+          },
+          "sm__pipe_alu_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 70.515068,
+            "unit": "%"
+          },
+          "sm__pipe_tensor_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 16.401461,
+            "unit": "%"
+          },
+          "dram__bytes.sum.per_second": {
+            "value": 1.528967,
+            "unit": "Tbyte/s"
+          },
+          "launch__registers_per_thread": {
+            "value": 128.0,
+            "unit": "register/thread"
+          },
+          "launch__shared_mem_per_block_static": {
+            "value": 32.832,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_dynamic": {
+            "value": 0.0,
+            "unit": "byte/block"
+          },
+          "launch__shared_mem_per_block_driver": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_allocated": {
+            "value": 33.92,
+            "unit": "Kbyte/block"
+          },
+          "launch__occupancy_limit_registers": {
+            "value": 4.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_shared_mem": {
+            "value": 4.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_warps": {
+            "value": 16.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_blocks": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "normalized_hbm_gb_s": {
+            "value": 1528.9669999999999,
+            "unit": "GB/s"
+          }
+        }
+      },
+      {
+        "name": "tf_exl3_gateup_epilogue",
+        "grid": "(128, 16, 1)",
+        "block": "(32, 1, 1)",
+        "metrics": {
+          "sm__warps_active.avg.pct_of_peak_sustained_active": {
+            "value": 17.432983,
+            "unit": "%"
+          },
+          "sm__maximum_warps_per_active_cycle_pct": {
+            "value": 50.0,
+            "unit": "%"
+          },
+          "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.0,
+            "unit": "%"
+          },
+          "sm__pipe_alu_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 13.050382,
+            "unit": "%"
+          },
+          "sm__pipe_tensor_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.0,
+            "unit": "%"
+          },
+          "dram__bytes.sum.per_second": {
+            "value": 0.0,
+            "unit": "Tbyte/s"
+          },
+          "launch__registers_per_thread": {
+            "value": 40.0,
+            "unit": "register/thread"
+          },
+          "launch__shared_mem_per_block_static": {
+            "value": 0.0,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_dynamic": {
+            "value": 0.0,
+            "unit": "byte/block"
+          },
+          "launch__shared_mem_per_block_driver": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_allocated": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__occupancy_limit_registers": {
+            "value": 48.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_shared_mem": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_warps": {
+            "value": 64.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_blocks": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "normalized_hbm_gb_s": {
+            "value": 0.0,
+            "unit": "GB/s"
+          }
+        }
+      },
+      {
+        "name": "tf_exl3_grouped_1",
+        "grid": "(128, 32, 1)",
+        "block": "(128, 1, 1)",
+        "metrics": {
+          "sm__warps_active.avg.pct_of_peak_sustained_active": {
+            "value": 22.368079,
+            "unit": "%"
+          },
+          "sm__maximum_warps_per_active_cycle_pct": {
+            "value": 25.0,
+            "unit": "%"
+          },
+          "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+            "value": 21.002988,
+            "unit": "%"
+          },
+          "sm__pipe_alu_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 66.840958,
+            "unit": "%"
+          },
+          "sm__pipe_tensor_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 15.80993,
+            "unit": "%"
+          },
+          "dram__bytes.sum.per_second": {
+            "value": 1.503663,
+            "unit": "Tbyte/s"
+          },
+          "launch__registers_per_thread": {
+            "value": 128.0,
+            "unit": "register/thread"
+          },
+          "launch__shared_mem_per_block_static": {
+            "value": 32.832,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_dynamic": {
+            "value": 0.0,
+            "unit": "byte/block"
+          },
+          "launch__shared_mem_per_block_driver": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_allocated": {
+            "value": 33.92,
+            "unit": "Kbyte/block"
+          },
+          "launch__occupancy_limit_registers": {
+            "value": 4.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_shared_mem": {
+            "value": 4.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_warps": {
+            "value": 16.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_blocks": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "normalized_hbm_gb_s": {
+            "value": 1503.663,
+            "unit": "GB/s"
+          }
+        }
+      },
+      {
+        "name": "tf_exl3_down_combine",
+        "grid": "(16, 32, 1)",
+        "block": "(256, 1, 1)",
+        "metrics": {
+          "sm__warps_active.avg.pct_of_peak_sustained_active": {
+            "value": 34.573436,
+            "unit": "%"
+          },
+          "sm__maximum_warps_per_active_cycle_pct": {
+            "value": 62.5,
+            "unit": "%"
+          },
+          "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.004552,
+            "unit": "%"
+          },
+          "sm__pipe_alu_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 8.157156,
+            "unit": "%"
+          },
+          "sm__pipe_tensor_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.0,
+            "unit": "%"
+          },
+          "dram__bytes.sum.per_second": {
+            "value": 0.000323,
+            "unit": "Tbyte/s"
+          },
+          "launch__registers_per_thread": {
+            "value": 48.0,
+            "unit": "register/thread"
+          },
+          "launch__shared_mem_per_block_static": {
+            "value": 16.384,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_dynamic": {
+            "value": 0.0,
+            "unit": "byte/block"
+          },
+          "launch__shared_mem_per_block_driver": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_allocated": {
+            "value": 17.408,
+            "unit": "Kbyte/block"
+          },
+          "launch__occupancy_limit_registers": {
+            "value": 5.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_shared_mem": {
+            "value": 7.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_warps": {
+            "value": 8.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_blocks": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "normalized_hbm_gb_s": {
+            "value": 0.323,
+            "unit": "GB/s"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "case": "counter-c16-u8",
+    "profiled_instances_per_stage": 1,
+    "replay_passes_per_stage": 14,
+    "kernels": [
+      {
+        "name": "tf_exl3_group",
+        "grid": "(1, 1, 1)",
+        "block": "(1024, 1, 1)",
+        "metrics": {
+          "sm__warps_active.avg.pct_of_peak_sustained_active": {
+            "value": 6.96496,
+            "unit": "%"
+          },
+          "sm__maximum_warps_per_active_cycle_pct": {
+            "value": 100.0,
+            "unit": "%"
+          },
+          "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.00041,
+            "unit": "%"
+          },
+          "sm__pipe_alu_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.024304,
+            "unit": "%"
+          },
+          "sm__pipe_tensor_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.0,
+            "unit": "%"
+          },
+          "dram__bytes.sum.per_second": {
+            "value": 0.029326,
+            "unit": "Gbyte/s"
+          },
+          "launch__registers_per_thread": {
+            "value": 32.0,
+            "unit": "register/thread"
+          },
+          "launch__shared_mem_per_block_static": {
+            "value": 0.128,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_dynamic": {
+            "value": 512.0,
+            "unit": "byte/block"
+          },
+          "launch__shared_mem_per_block_driver": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_allocated": {
+            "value": 1.664,
+            "unit": "Kbyte/block"
+          },
+          "launch__occupancy_limit_registers": {
+            "value": 2.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_shared_mem": {
+            "value": 4.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_warps": {
+            "value": 2.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_blocks": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "normalized_hbm_gb_s": {
+            "value": 0.029326,
+            "unit": "GB/s"
+          }
+        }
+      },
+      {
+        "name": "tf_exl3_experts_rot_in",
+        "grid": "(128, 32, 2)",
+        "block": "(32, 1, 1)",
+        "metrics": {
+          "sm__warps_active.avg.pct_of_peak_sustained_active": {
+            "value": 23.390147,
+            "unit": "%"
+          },
+          "sm__maximum_warps_per_active_cycle_pct": {
+            "value": 50.0,
+            "unit": "%"
+          },
+          "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.010106,
+            "unit": "%"
+          },
+          "sm__pipe_alu_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 9.193987,
+            "unit": "%"
+          },
+          "sm__pipe_tensor_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.0,
+            "unit": "%"
+          },
+          "dram__bytes.sum.per_second": {
+            "value": 0.71875,
+            "unit": "Gbyte/s"
+          },
+          "launch__registers_per_thread": {
+            "value": 21.0,
+            "unit": "register/thread"
+          },
+          "launch__shared_mem_per_block_static": {
+            "value": 0.0,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_dynamic": {
+            "value": 0.0,
+            "unit": "byte/block"
+          },
+          "launch__shared_mem_per_block_driver": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_allocated": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__occupancy_limit_registers": {
+            "value": 84.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_shared_mem": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_warps": {
+            "value": 64.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_blocks": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "normalized_hbm_gb_s": {
+            "value": 0.71875,
+            "unit": "GB/s"
+          }
+        }
+      },
+      {
+        "name": "tf_exl3_grouped_1",
+        "grid": "(128, 16, 8)",
+        "block": "(128, 1, 1)",
+        "metrics": {
+          "sm__warps_active.avg.pct_of_peak_sustained_active": {
+            "value": 18.733232,
+            "unit": "%"
+          },
+          "sm__maximum_warps_per_active_cycle_pct": {
+            "value": 25.0,
+            "unit": "%"
+          },
+          "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+            "value": 12.252154,
+            "unit": "%"
+          },
+          "sm__pipe_alu_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 47.007362,
+            "unit": "%"
+          },
+          "sm__pipe_tensor_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 10.796353,
+            "unit": "%"
+          },
+          "dram__bytes.sum.per_second": {
+            "value": 876.457256,
+            "unit": "Gbyte/s"
+          },
+          "launch__registers_per_thread": {
+            "value": 128.0,
+            "unit": "register/thread"
+          },
+          "launch__shared_mem_per_block_static": {
+            "value": 32.832,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_dynamic": {
+            "value": 0.0,
+            "unit": "byte/block"
+          },
+          "launch__shared_mem_per_block_driver": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_allocated": {
+            "value": 33.92,
+            "unit": "Kbyte/block"
+          },
+          "launch__occupancy_limit_registers": {
+            "value": 4.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_shared_mem": {
+            "value": 4.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_warps": {
+            "value": 16.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_blocks": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "normalized_hbm_gb_s": {
+            "value": 876.457256,
+            "unit": "GB/s"
+          }
+        }
+      },
+      {
+        "name": "tf_exl3_gateup_epilogue",
+        "grid": "(128, 16, 1)",
+        "block": "(32, 1, 1)",
+        "metrics": {
+          "sm__warps_active.avg.pct_of_peak_sustained_active": {
+            "value": 17.612003,
+            "unit": "%"
+          },
+          "sm__maximum_warps_per_active_cycle_pct": {
+            "value": 50.0,
+            "unit": "%"
+          },
+          "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.002759,
+            "unit": "%"
+          },
+          "sm__pipe_alu_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 12.971981,
+            "unit": "%"
+          },
+          "sm__pipe_tensor_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.0,
+            "unit": "%"
+          },
+          "dram__bytes.sum.per_second": {
+            "value": 0.195918,
+            "unit": "Gbyte/s"
+          },
+          "launch__registers_per_thread": {
+            "value": 40.0,
+            "unit": "register/thread"
+          },
+          "launch__shared_mem_per_block_static": {
+            "value": 0.0,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_dynamic": {
+            "value": 0.0,
+            "unit": "byte/block"
+          },
+          "launch__shared_mem_per_block_driver": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_allocated": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__occupancy_limit_registers": {
+            "value": 48.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_shared_mem": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_warps": {
+            "value": 64.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_blocks": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "normalized_hbm_gb_s": {
+            "value": 0.195918,
+            "unit": "GB/s"
+          }
+        }
+      },
+      {
+        "name": "tf_exl3_grouped_1",
+        "grid": "(128, 32, 1)",
+        "block": "(128, 1, 1)",
+        "metrics": {
+          "sm__warps_active.avg.pct_of_peak_sustained_active": {
+            "value": 11.316528,
+            "unit": "%"
+          },
+          "sm__maximum_warps_per_active_cycle_pct": {
+            "value": 25.0,
+            "unit": "%"
+          },
+          "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+            "value": 8.106887,
+            "unit": "%"
+          },
+          "sm__pipe_alu_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 25.119958,
+            "unit": "%"
+          },
+          "sm__pipe_tensor_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 5.903457,
+            "unit": "%"
+          },
+          "dram__bytes.sum.per_second": {
+            "value": 580.252212,
+            "unit": "Gbyte/s"
+          },
+          "launch__registers_per_thread": {
+            "value": 128.0,
+            "unit": "register/thread"
+          },
+          "launch__shared_mem_per_block_static": {
+            "value": 32.832,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_dynamic": {
+            "value": 0.0,
+            "unit": "byte/block"
+          },
+          "launch__shared_mem_per_block_driver": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_allocated": {
+            "value": 33.92,
+            "unit": "Kbyte/block"
+          },
+          "launch__occupancy_limit_registers": {
+            "value": 4.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_shared_mem": {
+            "value": 4.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_warps": {
+            "value": 16.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_blocks": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "normalized_hbm_gb_s": {
+            "value": 580.252212,
+            "unit": "GB/s"
+          }
+        }
+      },
+      {
+        "name": "tf_exl3_down_combine",
+        "grid": "(16, 32, 1)",
+        "block": "(256, 1, 1)",
+        "metrics": {
+          "sm__warps_active.avg.pct_of_peak_sustained_active": {
+            "value": 34.915205,
+            "unit": "%"
+          },
+          "sm__maximum_warps_per_active_cycle_pct": {
+            "value": 62.5,
+            "unit": "%"
+          },
+          "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.002891,
+            "unit": "%"
+          },
+          "sm__pipe_alu_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 8.130504,
+            "unit": "%"
+          },
+          "sm__pipe_tensor_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.0,
+            "unit": "%"
+          },
+          "dram__bytes.sum.per_second": {
+            "value": 0.205128,
+            "unit": "Gbyte/s"
+          },
+          "launch__registers_per_thread": {
+            "value": 48.0,
+            "unit": "register/thread"
+          },
+          "launch__shared_mem_per_block_static": {
+            "value": 16.384,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_dynamic": {
+            "value": 0.0,
+            "unit": "byte/block"
+          },
+          "launch__shared_mem_per_block_driver": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_allocated": {
+            "value": 17.408,
+            "unit": "Kbyte/block"
+          },
+          "launch__occupancy_limit_registers": {
+            "value": 5.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_shared_mem": {
+            "value": 7.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_warps": {
+            "value": 8.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_blocks": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "normalized_hbm_gb_s": {
+            "value": 0.205128,
+            "unit": "GB/s"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "case": "counter-c16-u96",
+    "profiled_instances_per_stage": 1,
+    "replay_passes_per_stage": 14,
+    "kernels": [
+      {
+        "name": "tf_exl3_group",
+        "grid": "(1, 1, 1)",
+        "block": "(1024, 1, 1)",
+        "metrics": {
+          "sm__warps_active.avg.pct_of_peak_sustained_active": {
+            "value": 6.788702,
+            "unit": "%"
+          },
+          "sm__maximum_warps_per_active_cycle_pct": {
+            "value": 100.0,
+            "unit": "%"
+          },
+          "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.00016,
+            "unit": "%"
+          },
+          "sm__pipe_alu_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.024014,
+            "unit": "%"
+          },
+          "sm__pipe_tensor_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.0,
+            "unit": "%"
+          },
+          "dram__bytes.sum.per_second": {
+            "value": 1.1e-05,
+            "unit": "Tbyte/s"
+          },
+          "launch__registers_per_thread": {
+            "value": 32.0,
+            "unit": "register/thread"
+          },
+          "launch__shared_mem_per_block_static": {
+            "value": 0.128,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_dynamic": {
+            "value": 512.0,
+            "unit": "byte/block"
+          },
+          "launch__shared_mem_per_block_driver": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_allocated": {
+            "value": 1.664,
+            "unit": "Kbyte/block"
+          },
+          "launch__occupancy_limit_registers": {
+            "value": 2.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_shared_mem": {
+            "value": 4.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_warps": {
+            "value": 2.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_blocks": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "normalized_hbm_gb_s": {
+            "value": 0.011,
+            "unit": "GB/s"
+          }
+        }
+      },
+      {
+        "name": "tf_exl3_experts_rot_in",
+        "grid": "(128, 32, 2)",
+        "block": "(32, 1, 1)",
+        "metrics": {
+          "sm__warps_active.avg.pct_of_peak_sustained_active": {
+            "value": 23.112227,
+            "unit": "%"
+          },
+          "sm__maximum_warps_per_active_cycle_pct": {
+            "value": 50.0,
+            "unit": "%"
+          },
+          "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.003593,
+            "unit": "%"
+          },
+          "sm__pipe_alu_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 9.168424,
+            "unit": "%"
+          },
+          "sm__pipe_tensor_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.0,
+            "unit": "%"
+          },
+          "dram__bytes.sum.per_second": {
+            "value": 0.000255,
+            "unit": "Tbyte/s"
+          },
+          "launch__registers_per_thread": {
+            "value": 21.0,
+            "unit": "register/thread"
+          },
+          "launch__shared_mem_per_block_static": {
+            "value": 0.0,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_dynamic": {
+            "value": 0.0,
+            "unit": "byte/block"
+          },
+          "launch__shared_mem_per_block_driver": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_allocated": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__occupancy_limit_registers": {
+            "value": 84.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_shared_mem": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_warps": {
+            "value": 64.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_blocks": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "normalized_hbm_gb_s": {
+            "value": 0.255,
+            "unit": "GB/s"
+          }
+        }
+      },
+      {
+        "name": "tf_exl3_grouped_1",
+        "grid": "(128, 16, 8)",
+        "block": "(128, 1, 1)",
+        "metrics": {
+          "sm__warps_active.avg.pct_of_peak_sustained_active": {
+            "value": 24.23264,
+            "unit": "%"
+          },
+          "sm__maximum_warps_per_active_cycle_pct": {
+            "value": 25.0,
+            "unit": "%"
+          },
+          "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+            "value": 21.913393,
+            "unit": "%"
+          },
+          "sm__pipe_alu_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 71.850644,
+            "unit": "%"
+          },
+          "sm__pipe_tensor_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 16.722238,
+            "unit": "%"
+          },
+          "dram__bytes.sum.per_second": {
+            "value": 1.569065,
+            "unit": "Tbyte/s"
+          },
+          "launch__registers_per_thread": {
+            "value": 128.0,
+            "unit": "register/thread"
+          },
+          "launch__shared_mem_per_block_static": {
+            "value": 32.832,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_dynamic": {
+            "value": 0.0,
+            "unit": "byte/block"
+          },
+          "launch__shared_mem_per_block_driver": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_allocated": {
+            "value": 33.92,
+            "unit": "Kbyte/block"
+          },
+          "launch__occupancy_limit_registers": {
+            "value": 4.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_shared_mem": {
+            "value": 4.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_warps": {
+            "value": 16.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_blocks": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "normalized_hbm_gb_s": {
+            "value": 1569.0649999999998,
+            "unit": "GB/s"
+          }
+        }
+      },
+      {
+        "name": "tf_exl3_gateup_epilogue",
+        "grid": "(128, 16, 1)",
+        "block": "(32, 1, 1)",
+        "metrics": {
+          "sm__warps_active.avg.pct_of_peak_sustained_active": {
+            "value": 17.668965,
+            "unit": "%"
+          },
+          "sm__maximum_warps_per_active_cycle_pct": {
+            "value": 50.0,
+            "unit": "%"
+          },
+          "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.001658,
+            "unit": "%"
+          },
+          "sm__pipe_alu_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 12.839992,
+            "unit": "%"
+          },
+          "sm__pipe_tensor_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.0,
+            "unit": "%"
+          },
+          "dram__bytes.sum.per_second": {
+            "value": 0.000118,
+            "unit": "Tbyte/s"
+          },
+          "launch__registers_per_thread": {
+            "value": 40.0,
+            "unit": "register/thread"
+          },
+          "launch__shared_mem_per_block_static": {
+            "value": 0.0,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_dynamic": {
+            "value": 0.0,
+            "unit": "byte/block"
+          },
+          "launch__shared_mem_per_block_driver": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_allocated": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__occupancy_limit_registers": {
+            "value": 48.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_shared_mem": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_warps": {
+            "value": 64.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_blocks": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "normalized_hbm_gb_s": {
+            "value": 0.118,
+            "unit": "GB/s"
+          }
+        }
+      },
+      {
+        "name": "tf_exl3_grouped_1",
+        "grid": "(128, 32, 1)",
+        "block": "(128, 1, 1)",
+        "metrics": {
+          "sm__warps_active.avg.pct_of_peak_sustained_active": {
+            "value": 23.26593,
+            "unit": "%"
+          },
+          "sm__maximum_warps_per_active_cycle_pct": {
+            "value": 25.0,
+            "unit": "%"
+          },
+          "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+            "value": 21.79593,
+            "unit": "%"
+          },
+          "sm__pipe_alu_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 69.331169,
+            "unit": "%"
+          },
+          "sm__pipe_tensor_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 16.403994,
+            "unit": "%"
+          },
+          "dram__bytes.sum.per_second": {
+            "value": 1.560588,
+            "unit": "Tbyte/s"
+          },
+          "launch__registers_per_thread": {
+            "value": 128.0,
+            "unit": "register/thread"
+          },
+          "launch__shared_mem_per_block_static": {
+            "value": 32.832,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_dynamic": {
+            "value": 0.0,
+            "unit": "byte/block"
+          },
+          "launch__shared_mem_per_block_driver": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_allocated": {
+            "value": 33.92,
+            "unit": "Kbyte/block"
+          },
+          "launch__occupancy_limit_registers": {
+            "value": 4.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_shared_mem": {
+            "value": 4.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_warps": {
+            "value": 16.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_blocks": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "normalized_hbm_gb_s": {
+            "value": 1560.5880000000002,
+            "unit": "GB/s"
+          }
+        }
+      },
+      {
+        "name": "tf_exl3_down_combine",
+        "grid": "(16, 32, 1)",
+        "block": "(256, 1, 1)",
+        "metrics": {
+          "sm__warps_active.avg.pct_of_peak_sustained_active": {
+            "value": 35.686243,
+            "unit": "%"
+          },
+          "sm__maximum_warps_per_active_cycle_pct": {
+            "value": 62.5,
+            "unit": "%"
+          },
+          "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.003445,
+            "unit": "%"
+          },
+          "sm__pipe_alu_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 8.171201,
+            "unit": "%"
+          },
+          "sm__pipe_tensor_cycles_active.avg.pct_of_peak_sustained_elapsed": {
+            "value": 0.0,
+            "unit": "%"
+          },
+          "dram__bytes.sum.per_second": {
+            "value": 0.000244,
+            "unit": "Tbyte/s"
+          },
+          "launch__registers_per_thread": {
+            "value": 48.0,
+            "unit": "register/thread"
+          },
+          "launch__shared_mem_per_block_static": {
+            "value": 16.384,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_dynamic": {
+            "value": 0.0,
+            "unit": "byte/block"
+          },
+          "launch__shared_mem_per_block_driver": {
+            "value": 1.024,
+            "unit": "Kbyte/block"
+          },
+          "launch__shared_mem_per_block_allocated": {
+            "value": 17.408,
+            "unit": "Kbyte/block"
+          },
+          "launch__occupancy_limit_registers": {
+            "value": 5.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_shared_mem": {
+            "value": 7.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_warps": {
+            "value": 8.0,
+            "unit": "block"
+          },
+          "launch__occupancy_limit_blocks": {
+            "value": 32.0,
+            "unit": "block"
+          },
+          "normalized_hbm_gb_s": {
+            "value": 0.244,
+            "unit": "GB/s"
+          }
+        }
+      }
+    ]
+  }
+]

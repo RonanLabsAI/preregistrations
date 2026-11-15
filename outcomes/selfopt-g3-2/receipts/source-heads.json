@@ -1,0 +1,7 @@
+{
+  "selfoptimize_implementation": "beaf45d8076f9f64f6645dfa0de04cf70f0a5b83",
+  "documentation_report": "87b3dd8246fab37284abf2efccab864aa78a098c",
+  "engine": "7c1bc0be3df413f43c65fb278699b629a44e7a90",
+  "measured_harness_public_commit": "31bce7e",
+  "scope": "Implementation and report source heads before report-only packaging metadata; final local heads supplied at handoff."
+}

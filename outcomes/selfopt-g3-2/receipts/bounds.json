@@ -1,0 +1,16 @@
+{
+  "c1": {
+    "n_reports": 5,
+    "exl3_union_fraction_median": 0.36048524742713467,
+    "ideal_deletion_ceiling_median": 1.5636855850108973,
+    "ideal_deletion_ceiling_maximum": 1.5641826431614885,
+    "applicable_candidate_bound": null
+  },
+  "c16": {
+    "n_reports": 5,
+    "exl3_union_fraction_median": 0.5908681711021172,
+    "ideal_deletion_ceiling_median": 2.444199960423013,
+    "ideal_deletion_ceiling_maximum": 2.4445728153404476,
+    "applicable_candidate_bound": null
+  }
+}

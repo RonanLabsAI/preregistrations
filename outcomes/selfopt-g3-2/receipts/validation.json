@@ -1,0 +1,8 @@
+{
+  "owner_k3_pass": true,
+  "selfoptimize_package_pass": true,
+  "section12_terminal_pass": true,
+  "frozen_hashes_pass": true,
+  "private_scan_pass": true,
+  "direct_review": "Public synthetic inputs, original binary hashes, anonymized timing and selected counters, explicit gate failures and operational totals. No raw operational snapshots or unfiltered device attributes included."
+}

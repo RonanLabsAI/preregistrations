@@ -1,0 +1,14 @@
+{
+  "shared_reservation_gpu_hours": 0.05913435777777778,
+  "claim_windows": 3,
+  "daily_unloaded": false,
+  "restore_seconds": null,
+  "minimum_free_mib": 29573,
+  "monitor_max_observed_interval_seconds": 0.326765,
+  "production_request_arrivals_observed": 0,
+  "all_claims_released": true,
+  "production_identity_and_config_unchanged": true,
+  "daily_identity_and_start_unchanged": true,
+  "right_identity_and_start_unchanged": true,
+  "monitor_deviation": "Observed sample record spacing reached 0.326765s versus the preregistered <=0.250s target. No arrival was observed; abort latency was not exercised or certified."
+}

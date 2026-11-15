@@ -1,0 +1,10 @@
+W27 G3.2 manual diagnostic. Every attempt retained in results.jsonl.
+Invalid preflight: peer daily name mismatch; no GPU work.
+Invalid original timing API: CUDA error 1, no valid timing sample.
+Amended run: six cases, each with one warm and five retained blocks, twenty graph replays per block.
+Six counter cases, six kernels each, one profiled instance per stage, fourteen replay passes.
+Profiler warnings: uncontrolled GPU caches and unmodified clocks; no whole-model replay backup warning.
+Counter CSV parser initially assumed long form; corrected for wide-form header and units before interpretation.
+Harness wall_seconds stores a monotonic tick; elapsed costs use the guard and claim receipts instead.
+Production arrival abort was not exercised. Maximum observed monitor record interval exceeded the registered 250ms target.
+No kernel patch or served candidate executed.

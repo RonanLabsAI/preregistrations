@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0",
+  "product_id": "selfopt-gen3-2-tensorfold-diagnostic",
+  "run_id": "w27-g3-2-20261114",
+  "title": "G3.2 isolated EXL3 counters with failed served-transfer gates",
+  "lane": "L4",
+  "created_at": "2026-11-14T22:22:57.035534-08:00",
+  "preregistration": {
+    "sha256": "b097e3a2aa9abf4d16c2d5ac1274c9b9e9e1f90cbb7cba3ecb819b6b9f8896c9",
+    "url": "https://github.com/RonanLabsAI/preregistrations/blob/1820646/protocols/selfopt-g3-2/PROTOCOL.md",
+    "timestamp_verifiable": true
+  },
+  "arms": [
+    "isolated-c1-distinct8",
+    "isolated-c16-synthetic-u8-u32-u64-u96-u128"
+  ],
+  "seeds": [
+    1234
+  ],
+  "frozen_inputs": [
+    {
+      "path": "harness.py",
+      "sha256": "f4bf883bebe41faa6826723be9ab2f1c6f2139aa9f9503ec2a9c012e5521592a"
+    },
+    {
+      "path": "served-durations.json",
+      "sha256": "fb5208cbf74de4c966966acdbc8711757979e493f7c819c411f69df7086ffcbf"
+    },
+    {
+      "path": "binding.json",
+      "sha256": "7897b3f9ee9ba08448fe37a53437cbed2a115f3d382d47b5b6ee09912035d371"
+    },
+    {
+      "path": "PROTOCOL.md",
+      "sha256": "b097e3a2aa9abf4d16c2d5ac1274c9b9e9e1f90cbb7cba3ecb819b6b9f8896c9"
+    },
+    {
+      "path": "AMENDMENT-1.md",
+      "sha256": "9149719c380d12356376c232906e7ddd594220a457a58a5074f4df7e03ebcca6"
+    }
+  ],
+  "environment": {
+    "hardware": "GB300 sm103, 152 SMs, driver 595.99.02",
+    "engine": "TensorFold original experts fatbin, engine 7c1bc0be3df413f43c65fb278699b629a44e7a90",
+    "fingerprint": "original-fatbin-1dadf5ec0919f46c-synthetic-values-routes",
+    "executor": "Manual authorized diagnostic; no Mission Control product or scheduler SLA claimed"
+  },
+  "receipts": [
+    "receipts/bounds.json",
+    "receipts/candidate-ledger.jsonl",
+    "receipts/counter-summary.json",
+    "receipts/harness-timings.json",
+    "receipts/measurement.log",
+    "receipts/operations-summary.json",
+    "receipts/raw-hashes.json",
+    "receipts/results.jsonl",
+    "receipts/source-heads.json",
+    "receipts/validation.json"
+  ],
+  "figures": [
+    {
+      "path": "figures/validation.png",
+      "source_receipts": [
+        "receipts/harness-timings.json",
+        "receipts/results.jsonl"
+      ]
+    }
+  ]
+}
