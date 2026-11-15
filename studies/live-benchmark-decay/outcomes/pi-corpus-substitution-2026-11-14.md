@@ -15,4 +15,4 @@ The approved work order asked how fast live-web benchmarks drift, using frozen-v
 
 ## Timing
 
-Stephen gave the decision on his review page. It was recorded here 2026-11-14, about 16:40 PT. His exact answer time was not relayed, so this note gives the recording time.
+Stephen gave the decision on his review page. It was recorded here 2026-11-14 at 16:23 PT. His exact answer time was not relayed, so this note gives the recording time.
