@@ -1,0 +1,55 @@
+{
+ "claim_epoch": 1794782812.209156,
+ "deadline_epoch": 1794803512.209156,
+ "block_cost_minutes": 45,
+ "loads": [
+  {
+   "tag": "P2-D4a-1",
+   "arm": "D4a",
+   "args": [
+    "--drafter",
+    "incoai/GLM-5.3-Flash-DFlash2@bf582e4e",
+    "--drafter-bits",
+    "4"
+   ],
+   "env": {},
+   "cells": [
+    "C1",
+    "C4",
+    "C16"
+   ],
+   "rounds": 5,
+   "est_minutes": 15
+  },
+  {
+   "tag": "P2-D4a-2",
+   "arm": "D4a",
+   "args": [
+    "--drafter",
+    "incoai/GLM-5.3-Flash-DFlash2@bf582e4e",
+    "--drafter-bits",
+    "4"
+   ],
+   "env": {},
+   "cells": [
+    "C1",
+    "C4",
+    "C16"
+   ],
+   "rounds": 5,
+   "est_minutes": 15
+  },
+  {
+   "tag": "P2-A3",
+   "arm": "A",
+   "cells": [
+    "C1",
+    "C4",
+    "C16"
+   ],
+   "rounds": 5,
+   "est_minutes": 16,
+   "halt_on_fail": true
+  }
+ ]
+}

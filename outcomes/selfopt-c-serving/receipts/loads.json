@@ -1,0 +1,334 @@
+[
+ {
+  "tag": "P0-A",
+  "arm": "A",
+  "attempt": 1,
+  "load_seconds": 54.036774879990844,
+  "disposition": "ran",
+  "pt": "2026-11-15T15:19:56.434931-08:00",
+  "stop_seconds": 1.056647432007594,
+  "loaded_line": "[tensorfold] serving study-c at http://127.0.0.1:8896/v1 (sampling: temperature 1.0, top_p 0.95; drafts: MTP + copies; context: 40960; loaded in 53.3s)",
+  "draft_lines": [
+   "[tensorfold] serving study-c at http://127.0.0.1:8896/v1 (sampling: temperature 1.0, top_p 0.95; drafts: MTP + copies; context: 40960; loaded in 53.3s)"
+  ],
+  "cells_exit": {
+   "C1": 0,
+   "C4": 0,
+   "C16": 0
+  }
+ },
+ {
+  "tag": "P1-Kminus",
+  "arm": "K-",
+  "attempt": 1,
+  "load_seconds": 54.03548891900573,
+  "disposition": "ran",
+  "pt": "2026-11-15T17:08:18.443749-08:00",
+  "stop_seconds": 1.0570451520034112,
+  "loaded_line": "[tensorfold] serving study-c at http://127.0.0.1:8896/v1 (sampling: temperature 1.0, top_p 0.95; drafts: MTP + copies; context: 40960; loaded in 53.1s)",
+  "draft_lines": [
+   "[tensorfold] serving study-c at http://127.0.0.1:8896/v1 (sampling: temperature 1.0, top_p 0.95; drafts: MTP + copies; context: 40960; loaded in 53.1s)"
+  ],
+  "cells_exit": {
+   "C4": 0,
+   "C16": 0
+  }
+ },
+ {
+  "tag": "P1-D2a",
+  "arm": "D2a",
+  "attempt": 1,
+  "load_seconds": 53.03503422101494,
+  "disposition": "ran",
+  "pt": "2026-11-15T17:18:23.840298-08:00",
+  "stop_seconds": 1.0428790689911693,
+  "loaded_line": "[tensorfold] serving study-c at http://127.0.0.1:8896/v1 (sampling: temperature 1.0, top_p 0.95; drafts: MTP + copies; context: 40960; loaded in 53.0s)",
+  "draft_lines": [
+   "[tensorfold] serving study-c at http://127.0.0.1:8896/v1 (sampling: temperature 1.0, top_p 0.95; drafts: MTP + copies; context: 40960; loaded in 53.0s)"
+  ],
+  "cells_exit": {
+   "C1": 0,
+   "C4": 0,
+   "C16": 0
+  }
+ },
+ {
+  "tag": "P1-D2b",
+  "arm": "D2b",
+  "attempt": 1,
+  "load_seconds": 53.01528387298458,
+  "disposition": "ran",
+  "pt": "2026-11-15T17:28:28.135839-08:00",
+  "stop_seconds": 1.055812833015807,
+  "loaded_line": "[tensorfold] serving study-c at http://127.0.0.1:8896/v1 (sampling: temperature 1.0, top_p 0.95; drafts: MTP + copies; context: 40960; loaded in 52.9s)",
+  "draft_lines": [
+   "[tensorfold] serving study-c at http://127.0.0.1:8896/v1 (sampling: temperature 1.0, top_p 0.95; drafts: MTP + copies; context: 40960; loaded in 52.9s)"
+  ],
+  "cells_exit": {
+   "C1": 0,
+   "C4": 0,
+   "C16": 0
+  }
+ },
+ {
+  "tag": "P1-D3",
+  "arm": "D3",
+  "attempt": 1,
+  "load_seconds": 53.01187857898185,
+  "disposition": "ran",
+  "pt": "2026-11-15T17:38:26.234590-08:00",
+  "stop_seconds": 1.0575826079875696,
+  "loaded_line": "[tensorfold] serving study-c at http://127.0.0.1:8896/v1 (sampling: temperature 1.0, top_p 0.95; drafts: MTP + copies; context: 40960; loaded in 52.6s)",
+  "draft_lines": [
+   "[tensorfold] serving study-c at http://127.0.0.1:8896/v1 (sampling: temperature 1.0, top_p 0.95; drafts: MTP + copies; context: 40960; loaded in 52.6s)"
+  ],
+  "cells_exit": {
+   "C1": 0,
+   "C4": 0,
+   "C16": 0
+  }
+ },
+ {
+  "tag": "P1-D4a",
+  "arm": "D4a",
+  "attempt": 1,
+  "load_seconds": 59.017702256998746,
+  "disposition": "ran",
+  "pt": "2026-11-15T17:47:25.852435-08:00",
+  "stop_seconds": 1.0479359810124151,
+  "loaded_line": "[tensorfold] serving study-c at http://127.0.0.1:8896/v1 (sampling: temperature 1.0, top_p 0.95; drafts: DFlash2 (incoai/GLM-5.3-Flash-DFlash2@bf582e4e) + copies; context: 40960; loaded in 58.7s)",
+  "draft_lines": [
+   "info: dflash2: drafter from incoai/GLM-5.3-Flash-DFlash2@bf582e4e (Apache-2.0), linears at 4 bits, 0.93 GiB on the device",
+   "[tensorfold] serving study-c at http://127.0.0.1:8896/v1 (sampling: temperature 1.0, top_p 0.95; drafts: DFlash2 (incoai/GLM-5.3-Flash-DFlash2@bf582e4e) + copies; context: 40960; loaded in 58.7s)"
+  ],
+  "cells_exit": {
+   "C1": 0,
+   "C4": 0,
+   "C16": 0
+  }
+ },
+ {
+  "tag": "P1-D4b",
+  "arm": "D4b",
+  "attempt": 1,
+  "load_seconds": 55.01732989100856,
+  "disposition": "ran",
+  "pt": "2026-11-15T17:56:21.009698-08:00",
+  "stop_seconds": 1.0727881700149737,
+  "loaded_line": "[tensorfold] serving study-c at http://127.0.0.1:8896/v1 (sampling: temperature 1.0, top_p 0.95; drafts: DFlash2 (incoai/GLM-5.3-Flash-DFlash2@bf582e4e) + copies; context: 40960; loaded in 54.8s)",
+  "draft_lines": [
+   "info: dflash2: drafter from incoai/GLM-5.3-Flash-DFlash2@bf582e4e (Apache-2.0), linears at 16 bits, 2.11 GiB on the device",
+   "[tensorfold] serving study-c at http://127.0.0.1:8896/v1 (sampling: temperature 1.0, top_p 0.95; drafts: DFlash2 (incoai/GLM-5.3-Flash-DFlash2@bf582e4e) + copies; context: 40960; loaded in 54.8s)"
+  ],
+  "cells_exit": {
+   "C1": 0,
+   "C4": 0,
+   "C16": 0
+  }
+ },
+ {
+  "tag": "P1-S1a",
+  "arm": "S1a",
+  "attempt": 1,
+  "load_seconds": 53.01322796099703,
+  "disposition": "ran",
+  "pt": "2026-11-15T18:01:43.346126-08:00",
+  "stop_seconds": 1.0559588960022666,
+  "loaded_line": "[tensorfold] serving study-c at http://127.0.0.1:8896/v1 (sampling: temperature 1.0, top_p 0.95; drafts: MTP + copies; context: 40960; loaded in 52.9s)",
+  "draft_lines": [
+   "[tensorfold] serving study-c at http://127.0.0.1:8896/v1 (sampling: temperature 1.0, top_p 0.95; drafts: MTP + copies; context: 40960; loaded in 52.9s)"
+  ],
+  "cells_exit": {
+   "C1": 0
+  }
+ },
+ {
+  "tag": "P1-S1b",
+  "arm": "S1b",
+  "attempt": 1,
+  "load_seconds": 54.0183776760241,
+  "disposition": "ran",
+  "pt": "2026-11-15T18:05:25.129111-08:00",
+  "stop_seconds": 1.0566613129922189,
+  "loaded_line": "[tensorfold] serving study-c at http://127.0.0.1:8896/v1 (sampling: temperature 1.0, top_p 0.95; drafts: MTP + copies; context: 40960; loaded in 53.1s)",
+  "draft_lines": [
+   "[tensorfold] serving study-c at http://127.0.0.1:8896/v1 (sampling: temperature 1.0, top_p 0.95; drafts: MTP + copies; context: 40960; loaded in 53.1s)"
+  ],
+  "cells_exit": {
+   "C4": 0
+  }
+ },
+ {
+  "tag": "P1-S7",
+  "arm": "S7",
+  "attempt": 1,
+  "load_seconds": 58.012773033988196,
+  "disposition": "ran",
+  "pt": "2026-11-15T18:15:35.713772-08:00",
+  "l2pf_rows": 123,
+  "stop_seconds": 1.056180615996709,
+  "loaded_line": "[tensorfold] serving study-c at http://127.0.0.1:8896/v1 (sampling: temperature 1.0, top_p 0.95; drafts: MTP + copies; context: 40960; loaded in 57.0s)",
+  "draft_lines": [
+   "[tensorfold] serving study-c at http://127.0.0.1:8896/v1 (sampling: temperature 1.0, top_p 0.95; drafts: MTP + copies; context: 40960; loaded in 57.0s)"
+  ],
+  "cells_exit": {
+   "C1": 0,
+   "C4": 0,
+   "C16": 0
+  }
+ },
+ {
+  "tag": "P1-S8",
+  "arm": "S8",
+  "attempt": 1,
+  "load_seconds": 58.01404900001944,
+  "disposition": "ran",
+  "pt": "2026-11-15T18:25:44.815439-08:00",
+  "stop_seconds": 1.0564929909887724,
+  "loaded_line": "[tensorfold] serving study-c at http://127.0.0.1:8896/v1 (sampling: temperature 1.0, top_p 0.95; drafts: MTP + copies; context: 40960; loaded in 57.1s)",
+  "draft_lines": [
+   "[tensorfold] serving study-c at http://127.0.0.1:8896/v1 (sampling: temperature 1.0, top_p 0.95; drafts: MTP + copies; context: 40960; loaded in 57.1s)"
+  ],
+  "cells_exit": {
+   "C1": 0,
+   "C4": 0,
+   "C16": 0
+  }
+ },
+ {
+  "tag": "P2-A1",
+  "arm": "A",
+  "attempt": 1,
+  "load_seconds": 53.034349580004346,
+  "disposition": "ran",
+  "pt": "2026-11-15T18:40:55.148786-08:00",
+  "stop_seconds": 1.056425852002576,
+  "loaded_line": "[tensorfold] serving study-c at http://127.0.0.1:8896/v1 (sampling: temperature 1.0, top_p 0.95; drafts: MTP + copies; context: 40960; loaded in 53.0s)",
+  "draft_lines": [
+   "[tensorfold] serving study-c at http://127.0.0.1:8896/v1 (sampling: temperature 1.0, top_p 0.95; drafts: MTP + copies; context: 40960; loaded in 53.0s)"
+  ],
+  "cells_exit": {
+   "C1": 0,
+   "C4": 0,
+   "C16": 0
+  }
+ },
+ {
+  "tag": "P2-D4b-1",
+  "arm": "D4b",
+  "attempt": 1,
+  "load_seconds": 54.01707374400576,
+  "disposition": "ran",
+  "pt": "2026-11-15T18:53:48.505064-08:00",
+  "stop_seconds": 1.056339829985518,
+  "loaded_line": "[tensorfold] serving study-c at http://127.0.0.1:8896/v1 (sampling: temperature 1.0, top_p 0.95; drafts: DFlash2 (incoai/GLM-5.3-Flash-DFlash2@bf582e4e) + copies; context: 40960; loaded in 53.7s)",
+  "draft_lines": [
+   "info: dflash2: drafter from incoai/GLM-5.3-Flash-DFlash2@bf582e4e (Apache-2.0), linears at 16 bits, 2.11 GiB on the device",
+   "[tensorfold] serving study-c at http://127.0.0.1:8896/v1 (sampling: temperature 1.0, top_p 0.95; drafts: DFlash2 (incoai/GLM-5.3-Flash-DFlash2@bf582e4e) + copies; context: 40960; loaded in 53.7s)"
+  ],
+  "cells_exit": {
+   "C1": 0,
+   "C4": 0,
+   "C16": 0
+  }
+ },
+ {
+  "tag": "P2-D4b-2",
+  "arm": "D4b",
+  "attempt": 1,
+  "load_seconds": 54.014924863004126,
+  "disposition": "ran",
+  "pt": "2026-11-15T19:06:41.861818-08:00",
+  "stop_seconds": 1.0551186819793656,
+  "loaded_line": "[tensorfold] serving study-c at http://127.0.0.1:8896/v1 (sampling: temperature 1.0, top_p 0.95; drafts: DFlash2 (incoai/GLM-5.3-Flash-DFlash2@bf582e4e) + copies; context: 40960; loaded in 53.5s)",
+  "draft_lines": [
+   "info: dflash2: drafter from incoai/GLM-5.3-Flash-DFlash2@bf582e4e (Apache-2.0), linears at 16 bits, 2.11 GiB on the device",
+   "[tensorfold] serving study-c at http://127.0.0.1:8896/v1 (sampling: temperature 1.0, top_p 0.95; drafts: DFlash2 (incoai/GLM-5.3-Flash-DFlash2@bf582e4e) + copies; context: 40960; loaded in 53.5s)"
+  ],
+  "cells_exit": {
+   "C1": 0,
+   "C4": 0,
+   "C16": 0
+  }
+ },
+ {
+  "tag": "P2-A2",
+  "arm": "A",
+  "attempt": 1,
+  "load_seconds": 53.02004157801275,
+  "disposition": "ran",
+  "pt": "2026-11-15T19:21:19.009164-08:00",
+  "stop_seconds": 1.0564075550064445,
+  "loaded_line": "[tensorfold] serving study-c at http://127.0.0.1:8896/v1 (sampling: temperature 1.0, top_p 0.95; drafts: MTP + copies; context: 40960; loaded in 52.7s)",
+  "draft_lines": [
+   "[tensorfold] serving study-c at http://127.0.0.1:8896/v1 (sampling: temperature 1.0, top_p 0.95; drafts: MTP + copies; context: 40960; loaded in 52.7s)"
+  ],
+  "cells_exit": {
+   "C1": 0,
+   "C4": 0,
+   "C16": 0
+  }
+ },
+ {
+  "tag": "P2-D4a-1",
+  "arm": "D4a",
+  "attempt": 1,
+  "load_seconds": 54.03604908598936,
+  "disposition": "ran",
+  "pt": "2026-11-15T19:34:13.501539-08:00",
+  "stop_seconds": 1.0569426149886567,
+  "loaded_line": "[tensorfold] serving study-c at http://127.0.0.1:8896/v1 (sampling: temperature 1.0, top_p 0.95; drafts: DFlash2 (incoai/GLM-5.3-Flash-DFlash2@bf582e4e) + copies; context: 40960; loaded in 53.6s)",
+  "draft_lines": [
+   "info: dflash2: drafter from incoai/GLM-5.3-Flash-DFlash2@bf582e4e (Apache-2.0), linears at 4 bits, 0.93 GiB on the device",
+   "[tensorfold] serving study-c at http://127.0.0.1:8896/v1 (sampling: temperature 1.0, top_p 0.95; drafts: DFlash2 (incoai/GLM-5.3-Flash-DFlash2@bf582e4e) + copies; context: 40960; loaded in 53.6s)"
+  ],
+  "cells_exit": {
+   "C1": 0,
+   "C4": 0,
+   "C16": 0
+  }
+ },
+ {
+  "tag": "P2-D4a-2",
+  "arm": "D4a",
+  "attempt": 1,
+  "load_seconds": 54.016187175002415,
+  "disposition": "ran",
+  "pt": "2026-11-15T19:47:07.915615-08:00",
+  "stop_seconds": 1.044430411013309,
+  "loaded_line": "[tensorfold] serving study-c at http://127.0.0.1:8896/v1 (sampling: temperature 1.0, top_p 0.95; drafts: DFlash2 (incoai/GLM-5.3-Flash-DFlash2@bf582e4e) + copies; context: 40960; loaded in 53.5s)",
+  "draft_lines": [
+   "info: dflash2: drafter from incoai/GLM-5.3-Flash-DFlash2@bf582e4e (Apache-2.0), linears at 4 bits, 0.93 GiB on the device",
+   "[tensorfold] serving study-c at http://127.0.0.1:8896/v1 (sampling: temperature 1.0, top_p 0.95; drafts: DFlash2 (incoai/GLM-5.3-Flash-DFlash2@bf582e4e) + copies; context: 40960; loaded in 53.5s)"
+  ],
+  "cells_exit": {
+   "C1": 0,
+   "C4": 0,
+   "C16": 0
+  }
+ },
+ {
+  "tag": "P2-A3",
+  "arm": "A",
+  "attempt": 1,
+  "load_seconds": 54.01182169999811,
+  "disposition": "ran",
+  "pt": "2026-11-15T20:01:46.438132-08:00",
+  "stop_seconds": 1.0542994379939046,
+  "loaded_line": "[tensorfold] serving study-c at http://127.0.0.1:8896/v1 (sampling: temperature 1.0, top_p 0.95; drafts: MTP + copies; context: 40960; loaded in 53.1s)",
+  "draft_lines": [
+   "[tensorfold] serving study-c at http://127.0.0.1:8896/v1 (sampling: temperature 1.0, top_p 0.95; drafts: MTP + copies; context: 40960; loaded in 53.1s)"
+  ],
+  "cells_exit": {
+   "C1": 0,
+   "C4": 0,
+   "C16": 0
+  }
+ },
+ {
+  "disposition": "unrun",
+  "reason": "budget: whole block does not fit before the restore reserve",
+  "block": "b3",
+  "cost_minutes": 47
+ }
+]

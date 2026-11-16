@@ -1,0 +1,139 @@
+{
+ "claim_epoch": 1794782812.209156,
+ "deadline_epoch": 1794803512.209156,
+ "loads": [
+  {
+   "tag": "P1-D2a",
+   "arm": "D2a",
+   "args": [
+    "--mtp-confidence",
+    "0.5"
+   ],
+   "cells": [
+    "C1",
+    "C4",
+    "C16"
+   ],
+   "rounds": 3,
+   "est_minutes": 13
+  },
+  {
+   "tag": "P1-D2b",
+   "arm": "D2b",
+   "args": [
+    "--mtp-confidence",
+    "0.8"
+   ],
+   "cells": [
+    "C1",
+    "C4",
+    "C16"
+   ],
+   "rounds": 3,
+   "est_minutes": 13
+  },
+  {
+   "tag": "P1-D3",
+   "arm": "D3",
+   "env": {
+    "TF_GLM_COPIES": "1"
+   },
+   "cells": [
+    "C1",
+    "C4",
+    "C16"
+   ],
+   "rounds": 3,
+   "est_minutes": 13
+  },
+  {
+   "tag": "P1-D4a",
+   "arm": "D4a",
+   "args": [
+    "--drafter",
+    "incoai/GLM-5.3-Flash-DFlash2@bf582e4e",
+    "--drafter-bits",
+    "4"
+   ],
+   "cells": [
+    "C1",
+    "C4",
+    "C16"
+   ],
+   "rounds": 3,
+   "est_minutes": 13
+  },
+  {
+   "tag": "P1-D4b",
+   "arm": "D4b",
+   "args": [
+    "--drafter",
+    "incoai/GLM-5.3-Flash-DFlash2@bf582e4e",
+    "--drafter-bits",
+    "0"
+   ],
+   "cells": [
+    "C1",
+    "C4",
+    "C16"
+   ],
+   "rounds": 3,
+   "est_minutes": 13
+  },
+  {
+   "tag": "P1-S1a",
+   "arm": "S1a",
+   "args": [
+    "--parallel",
+    "1"
+   ],
+   "cells": [
+    "C1"
+   ],
+   "rounds": 3,
+   "est_minutes": 8
+  },
+  {
+   "tag": "P1-S1b",
+   "arm": "S1b",
+   "args": [
+    "--parallel",
+    "4"
+   ],
+   "cells": [
+    "C4"
+   ],
+   "rounds": 3,
+   "est_minutes": 8
+  },
+  {
+   "tag": "P1-S7",
+   "arm": "S7",
+   "env": {
+    "TF_GLM_L2PF": "1"
+   },
+   "cells": [
+    "C1",
+    "C4",
+    "C16"
+   ],
+   "applicability": "l2pf",
+   "rounds": 3,
+   "est_minutes": 13
+  },
+  {
+   "tag": "P1-S8",
+   "arm": "S8",
+   "env": {
+    "TF_KV_PAGES": "on"
+   },
+   "cells": [
+    "C1",
+    "C4",
+    "C16"
+   ],
+   "rounds": 3,
+   "est_minutes": 13
+  }
+ ]
+}
