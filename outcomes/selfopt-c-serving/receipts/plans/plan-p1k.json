@@ -1,0 +1,19 @@
+{
+ "claim_epoch": 1794782812.209156,
+ "deadline_epoch": 1794803512.209156,
+ "loads": [
+  {
+   "tag": "P1-Kminus",
+   "arm": "K-",
+   "env": {
+    "TF_GLM_SHARED": "0"
+   },
+   "cells": [
+    "C4",
+    "C16"
+   ],
+   "rounds": 3,
+   "est_minutes": 8
+  }
+ ]
+}

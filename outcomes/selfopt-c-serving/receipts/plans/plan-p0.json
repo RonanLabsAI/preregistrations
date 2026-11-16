@@ -1,0 +1,19 @@
+{
+ "claim_epoch": 1794782812.209156,
+ "deadline_epoch": 1794803512.209156,
+ "loads": [
+  {
+   "tag": "P0-A",
+   "arm": "A",
+   "cells": [
+    "C1",
+    "C4",
+    "C16"
+   ],
+   "modes": "drafted,plain",
+   "rounds": 5,
+   "est_minutes": 40,
+   "halt_on_fail": true
+  }
+ ]
+}
