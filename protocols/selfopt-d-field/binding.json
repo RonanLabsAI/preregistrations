@@ -1,0 +1,58 @@
+{
+  "frozen_pt": "2026-11-15T20:48:51.502589-08:00",
+  "timing_samples_before_binding": 0,
+  "pi_approval": {
+    "pt": "2026-11-16 (chat)",
+    "choice": "do 1-4 now (parts H, X, W; part 4 full GLM-5.3 waits on upstream access)"
+  },
+  "public_files": {
+    "PROTOCOL.md": "c1058031b52a779d32b9909e90d01a88f9cf968998ccc338c34ff757fbd52570",
+    "harness_d.py": "69fc86ae54189f1bd77ceca0362b0f615b489a609d6bad494197ef7fd506b260",
+    "analyze_d.py": "b15e51a5431e5d81f8bef2afc1e84d915bcc34715453b6494bf7798dacdf82b4",
+    "run_wc.py": "6de2bcfde37e8ad11ab14510cfbb68a8af38e21b1087576bacb8746fc077e0a3",
+    "corpus-d.json": "9a0a16a036ae9d40a2fc66bea5705d33e2a09538a5088f57648f12bcf3601549"
+  },
+  "private_operator_files_sha256": {
+    "run_loads_d.py": "baf9e32b44c66a61cd403e7c17482dba3bbef57196396d4a2a52b4923b8db0e2",
+    "run_loads_x.py": "fb9f44d067b895263296ce30b1939f440b37f02b645dd8d4894cba9811929d36",
+    "gen_plans.py": "b23510dd8ed64c029c21ddd1dc6ebfe8255454f3707f556a6cb63cb13a779bec",
+    "build_corpus.py": "8f156c549a934fbe2214638da453d8dd0b49a18e7f2f01c8605ced17337776bd"
+  },
+  "reused_from_study_c": {
+    "commit": "191b7a48412ee60647c5c3b5645553b14cf14c3b",
+    "files": {
+      "harness.py": "a30c2537fdfac47cbe93f6212a7c4d17d3a0ad70886a813fa9ee21927a32d6da",
+      "analyze.py": "057f4068b1e5b606e90b04fe392b72a35554dbbb0dbc56d18b764241c0559db9",
+      "TOKEN-REFERENCE.json": "25580be28082f7a7b0761467006d2fd2eda19de763ba1ba26b3073428cb3478c",
+      "reference-corpus.json": "edb21df93c0ce6971c5466addb85c8a7022a889f76e727526a49124a9eefc5bd"
+    }
+  },
+  "champion": {
+    "server_sha256": "1711a2c9e8ef1058c563ea99b4f51346898731a41c73c42d713bc103cf7c9c92",
+    "build_sha": "7c1bc0be3df413f43c65fb278699b629a44e7a90",
+    "model_revision": "078455ffe6472f9a52fbc1139f58b9db2881b25c",
+    "drafter": "incoai/GLM-5.3-Flash-DFlash2@bf582e4eacc1810f76656d1811693ff6c6737d2a",
+    "drafter_bits": 0,
+    "evidence": "outcomes/selfopt-c-serving @ f6ad955cbba2aea6b84b55431ade58a13825e404"
+  },
+  "left_d4b_bands": {
+    "source": "study C P2-D4b-1/-2, 10 retained rounds",
+    "C1": [
+      137.438,
+      143.048
+    ],
+    "C4": [
+      233.63,
+      243.166
+    ],
+    "C16": [
+      325.094,
+      338.363
+    ]
+  },
+  "caps_gpu_hours": {
+    "left": 5.5,
+    "right": 2.0
+  },
+  "tokenizer_sha256": "19e773648cb4e65de8660ea6365e10acca112d42a854923df93db4a6f333a82d"
+}
