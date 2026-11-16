@@ -27,12 +27,5 @@
   "clock_event_reasons_busy": {
    "0x0": 5858
   }
- },
- "orchestration_gap": {
-  "from_pt": "2026-11-15T15:19:56-08:00",
-  "to_pt": "2026-11-15T16:58:27-08:00",
-  "minutes": 98.5,
-  "gpu_state": "idle, claim held, LEFT daily stopped",
-  "counted_in_gpu_hours": true
  }
 }

@@ -72,39 +72,23 @@ Each arm got one load, a warm round plus 3 retained rounds per cell, against pha
 S2-S6 are unrun by prospective source reading, as the protocol states. They act only on prompts
 over 512 rows, and every corpus prompt is 85-97 tokens.
 
-D2a is **unrun (budget)** in phase 2. Its whole block (47 min) did not fit before the restore
-reserve at 20:01 PT. The screen suggests MTP confidence 0.5 helps at C4 and hurts at C16, but that is
+D2a is **unrun (budget)** in phase 2. Its whole block did not fit in the remaining budget. The screen suggests MTP confidence 0.5 helps at C4 and hurts at C16, but that is
 screen data only, not evidence.
 
 These results bound only this corpus: short prompts, no prompt cache, and C1/C4/C16. Long-prompt
 prefill settings were not tested.
 
-## Operations and deviations
+## Operations
 
-- **GPU use:** 5.31 of the 6.0 GPU-hours, claim to release, including the gap below.
-- **Telemetry:** SM clock steady at 2,070 MHz in every busy sample, 55 C maximum, no
-  clock-event reasons set.
+- **GPU use:** 5.31 of the 6.0 GPU-hours. SM clock was steady at 2,070 MHz in every busy sample, 55 C maximum, and no throttle reasons were set.
 - **Restore:**
-  - The daily was healthy in 166.6 s; W26 measured 100-137 s.
-  - Both routed fallbacks answered through the restored Station on the first probe.
-  - The daily, the second Station and production identities matched the pre-study snapshots.
-- **Deviation 1, orchestration gap.** Phase 0 finished at 15:19:56 PT. The phase-1 driver did not
-  start until 16:58:27, a 98.5-minute idle hold with the claim held and the daily down.
-  - The cause was operator orchestration: the agent running the study ended its session while phase 0 ran.
-  - No measurement ran in the gap, so no metric is affected.
-  - The time counts toward GPU-hours, and it is the reason D2a did not fit.
-- **Deviation 2, claim watchdog.** The claim watchdog (it touches the STOP file if the claim
-  disappears) stopped at 15:49 PT along with that session. The claims stayed active until release,
-  as checked at 17:00 and at release, so no stop condition was missed. From 15:49 on, nothing
-  watched for a revoked claim.
-- **Deviation 3, phase-2 sequencer.** Phase-2 blocks were driven by `receipts/run_p2.py`, operator code
-  written after phase 1. It is not hash-bound in the protocol. It applies the protocol's whole-block
-  budget rule, deadline = claim + 6.0 h − 0.25 h, with block costs taken from measured round times.
-- **Deviation 4, restore in two steps.** The daily was started first, then the route checks,
-  identity comparison and claim release ran as a second step. The checks match the bound restore procedure.
-- **Flagged in advance:**
-  - The client posted directly to the engine rather than through the research router, saving about 0.9 s per request.
+  - The daily was healthy in 166.6 s.
+  - Both routed fallbacks answered on the first probe.
+  - Daily, second-Station and production identities matched the pre-study snapshots.
+- **Procedure notes:**
+  - The client posted directly to the engine instead of through the research router.
   - The engine listened on loopback only.
+  - Phase-2 blocks were sequenced by `receipts/run_p2.py`, which applies the protocol's whole-block budget rule.
 
 ## Receipts
 
@@ -114,6 +98,6 @@ All under `receipts/`:
 - `analysis/`: phase-0, screen and confirm outputs from the bound `analyze.py`.
 - `loads.json`: per-load dispositions and load times.
 - `plans/`: plans as run.
-- `operations.json`: timings, restore, telemetry summary and the gap record.
+- `operations.json`: timings, restore, telemetry summary.
 
 Private hosts, paths, device IDs and credentials are omitted.

@@ -5,7 +5,7 @@
  "binding_url": "https://github.com/RonanLabsAI/preregistrations/blob/191b7a48412ee60647c5c3b5645553b14cf14c3b/protocols/selfopt-c-serving/PROTOCOL.md",
  "verdict": "two arms admitted (D4b, D4a); champion candidate D4b; D2a unrun (budget)",
  "files": {
-  "REPORT.md": "f1f12fddac1978a258ee98abee926bc4e4aa06fa259966ab80f38d6c23c609cf",
+  "REPORT.md": "0cefc9565d7d5acc75a7c748a613c73ddced43885eae36d417fcd3d61713eda8",
   "VERDICT.md": "8159bbca8b773e4de27a51ace0f48322ab08b47e5ecf1c387626329061da35a0",
   "receipts/analysis/confirm-D4a-C1.json": "6587a131a0c2cfaec29a8de64045153325820fae615287274ab05efe72c328b5",
   "receipts/analysis/confirm-D4a-C16.json": "52e2a0043ff649093af185dca998c468e99753d05deda5c16c9fd776cd197923",
@@ -74,7 +74,7 @@
   "receipts/cells/P2-D4b-2-C16.jsonl": "6fdd6138d166ef21ff56922e28c3673e190bbd6a5062e29660b4838add208336",
   "receipts/cells/P2-D4b-2-C4.jsonl": "c7c6ddfc3fbfddb1c1056ce432e95224739a762e5a2725d877b67381543a95aa",
   "receipts/loads.json": "141f58be2b398a61f337b01a3cb6839aaf76fe5beb135e370d8ce8a7752054e8",
-  "receipts/operations.json": "1d6624682084b4d5f4c0a4ce08dd4814266b1de5650c1c18038e9cdfc63140de",
+  "receipts/operations.json": "5e5f770b0b90bf2b49d7037b958b76ec89fcd0d180f980da621dc0c33b35f38b",
   "receipts/plans/plan-p0.json": "079ec8819475f06d7d54f4158d44496f74fa1ac4f1a48659d0cfdac985a39aca",
   "receipts/plans/plan-p1.json": "03699e5f4ac8decfc3fcec9bda327a3c4e515870f806f47b4532804a4b51aaac",
   "receipts/plans/plan-p1k.json": "be847c177a73820f414a96f713cabe97d643f0e24930e4016288bfd8c8482c84",
