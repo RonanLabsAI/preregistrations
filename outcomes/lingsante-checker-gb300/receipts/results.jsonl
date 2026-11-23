@@ -1,0 +1,92 @@
+{"arm": "L", "slug": "conditions__finasteride-post-discontinuation-effluvium", "ok": true, "attempts": 1, "ms": 669811, "usage": {"prompt_tokens": 11203, "total_tokens": 33563, "completion_tokens": 22360, "prompt_tokens_details": null, "reasoning_tokens": 21664}}
+{"arm": "L", "slug": "conditions__telogen-effluvium__iron-deficiency-shedding", "ok": true, "attempts": 1, "ms": 754399, "usage": {"prompt_tokens": 13623, "total_tokens": 39963, "completion_tokens": 26340, "prompt_tokens_details": {"cached_tokens": 512}, "reasoning_tokens": 25332}}
+{"arm": "L", "slug": "compare__fue-vs-fut", "ok": true, "attempts": 2, "ms": 639034, "usage": {"prompt_tokens": 13719, "total_tokens": 36044, "completion_tokens": 22325, "prompt_tokens_details": {"cached_tokens": 13693}, "reasoning_tokens": 21531}}
+{"arm": "L", "slug": "conditions__female-pattern-hair-loss", "ok": false, "attempts": 2, "ms": 921810, "usage": {"prompt_tokens": 35070, "total_tokens": 67070, "completion_tokens": 32000, "prompt_tokens_details": {"cached_tokens": 35046}, "reasoning_tokens": 32000}}
+{"arm": "L", "slug": "compare__oral-jak-inhibitors-aa-vs-topical-ruxolitinib", "ok": false, "attempts": 2, "ms": 922990, "usage": {"prompt_tokens": 29761, "total_tokens": 61761, "completion_tokens": 32000, "prompt_tokens_details": {"cached_tokens": 29736}, "reasoning_tokens": 32000}}
+{"arm": "L", "slug": "conditions__frontal-fibrosing-alopecia", "ok": false, "attempts": 2, "ms": 928699, "usage": {"prompt_tokens": 35872, "total_tokens": 67872, "completion_tokens": 32000, "prompt_tokens_details": {"cached_tokens": 35815}, "reasoning_tokens": 32000}}
+{"arm": "L", "slug": "conditions__telogen-effluvium", "ok": false, "attempts": 2, "ms": 928676, "usage": {"prompt_tokens": 21114, "total_tokens": 53114, "completion_tokens": 32000, "prompt_tokens_details": {"cached_tokens": 21063}, "reasoning_tokens": 32000}}
+{"arm": "L", "slug": "compare__dutasteride-vs-finasteride", "ok": false, "attempts": 2, "ms": 932446, "usage": {"prompt_tokens": 23499, "total_tokens": 55499, "completion_tokens": 32000, "prompt_tokens_details": {"cached_tokens": 23437}, "reasoning_tokens": 32000}}
+{"arm": "L", "slug": "conditions__androgenetic-alopecia", "ok": false, "attempts": 2, "ms": 939485, "usage": {"prompt_tokens": 36562, "total_tokens": 68562, "completion_tokens": 32000, "prompt_tokens_details": {"cached_tokens": 36546}, "reasoning_tokens": 32000}}
+{"arm": "L", "slug": "drugs__baricitinib", "ok": true, "attempts": 1, "ms": 870207, "usage": {"prompt_tokens": 26750, "total_tokens": 56720, "completion_tokens": 29970, "prompt_tokens_details": {"cached_tokens": 512}, "reasoning_tokens": 28118}}
+{"arm": "L", "slug": "demographics__adolescent-teen-male-aga", "ok": false, "attempts": 2, "ms": 908788, "usage": {"prompt_tokens": 31863, "total_tokens": 63863, "completion_tokens": 32000, "prompt_tokens_details": {"cached_tokens": 31808}, "reasoning_tokens": 32000}}
+{"arm": "L", "slug": "demographics__postpartum-hair-loss", "ok": false, "attempts": 2, "ms": 915195, "usage": {"prompt_tokens": 22997, "total_tokens": 54997, "completion_tokens": 32000, "prompt_tokens_details": {"cached_tokens": 22976}, "reasoning_tokens": 32000}}
+{"arm": "L", "slug": "demographics__traction-alopecia-black-women", "ok": false, "attempts": 2, "ms": 916402, "usage": {"prompt_tokens": 15766, "total_tokens": 47766, "completion_tokens": 32000, "prompt_tokens_details": {"cached_tokens": 15744}, "reasoning_tokens": 32000}}
+{"arm": "L", "slug": "drugs__bicalutamide-off-label-female-aga-class", "ok": false, "attempts": 2, "ms": 919534, "usage": {"prompt_tokens": 21070, "total_tokens": 53070, "completion_tokens": 32000, "prompt_tokens_details": {"cached_tokens": 21056}, "reasoning_tokens": 32000}}
+{"arm": "L", "slug": "drugs__biotin-b7", "ok": false, "attempts": 2, "ms": 919505, "usage": {"prompt_tokens": 14495, "total_tokens": 46495, "completion_tokens": 32000, "prompt_tokens_details": {"cached_tokens": 14450}, "reasoning_tokens": 32000}}
+{"arm": "L", "slug": "drugs__finasteride", "ok": false, "attempts": 2, "ms": 923276, "usage": {"prompt_tokens": 32926, "total_tokens": 64926, "completion_tokens": 32000, "prompt_tokens_details": {"cached_tokens": 32915}, "reasoning_tokens": 32000}}
+{"arm": "L", "slug": "drugs__isotretinoin", "ok": false, "attempts": 2, "ms": 928743, "usage": {"prompt_tokens": 25391, "total_tokens": 57391, "completion_tokens": 32000, "prompt_tokens_details": {"cached_tokens": 25344}, "reasoning_tokens": 32000}}
+{"arm": "L", "slug": "drugs__kx-826-pyrilutamide", "ok": false, "attempts": 2, "ms": 923614, "usage": {"prompt_tokens": 12081, "total_tokens": 44081, "completion_tokens": 32000, "prompt_tokens_details": {"cached_tokens": 12032}, "reasoning_tokens": 32000}}
+{"arm": "L", "slug": "drugs__minoxidil", "ok": false, "attempts": 2, "ms": 909353, "usage": {"prompt_tokens": 33611, "total_tokens": 65611, "completion_tokens": 32000, "prompt_tokens_details": {"cached_tokens": 33600}, "reasoning_tokens": 32000}}
+{"arm": "L", "slug": "drugs__oral-minoxidil-low-dose-sub-monograph-surging-clinical-use-c", "ok": false, "attempts": 2, "ms": 910609, "usage": {"prompt_tokens": 24253, "total_tokens": 56253, "completion_tokens": 32000, "prompt_tokens_details": {"cached_tokens": 24192}, "reasoning_tokens": 32000}}
+{"arm": "L", "slug": "drugs__saw-palmetto", "ok": true, "attempts": 1, "ms": 1245359, "usage": {"prompt_tokens": 19419, "total_tokens": 44772, "completion_tokens": 25353, "prompt_tokens_details": {"cached_tokens": 19392}, "reasoning_tokens": 23771}}
+{"arm": "L", "slug": "procedures__fut", "ok": true, "attempts": 1, "ms": 1253871, "usage": {"prompt_tokens": 10911, "total_tokens": 36505, "completion_tokens": 25594, "prompt_tokens_details": {"cached_tokens": 10880}, "reasoning_tokens": 24358}}
+{"arm": "L", "slug": "procedures__prp", "ok": true, "attempts": 1, "ms": 1391622, "usage": {"prompt_tokens": 24121, "total_tokens": 54509, "completion_tokens": 30388, "prompt_tokens_details": {"cached_tokens": 512}, "reasoning_tokens": 28931}}
+{"arm": "L", "slug": "procedures__eyebrow-transplant", "ok": true, "attempts": 1, "ms": 1427383, "usage": {"prompt_tokens": 13698, "total_tokens": 45322, "completion_tokens": 31624, "prompt_tokens_details": {"cached_tokens": 13693}, "reasoning_tokens": 30559}}
+{"arm": "L", "slug": "procedures__fue", "ok": false, "attempts": 2, "ms": 908536, "usage": {"prompt_tokens": 13588, "total_tokens": 45588, "completion_tokens": 32000, "prompt_tokens_details": {"cached_tokens": 13568}, "reasoning_tokens": 32000}}
+{"arm": "L", "slug": "procedures__exosomes-parent", "ok": false, "attempts": 2, "ms": 908565, "usage": {"prompt_tokens": 18860, "total_tokens": 50860, "completion_tokens": 32000, "prompt_tokens_details": {"cached_tokens": 18857}, "reasoning_tokens": 32000}}
+{"arm": "L", "slug": "drugs__spironolactone", "ok": false, "attempts": 2, "ms": 908507, "usage": {"prompt_tokens": 29039, "total_tokens": 61039, "completion_tokens": 32000, "prompt_tokens_details": {"cached_tokens": 29016}, "reasoning_tokens": 32000}}
+{"arm": "L", "slug": "procedures__lllt-caps-capillus-irestore-theradome", "ok": false, "attempts": 2, "ms": 908509, "usage": {"prompt_tokens": 26018, "total_tokens": 58018, "completion_tokens": 32000, "prompt_tokens_details": {"cached_tokens": 25984}, "reasoning_tokens": 32000}}
+{"arm": "L", "slug": "procedures__scalp-cooling-chemo-induced-alopecia", "ok": false, "attempts": 2, "ms": 908511, "usage": {"prompt_tokens": 17630, "total_tokens": 49630, "completion_tokens": 32000, "prompt_tokens_details": {"cached_tokens": 17586}, "reasoning_tokens": 32000}}
+{"arm": "L", "slug": "procedures__exosomes-fda-warning-history", "ok": false, "attempts": 2, "ms": 908511, "usage": {"prompt_tokens": 22824, "total_tokens": 54824, "completion_tokens": 32000, "prompt_tokens_details": {"cached_tokens": 22784}, "reasoning_tokens": 32000}}
+{"arm": "L-nothink", "slug": "conditions__telogen-effluvium", "ok": true, "attempts": 1, "ms": 230995, "usage": {"prompt_tokens": 21115, "total_tokens": 24299, "completion_tokens": 3184, "prompt_tokens_details": {"cached_tokens": 512}, "reasoning_tokens": 0}}
+{"arm": "L-nothink", "slug": "compare__oral-jak-inhibitors-aa-vs-topical-ruxolitinib", "ok": true, "attempts": 1, "ms": 265509, "usage": {"prompt_tokens": 29762, "total_tokens": 33497, "completion_tokens": 3735, "prompt_tokens_details": {"cached_tokens": 512}, "reasoning_tokens": 0}}
+{"arm": "L-nothink", "slug": "demographics__postpartum-hair-loss", "ok": true, "attempts": 1, "ms": 326091, "usage": {"prompt_tokens": 22998, "total_tokens": 27703, "completion_tokens": 4705, "prompt_tokens_details": {"cached_tokens": 512}, "reasoning_tokens": 0}}
+{"arm": "L-nothink", "slug": "conditions__female-pattern-hair-loss", "ok": true, "attempts": 1, "ms": 463917, "usage": {"prompt_tokens": 35071, "total_tokens": 42138, "completion_tokens": 7067, "prompt_tokens_details": {"cached_tokens": 512}, "reasoning_tokens": 0}}
+{"arm": "L-nothink", "slug": "drugs__biotin-b7", "ok": true, "attempts": 1, "ms": 155827, "usage": {"prompt_tokens": 14496, "total_tokens": 17045, "completion_tokens": 2549, "prompt_tokens_details": {"cached_tokens": 512}, "reasoning_tokens": 0}}
+{"arm": "L-nothink", "slug": "compare__dutasteride-vs-finasteride", "ok": true, "attempts": 1, "ms": 534567, "usage": {"prompt_tokens": 23500, "total_tokens": 31599, "completion_tokens": 8099, "prompt_tokens_details": {"cached_tokens": 512}, "reasoning_tokens": 0}}
+{"arm": "L-nothink", "slug": "demographics__adolescent-teen-male-aga", "ok": true, "attempts": 1, "ms": 594908, "usage": {"prompt_tokens": 31864, "total_tokens": 40953, "completion_tokens": 9089, "prompt_tokens_details": {"cached_tokens": 512}, "reasoning_tokens": 0}}
+{"arm": "L-nothink", "slug": "drugs__bicalutamide-off-label-female-aga-class", "ok": true, "attempts": 1, "ms": 347784, "usage": {"prompt_tokens": 21071, "total_tokens": 26651, "completion_tokens": 5580, "prompt_tokens_details": {"cached_tokens": 512}, "reasoning_tokens": 0}}
+{"arm": "L-nothink", "slug": "demographics__traction-alopecia-black-women", "ok": true, "attempts": 1, "ms": 513897, "usage": {"prompt_tokens": 15767, "total_tokens": 24099, "completion_tokens": 8332, "prompt_tokens_details": {"cached_tokens": 512}, "reasoning_tokens": 0}}
+{"arm": "L-nothink", "slug": "conditions__androgenetic-alopecia", "ok": true, "attempts": 1, "ms": 746863, "usage": {"prompt_tokens": 36563, "total_tokens": 48100, "completion_tokens": 11537, "prompt_tokens_details": {"cached_tokens": 512}, "reasoning_tokens": 0}}
+{"arm": "L-nothink", "slug": "drugs__kx-826-pyrilutamide", "ok": true, "attempts": 1, "ms": 240331, "usage": {"prompt_tokens": 12082, "total_tokens": 16207, "completion_tokens": 4125, "prompt_tokens_details": {"cached_tokens": 512}, "reasoning_tokens": 0}}
+{"arm": "L-nothink", "slug": "drugs__finasteride", "ok": true, "attempts": 1, "ms": 317245, "usage": {"prompt_tokens": 32927, "total_tokens": 38242, "completion_tokens": 5315, "prompt_tokens_details": {"cached_tokens": 512}, "reasoning_tokens": 0}}
+{"arm": "L-nothink", "slug": "drugs__isotretinoin", "ok": true, "attempts": 1, "ms": 308290, "usage": {"prompt_tokens": 25392, "total_tokens": 30709, "completion_tokens": 5317, "prompt_tokens_details": {"cached_tokens": 512}, "reasoning_tokens": 0}}
+{"arm": "L-nothink", "slug": "conditions__frontal-fibrosing-alopecia", "ok": true, "attempts": 2, "ms": 420842, "usage": {"prompt_tokens": 35873, "total_tokens": 43501, "completion_tokens": 7628, "prompt_tokens_details": {"cached_tokens": 35821}, "reasoning_tokens": 0}}
+{"arm": "L-nothink", "slug": "drugs__oral-minoxidil-low-dose-sub-monograph-surging-clinical-use-c", "ok": true, "attempts": 1, "ms": 281977, "usage": {"prompt_tokens": 24254, "total_tokens": 30229, "completion_tokens": 5975, "prompt_tokens_details": {"cached_tokens": 512}, "reasoning_tokens": 0}}
+{"arm": "L-nothink", "slug": "drugs__minoxidil", "ok": true, "attempts": 1, "ms": 398873, "usage": {"prompt_tokens": 33612, "total_tokens": 42674, "completion_tokens": 9062, "prompt_tokens_details": {"cached_tokens": 512}, "reasoning_tokens": 0}}
+{"arm": "L-nothink", "slug": "procedures__exosomes-fda-warning-history", "ok": true, "attempts": 1, "ms": 123854, "usage": {"prompt_tokens": 22825, "total_tokens": 26456, "completion_tokens": 3631, "prompt_tokens_details": {"cached_tokens": 512}, "reasoning_tokens": 0}}
+{"arm": "L-nothink", "slug": "procedures__exosomes-parent", "ok": true, "attempts": 1, "ms": 125621, "usage": {"prompt_tokens": 18861, "total_tokens": 22568, "completion_tokens": 3707, "prompt_tokens_details": {"cached_tokens": 512}, "reasoning_tokens": 0}}
+{"arm": "L-nothink", "slug": "procedures__scalp-cooling-chemo-induced-alopecia", "ok": true, "attempts": 1, "ms": 129303, "usage": {"prompt_tokens": 17631, "total_tokens": 21494, "completion_tokens": 3863, "prompt_tokens_details": {"cached_tokens": 512}, "reasoning_tokens": 0}}
+{"arm": "L-nothink", "slug": "procedures__fue", "ok": true, "attempts": 1, "ms": 175221, "usage": {"prompt_tokens": 13589, "total_tokens": 19400, "completion_tokens": 5811, "prompt_tokens_details": {"cached_tokens": 512}, "reasoning_tokens": 0}}
+{"arm": "L-nothink", "slug": "procedures__lllt-caps-capillus-irestore-theradome", "ok": true, "attempts": 1, "ms": 178816, "usage": {"prompt_tokens": 26019, "total_tokens": 31995, "completion_tokens": 5976, "prompt_tokens_details": {"cached_tokens": 512}, "reasoning_tokens": 0}}
+{"arm": "L-nothink", "slug": "drugs__spironolactone", "ok": true, "attempts": 1, "ms": 206572, "usage": {"prompt_tokens": 29040, "total_tokens": 36379, "completion_tokens": 7339, "prompt_tokens_details": {"cached_tokens": 512}, "reasoning_tokens": 0}}
+{"adjudication_n": 1, "arm": "C", "verdict": "valid"}
+{"adjudication_n": 2, "arm": "L+L-nothink", "verdict": "invalid"}
+{"adjudication_n": 3, "arm": "L+L-nothink", "verdict": "invalid"}
+{"adjudication_n": 4, "arm": "L+L-nothink", "verdict": "invalid"}
+{"adjudication_n": 5, "arm": "C", "verdict": "valid"}
+{"adjudication_n": 6, "arm": "C", "verdict": "valid"}
+{"adjudication_n": 7, "arm": "L+L-nothink", "verdict": "invalid"}
+{"adjudication_n": 8, "arm": "C", "verdict": "valid"}
+{"adjudication_n": 9, "arm": "C", "verdict": "valid"}
+{"adjudication_n": 10, "arm": "L+L-nothink", "verdict": "invalid"}
+{"adjudication_n": 11, "arm": "C", "verdict": "valid"}
+{"adjudication_n": 12, "arm": "L+L-nothink", "verdict": "invalid"}
+{"adjudication_n": 13, "arm": "C", "verdict": "valid"}
+{"adjudication_n": 14, "arm": "C", "verdict": "valid"}
+{"adjudication_n": 15, "arm": "C", "verdict": "valid"}
+{"adjudication_n": 16, "arm": "L+L-nothink", "verdict": "invalid"}
+{"adjudication_n": 17, "arm": "L+L-nothink", "verdict": "invalid"}
+{"adjudication_n": 18, "arm": "L+L-nothink", "verdict": "invalid"}
+{"adjudication_n": 19, "arm": "L+L-nothink", "verdict": "invalid"}
+{"adjudication_n": 20, "arm": "L+L-nothink", "verdict": "invalid"}
+{"adjudication_n": 21, "arm": "C", "verdict": "valid"}
+{"adjudication_n": 22, "arm": "L+L-nothink", "verdict": "valid"}
+{"adjudication_n": 23, "arm": "C", "verdict": "valid"}
+{"adjudication_n": 24, "arm": "C", "verdict": "valid"}
+{"adjudication_n": 25, "arm": "C", "verdict": "valid"}
+{"adjudication_n": 26, "arm": "L+L-nothink", "verdict": "valid"}
+{"adjudication_n": 27, "arm": "C", "verdict": "valid"}
+{"adjudication_n": 28, "arm": "L+L-nothink", "verdict": "invalid"}
+{"adjudication_n": 29, "arm": "C", "verdict": "valid"}
+{"adjudication_n": 30, "arm": "C", "verdict": "valid"}
+{"adjudication_n": 31, "arm": "C", "verdict": "valid"}
+{"adjudication_n": 32, "arm": "L+L-nothink", "verdict": "valid"}
+{"adjudication_n": 33, "arm": "C", "verdict": "valid"}
+{"adjudication_n": 34, "arm": "L+L-nothink", "verdict": "invalid"}
+{"adjudication_n": 35, "arm": "C", "verdict": "valid"}
+{"adjudication_n": 36, "arm": "L+L-nothink", "verdict": "valid"}
+{"adjudication_n": 37, "arm": "L+L-nothink", "verdict": "invalid"}
+{"adjudication_n": 38, "arm": "C", "verdict": "valid"}
+{"adjudication_n": 39, "arm": "L+L-nothink", "verdict": "invalid"}
+{"adjudication_n": 40, "arm": "L+L-nothink", "verdict": "invalid"}
