@@ -49,3 +49,15 @@ L can replace C for the full site only if adjudicated precision(L) >= precision(
 - Run budget 60 min for 30 pages; a page with no valid JSON after 2 attempts counts as a miss for L.
 - Production (another fleet claim) takes priority: an interruption is recorded and the run is not resumed
   under a changed setup.
+
+## Amendment 1 (2026-11-22 23:52 PT, after 9 of 30 L pages, before any scoring)
+
+Observed: 6 of the first 9 L pages returned no answer; each spent the whole 32,000-token reply cap (the
+harness `max_tokens`, not frozen above) on reasoning (prompt 21-37K tokens). Per-page wall time is 11-15 min
+at 8 concurrent (about 285 tok/s aggregate decode), not the budgeted 2 min.
+
+1. **Primary result unchanged:** arm L as frozen, `max_tokens` 32,000; no valid JSON after 2 attempts = miss.
+2. **Run budget extended** from 60 min to completion of all 30 pages (one pass).
+3. **Secondary arm L-nothink (looking closer, not the primary result):** every L miss is re-run once with
+   thinking off (`enable_thinking: false`), same prompt, sampling and cap. Reported separately; the decision rule
+   is evaluated on the primary arm, and also shown for L + L-nothink combined as a labeled secondary.
