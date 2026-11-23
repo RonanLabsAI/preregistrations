@@ -7,11 +7,11 @@ Status: preregistered locally; timestamps not externally verifiable (local commi
 **Decision rule not met; the Claude check pass stays.**
 
 - Primary arm L (frozen settings, thinking on, 32,000-token reply cap): answered 8 of 30 pages, n=30. The other 22
-  spent the whole cap on reasoning (prompts 11K-37K tokens). Median 1,245 s and 26,340 completion tokens per answered
-  page, about 33 tok/s per request at 8 concurrent.
+  spent the whole cap on reasoning (prompts 11K-37K tokens). Median 1,058 s and 25,967 completion tokens per answered
+  page; 33-35 tok/s per request at 8 concurrent (20-22 tok/s for the last pages, run 10 at a time).
 - On those 8 pages L found 7/21 of the Claude checker's misread-result and regulatory flags (33%, Wilson 95% CI
   17%-55%).
-- Secondary arm L-nothink (Amendment 1, thinking off, misses only): 22/22 answered, median 308 s. L + L-nothink over
+- Secondary arm L-nothink (Amendment 1, thinking off, misses only): 22/22 answered, median 295 s. L + L-nothink over
   all 30 pages: 670 flags against Claude's 229; core recall 57/109 = 52% (95% CI 43%-61%), below the 70% bar.
 - Blind adjudication of disagreements (seed 20261122, n=20 per arm, source hidden, Claude Opus 5.5 judge): Claude-only
   flags 20/20 valid (100%, 95% CI 84%-100%); LingSante-only flags 4/20 valid (20%, 95% CI 8%-42%). The judge shares a
