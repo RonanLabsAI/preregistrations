@@ -1,0 +1,12 @@
+# stage fix4 2026-11-28 12:23:18 PST reason: Deviation 4: warmups and warm-cache check, aborted-run handling, floor keys and id guard, prompt-token check, graph read-back, digest gate, per-item bootstrap
+9b94293e2afa2d92935fd9ba46dd9c71531a4e04a6d06628a564771283ac3540  configs/r1/plan.json
+6407a917f6a05cda59424b49322dded1c252a1456fb4449ec836623a2cc4f2a1  configs/r1/runs.json
+b0ea44aac712308b30beda7047a905605ef2738aad63de1cad142b564c6c597e  preregs/2026-11-28-r1-floors.md
+beb022704c2f501557f1b65c68d8552d9e3de0082005bc600aba66382eb25d82  scripts/r1/launch.py
+1b69357b6a54d2dd3325379d3e8a4d2ef3fa9610831030b12af2040c53281bd6  scripts/r1/r1_analysis.py
+e4260b41fa057c4b46f7e127c1037a5a2996f9c6debee76819c4fe820dff7338  scripts/r1/r1_offline.py
+4cd25cba1bd86b8a93189de0fbc200917505bfbe396c20d9a0f952417d48a0f6  scripts/r1/r1_queue.py
+3ec1214307d3db95098543b0308fb0b25247b56866066b299ba0761afc7cadd7  tests/test_r1_analysis.py
+9fff56da5d6e5b1b551118bf2cf9107e5b2c6e1590007a086566853842b8e1ec  tests/test_r1_offline_meta.py
+43215a3c14073891ba2510f3215e187386e9e40bae604f3073ad6dc02a523a15  tests/test_r1_plan_launch.py
+cf0b805e51f121e77b48a0bd30954b8b7f9ad0a070eba6f994899c192087e0dc  tests/test_r1_queue.py
